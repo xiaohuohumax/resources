@@ -12,6 +12,10 @@ const resource: Resource = {
         text: '移动端',
         link: '/software/mobile/required'
       },
+      {
+        text: 'WEB端',
+        link: '/software/web/tool/color'
+      }
     ]
   },
   sidebar: {
@@ -116,6 +120,36 @@ const resource: Resource = {
           }
         ]
       },
+    ],
+    '/software/web/': [
+      {
+        text: 'WEB端',
+        base: '/software/web/',
+        items: [
+          {
+            text: '在线工具',
+            base: '/software/web/tool/',
+            items: [
+              {
+                text: '颜色',
+                link: 'color'
+              },
+              {
+                text: '图片',
+                link: 'image'
+              },
+              {
+                text: '文件',
+                link: 'file'
+              },
+              {
+                text: '文字',
+                link: 'text'
+              }
+            ]
+          }
+        ]
+      }
     ]
   }
 };

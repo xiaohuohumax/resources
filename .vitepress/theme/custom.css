@@ -1,0 +1,17 @@
+video,
+img {
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.VPSidebarItem.level-0 {
+  padding-bottom: 12px !important;
+}
+
+.VPNavBarMenuGroup .VPMenu {
+  min-width: auto !important;
+}

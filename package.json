@@ -1,0 +1,50 @@
+{
+  "name": "resources",
+  "version": "1.0.0",
+  "description": "资源仓库: 收录各种常用资源地址。",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "preview": "vitepress preview",
+    "commit": "git add . && cz",
+    "postinstall": "simple-git-hooks",
+    "changeset": "changeset",
+    "lint:fix": "eslint --ext .ts . --fix"
+  },
+  "keywords": [
+    "resources",
+    "vitepress"
+  ],
+  "author": {
+    "name": "xiaohuohumax",
+    "url": "https://github.com/xiaohuohumax"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xiaohuohumax/resources.git"
+  },
+  "license": "MIT",
+  "simple-git-hooks": {
+    "commit-msg": "npx commitlint --edit $1"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-git"
+    }
+  },
+  "devDependencies": {
+    "@changesets/changelog-github": "^0.5.0",
+    "@changesets/cli": "^2.27.1",
+    "@commitlint/cli": "^19.2.2",
+    "@commitlint/config-conventional": "^19.2.2",
+    "@typescript-eslint/eslint-plugin": "^7.11.0",
+    "@typescript-eslint/parser": "^7.11.0",
+    "commitizen": "^4.3.0",
+    "cz-git": "^1.9.1",
+    "eslint": "^8.57.0",
+    "simple-git-hooks": "^2.11.1",
+    "vitepress": "^1.2.3"
+  }
+}

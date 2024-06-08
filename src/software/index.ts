@@ -145,8 +145,20 @@ const resource: Resource = {
               {
                 text: '文字',
                 link: 'text'
+              },
+              {
+                text: '绘制',
+                link: 'draw'
+              },
+              {
+                text: 'AST',
+                link: 'ast'
               }
             ]
+          },
+          {
+            text: 'Git练习',
+            link: 'git-learn'
           }
         ]
       }

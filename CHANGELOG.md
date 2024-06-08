@@ -1,5 +1,11 @@
 # resources
 
+## 1.2.0
+
+### Minor Changes
+
+- 在线工具添加绘制, AST, Git 在线练习
+
 ## 1.1.0
 
 ### Minor Changes

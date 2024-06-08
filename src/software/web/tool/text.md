@@ -4,21 +4,15 @@
 
 [浏览地址](https://www.likefont.com/) 上传图片，即可识别字体。
 
+## EMOJIALL
+
+[浏览地址](https://www.emojiall.com/) EMOJI 中文网，这是一本全面的EMOJI字典。
 
 ## 字符画
 
 ### TAAG
 
 [浏览地址](https://patorjk.com/software/taag/#p=display&f=Graffiti&t=Hello%20Resources) 文本转 ASCII 字符画。
-
-```
-    ____                                           
-   / __ \___  _________  __  _______________  _____
-  / /_/ / _ \/ ___/ __ \/ / / / ___/ ___/ _ \/ ___/
- / _, _/  __(__  ) /_/ / /_/ / /  / /__/  __(__  ) 
-/_/ |_|\___/____/\____/\__,_/_/   \___/\___/____/  
-                                                   
-```
 
 ### ASCII Generator
 

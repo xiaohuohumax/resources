@@ -5,7 +5,9 @@ const resource: Resource = {
     text: '文章文档',
     link: ''
   },
-  sidebar: {}
+  sidebar: {
+
+  }
 };
 
 export default resource;

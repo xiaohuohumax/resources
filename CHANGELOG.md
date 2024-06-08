@@ -1,5 +1,11 @@
 # resources
 
+## 1.5.0
+
+### Minor Changes
+
+- 添加娱乐影音-音乐-在线乐器
+
 ## 1.4.0
 
 ### Minor Changes

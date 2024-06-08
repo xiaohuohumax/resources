@@ -60,6 +60,10 @@ const resource: Resource = {
               {
                 text: '虚拟环境',
                 link: 'virtual'
+              },
+              {
+                text: '接口测试',
+                link: 'api'
               }
             ]
           },
@@ -153,6 +157,10 @@ const resource: Resource = {
               {
                 text: 'AST',
                 link: 'ast'
+              },
+              {
+                text: 'API',
+                link: 'api'
               }
             ]
           },

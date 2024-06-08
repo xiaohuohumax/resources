@@ -1,5 +1,11 @@
 # resources
 
+## 1.4.0
+
+### Minor Changes
+
+- 添加娱乐影音-游戏-塔防
+
 ## 1.3.0
 
 ### Minor Changes

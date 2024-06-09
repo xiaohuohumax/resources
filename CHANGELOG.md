@@ -1,5 +1,11 @@
 # resources
 
+## 1.6.0
+
+### Minor Changes
+
+- 添加文字字体-字库
+
 ## 1.5.0
 
 ### Minor Changes

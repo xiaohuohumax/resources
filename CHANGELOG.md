@@ -1,5 +1,11 @@
 # resources
 
+## 1.7.0
+
+### Minor Changes
+
+- 添加篡改猴-脚本仓库
+
 ## 1.6.0
 
 ### Minor Changes

@@ -44,6 +44,10 @@ const resource: Resource = {
             text: '脚本仓库',
             link: 'lib'
           },
+          {
+            text: '脚本收录',
+            link: 'script'
+          }
         ]
       },
     ],

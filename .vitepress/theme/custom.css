@@ -12,6 +12,10 @@ a {
   text-decoration: none !important;
 }
 
+.VPNavBarMenuGroup .VPMenu {
+  min-width: auto !important;
+}
+
 .VPDoc .container {
   max-width: calc(var(--vp-layout-max-width) - 16px) !important;
 }

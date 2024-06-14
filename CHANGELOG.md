@@ -1,5 +1,11 @@
 # resources
 
+## 2.0.1
+
+### Patch Changes
+
+- 调整导航栏最小宽度
+
 ## 2.0.0
 
 ### Major Changes

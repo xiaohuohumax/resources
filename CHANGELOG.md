@@ -1,5 +1,11 @@
 # resources
 
+## 2.4.0
+
+### Minor Changes
+
+- 篡改猴-脚本收录添加几款常用脚本
+
 ## 2.3.0
 
 ### Minor Changes

@@ -1,5 +1,11 @@
 # resources
 
+## 2.6.0
+
+### Minor Changes
+
+- 软件-电脑端添加实用工具
+
 ## 2.5.0
 
 ### Minor Changes

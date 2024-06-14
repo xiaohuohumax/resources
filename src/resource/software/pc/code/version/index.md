@@ -12,7 +12,7 @@ icon:
   src: /logo.svg
 
 title: 版本控制
-# details: 版本控制
+
 ---
 
 # 版本控制

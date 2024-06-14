@@ -2,7 +2,7 @@
 
 type: collection
 
-id: software-pc-code-iso
+id: software-pc-code-server
 
 belong:
   id: software-pc-code
@@ -11,11 +11,11 @@ belong:
 icon:
   src: /logo.svg
 
-title: 系统镜像
+title: WEB服务器
 
 ---
 
-# 系统镜像
+# WEB服务器
 
 <ShowBreadcrumb />
 

@@ -1,5 +1,11 @@
 # resources
 
+## 2.3.0
+
+### Minor Changes
+
+- 电脑端-软件开发添加 WEB 服务器
+
 ## 2.2.0
 
 ### Minor Changes

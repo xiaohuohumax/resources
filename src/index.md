@@ -17,8 +17,11 @@ hero:
       text: 必备软件
       link: /resource/software/mobile/required
     - theme: alt
-      text: Github
+      text: 项目源码
       link: https://github.com/xiaohuohumax/resources
+    - theme: alt
+      text: 下载书签
+      link: /bookmark.html
 
 features:
   - title: 软件
@@ -31,6 +34,24 @@ features:
     icon: 📖
     details: 收录各种文章、教程、文档等资源
 ---
+
+<script setup lang="ts">
+import { withBase, useData } from 'vitepress';
+import { onMounted } from 'vue';
+
+const { site } = useData();
+
+onMounted(() => {
+  // 下载书签
+  const downloadLink = document.querySelectorAll('.VPHero a.VPButton.alt')[1];
+  if (!downloadLink) return;
+
+  const a = downloadLink.cloneNode(true);
+  a.download = site.value.title + '.html';
+
+  downloadLink.parentNode.replaceChild(a, downloadLink);
+});
+</script>
 
 <style>
 :root {

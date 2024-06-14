@@ -1,6 +1,6 @@
 {
   "name": "resources",
-  "version": "2.6.0",
+  "version": "2.7.0",
   "description": "资源仓库: 收录各种常用资源地址。",
   "type": "module",
   "private": true,
@@ -41,6 +41,7 @@
     "@commitlint/config-conventional": "^19.2.2",
     "@typescript-eslint/eslint-plugin": "^7.11.0",
     "@typescript-eslint/parser": "^7.11.0",
+    "@xiaohuohumax/bookmark": "^2.1.1",
     "commitizen": "^4.3.0",
     "cz-git": "^1.9.1",
     "eslint": "^8.57.0",

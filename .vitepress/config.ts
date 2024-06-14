@@ -1,20 +1,28 @@
 import { defineConfig } from 'vitepress';
 import pkg from '../package.json';
 import {
-  Resource, loadResources, createResource, createNav,
-  getResourcesByBelongId, getBreadcrumbsByResource
+  Resource, loadResources, createResource,
+  getResourcesByBelongId, getBreadcrumbsByResource,
+  createNav
 } from './theme/resource';
+
+import { createBookmark } from './bookmark';
 
 import path from 'node:path';
 
 const BASE = '/resources/';
+const TITLE = 'Resources';
 const SRC_DIR = path.join(__dirname, '../src');
+const PUBLIC_DIR = path.join(SRC_DIR, 'public');
 
 const resources: Resource[] = loadResources(SRC_DIR, ['**/__*.md']);
 
+// 创建书签文件
+createBookmark(resources, PUBLIC_DIR, path.join(SRC_DIR, 'public', 'bookmark.html'), TITLE + ' Bookmark');
+
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: 'Resources',
+  title: TITLE,
   description: 'Resource Repository',
   base: BASE,
   srcDir: SRC_DIR,

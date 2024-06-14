@@ -1,5 +1,11 @@
 # resources
 
+## 2.7.0
+
+### Minor Changes
+
+- 添加下载书签功能-包含全部资源链接
+
 ## 2.6.0
 
 ### Minor Changes

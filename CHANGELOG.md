@@ -1,5 +1,11 @@
 # resources
 
+## 2.1.0
+
+### Minor Changes
+
+- 添加网页端-绘制
+
 ## 2.0.1
 
 ### Patch Changes

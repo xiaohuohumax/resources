@@ -1,27 +1,49 @@
 import { defineConfig } from 'vitepress';
-import resources from '../src';
 import pkg from '../package.json';
+import {
+  Resource, loadResources, createResource, createNav,
+  getResourcesByBelongId, getBreadcrumbsByResource
+} from './theme/resource';
 
 import path from 'node:path';
 
-const base = '/resources/';
+const BASE = '/resources/';
+const SRC_DIR = path.join(__dirname, '../src');
+
+const resources: Resource[] = loadResources(SRC_DIR, ['**/__*.md']);
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: 'Resources',
   description: 'Resource Repository',
-  base,
-  srcDir: 'src',
+  base: BASE,
+  srcDir: SRC_DIR,
   cacheDir: 'cache',
   outDir: 'dist',
   head: [
-    ['link', { rel: 'icon', href: path.join(base, '/logo.svg') }]
+    ['link', { rel: 'icon', href: path.join(BASE, '/logo.svg') }]
   ],
   lastUpdated: true,
+  transformPageData(pageData) {
+    const resource = createResource(SRC_DIR, path.join(SRC_DIR, pageData.relativePath));
+    if (!resource) {
+      return;
+    }
+    resource.breadcrumbs = getBreadcrumbsByResource(resources, resource);
+    if (resource.type === 'collection') {
+      pageData.frontmatter.layout = 'doc';
+      pageData.frontmatter.sidebar = false;
+      pageData.frontmatter.aside = false;
+      resource.items = getResourcesByBelongId(resources, resource.id);
+    } else if (resource.type === 'doc') {
+      pageData.frontmatter.layout = 'doc';
+    }
+    pageData.frontmatter = Object.assign(pageData.frontmatter, resource);
+  },
+  srcExclude: ['**/_*.md'],
   themeConfig: {
     logo: '/logo.svg',
-    nav: resources.map(r => r.nav),
-    sidebar: resources.reduce((acc, r) => Object.assign(acc, r.sidebar), {}),
+    nav: createNav(resources),
     socialLinks: [
       {
         icon: 'github',
@@ -45,6 +67,10 @@ export default defineConfig({
       linkLabel: '返回首页',
       linkText: '返回首页',
     },
+    outline: {
+      label: '目录'
+    },
+    returnToTopLabel: '返回顶部',
     search: {
       provider: 'local',
       options: {

@@ -12,22 +12,22 @@ hero:
   actions:
     - theme: brand
       text: 装机必备
-      link: /software/pc/required
+      link: /resource/software/pc/required/
     - theme: brand
-      text: 必备App
-      link: /software/mobile/required
+      text: 必备软件
+      link: /resource/software/mobile/required
     - theme: alt
       text: Github
       link: https://github.com/xiaohuohumax/resources
 
 features:
-  - title: 软件资源
+  - title: 软件
     icon: 📦
     details: 收录各种常用软件、工具、插件等资源
-  - title: 娱乐影音
+  - title: 娱乐
     icon: 🎉
     details: 收录各种视频、游戏、音乐等资源
-  - title: 文章文档(施工中🚧)
+  - title: 文档(施工中🚧)
     icon: 📖
     details: 收录各种文章、教程、文档等资源
 ---

@@ -1,4 +1,5 @@
 node_modules
 .vscode
 .changeset
-!.vitepress
+!.vitepress/**/
+!.vitepress/**/*.ts

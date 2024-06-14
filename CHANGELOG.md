@@ -1,5 +1,11 @@
 # resources
 
+## 2.0.0
+
+### Major Changes
+
+- 文档自动整理
+
 ## 1.7.0
 
 ### Minor Changes

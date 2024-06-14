@@ -1,5 +1,11 @@
 # resources
 
+## 2.2.0
+
+### Minor Changes
+
+- 软件开发-数据库添加几款连接工具
+
 ## 2.1.0
 
 ### Minor Changes

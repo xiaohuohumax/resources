@@ -1,5 +1,11 @@
 # resources
 
+## 2.5.0
+
+### Minor Changes
+
+- 系统美化-字体字库添加字体
+
 ## 2.4.0
 
 ### Minor Changes

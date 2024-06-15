@@ -2,20 +2,20 @@
 
 type: collection
 
-id: play-music-online
+id: software-pc-tool-image
 
 belong:
-  id: play-music
-  order: 1
+  id: software-pc-tool
+  # order: 9999
 
 icon:
   src: /logo.svg
 
-title: 在线乐器
+title: 图片图像
 
 ---
 
-# 在线乐器
+# 图片图像
 
 <ShowBreadcrumb />
 

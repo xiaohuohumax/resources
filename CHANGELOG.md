@@ -1,5 +1,11 @@
 # resources
 
+## 2.8.0
+
+### Minor Changes
+
+- 电脑端-实用工具添加图片图像
+
 ## 2.7.0
 
 ### Minor Changes

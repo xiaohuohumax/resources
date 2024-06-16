@@ -1,5 +1,11 @@
 # resources
 
+## 2.9.0
+
+### Minor Changes
+
+- 电脑端-实用工具添加筛选重复文件的工具
+
 ## 2.8.0
 
 ### Minor Changes

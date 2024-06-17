@@ -1,5 +1,11 @@
 # resources
 
+## 2.10.0
+
+### Minor Changes
+
+- 电脑端-软件开发添加几款终端工具
+
 ## 2.9.0
 
 ### Minor Changes

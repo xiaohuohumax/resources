@@ -1,5 +1,11 @@
 # resources
 
+## 2.12.1
+
+### Patch Changes
+
+- 修复本地搜索集合无法搜索问题
+
 ## 2.12.0
 
 ### Minor Changes

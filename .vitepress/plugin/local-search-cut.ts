@@ -17,6 +17,10 @@ export default function (localeId: string): Plugin {
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
         const indexMap: { [key: string]: any } = {};
 
+        for (const [key, value] of data.index) {
+          indexMap[key] = value;
+        }
+
         for (const indexItem of data.index) {
           // 对原词再切词
           for (const cutWord of cut(indexItem[0])) {

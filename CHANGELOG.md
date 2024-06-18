@@ -1,5 +1,11 @@
 # resources
 
+## 2.12.0
+
+### Minor Changes
+
+- 本地搜索切词舍弃原词
+
 ## 2.11.1
 
 ### Patch Changes

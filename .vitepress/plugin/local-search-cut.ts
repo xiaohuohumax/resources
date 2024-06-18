@@ -14,9 +14,8 @@ export default function (localeId: string): Plugin {
       if (id.includes(`@localSearchIndex${localeId}`)) {
         const data = JSON.parse(JSON.parse(code.slice(15)));
 
-        // 原切词索引
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        const indexMap: { [key: string]: any } = Object.entries(data.index);
+        const indexMap: { [key: string]: any } = {};
 
         for (const indexItem of data.index) {
           // 对原词再切词

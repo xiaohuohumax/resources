@@ -7,6 +7,7 @@ import {
 } from './theme/resource';
 
 import { createBookmark } from './bookmark';
+import localSearchCut from './plugin/local-search-cut';
 
 import path from 'node:path';
 
@@ -14,6 +15,7 @@ const BASE = '/resources/';
 const TITLE = 'Resources';
 const SRC_DIR = path.join(__dirname, '../src');
 const PUBLIC_DIR = path.join(SRC_DIR, 'public');
+const LOCALE_ID = 'root';
 
 const resources: Resource[] = loadResources(SRC_DIR, ['**/__*.md']);
 
@@ -32,6 +34,12 @@ export default defineConfig({
     ['link', { rel: 'icon', href: path.join(BASE, '/logo.svg') }]
   ],
   lastUpdated: true,
+  vite: {
+    plugins: [
+      // 本地搜索切词增强插件
+      localSearchCut(LOCALE_ID)
+    ]
+  },
   transformPageData(pageData) {
     const resource = createResource(SRC_DIR, path.join(SRC_DIR, pageData.relativePath));
     if (!resource) {
@@ -83,7 +91,7 @@ export default defineConfig({
       provider: 'local',
       options: {
         locales: {
-          root: {
+          [LOCALE_ID]: {
             translations: {
               button: {
                 buttonText: '搜索文档',

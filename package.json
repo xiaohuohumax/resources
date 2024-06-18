@@ -1,6 +1,6 @@
 {
   "name": "resources",
-  "version": "2.10.0",
+  "version": "2.11.0",
   "description": "资源仓库: 收录各种常用资源地址。",
   "type": "module",
   "private": true,
@@ -39,6 +39,7 @@
     "@changesets/cli": "^2.27.1",
     "@commitlint/cli": "^19.2.2",
     "@commitlint/config-conventional": "^19.2.2",
+    "@node-rs/jieba": "^1.10.3",
     "@typescript-eslint/eslint-plugin": "^7.11.0",
     "@typescript-eslint/parser": "^7.11.0",
     "@xiaohuohumax/bookmark": "^2.1.1",

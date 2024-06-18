@@ -1,5 +1,11 @@
 # resources
 
+## 2.11.0
+
+### Minor Changes
+
+- 本地搜索中文搜索增强
+
 ## 2.10.0
 
 ### Minor Changes

@@ -2,17 +2,17 @@
 
 type: collection
 
-id: software
+id: material
 
 belong:
   id: null
-  order: 0
+  order: 1
 
-title: 软件
+title: 素材
 
 ---
 
-# 软件
+# 素材
 
 <ShowBreadcrumb />
 

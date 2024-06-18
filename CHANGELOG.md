@@ -1,5 +1,11 @@
 # resources
 
+## 2.13.0
+
+### Minor Changes
+
+- 添加素材模块
+
 ## 2.12.1
 
 ### Patch Changes

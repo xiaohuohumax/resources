@@ -2,17 +2,16 @@
 
 type: collection
 
-id: software
+id: material-image
 
 belong:
-  id: null
-  order: 0
+  id: material
 
-title: 软件
+title: 图片素材
 
 ---
 
-# 软件
+# 图片素材
 
 <ShowBreadcrumb />
 

@@ -1,5 +1,11 @@
 # resources
 
+## 2.11.1
+
+### Patch Changes
+
+- 修复本地搜索切词部分缺失问题
+
 ## 2.11.0
 
 ### Minor Changes

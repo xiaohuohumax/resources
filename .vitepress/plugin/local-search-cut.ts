@@ -12,13 +12,13 @@ export default function (localeId: string): Plugin {
     transform(code, id) {
       // 搜索数据来源虚拟模块 `@localSearchIndex${localesId}` 固定前缀 @localSearchIndex + 语言标识ID
       if (id.includes(`@localSearchIndex${localeId}`)) {
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        const indexMap: { [key: string]: any } = {};
         const data = JSON.parse(JSON.parse(code.slice(15)));
 
+        // 原切词索引
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        const indexMap: { [key: string]: any } = Object.entries(data.index);
+
         for (const indexItem of data.index) {
-          // 原词
-          indexMap[indexItem[0]] = indexItem[1];
           // 对原词再切词
           for (const cutWord of cut(indexItem[0])) {
             // 克隆原词对应数据

@@ -1,5 +1,11 @@
 # resources
 
+## 2.15.0
+
+### Minor Changes
+
+- 添加文档模块
+
 ## 2.14.0
 
 ### Minor Changes

@@ -1,5 +1,11 @@
 # resources
 
+## 2.14.0
+
+### Minor Changes
+
+- 网页端添加 Git 分支在线练习
+
 ## 2.13.0
 
 ### Minor Changes

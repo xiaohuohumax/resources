@@ -19,4 +19,4 @@ title: 下载安装
 
 <ShowBreadcrumb />
 
-<ShowResources/>
+<ShowResources />

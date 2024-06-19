@@ -58,7 +58,7 @@ title: 工具集合
 <ShowBreadcrumb />
 
 <!-- 显示归属当前集合的资源 -->
-<ShowResources/>
+<ShowResources />
 ```
 
 3. 在 `tools/color.md` 中添加文档内容，参考如下：

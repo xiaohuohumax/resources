@@ -19,4 +19,4 @@ title: 文件管理
 
 <ShowBreadcrumb />
 
-<ShowResources/>
+<ShowResources />

@@ -19,4 +19,4 @@ title: 工作办公
 
 <ShowBreadcrumb />
 
-<ShowResources/>
+<ShowResources />

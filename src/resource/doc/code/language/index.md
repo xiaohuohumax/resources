@@ -19,4 +19,4 @@ title: 编程语言
 
 <ShowBreadcrumb />
 
-<ShowResources/>
+<ShowResources />

@@ -19,4 +19,4 @@ title: 开发环境
 
 <ShowBreadcrumb />
 
-<ShowResources/>
+<ShowResources />

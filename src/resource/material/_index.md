@@ -16,4 +16,4 @@ title: 素材
 
 <ShowBreadcrumb />
 
-<ShowResources/>
+<ShowResources />

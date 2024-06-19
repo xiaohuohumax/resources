@@ -19,4 +19,4 @@ title: 字体字库
 
 <ShowBreadcrumb />
 
-<ShowResources/>
+<ShowResources />

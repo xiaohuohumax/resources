@@ -19,4 +19,4 @@ title: 塔防游戏
 
 <ShowBreadcrumb />
 
-<ShowResources/>
+<ShowResources />

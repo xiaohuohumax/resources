@@ -19,4 +19,4 @@ title: 托管平台
 
 <ShowBreadcrumb />
 
-<ShowResources/>
+<ShowResources />

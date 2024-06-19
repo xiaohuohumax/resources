@@ -19,4 +19,4 @@ title: 图片
 
 <ShowBreadcrumb />
 
-<ShowResources/>
+<ShowResources />

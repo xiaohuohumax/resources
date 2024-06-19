@@ -19,4 +19,4 @@ title: 文件
 
 <ShowBreadcrumb />
 
-<ShowResources/>
+<ShowResources />

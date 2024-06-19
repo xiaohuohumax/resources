@@ -18,4 +18,4 @@ title: 软件开发
 
 <ShowBreadcrumb />
 
-<ShowResources/>
+<ShowResources />

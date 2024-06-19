@@ -19,4 +19,4 @@ title: 邮件管理
 
 <ShowBreadcrumb />
 
-<ShowResources/>
+<ShowResources />

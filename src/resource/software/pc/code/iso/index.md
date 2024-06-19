@@ -19,4 +19,4 @@ title: 系统镜像
 
 <ShowBreadcrumb />
 
-<ShowResources/>
+<ShowResources />

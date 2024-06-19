@@ -19,4 +19,4 @@ title: 实用工具
 
 <ShowBreadcrumb />
 
-<ShowResources/>
+<ShowResources />

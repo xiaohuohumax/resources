@@ -21,4 +21,4 @@ title: 集合模板
 
 这是一段描述。
 
-<ShowResources/>
+<ShowResources />

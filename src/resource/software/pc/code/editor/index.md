@@ -19,4 +19,4 @@ title: 编辑器
 
 <ShowBreadcrumb />
 
-<ShowResources/>
+<ShowResources />

@@ -19,4 +19,4 @@ title: 文件同步
 
 <ShowBreadcrumb />
 
-<ShowResources/>
+<ShowResources />

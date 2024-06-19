@@ -15,4 +15,4 @@ title: 图片素材
 
 <ShowBreadcrumb />
 
-<ShowResources/>
+<ShowResources />

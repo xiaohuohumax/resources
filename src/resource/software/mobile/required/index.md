@@ -19,4 +19,4 @@ title: 必备软件
 
 <ShowBreadcrumb />
 
-<ShowResources/>
+<ShowResources />

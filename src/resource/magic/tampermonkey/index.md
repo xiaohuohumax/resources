@@ -15,4 +15,4 @@ title: 篡改猴
 
 <ShowBreadcrumb />
 
-<ShowResources/>
+<ShowResources />

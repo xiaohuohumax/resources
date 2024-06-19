@@ -19,4 +19,4 @@ title: 代理服务
 
 <ShowBreadcrumb />
 
-<ShowResources/>
+<ShowResources />

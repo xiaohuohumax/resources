@@ -19,4 +19,4 @@ title: 在线乐器
 
 <ShowBreadcrumb />
 
-<ShowResources/>
+<ShowResources />

@@ -19,4 +19,4 @@ title: WEB服务器
 
 <ShowBreadcrumb />
 
-<ShowResources/>
+<ShowResources />

@@ -15,4 +15,4 @@ title: 游戏
 
 <ShowBreadcrumb />
 
-<ShowResources/>
+<ShowResources />

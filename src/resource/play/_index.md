@@ -16,4 +16,4 @@ title: 娱乐
 
 <ShowBreadcrumb />
 
-<ShowResources/>
+<ShowResources />

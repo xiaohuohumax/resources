@@ -19,4 +19,4 @@ title: 绘制
 
 <ShowBreadcrumb />
 
-<ShowResources/>
+<ShowResources />

@@ -19,4 +19,4 @@ title: 数据库
 
 <ShowBreadcrumb />
 
-<ShowResources/>
+<ShowResources />

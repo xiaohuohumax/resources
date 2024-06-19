@@ -15,4 +15,4 @@ title: 科学上网
 
 <ShowBreadcrumb />
 
-<ShowResources/>
+<ShowResources />

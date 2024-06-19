@@ -19,4 +19,4 @@ title: 密码安全
 
 <ShowBreadcrumb />
 
-<ShowResources/>
+<ShowResources />

@@ -19,4 +19,4 @@ title: 颜色
 
 <ShowBreadcrumb />
 
-<ShowResources/>
+<ShowResources />

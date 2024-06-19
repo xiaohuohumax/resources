@@ -19,4 +19,4 @@ title: 接口测试
 
 <ShowBreadcrumb />
 
-<ShowResources/>
+<ShowResources />

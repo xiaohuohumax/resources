@@ -19,4 +19,4 @@ title: 装机必备
 
 <ShowBreadcrumb />
 
-<ShowResources/>
+<ShowResources />

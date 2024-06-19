@@ -19,4 +19,4 @@ title: 下载器
 
 <ShowBreadcrumb />
 
-<ShowResources/>
+<ShowResources />

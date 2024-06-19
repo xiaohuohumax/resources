@@ -19,4 +19,4 @@ title: 图片管理
 
 <ShowBreadcrumb />
 
-<ShowResources/>
+<ShowResources />

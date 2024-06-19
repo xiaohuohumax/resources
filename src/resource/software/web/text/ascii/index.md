@@ -19,4 +19,4 @@ title: 字符画
 
 <ShowBreadcrumb />
 
-<ShowResources/>
+<ShowResources />

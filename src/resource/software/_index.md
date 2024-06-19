@@ -16,4 +16,4 @@ title: 软件
 
 <ShowBreadcrumb />
 
-<ShowResources/>
+<ShowResources />

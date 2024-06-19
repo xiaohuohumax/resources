@@ -16,4 +16,4 @@ title: 魔法
 
 <ShowBreadcrumb />
 
-<ShowResources/>
+<ShowResources />

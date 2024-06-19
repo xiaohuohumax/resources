@@ -16,4 +16,4 @@ title: 文档
 
 <ShowBreadcrumb />
 
-<ShowResources/>
+<ShowResources />

@@ -15,4 +15,4 @@ title: 音乐
 
 <ShowBreadcrumb />
 
-<ShowResources/>
+<ShowResources />

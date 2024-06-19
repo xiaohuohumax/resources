@@ -15,4 +15,4 @@ title: 网页端
 
 <ShowBreadcrumb />
 
-<ShowResources/>
+<ShowResources />

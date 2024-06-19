@@ -19,4 +19,4 @@ title: 科学工具
 
 <ShowBreadcrumb />
 
-<ShowResources/>
+<ShowResources />

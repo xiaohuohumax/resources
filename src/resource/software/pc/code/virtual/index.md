@@ -19,4 +19,4 @@ title: 虚拟环境
 
 <ShowBreadcrumb />
 
-<ShowResources/>
+<ShowResources />

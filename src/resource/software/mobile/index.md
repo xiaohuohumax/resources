@@ -15,4 +15,4 @@ title: 移动端
 
 <ShowBreadcrumb />
 
-<ShowResources/>
+<ShowResources />

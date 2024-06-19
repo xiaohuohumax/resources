@@ -19,4 +19,4 @@ title: 脚本仓库
 
 <ShowBreadcrumb />
 
-<ShowResources/>
+<ShowResources />

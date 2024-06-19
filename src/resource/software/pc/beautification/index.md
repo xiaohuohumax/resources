@@ -18,4 +18,4 @@ title: 系统美化
 
 <ShowBreadcrumb />
 
-<ShowResources/>
+<ShowResources />

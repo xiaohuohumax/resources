@@ -1,6 +1,6 @@
 {
   "name": "resources",
-  "version": "2.15.0",
+  "version": "2.16.0",
   "description": "资源仓库: 收录各种常用资源地址。",
   "type": "module",
   "private": true,
@@ -11,6 +11,7 @@
     "commit": "git add . && cz",
     "postinstall": "simple-git-hooks",
     "changeset": "changeset",
+    "version": "changeset version && npm i",
     "lint:fix": "eslint --ext .ts . --fix"
   },
   "keywords": [

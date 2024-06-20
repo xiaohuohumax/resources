@@ -1,5 +1,11 @@
 # resources
 
+## 2.16.0
+
+### Minor Changes
+
+- 文档-编程相关添加一些 Web 相关文档
+
 ## 2.15.0
 
 ### Minor Changes

@@ -1,5 +1,11 @@
 # resources
 
+## 2.17.0
+
+### Minor Changes
+
+- 文档添加项目文档模块
+
 ## 2.16.0
 
 ### Minor Changes

@@ -1,5 +1,11 @@
 # resources
 
+## 2.18.0
+
+### Minor Changes
+
+- 文档-项目文档添加 gitignore 模板,github release action 项目
+
 ## 2.17.0
 
 ### Minor Changes

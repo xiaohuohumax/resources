@@ -1,0 +1,33 @@
+---
+
+type: doc
+
+belong:
+  id: software-pc-code-iso
+  # order: 9999
+
+icon:
+  src: /image/logo/centos.svg
+
+title: CentOS
+description: 一款基于 Linux 内核的自由、开源的服务器操作系统。
+
+links:
+  - text: ⏬下载地址
+    link: &togo https://wiki.centos.org/Download.html
+
+togo: *togo
+
+---
+
+<ShowLogo />
+
+# CentOS
+
+<ShowBreadcrumb />
+
+## 资源链接
+
+<ShowLinks />
+
+一款基于 Linux 内核的自由、开源的服务器操作系统。

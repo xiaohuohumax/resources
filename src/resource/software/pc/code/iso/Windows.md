@@ -10,7 +10,7 @@ icon:
   src: /image/logo/windows.svg
 
 title: Windows
-description: 
+description: 一款图形用户界面为基础研发的操作系统。
 
 links:
   - text: ⏬下载地址
@@ -29,3 +29,5 @@ togo: *togo
 ## 资源链接
 
 <ShowLinks />
+
+一款图形用户界面为基础研发的操作系统。

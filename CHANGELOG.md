@@ -1,5 +1,11 @@
 # resources
 
+## 2.20.0
+
+### Minor Changes
+
+- 软件开发-系统镜像添加几款操作系统
+
 ## 2.19.0
 
 ### Minor Changes

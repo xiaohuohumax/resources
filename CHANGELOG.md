@@ -1,5 +1,11 @@
 # resources
 
+## 2.19.0
+
+### Minor Changes
+
+- 软件开发-数据库添加 MongoDB, 文档-项目文档添加 MongoDB Node.js 官方驱动
+
 ## 2.18.0
 
 ### Minor Changes

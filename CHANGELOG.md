@@ -1,5 +1,11 @@
 # resources
 
+## 2.21.0
+
+### Minor Changes
+
+- 添加资源链接检查功能
+
 ## 2.20.0
 
 ### Minor Changes

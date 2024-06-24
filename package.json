@@ -1,6 +1,6 @@
 {
   "name": "resources",
-  "version": "2.20.0",
+  "version": "2.21.0",
   "description": "资源仓库: 收录各种常用资源地址。",
   "type": "module",
   "private": true,
@@ -8,6 +8,8 @@
     "dev": "vitepress dev",
     "build": "vitepress build",
     "preview": "vitepress preview",
+    "check": "vite-node .vitepress/check/index.ts",
+    "check:cache": "npm run check -- --cache",
     "commit": "git add . && cz",
     "postinstall": "simple-git-hooks",
     "changeset": "changeset",
@@ -41,6 +43,7 @@
     "@commitlint/cli": "^19.2.2",
     "@commitlint/config-conventional": "^19.2.2",
     "@node-rs/jieba": "^1.10.3",
+    "@types/progress": "^2.0.7",
     "@typescript-eslint/eslint-plugin": "^7.11.0",
     "@typescript-eslint/parser": "^7.11.0",
     "@xiaohuohumax/bookmark": "^2.1.1",
@@ -49,7 +52,11 @@
     "eslint": "^8.57.0",
     "fast-glob": "^3.3.2",
     "gray-matter": "^4.0.3",
+    "p-limit": "^5.0.0",
+    "progress": "^2.0.3",
+    "puppeteer": "^22.12.0",
     "simple-git-hooks": "^2.11.1",
+    "vite-node": "^1.6.0",
     "vitepress": "^1.2.3"
   }
 }

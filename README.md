@@ -113,6 +113,16 @@ togo: *togo
 这是一段描述。
 ```
 
+## 🔧 检查链接
+
+```bash
+# 检查所有链接是否有效
+npm run check
+
+# 检查缓存中失败的链接是否有效
+npm run check:cache
+```
+
 ## 🗂️ 模板
 
 - [Collection](./src/__collection.md)

@@ -17,7 +17,7 @@ const SRC_DIR = path.join(__dirname, '../src');
 const PUBLIC_DIR = path.join(SRC_DIR, 'public');
 const LOCALE_ID = 'root';
 
-const resources: Resource[] = loadResources(SRC_DIR, ['**/__*.md']);
+const resources: Resource[] = loadResources(SRC_DIR, []);
 
 // 创建书签文件
 createBookmark(resources, PUBLIC_DIR, path.join(SRC_DIR, 'public', 'bookmark.html'), TITLE + ' Bookmark');

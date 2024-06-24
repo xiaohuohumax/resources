@@ -137,7 +137,7 @@ async function check(links: Link[]): Promise<CheckResult> {
  * 检查所有文档中的链接是否有效
  */
 async function checkWithScan(): Promise<CheckResult> {
-  const docs: Doc[] = loadResources(SRC_DIR, ['**/__*.md'])
+  const docs: Doc[] = loadResources(SRC_DIR, [])
     .filter(r => r.type === 'doc') as Doc[];
 
   const links: Link[] = docs.map(doc => {

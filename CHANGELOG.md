@@ -1,5 +1,11 @@
 # resources
 
+## 2.21.1
+
+### Patch Changes
+
+- 更新部分资源名称/资源地址
+
 ## 2.21.0
 
 ### Minor Changes

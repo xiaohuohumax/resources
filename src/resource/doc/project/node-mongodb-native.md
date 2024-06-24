@@ -9,7 +9,7 @@ belong:
 icon:
   src: /image/logo/mongoDB.svg
 
-title: MongoDB Node.js Driver
+title: node-mongodb-native
 description: MongoDB 官方 Node.js 驱动
 
 links:
@@ -22,7 +22,7 @@ togo: *togo
 
 <ShowLogo />
 
-# MongoDB Node.js Driver
+# node-mongodb-native
 
 <ShowBreadcrumb />
 

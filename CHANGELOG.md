@@ -1,5 +1,11 @@
 # resources
 
+## 2.22.0
+
+### Minor Changes
+
+- 文档-项目文档添加 VS Code 扩展组件库 elements
+
 ## 2.21.1
 
 ### Patch Changes

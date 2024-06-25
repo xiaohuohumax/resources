@@ -1,5 +1,11 @@
 # resources
 
+## 2.25.0
+
+### Minor Changes
+
+- 文档-项目文档添加 Web 消息通知库项目
+
 ## 2.24.0
 
 ### Minor Changes

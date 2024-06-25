@@ -16,6 +16,7 @@ const TITLE = 'Resources';
 const SRC_DIR = path.join(__dirname, '../src');
 const PUBLIC_DIR = path.join(SRC_DIR, 'public');
 const LOCALE_ID = 'root';
+const DICT_FILE_PATH = path.join(__dirname, 'dict.txt');
 
 const resources: Resource[] = loadResources(SRC_DIR, []);
 
@@ -37,7 +38,7 @@ export default defineConfig({
   vite: {
     plugins: [
       // 本地搜索切词增强插件
-      localSearchCut(LOCALE_ID)
+      localSearchCut(LOCALE_ID, DICT_FILE_PATH)
     ]
   },
   transformPageData(pageData) {

@@ -1,5 +1,11 @@
 # resources
 
+## 2.27.0
+
+### Minor Changes
+
+- 本地搜索切词插件添加自定义字典
+
 ## 2.26.0
 
 ### Minor Changes

@@ -1,12 +1,25 @@
 import { Plugin } from 'vite';
-import { cut } from '@node-rs/jieba';
+import { cut, loadDict } from '@node-rs/jieba';
+
+import fs from 'node:fs';
 
 /**
  * 本地搜索切词增强插件(优化中文搜索)
  * @param localeId 语言标识ID
+ * @param dictPath 词典路径
  * @returns 
  */
-export default function (localeId: string): Plugin {
+export default function (localeId: string, dictPath: string): Plugin {
+
+  try {
+    // 热更新导致重复加载异常, 故忽略异常
+
+    const dict = fs.readFileSync(dictPath, 'utf-8');
+    // 加载词典 去除注释 #开头的行
+    loadDict(Buffer.from(dict.replaceAll(/^#.*$/gm, () => ''), 'utf-8'));
+    // eslint-disable-next-line no-empty
+  } catch (_) { }
+
   return {
     name: 'vitepress:local-search-cut',
     transform(code, id) {
@@ -23,7 +36,7 @@ export default function (localeId: string): Plugin {
 
         for (const indexItem of data.index) {
           // 对原词再切词
-          for (const cutWord of cut(indexItem[0])) {
+          for (const cutWord of cut(indexItem[0], false)) {
             // 克隆原词对应数据
             const cloneItem = JSON.parse(JSON.stringify(indexItem[1]));
 

@@ -1,5 +1,11 @@
 # resources
 
+## 2.28.0
+
+### Minor Changes
+
+- 网页端-扩展添加翻译,广告拦截器,图片批量下载,自动化等扩展
+
 ## 2.27.0
 
 ### Minor Changes

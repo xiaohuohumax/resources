@@ -1,5 +1,11 @@
 # resources
 
+## 2.26.0
+
+### Minor Changes
+
+- 软件-网页端添加扩展模块
+
 ## 2.25.0
 
 ### Minor Changes

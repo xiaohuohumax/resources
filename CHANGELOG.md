@@ -1,5 +1,11 @@
 # resources
 
+## 2.24.0
+
+### Minor Changes
+
+- 网页端-绘制添加手绘风格画板
+
 ## 2.23.0
 
 ### Minor Changes

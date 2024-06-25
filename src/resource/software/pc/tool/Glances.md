@@ -1,0 +1,35 @@
+---
+
+type: doc
+
+belong:
+  id: software-pc-tool
+  # order: 9999
+
+icon:
+  src: /image/logo/glances.png
+
+title: Glances
+description: 一款用 Python 语言编写的跨平台系统监控工具。
+
+links:
+  - text: ⏬下载地址
+    link: &togo https://nicolargo.github.io/glances/
+
+togo: *togo
+
+---
+
+<ShowLogo />
+
+# Glances
+
+<ShowBreadcrumb />
+
+## 资源链接
+
+<ShowLinks />
+
+## 简介
+
+一款用 Python 语言编写的跨平台系统监控工具。

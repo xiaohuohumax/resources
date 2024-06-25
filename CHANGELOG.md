@@ -1,5 +1,11 @@
 # resources
 
+## 2.23.0
+
+### Minor Changes
+
+- 电脑端-实用工具添加 U 盘工具,系统监视,程序包装等工具
+
 ## 2.22.0
 
 ### Minor Changes

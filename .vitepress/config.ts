@@ -27,7 +27,7 @@ export default defineConfig({
   cacheDir: 'cache',
   outDir: 'dist',
   head: [
-    ['link', { rel: 'icon', href: path.join(BASE, '/logo.svg') }]
+    ['link', { rel: 'icon', href: BASE + 'logo.svg' }]
   ],
   lastUpdated: true,
   vite: {

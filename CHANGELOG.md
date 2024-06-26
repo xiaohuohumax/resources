@@ -1,5 +1,11 @@
 # resources
 
+## 2.30.1
+
+### Patch Changes
+
+- 修复资源路径检查函数问题
+
 ## 2.30.0
 
 ### Minor Changes

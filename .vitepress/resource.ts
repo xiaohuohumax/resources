@@ -3,6 +3,7 @@ import { Breadcrumb, Resource, RBase, Collection, Doc } from './theme/types';
 import { normalizePath } from 'vite';
 import matter from 'gray-matter';
 import glob from 'fast-glob';
+import micromatch from 'micromatch';
 
 import path from 'node:path';
 import fs from 'node:fs';
@@ -37,7 +38,9 @@ export class ResourceManager {
    * @returns 
    */
   isAllowedPath(filePath: string): boolean {
-    return glob.sync(normalizePath(filePath), { ignore: this.srcExclude }).length > 0;
+    return micromatch.isMatch(filePath, normalizePath(path.join(this.srcDir, '**/*.md')), {
+      ignore: this.srcExclude
+    });
   }
 
   /**

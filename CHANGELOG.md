@@ -1,5 +1,11 @@
 # resources
 
+## 2.30.0
+
+### Minor Changes
+
+- 链接检查消息显示添加颜色以便区分
+
 ## 2.29.1
 
 ### Patch Changes

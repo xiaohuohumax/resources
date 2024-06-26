@@ -1,6 +1,7 @@
 import pLimit from 'p-limit';
 import * as puppeteer from 'puppeteer';
 import ProgressBar from 'progress';
+import chalk from 'chalk';
 
 import { Doc, ResourceManager, RLink } from '../resource';
 import * as constant from '../constant';
@@ -13,7 +14,7 @@ const LIMIT_CONCURRENCY = 26;
 // 重试次数
 const RETRY_COUNT = 3;
 // 重试增加间隔
-const RETRY_STEEP_TIME = 10_000;
+const RETRY_STEEP_TIME = 8_000;
 // 链接基础超时时间
 const BASE_TIMEOUT = 10_000;
 // 检查结果文件
@@ -76,9 +77,7 @@ export async function checkLink(link: string, browser: puppeteer.Browser): Promi
  * @param links 链接列表
  */
 async function check(links: Link[]): Promise<CheckResult> {
-  console.log('Start check links...');
-
-  const msg = 'Check :status [:current/:total] :msg :percent :etas';
+  const msg = chalk.blue('Checking') + ' :status [:current/:total] :msg :percent :etas';
   const bar: ProgressBar = new ProgressBar(msg, {
     total: links.length
   });
@@ -92,7 +91,7 @@ async function check(links: Link[]): Promise<CheckResult> {
 
   await Promise.all(links.map(link => limit(async (l) => {
     bar.tick(0, {
-      msg: `${l.title}(${l.linkText})`,
+      msg: chalk.yellow(`${l.title}(${l.linkText})`),
       status: 'start'
     });
 
@@ -101,8 +100,8 @@ async function check(links: Link[]): Promise<CheckResult> {
     link.error = error?.message;
 
     bar.tick({
-      msg: `${l.title}(${l.linkText})`,
-      status: status ? 'success' : 'fail'
+      msg: chalk.yellow(`${l.title}(${l.linkText})`),
+      status: status ? chalk.green('success') : chalk.red('fail')
     });
   }, link)));
 
@@ -111,11 +110,8 @@ async function check(links: Link[]): Promise<CheckResult> {
   const failLinks = links.filter(l => !l.status);
   const successLinks = links.filter(l => l.status);
 
-  if (failLinks.length === 0) {
-    console.log('\nAll links are valid!');
-  } else {
+  if (failLinks.length !== 0) {
     // 检查失败的链接
-    console.log('\nFailed links:');
     console.table(failLinks, ['title', 'linkText', 'error']);
   }
 
@@ -166,7 +162,6 @@ async function checkWithCache(): Promise<CheckResult> {
 
   const cache: CheckResult = JSON.parse(fs.readFileSync(CHECK_RESULT_CACHE_FILE, 'utf-8'));
   if (cache.failLinks.length === 0) {
-    console.log('All links are valid!');
     cache.time = getNowTime();
     return cache;
   }
@@ -186,10 +181,10 @@ async function main() {
   let result;
 
   if (process.argv.length > 2 && process.argv[2] === '--cache') {
-    console.log('Checking with cache...\n');
+    console.log(chalk.blue('Checking with cache...'));
     result = await checkWithCache();
   } else {
-    console.log('Checking with scan...\n');
+    console.log(chalk.blue('Checking with scan...'));
     result = await checkWithScan();
   }
 
@@ -199,7 +194,14 @@ async function main() {
   }
 
   fs.writeFileSync(CHECK_RESULT_CACHE_FILE, JSON.stringify(result, null, 2));
-  console.log(`\nCheck result saved to ${CHECK_RESULT_CACHE_FILE}`);
+  console.log(`Check result saved to ${chalk.yellow(CHECK_RESULT_CACHE_FILE)}`);
+
+  if (result.failLinks.length === 0) {
+    console.log(chalk.green('All links are valid!'));
+  } else {
+    // 存在失败的链接,请阅读 result.json 文件获取详细信息
+    console.log(chalk.red(`Some links are invalid, please read \`${path.basename(CHECK_RESULT_CACHE_FILE)}\` for details.`));
+  }
 }
 
-main().catch((err) => console.log(err.message));
+main().catch((err) => console.log(chalk.red(err.message)));

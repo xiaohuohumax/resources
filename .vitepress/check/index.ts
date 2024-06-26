@@ -2,7 +2,8 @@ import pLimit from 'p-limit';
 import * as puppeteer from 'puppeteer';
 import ProgressBar from 'progress';
 
-import { Doc, loadResources, RLink } from '../theme/resource';
+import { Doc, ResourceManager, RLink } from '../resource';
+import * as constant from '../constant';
 
 import path from 'node:path';
 import fs from 'node:fs';
@@ -18,9 +19,6 @@ const BASE_TIMEOUT = 10_000;
 // 检查结果文件
 const CHECK_RESULT_CACHE_DIR = path.join(__dirname, '../../cache/check');
 const CHECK_RESULT_CACHE_FILE = path.join(CHECK_RESULT_CACHE_DIR, 'result.json');
-
-// 文档目录
-const SRC_DIR = path.join(__dirname, '../../src');
 
 type Link = Pick<Doc, 'title' | 'path' | 'description'> & {
   link: RLink['link']
@@ -137,8 +135,8 @@ async function check(links: Link[]): Promise<CheckResult> {
  * 检查所有文档中的链接是否有效
  */
 async function checkWithScan(): Promise<CheckResult> {
-  const docs: Doc[] = loadResources(SRC_DIR, [])
-    .filter(r => r.type === 'doc') as Doc[];
+  const resourceManager = new ResourceManager(constant.SRC_DIR, constant.SRC_EXCLUDE);
+  const docs: Doc[] = resourceManager.getAllDocs();
 
   const links: Link[] = docs.map(doc => {
     return doc.links.map(l => ({
@@ -152,7 +150,7 @@ async function checkWithScan(): Promise<CheckResult> {
   }).flat(1);
 
   if (docs.length === 0) {
-    throw new Error(`No links found: ${SRC_DIR}.`);
+    throw new Error(`No links found: ${constant.SRC_DIR}.`);
   }
 
   return await check(links);

@@ -1,5 +1,11 @@
 # resources
 
+## 2.29.1
+
+### Patch Changes
+
+- 代码结构优化
+
 ## 2.29.0
 
 ### Minor Changes

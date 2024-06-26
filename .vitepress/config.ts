@@ -1,10 +1,7 @@
-import { defineConfig } from 'vitepress';
+import { DefaultTheme, defineConfig } from 'vitepress';
 import pkg from '../package.json';
-import {
-  Resource, loadResources, createResource,
-  getResourcesByBelongId, getBreadcrumbsByResource,
-  createNav
-} from './theme/resource';
+import { Collection, ResourceManager } from './resource';
+import * as constant from './constant';
 
 import { createBookmark } from './bookmark';
 import localSearchCut from './plugin/local-search-cut';
@@ -14,22 +11,19 @@ import path from 'node:path';
 
 const BASE = '/resources/';
 const TITLE = 'Resources';
-const SRC_DIR = path.join(__dirname, '../src');
-const PUBLIC_DIR = path.join(SRC_DIR, 'public');
 const LOCALE_ID = 'root';
-const DICT_FILE_PATH = path.join(__dirname, 'dict.txt');
 
-const resources: Resource[] = loadResources(SRC_DIR, []);
+const resourceManager: ResourceManager = new ResourceManager(constant.SRC_DIR, constant.SRC_EXCLUDE);
 
 // 创建书签文件
-createBookmark(resources, PUBLIC_DIR, path.join(SRC_DIR, 'public', 'bookmark.html'), TITLE + ' Bookmark');
+createBookmark(resourceManager, path.join(constant.SRC_DIR, 'public', 'bookmark.html'), TITLE + ' Bookmark');
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: TITLE,
   description: 'Resource Repository',
   base: BASE,
-  srcDir: SRC_DIR,
+  srcDir: constant.SRC_DIR,
   cacheDir: 'cache',
   outDir: 'dist',
   head: [
@@ -39,31 +33,15 @@ export default defineConfig({
   vite: {
     plugins: [
       // 本地搜索切词增强插件
-      localSearchCut(LOCALE_ID, DICT_FILE_PATH),
+      localSearchCut(LOCALE_ID, path.join(__dirname, 'dict.txt')),
       // 资源热更新插件
-      hmrResources(SRC_DIR, resources)
+      hmrResources(resourceManager)
     ]
-  },
-  transformPageData(pageData) {
-    const resource = createResource(SRC_DIR, path.join(SRC_DIR, pageData.relativePath));
-    if (!resource) {
-      return;
-    }
-    resource.breadcrumbs = getBreadcrumbsByResource(resources, resource);
-    if (resource.type === 'collection') {
-      pageData.frontmatter.layout = 'doc';
-      pageData.frontmatter.sidebar = false;
-      pageData.frontmatter.aside = false;
-      resource.items = getResourcesByBelongId(resources, resource.id);
-    } else if (resource.type === 'doc') {
-      pageData.frontmatter.layout = 'doc';
-    }
-    pageData.frontmatter = Object.assign(pageData.frontmatter, resource);
   },
   srcExclude: ['**/_*.md'],
   themeConfig: {
     logo: '/logo.svg',
-    nav: createNav(resources),
+    nav: createNav(resourceManager),
     socialLinks: [
       {
         icon: 'github',
@@ -116,5 +94,46 @@ export default defineConfig({
         }
       }
     }
-  }
+  },
+  transformPageData(pageData) {
+    const filePath = path.join(constant.SRC_DIR, pageData.relativePath);
+    const resource = resourceManager.createResource(filePath);
+    if (!resource) {
+      return;
+    }
+    resource.breadcrumbs = resourceManager.getBreadcrumbsByResource(resource);
+    if (resource.type === 'collection') {
+      pageData.frontmatter.layout = 'doc';
+      pageData.frontmatter.sidebar = false;
+      pageData.frontmatter.aside = false;
+      resource.items = resourceManager.getResourcesByBelongId(resource.id);
+    } else if (resource.type === 'doc') {
+      pageData.frontmatter.layout = 'doc';
+    }
+    pageData.frontmatter = Object.assign(pageData.frontmatter, resource);
+  },
 });
+
+/**
+ * 创建导航
+ * 默认二级导航
+ * @param resourceManager 资源管理器
+ * @returns 
+ */
+function createNav(resourceManager: ResourceManager): DefaultTheme.NavItem[] {
+  const rootCollections = resourceManager.getResourcesByBelongId(null)
+    .filter(r => r.type === 'collection') as Collection[];
+
+  return rootCollections.map(collection => {
+    const items = resourceManager.getResourcesByBelongId(collection.id).map(r => ({
+      text: r.title,
+      link: r.path,
+    }));
+
+    if (items.length === 0) {
+      return { text: collection.title, link: collection.path };
+    }
+
+    return { text: collection.title, items };
+  });
+}

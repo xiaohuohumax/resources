@@ -16,6 +16,17 @@ export type * from './types';
 export const BELONG_ORDER_DEFAULT = 9999;
 
 /**
+ * 路径转资源路径
+ * @param srcDir 项目文档源目录
+ * @param filePath 文档绝对路径
+ * @returns 
+ */
+function filePathToResourcePath(srcDir: string, filePath: string): string {
+  const relativePath = normalizePath(path.relative(srcDir, filePath));
+  return '/' + relativePath.slice(0, -3);
+}
+
+/**
  * 创建资源对象
  * @param srcDir 项目文档源目录
  * @param absFilePath 文档绝对路径
@@ -26,20 +37,20 @@ export function createResource(srcDir: string, absFilePath: string): Resource | 
   if (typeof data.type !== 'string') {
     return;
   }
-  const relativePath = normalizePath(path.relative(srcDir, absFilePath));
+  const resourcePath = filePathToResourcePath(srcDir, absFilePath);
 
   if (data.belong === undefined) {
     // 必须有 belong 属性
-    throw new Error(`Resource ${relativePath} must have belong property`);
+    throw new Error(`Resource ${resourcePath} must have belong property`);
   }
   data.belong.order = data.belong.order ?? BELONG_ORDER_DEFAULT;
 
   // 标题缺省则取文件名
-  const title = data.title ?? path.basename(relativePath, '.md');
+  const title = data.title ?? path.basename(resourcePath);
 
   const base: RBase = {
     title,
-    path: '/' + relativePath.slice(0, -3),
+    path: filePathToResourcePath(srcDir, absFilePath),
     belong: data.belong,
     breadcrumbs: [],
 
@@ -52,10 +63,9 @@ export function createResource(srcDir: string, absFilePath: string): Resource | 
   if (data.type === 'collection') {
     // 集合
     const id = data.id
-      ?? relativePath
-        .replace(/\/index\.md$/g, '.md')
-        .replaceAll('/', '-')
-        .slice(0, -3);
+      ?? resourcePath
+        .replace(/\/index$/g, '')
+        .replaceAll('/', '-');
 
     return {
       ...base,
@@ -131,6 +141,16 @@ export function getBreadcrumbsByResource(resources: Resource[], resource: Resour
     allowClick: false,
   });
   return parents.reverse();
+}
+
+/**
+ * 移除指定文件路径的资源对象
+ * @param resources 资源对象列表
+ * @param filePath 文档绝对路径
+ */
+export function spliceResourceByFilePath(resources: Resource[], srcDir: string, filePath: string) {
+  const index = resources.findIndex(r => r.path === filePathToResourcePath(srcDir, filePath));
+  return index !== -1 ? resources.splice(index, 1)[0] : undefined;
 }
 
 /**

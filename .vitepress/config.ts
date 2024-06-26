@@ -8,6 +8,7 @@ import {
 
 import { createBookmark } from './bookmark';
 import localSearchCut from './plugin/local-search-cut';
+import hmrResources from './plugin/hmr-resources';
 
 import path from 'node:path';
 
@@ -38,7 +39,9 @@ export default defineConfig({
   vite: {
     plugins: [
       // 本地搜索切词增强插件
-      localSearchCut(LOCALE_ID, DICT_FILE_PATH)
+      localSearchCut(LOCALE_ID, DICT_FILE_PATH),
+      // 资源热更新插件
+      hmrResources(SRC_DIR, resources)
     ]
   },
   transformPageData(pageData) {

@@ -1,5 +1,11 @@
 # resources
 
+## 2.29.0
+
+### Minor Changes
+
+- 资源热更新支持
+
 ## 2.28.0
 
 ### Minor Changes

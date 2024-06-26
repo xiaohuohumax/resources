@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed } from 'vue'
+import { computed, ref } from 'vue'
 import ShowResource from './ShowResource.vue'
 import { useData } from 'vitepress'
 import { Collection, Resource } from '../types'
@@ -10,7 +10,7 @@ const collection = computed(() => frontmatter.value as Collection)
 
 const isCollection = computed(() => collection.value.type === 'collection')
 
-const resources = computed(() => collection.value.items as Resource[])
+const resources = ref<Resource[]>(collection.value.items)
 
 const grid = computed(() => {
   if (!isCollection) {
@@ -31,6 +31,20 @@ const grid = computed(() => {
     return 'grid-4'
   }
 })
+
+interface CollectionItemsUpdateEvent {
+  collectionId: string
+  items: Resource[]
+}
+
+if (import.meta.hot) {
+  import.meta.hot.on('update-collection-items', (event: CollectionItemsUpdateEvent) => {
+    if (event.collectionId !== collection.value.id) {
+      return
+    }
+    resources.value = event.items;
+  });
+}
 </script>
 
 <template>

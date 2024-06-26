@@ -18,6 +18,7 @@ export interface RBelong {
 
 export interface RBase {
   title: string
+  // 资源唯一标识
   path: string
   belong: RBelong
 

@@ -1,5 +1,11 @@
 # resources
 
+## 2.32.0
+
+### Minor Changes
+
+- 网页端-扩展添加 Infinity 新标签页插件
+
 ## 2.31.0
 
 ### Minor Changes

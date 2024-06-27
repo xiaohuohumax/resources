@@ -73,7 +73,6 @@ export class ResourceManager {
       title,
       path: resourcePath,
       belong: data.belong,
-      breadcrumbs: [],
 
       togo: data.togo,
       togoText: data.togoText,
@@ -92,7 +91,6 @@ export class ResourceManager {
         ...base,
         type: 'collection',
         id,
-        items: [],
       };
     } else if (data.type === 'doc') {
       // 文档
@@ -148,44 +146,27 @@ export class ResourceManager {
   }
 
   /**
-   * 获取指定资源的面包屑导航
-   * @param resource 资源对象
+   * 获取指定归属的资源对象父级集合
+   * @param belongId 归属 ID
    * @returns 
    */
-  getBreadcrumbsByResource(resource: Resource): Breadcrumb[] {
+  getResourceParentsByBelongId(belongId: string | null): Breadcrumb[] {
     const parents: Breadcrumb[] = [];
     const collections = this.resources.filter(r => r.type === 'collection') as Collection[];
-    let belongId: string | null = resource.belong.id;
     for (; ;) {
       // 查找父级集合
       const parent = collections.find(r => r.type === 'collection' && r.id === belongId);
       if (parent) {
         parents.push({
           title: parent.title,
-          path: parent.path,
-          allowClick: parent.belong.id !== null,
+          path: parent.path
         });
         belongId = parent.belong.id;
         continue;
       }
       break;
     }
-    // 添加当前资源
-    parents.unshift({
-      title: resource.title,
-      path: resource.path,
-      allowClick: false,
-    });
     return parents.reverse();
-  }
-
-  /**
-   * 获取指定文件路径的资源对象
-   * @param filePath 文档绝对路径
-   * @returns 
-   */
-  getResourceByFilePath(filePath: string): Resource | undefined {
-    return this.resources.find(r => r.path === this.filePathToResourcePath(filePath));
   }
 
   /**
@@ -195,4 +176,13 @@ export class ResourceManager {
   getAllDocs(): Doc[] {
     return this.resources.filter(r => r.type === 'doc') as Doc[];
   }
+
+  /**
+   * 获取所有集合
+   * @returns 
+   */
+  getAllCollections(): Collection[] {
+    return this.resources.filter(r => r.type === 'collection') as Collection[];
+  }
+
 }

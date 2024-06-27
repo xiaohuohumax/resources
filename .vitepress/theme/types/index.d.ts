@@ -8,7 +8,6 @@ export interface RLink {
 export interface Breadcrumb {
   title: string
   path: string
-  allowClick: boolean
 }
 
 export interface RBelong {
@@ -21,8 +20,6 @@ export interface RBase {
   // 资源唯一标识
   path: string
   belong: RBelong
-
-  breadcrumbs: Breadcrumb[]
 
   togo?: string
   togoText?: string
@@ -40,7 +37,6 @@ export interface Collection extends RBase {
   type: 'collection'
 
   id: string
-  items: Resource[]
 }
 
 export type Resource = Doc | Collection;

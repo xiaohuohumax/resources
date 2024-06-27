@@ -1,23 +1,28 @@
-<script setup lang="ts">
-import { computed, ref } from 'vue'
+<script setup lang="ts" async>
+import { computed } from 'vue'
+import { computedAsync } from '@vueuse/core'
 import ShowResource from './ShowResource.vue'
 import { useData } from 'vitepress'
-import { Collection, Resource } from '../types'
+import virtualResources from 'virtual:resources'
 
 const { frontmatter } = useData()
 
-const collection = computed(() => frontmatter.value as Collection)
+const isCollection = computed(() => frontmatter.value.type === 'collection')
 
-const isCollection = computed(() => collection.value.type === 'collection')
-
-const resources = ref<Resource[]>(collection.value.items)
+const resources = computedAsync(async () => {
+  if (isCollection.value) {
+    const module = await virtualResources[frontmatter.value.id]()
+    return module.default
+  }
+  return []
+})
 
 const grid = computed(() => {
-  if (!isCollection) {
+  if (!isCollection.value) {
     return
   }
 
-  const length = frontmatter.value.items.length
+  const length = resources.value.length
 
   if (!length) {
     return
@@ -31,20 +36,6 @@ const grid = computed(() => {
     return 'grid-4'
   }
 })
-
-interface CollectionItemsUpdateEvent {
-  collectionId: string
-  items: Resource[]
-}
-
-if (import.meta.hot) {
-  import.meta.hot.on('update-collection-items', (event: CollectionItemsUpdateEvent) => {
-    if (event.collectionId !== collection.value.id) {
-      return
-    }
-    resources.value = event.items;
-  });
-}
 </script>
 
 <template>

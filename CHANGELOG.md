@@ -1,5 +1,11 @@
 # resources
 
+## 2.31.0
+
+### Minor Changes
+
+- 资源集合改为通过插件获取, 热更新优化
+
 ## 2.30.1
 
 ### Patch Changes

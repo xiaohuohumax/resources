@@ -6,9 +6,9 @@ import { computed } from 'vue'
 
 const { frontmatter } = useData();
 
-const links = computed(() => frontmatter.value.links as RLink[])
-
 const isDoc = computed(() => frontmatter.value.type === 'doc')
+
+const links = computed(() => frontmatter.value.links as RLink[])
 </script>
 
 <template>

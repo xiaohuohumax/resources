@@ -48,7 +48,7 @@ function getNowTime(): string {
  * @param browser 浏览器
  * @returns 
  */
-export async function checkLink(link: string, browser: puppeteer.Browser): Promise<[boolean, Error?]> {
+async function checkLink(link: string, browser: puppeteer.Browser): Promise<[boolean, Error?]> {
   let error: Error | undefined = undefined;
   for (let i = 1; i <= RETRY_COUNT; i++) {
     const page = await browser.newPage();
@@ -180,7 +180,7 @@ async function checkWithCache(): Promise<CheckResult> {
 async function main() {
   let result;
 
-  if (process.argv.length > 2 && process.argv[2] === '--cache') {
+  if (process.argv.length > 2 && process.argv.includes('--cache')) {
     console.log(chalk.blue('Checking with cache...'));
     result = await checkWithCache();
   } else {
@@ -199,7 +199,6 @@ async function main() {
   if (result.failLinks.length === 0) {
     console.log(chalk.green('All links are valid!'));
   } else {
-    // 存在失败的链接,请阅读 result.json 文件获取详细信息
     console.log(chalk.red(`Some links are invalid, please read \`${path.basename(CHECK_RESULT_CACHE_FILE)}\` for details.`));
   }
 }

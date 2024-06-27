@@ -5,7 +5,8 @@ import * as constant from './constant';
 
 import { createBookmark } from './bookmark';
 import localSearchCut from './plugin/local-search-cut';
-import hmrResources from './plugin/hmr-resources';
+import virtualResources from './plugin/virtual-resources';
+import virtualBreadcrumb from './plugin/virtual-breadcrumb';
 
 import path from 'node:path';
 
@@ -34,8 +35,10 @@ export default defineConfig({
     plugins: [
       // 本地搜索切词增强插件
       localSearchCut(LOCALE_ID, path.join(__dirname, 'dict.txt')),
-      // 资源热更新插件
-      hmrResources(resourceManager)
+      // 虚拟资源插件
+      virtualResources(resourceManager),
+      // 虚拟面包屑插件
+      virtualBreadcrumb(resourceManager),
     ]
   },
   srcExclude: ['**/_*.md'],
@@ -101,16 +104,13 @@ export default defineConfig({
     if (!resource) {
       return;
     }
-    resource.breadcrumbs = resourceManager.getBreadcrumbsByResource(resource);
     if (resource.type === 'collection') {
       pageData.frontmatter.layout = 'doc';
       pageData.frontmatter.sidebar = false;
       pageData.frontmatter.aside = false;
-      resource.items = resourceManager.getResourcesByBelongId(resource.id);
     } else if (resource.type === 'doc') {
       pageData.frontmatter.layout = 'doc';
     }
-    pageData.frontmatter = Object.assign(pageData.frontmatter, resource);
   },
 });
 

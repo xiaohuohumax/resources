@@ -7,7 +7,7 @@ belong:
   # order: 9999
 
 icon:
-  src: /logo.svg
+  src: /image/logo/ASCII_Generator.ico
 
 title: ASCII Generator
 description: ASCII 字符画生成器。

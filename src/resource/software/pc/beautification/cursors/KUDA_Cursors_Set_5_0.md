@@ -7,7 +7,7 @@ belong:
   # order: 9999
 
 icon:
-  src: /logo.svg
+  src: /image/logo/KUDA_Cursors_Set_5_0.png
 
 title: KUDA Cursors Set 5.0
 description: 简约复古风格光标。

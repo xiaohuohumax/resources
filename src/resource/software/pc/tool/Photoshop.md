@@ -3,7 +3,7 @@
 type: doc
 
 belong:
-  id: software-pc-tool-image
+  id: software-pc-tool
   # order: 9999
 
 icon:

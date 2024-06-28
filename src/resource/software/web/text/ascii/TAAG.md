@@ -7,7 +7,7 @@ belong:
   # order: 9999
 
 icon:
-  src: /logo.svg
+  src: /image/logo/TAAG.ico
 
 title: TAAG
 description: 文本转 ASCII 字符画。

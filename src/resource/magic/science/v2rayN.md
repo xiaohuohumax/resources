@@ -3,7 +3,7 @@
 type: doc
 
 belong:
-  id: magic-science-tool
+  id: magic-science
   # order: 9999
 
 icon:

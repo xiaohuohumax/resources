@@ -7,7 +7,7 @@ belong:
   # order: 9999
 
 icon:
-  src: /logo.svg
+  src: /image/logo/Windows_11_Cursors_Concept.png
 
 title: Windows 11 Cursors Concept
 description: Windows 11 概念版光标 V2。

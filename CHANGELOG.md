@@ -1,5 +1,11 @@
 # resources
 
+## 2.32.1
+
+### Patch Changes
+
+- 更新资源目录结构
+
 ## 2.32.0
 
 ### Minor Changes

@@ -1,5 +1,11 @@
 # resources
 
+## 2.33.0
+
+### Minor Changes
+
+- 素材-图片素材添加几个免费素材网站
+
 ## 2.32.1
 
 ### Patch Changes

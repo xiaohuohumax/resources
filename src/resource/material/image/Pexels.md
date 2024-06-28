@@ -1,0 +1,35 @@
+---
+
+type: doc
+
+belong:
+  id: material-image
+  # order: 9999
+
+icon:
+  src: /image/logo/Pexels.png
+
+title: Pexels
+description: 一个常用的免费图片素材网站，摄影师拍摄的照片，全部都是高清图片素材，个人和商业均可使用。
+
+links:
+  - text: 🧰浏览地址
+    link: &togo https://www.pexels.com/zh-cn/
+
+togo: *togo
+
+---
+
+<ShowLogo />
+
+# Pexels
+
+<ShowBreadcrumb />
+
+## 资源链接
+
+<ShowLinks />
+
+## 简介
+
+一个常用的免费图片素材网站，摄影师拍摄的照片，全部都是高清图片素材，个人和商业均可使用。

@@ -1,5 +1,11 @@
 # resources
 
+## 2.34.0
+
+### Minor Changes
+
+- 集合加载添加 loading
+
 ## 2.33.0
 
 ### Minor Changes

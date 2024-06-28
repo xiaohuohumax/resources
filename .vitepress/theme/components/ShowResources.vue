@@ -1,13 +1,16 @@
 <script setup lang="ts" async>
-import { computed } from 'vue'
+import { computed, ref, watch } from 'vue'
 import { computedAsync } from '@vueuse/core'
 import ShowResource from './ShowResource.vue'
 import { useData } from 'vitepress'
 import virtualResources from 'virtual:resources'
+import VPLoading from './VPLoading.vue'
 
 const { frontmatter } = useData()
 
 const isCollection = computed(() => frontmatter.value.type === 'collection')
+
+const loading = ref(true)
 
 const resources = computedAsync(async () => {
   if (isCollection.value) {
@@ -16,6 +19,8 @@ const resources = computedAsync(async () => {
   }
   return []
 })
+
+watch(resources, () => loading.value = false, { once: true })
 
 const grid = computed(() => {
   if (!isCollection.value) {
@@ -40,13 +45,15 @@ const grid = computed(() => {
 
 <template>
   <div v-if="isCollection" class="ShowCollections">
-    <div class="container">
-      <div class="items">
-        <div v-for="resource in resources" :key="resource.title" class="item" :class="[grid]">
-          <ShowResource :resource="resource" />
+    <VPLoading :loading="loading">
+      <div class="container">
+        <div class="items">
+          <div v-for="resource in resources" :key="resource.title" class="item" :class="[grid]">
+            <ShowResource :resource="resource" />
+          </div>
         </div>
       </div>
-    </div>
+    </VPLoading>
   </div>
 </template>
 

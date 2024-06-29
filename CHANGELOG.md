@@ -1,5 +1,11 @@
 # resources
 
+## 3.0.0
+
+### Major Changes
+
+- 顶部菜单, 资源合集热更新
+
 ## 2.34.0
 
 ### Minor Changes

@@ -1,12 +1,13 @@
-import { DefaultTheme, defineConfig } from 'vitepress';
+import { defineConfig } from 'vitepress';
 import pkg from '../package.json';
-import { Collection, ResourceManager } from './resource';
+import { ResourceManager } from './resource';
 import * as constant from './constant';
 
 import { createBookmark } from './bookmark';
 import localSearchCut from './plugin/local-search-cut';
 import virtualResources from './plugin/virtual-resources';
 import virtualBreadcrumb from './plugin/virtual-breadcrumb';
+import navHmrFix from './plugin/nav-hmr-fix';
 
 import path from 'node:path';
 
@@ -39,12 +40,13 @@ export default defineConfig({
       virtualResources(resourceManager),
       // 虚拟面包屑插件
       virtualBreadcrumb(resourceManager),
+      navHmrFix(resourceManager, __filename)
     ]
   },
   srcExclude: ['**/_*.md'],
   themeConfig: {
     logo: '/logo.svg',
-    nav: createNav(resourceManager),
+    nav: resourceManager.createNav(),
     socialLinks: [
       {
         icon: 'github',
@@ -113,27 +115,3 @@ export default defineConfig({
     }
   },
 });
-
-/**
- * 创建导航
- * 默认二级导航
- * @param resourceManager 资源管理器
- * @returns 
- */
-function createNav(resourceManager: ResourceManager): DefaultTheme.NavItem[] {
-  const rootCollections = resourceManager.getResourcesByBelongId(null)
-    .filter(r => r.type === 'collection') as Collection[];
-
-  return rootCollections.map(collection => {
-    const items = resourceManager.getResourcesByBelongId(collection.id).map(r => ({
-      text: r.title,
-      link: r.path,
-    }));
-
-    if (items.length === 0) {
-      return { text: collection.title, link: collection.path };
-    }
-
-    return { text: collection.title, items };
-  });
-}

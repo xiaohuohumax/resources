@@ -1,4 +1,5 @@
 node_modules
-dist
+dist/*
+!dist/bookmark.html
 cache
 src/public/bookmark.html

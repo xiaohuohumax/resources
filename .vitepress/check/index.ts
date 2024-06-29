@@ -52,6 +52,8 @@ async function checkLink(link: string, browser: puppeteer.Browser): Promise<[boo
   let error: Error | undefined = undefined;
   for (let i = 1; i <= RETRY_COUNT; i++) {
     const page = await browser.newPage();
+    // 部分网站需要设置 userAgent
+    await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64)');
     try {
       const response = await page.goto(link, {
         waitUntil: 'domcontentloaded',
@@ -66,8 +68,9 @@ async function checkLink(link: string, browser: puppeteer.Browser): Promise<[boo
       return [true, error];
     } catch (err) {
       error = err as Error;
+    } finally {
+      await page.close();
     }
-    await page.close();
   }
   return [false, error];
 }

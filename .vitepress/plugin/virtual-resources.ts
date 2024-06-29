@@ -4,17 +4,21 @@ import { ResourceManager } from '../resource';
 const VIRTUAL_RESOURCES_ID = 'virtual:resources';
 const VIRTUAL_RESOURCES_ITEM_PATH = VIRTUAL_RESOURCES_ID + ':';
 
-let server: ViteDevServer | null = null;
-
 /**
  * 更新资源
  * @param event 事件类型
- * @param file 文件路径
  * @param resourceManager 资源管理器
+ * @param server 服务器
+ * @param file 文件路径
  * @returns 
  */
-function updateResource(event: 'unlink' | 'update', file: string, resourceManager: ResourceManager) {
+function updateResource(event: 'unlink' | 'update', resourceManager: ResourceManager, server: ViteDevServer, file: string,) {
   if (!resourceManager.isAllowedPath(file)) {
+    return;
+  }
+
+  // 导航文件不处理
+  if (resourceManager.isNav(file)) {
     return;
   }
 
@@ -31,9 +35,9 @@ function updateResource(event: 'unlink' | 'update', file: string, resourceManage
   } else {
     // 更新资源
     const resource = resourceManager.createResource(file);
-    if (!resource || !resource.belong.id) {
-      // 资源不存在或资源所属的集合ID不存在, 则尝试删除资源
-      updateResource('unlink', file, resourceManager);
+    if (!resource) {
+      // 资源不存在, 则尝试删除资源
+      updateResource('unlink', resourceManager, server, file);
       return;
     }
     collectionId = resource.belong.id;
@@ -60,19 +64,14 @@ function updateResource(event: 'unlink' | 'update', file: string, resourceManage
 export default function (resourceManager: ResourceManager): Plugin {
   return {
     name: 'vitepress:virtual-resources',
-    configureServer(s) {
-      server = s;
+    configureServer(server) {
+      server.watcher.on('unlink', updateResource.bind(null, 'unlink', resourceManager, server));
+      server.watcher.on('add', updateResource.bind(null, 'update', resourceManager, server));
+      server.watcher.on('change', updateResource.bind(null, 'update', resourceManager, server));
     },
     resolveId(source) {
       if (source.startsWith(VIRTUAL_RESOURCES_ID)) {
         return source;
-      }
-    },
-    buildStart() {
-      if (server) {
-        server.watcher.on('unlink', (file) => updateResource('unlink', file, resourceManager));
-        server.watcher.on('add', (file) => updateResource('update', file, resourceManager));
-        server.watcher.on('change', (file) => updateResource('update', file, resourceManager));
       }
     },
     load(id) {

@@ -1,6 +1,6 @@
 {
   "name": "resources",
-  "version": "2.34.0",
+  "version": "3.0.0",
   "description": "资源仓库: 收录各种常用资源地址。",
   "type": "module",
   "private": true,
@@ -10,7 +10,7 @@
     "preview": "vitepress preview",
     "check": "vite-node .vitepress/check/index.ts",
     "check:cache": "npm run check -- --cache",
-    "commit": "git add . && cz",
+    "commit": "npm run lint:fix && npm run build && git add . && cz",
     "postinstall": "simple-git-hooks",
     "changeset": "changeset",
     "version": "changeset version && npm i",

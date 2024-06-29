@@ -7,6 +7,7 @@ import micromatch from 'micromatch';
 
 import path from 'node:path';
 import fs from 'node:fs';
+import { DefaultTheme } from 'vitepress';
 
 export type * from './theme/types';
 
@@ -103,6 +104,43 @@ export class ResourceManager {
   }
 
   /**
+   * 检查资源是否为导航
+   * @param resource 资源对象
+   */
+  isNav(resource?: Resource | string): boolean {
+    const r = typeof resource === 'string'
+      ? this.getResourceByFilePath(resource)
+      : resource;
+
+    return !r || r.type !== 'collection'
+      ? false
+      : this.getResourceParentsByBelongId(r.belong.id).length < 2;
+  }
+
+  /**
+   * 创建导航
+   * 默认二级导航
+   * @returns 
+   */
+  createNav(): DefaultTheme.NavItem[] {
+    const rootCollections = this.getResourcesByBelongId(null)
+      .filter(r => r.type === 'collection') as Collection[];
+
+    return rootCollections.map(collection => {
+      const items = this.getResourcesByBelongId(collection.id).map(r => ({
+        text: r.title,
+        link: r.path,
+      }));
+
+      if (items.length === 0) {
+        return { text: collection.title, link: collection.path };
+      }
+
+      return { text: collection.title, items };
+    });
+  }
+
+  /**
    * 移除指定文件路径的资源对象
    * @param filePath 文档绝对路径
    */
@@ -183,6 +221,11 @@ export class ResourceManager {
    */
   getAllCollections(): Collection[] {
     return this.resources.filter(r => r.type === 'collection') as Collection[];
+  }
+
+  getResourceByFilePath(filePath: string): Resource | undefined {
+    const resourcePath = this.filePathToResourcePath(filePath);
+    return this.resources.find(r => r.path === resourcePath);
   }
 
 }

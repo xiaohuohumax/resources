@@ -2,12 +2,6 @@
 
 type: collection
 
-id: software-pc-code-api
-
-belong:
-  id: software-pc-code
-  # order: 9999
-
 icon:
   src: /logo.svg
 

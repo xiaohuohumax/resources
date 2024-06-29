@@ -2,17 +2,18 @@
 
 type: collection
 
-id: magic
-
 belong:
   id: null
-  order: 2
+  order: 1
 
-title: 魔法
+icon:
+  src: /logo.svg
+
+title: 软件
 
 ---
 
-# 魔法
+# 软件
 
 <ShowBreadcrumb />
 

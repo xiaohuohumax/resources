@@ -2,10 +2,8 @@
 
 type: collection
 
-id: software-web
-
-belong:
-  id: software
+icon:
+  src: /logo.svg
 
 title: 网页端
 

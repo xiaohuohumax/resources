@@ -2,11 +2,6 @@
 
 type: collection
 
-id: software-pc-code
-
-belong:
-  id: software-pc
-
 icon:
   src: /logo.svg
 

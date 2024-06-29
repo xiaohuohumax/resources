@@ -1,4 +1,5 @@
 import { Plugin } from 'vite';
+
 import { ResourceManager } from '../resource';
 
 import fs from 'node:fs';
@@ -23,7 +24,7 @@ function updateNav(event: 'unlink' | 'update', resourceManager: ResourceManager,
   // 通过更新配置文件(config.ts)的修改时间触发服务器刷新
   fs.utimesSync(configFilePath, new Date(), new Date());
 
-  // 命令行刷新
+  // 命令行重启服务器
   // process.stdin.emit('data', 'h');
   // process.stdin.emit('data', 'r');
 }

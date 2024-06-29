@@ -2,12 +2,6 @@
 
 type: collection
 
-id: magic-tampermonkey-lib
-
-belong:
-  id: magic-tampermonkey
-  # order: 9999
-
 icon:
   src: /logo.svg
 

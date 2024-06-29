@@ -2,10 +2,6 @@
 
 type: doc
 
-belong:
-  id: magic-tampermonkey-script
-  # order: 9999
-
 icon:
   src: /image/logo/AC-baidu.webp
 

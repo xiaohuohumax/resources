@@ -2,10 +2,6 @@
 
 type: doc
 
-belong:
-  id: software-pc-required
-  # order: 9999
-
 icon:
   src: /image/logo/geek.png
 

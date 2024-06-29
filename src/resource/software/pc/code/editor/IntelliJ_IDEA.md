@@ -2,10 +2,6 @@
 
 type: doc
 
-belong:
-  id: software-pc-code-editor
-  # order: 9999
-
 icon:
   src: /image/logo/intellij_idea.svg
 

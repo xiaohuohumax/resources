@@ -1,10 +1,10 @@
 <script setup lang="ts" async>
 import { computed, ref, watch } from 'vue'
 import { computedAsync } from '@vueuse/core'
-import ShowResource from './ShowResource.vue'
 import { useData } from 'vitepress'
-import virtualResources from 'virtual:resources'
+import ShowResource from './ShowResource.vue'
 import VPLoading from './VPLoading.vue'
+import virtualResources from 'virtual:resources'
 
 const { frontmatter } = useData()
 
@@ -14,6 +14,7 @@ const loading = ref(true)
 
 const resources = computedAsync(async () => {
   if (isCollection.value) {
+    // 从虚拟模块中获取当前集合资源
     const module = await virtualResources[frontmatter.value.id]()
     return module.default
   }

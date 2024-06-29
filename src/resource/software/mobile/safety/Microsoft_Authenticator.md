@@ -2,10 +2,6 @@
 
 type: doc
 
-belong:
-  id: software-mobile-safety
-  # order: 9999
-
 icon:
   src: /image/logo/Microsoft_Authenticator.png
 

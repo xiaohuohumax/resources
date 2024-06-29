@@ -1,8 +1,8 @@
 <script setup lang='ts'>
 import VPLink from 'vitepress/dist/client/theme-default/components/VPLink.vue'
 import { useData } from 'vitepress';
-import { RLink } from '../types'
 import { computed } from 'vue'
+import { RLink } from '../types'
 
 const { frontmatter } = useData();
 

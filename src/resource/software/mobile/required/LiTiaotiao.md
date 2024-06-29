@@ -2,10 +2,6 @@
 
 type: doc
 
-belong:
-  id: software-mobile-required
-  order: 1
-
 icon:
   src: /image/logo/LiTiaotiao.png
 

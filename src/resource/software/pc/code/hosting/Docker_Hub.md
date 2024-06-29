@@ -2,10 +2,6 @@
 
 type: doc
 
-belong:
-  id: software-pc-code-hosting
-  # order: 9999
-
 icon:
   src: /image/logo/docker_hub.svg
 

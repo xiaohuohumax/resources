@@ -2,12 +2,6 @@
 
 type: collection
 
-id: software-pc-beautification-font
-
-belong:
-  id: software-pc-beautification
-  # order: 9999
-
 icon:
   src: /logo.svg
 

@@ -2,10 +2,8 @@
 
 type: collection
 
-id: material-image
-
-belong:
-  id: material
+icon:
+  src: /logo.svg
 
 title: 图片素材
 

@@ -2,17 +2,18 @@
 
 type: collection
 
-id: material
-
 belong:
   id: null
-  order: 1
+  order: 4
 
-title: 素材
+icon:
+  src: /logo.svg
+
+title: 娱乐
 
 ---
 
-# 素材
+# 娱乐
 
 <ShowBreadcrumb />
 

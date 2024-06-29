@@ -1,4 +1,5 @@
 import { Plugin, ViteDevServer } from 'vite';
+
 import { ResourceManager } from '../resource';
 
 const VIRTUAL_RESOURCES_ID = 'virtual:resources';
@@ -14,11 +15,6 @@ const VIRTUAL_RESOURCES_ITEM_PATH = VIRTUAL_RESOURCES_ID + ':';
  */
 function updateResource(event: 'unlink' | 'update', resourceManager: ResourceManager, server: ViteDevServer, file: string,) {
   if (!resourceManager.isAllowedPath(file)) {
-    return;
-  }
-
-  // 导航文件不处理
-  if (resourceManager.isNav(file)) {
     return;
   }
 
@@ -87,7 +83,7 @@ export default function (resourceManager: ResourceManager): Plugin {
       } else if (id.startsWith(VIRTUAL_RESOURCES_ITEM_PATH)) {
         // virtual:resources:collectionId => Resource[]
         const collectionId = id.slice(VIRTUAL_RESOURCES_ITEM_PATH.length);
-        return `export default ${JSON.stringify(resourceManager.getResourcesByBelongId(collectionId))}`;
+        return `export default ${JSON.stringify(resourceManager.getSortResourcesByBelongId(collectionId))}`;
       }
     }
   };

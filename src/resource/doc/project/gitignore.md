@@ -2,10 +2,6 @@
 
 type: doc
 
-belong:
-  id: doc-project
-  # order: 9999
-
 icon:
   dark: /image/logo/github_light.svg
   light: /image/logo/github_dark.svg

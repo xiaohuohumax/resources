@@ -2,17 +2,18 @@
 
 type: collection
 
-id: play
-
 belong:
   id: null
-  order: 3
+  order: 2
 
-title: 娱乐
+icon:
+  src: /logo.svg
+
+title: 素材
 
 ---
 
-# 娱乐
+# 素材
 
 <ShowBreadcrumb />
 

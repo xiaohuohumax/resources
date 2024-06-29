@@ -2,10 +2,6 @@
 
 type: doc
 
-belong:
-  id: software-pc-beautification-cursors
-  # order: 9999
-
 icon:
   src: /image/logo/Windows_11_Cursors_Concept.png
 

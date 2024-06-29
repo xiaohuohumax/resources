@@ -2,10 +2,6 @@
 
 type: doc
 
-belong:
-  id: software-web-image
-  # order: 9999
-
 icon:
   src: /image/logo/Readme_Typing_SVG.png
 

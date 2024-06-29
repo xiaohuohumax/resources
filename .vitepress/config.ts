@@ -1,8 +1,8 @@
 import { defineConfig } from 'vitepress';
+
 import pkg from '../package.json';
 import { ResourceManager } from './resource';
 import * as constant from './constant';
-
 import { createBookmark } from './bookmark';
 import localSearchCut from './plugin/local-search-cut';
 import virtualResources from './plugin/virtual-resources';
@@ -17,8 +17,9 @@ const LOCALE_ID = 'root';
 
 const resourceManager: ResourceManager = new ResourceManager(constant.SRC_DIR, constant.SRC_EXCLUDE);
 
+const bookmarkFilePath = path.join(constant.SRC_DIR, 'public', 'bookmark.html');
 // 创建书签文件
-createBookmark(resourceManager, path.join(constant.SRC_DIR, 'public', 'bookmark.html'), TITLE + ' Bookmark');
+createBookmark(resourceManager, bookmarkFilePath, TITLE + ' Bookmark');
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -36,14 +37,14 @@ export default defineConfig({
     plugins: [
       // 本地搜索切词增强插件
       localSearchCut(LOCALE_ID, path.join(__dirname, 'dict.txt')),
+      // 导航热更新修复插件
+      navHmrFix(resourceManager, __filename),
       // 虚拟资源插件
       virtualResources(resourceManager),
       // 虚拟面包屑插件
       virtualBreadcrumb(resourceManager),
-      navHmrFix(resourceManager, __filename)
     ]
   },
-  srcExclude: ['**/_*.md'],
   themeConfig: {
     logo: '/logo.svg',
     nav: resourceManager.createNav(),
@@ -102,7 +103,7 @@ export default defineConfig({
   },
   transformPageData(pageData) {
     const filePath = path.join(constant.SRC_DIR, pageData.relativePath);
-    const resource = resourceManager.createResource(filePath);
+    const resource = resourceManager.getResourceByFilePath(filePath);
     if (!resource) {
       return;
     }
@@ -113,5 +114,6 @@ export default defineConfig({
     } else if (resource.type === 'doc') {
       pageData.frontmatter.layout = 'doc';
     }
+    pageData.frontmatter = Object.assign(pageData.frontmatter, resource);
   },
 });

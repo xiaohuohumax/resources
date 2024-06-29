@@ -2,12 +2,6 @@
 
 type: collection
 
-id: software-mobile-safety
-
-belong:
-  id: software-mobile
-  # order: 9999
-
 icon:
   src: /logo.svg
 

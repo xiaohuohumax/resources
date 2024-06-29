@@ -2,10 +2,6 @@
 
 type: doc
 
-belong:
-  id: magic-science
-  # order: 9999
-
 icon:
   src: /image/logo/v2rayN.svg
 

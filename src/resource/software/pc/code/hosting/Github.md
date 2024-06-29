@@ -2,10 +2,6 @@
 
 type: doc
 
-belong:
-  id: software-pc-code-hosting
-  # order: 9999
-
 icon:
   light: /image/logo/github_dark.svg
   dark: /image/logo/github_light.svg

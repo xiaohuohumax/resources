@@ -2,10 +2,6 @@
 
 type: doc
 
-belong:
-  id: software-pc-beautification-font
-  # order: 9999
-
 icon:
   dark: /image/logo/smiley-sans.dark.png
   light: /image/logo/smiley-sans.light.png

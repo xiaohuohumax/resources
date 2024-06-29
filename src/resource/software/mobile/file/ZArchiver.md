@@ -2,10 +2,6 @@
 
 type: doc
 
-belong:
-  id: software-mobile-file
-  # order: 9999
-
 icon:
   src: /image/logo/ZArchiver.png
 

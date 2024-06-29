@@ -2,12 +2,6 @@
 
 type: collection
 
-id: doc-code-language
-
-belong:
-  id: doc-code
-  # order: 9999
-
 icon:
   src: /logo.svg
 

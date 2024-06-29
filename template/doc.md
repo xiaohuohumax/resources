@@ -2,10 +2,20 @@
 # 文档
 type: doc
 
+# 该集合已被禁用
+disabled: false
+
 belong:
-  # 将当前文档添加到 template 集合
-  id: template
-  # order: 9999
+  # 归属集合 ID
+  # null 则表示不归属任何集合, 为顶级集合
+  # 若不指定，则自动生成, 由文档路径生成
+  # 例如:
+  #   template/item/index.md  -> template
+  #   template/item/other.md  -> template-item
+  #   template/other.md       -> template
+  id: null
+  # 归属集合排序 (越小越靠前, 默认0)
+  # order: 0
 
 # 图标
 icon:

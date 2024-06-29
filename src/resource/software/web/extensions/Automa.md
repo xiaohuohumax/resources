@@ -2,10 +2,6 @@
 
 type: doc
 
-belong:
-  id: software-web-extensions
-  # order: 9999
-
 icon:
   src: /image/logo/Automa.png
 

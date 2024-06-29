@@ -2,17 +2,18 @@
 
 type: collection
 
-id: software
-
 belong:
   id: null
-  order: 0
+  order: 3
 
-title: 软件
+icon:
+  src: /logo.svg
+
+title: 魔法
 
 ---
 
-# 软件
+# 魔法
 
 <ShowBreadcrumb />
 

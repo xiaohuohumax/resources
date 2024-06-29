@@ -2,10 +2,6 @@
 
 type: doc
 
-belong:
-  id: doc-project
-  # order: 9999
-
 icon:
   src: /image/logo/action_gh_release.jpg
 

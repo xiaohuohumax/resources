@@ -2,12 +2,6 @@
 
 type: collection
 
-id: doc-project
-
-belong:
-  id: doc
-  # order: 9999
-
 icon:
   src: /logo.svg
 

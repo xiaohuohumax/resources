@@ -2,10 +2,8 @@
 
 type: collection
 
-id: play-game
-
-belong:
-  id: play
+icon:
+  src: /logo.svg
 
 title: 游戏
 

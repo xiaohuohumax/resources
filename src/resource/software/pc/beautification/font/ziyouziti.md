@@ -2,10 +2,6 @@
 
 type: doc
 
-belong:
-  id: software-pc-beautification-font
-  # order: 9999
-
 icon:
   src: /image/logo/ziyouziti.png
 

@@ -2,10 +2,6 @@
 
 type: doc
 
-belong:
-  id: software-mobile-required
-  # order: 9999
-
 icon:
   src: /image/logo/gkd.svg
 

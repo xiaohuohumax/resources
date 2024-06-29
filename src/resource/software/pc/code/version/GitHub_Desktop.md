@@ -2,10 +2,6 @@
 
 type: doc
 
-belong:
-  id: software-pc-code-version
-  # order: 9999
-
 icon:
   src: /image/logo/github_desktop.svg
 

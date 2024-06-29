@@ -2,10 +2,6 @@
 
 type: doc
 
-belong:
-  id: software-pc-code-server
-  # order: 9999
-
 icon:
   src: /image/logo/nginx.svg
 

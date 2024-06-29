@@ -2,10 +2,6 @@
 
 type: doc
 
-belong:
-  id: software-pc-required
-  order: 1
-
 icon:
   src: /image/logo/utools.svg
 

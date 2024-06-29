@@ -2,10 +2,6 @@
 
 type: doc
 
-belong:
-  id: software-pc-code
-  order: 10001
-
 icon:
   src: /image/logo/Windows_Terminal.png
 

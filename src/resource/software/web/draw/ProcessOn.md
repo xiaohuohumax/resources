@@ -2,10 +2,6 @@
 
 type: doc
 
-belong:
-  id: software-web-draw
-  # order: 9999
-
 icon:
   src: /image/logo/ProcessOn.ico
 

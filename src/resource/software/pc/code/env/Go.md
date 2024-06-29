@@ -2,10 +2,6 @@
 
 type: doc
 
-belong:
-  id: software-pc-code-env
-  # order: 9999
-
 icon:
   src: /image/logo/golang.svg
 

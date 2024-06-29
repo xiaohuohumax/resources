@@ -2,10 +2,6 @@
 
 type: doc
 
-belong:
-  id: software-mobile-email
-  # order: 9999
-
 icon:
   src: /image/logo/k9_email.svg
 

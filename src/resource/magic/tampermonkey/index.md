@@ -2,10 +2,8 @@
 
 type: collection
 
-id: magic-tampermonkey
-
-belong:
-  id: magic
+icon:
+  src: /logo.svg
 
 title: 篡改猴
 

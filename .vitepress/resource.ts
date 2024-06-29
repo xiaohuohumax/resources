@@ -1,13 +1,13 @@
-import { Breadcrumb, Resource, RBase, Collection, Doc } from './theme/types';
-
 import { normalizePath } from 'vite';
+import { DefaultTheme } from 'vitepress';
 import matter from 'gray-matter';
 import glob from 'fast-glob';
 import micromatch from 'micromatch';
 
+import { Breadcrumb, Resource, RBase, Collection, Doc } from './theme/types';
+
 import path from 'node:path';
 import fs from 'node:fs';
-import { DefaultTheme } from 'vitepress';
 
 export type * from './theme/types';
 
@@ -16,18 +16,27 @@ export type * from './theme/types';
  */
 export class ResourceManager {
   // 资源对象列表
-  private resources: Resource[];
+  private resources: Resource[] = [];
   // 集合排序默认值
-  static BELONG_ORDER_DEFAULT = 9999;
+  static BELONG_ORDER_DEFAULT = 0;
+  // 资源筛选范围
+  private resourceGlobSource: string;
 
   /**
    * @param srcDir 项目文档源目录
    * @param srcExclude 项目文档源目录排除项
    */
   constructor(private srcDir: string, private srcExclude: string[]) {
-    const pagePaths = glob.sync(normalizePath(path.join(this.srcDir, '**/*.md')), {
-      ignore: srcExclude
-    });
+    this.resourceGlobSource = normalizePath(path.join(srcDir, '**/*.md'));
+    this.loadResources();
+  }
+
+  /**
+   * 加载资源对象列表
+   */
+  loadResources() {
+    const pagePaths = glob.sync(this.resourceGlobSource, { ignore: this.srcExclude });
+
     this.resources = pagePaths
       .map(pagePath => this.createResource(pagePath))
       .filter(r => r) as Resource[];
@@ -39,9 +48,20 @@ export class ResourceManager {
    * @returns 
    */
   isAllowedPath(filePath: string): boolean {
-    return micromatch.isMatch(filePath, normalizePath(path.join(this.srcDir, '**/*.md')), {
+    return micromatch.isMatch(filePath, this.resourceGlobSource, {
       ignore: this.srcExclude
     });
+  }
+
+  /**
+   * 路径转ID
+   * 
+   * /a/b/c => a-b-c
+   * @param filePath 文档路径
+   * @returns 
+   */
+  private filePathToId(filePath: string): string {
+    return filePath.replace(/^\//, '').replaceAll('/', '-');
   }
 
   /**
@@ -58,22 +78,21 @@ export class ResourceManager {
     if (typeof data.type !== 'string') {
       return;
     }
+
     const resourcePath = this.filePathToResourcePath(filePath);
-
-    if (data.belong === undefined) {
-      // 必须有 belong 属性
-      console.warn(`Resource ${resourcePath} must have belong property`);
-      return;
-    }
-    data.belong.order = data.belong.order ?? ResourceManager.BELONG_ORDER_DEFAULT;
-
-    // 标题缺省则取文件名
-    const title = data.title ?? path.basename(resourcePath);
+    // 格式化路径 a/index => a, b => b
+    const formatFilePath = resourcePath.replace(/\/index$/g, '');
 
     const base: RBase = {
-      title,
+      // 标题缺省则取文件名
+      title: data.title ?? path.basename(resourcePath),
       path: resourcePath,
-      belong: data.belong,
+      belong: Object.assign({
+        // 归属id缺省则取路径
+        id: this.filePathToId(formatFilePath.substring(0, formatFilePath.lastIndexOf('/'))),
+        // 排序缺省则取默认值
+        order: ResourceManager.BELONG_ORDER_DEFAULT
+      }, data.belong),
 
       togo: data.togo,
       togoText: data.togoText,
@@ -83,15 +102,10 @@ export class ResourceManager {
 
     if (data.type === 'collection') {
       // 集合
-      const id = data.id
-        ?? resourcePath
-          .replace(/\/index$/g, '')
-          .replaceAll('/', '-');
-
       return {
         ...base,
         type: 'collection',
-        id,
+        id: data.id ?? this.filePathToId(formatFilePath),
       };
     } else if (data.type === 'doc') {
       // 文档
@@ -112,31 +126,33 @@ export class ResourceManager {
       ? this.getResourceByFilePath(resource)
       : resource;
 
-    return !r || r.type !== 'collection'
+    return !r
       ? false
       : this.getResourceParentsByBelongId(r.belong.id).length < 2;
   }
 
   /**
-   * 创建导航
-   * 默认二级导航
+   * 创建导航 默认二级导航
    * @returns 
    */
   createNav(): DefaultTheme.NavItem[] {
-    const rootCollections = this.getResourcesByBelongId(null)
-      .filter(r => r.type === 'collection') as Collection[];
+    const rootResources = this.getSortResourcesByBelongId(null);
 
-    return rootCollections.map(collection => {
-      const items = this.getResourcesByBelongId(collection.id).map(r => ({
+    return rootResources.map(resource => {
+      if (resource.type === 'doc') {
+        return { text: resource.title, link: resource.path };
+      }
+
+      const items = this.getSortResourcesByBelongId(resource.id).map(r => ({
         text: r.title,
         link: r.path,
       }));
 
       if (items.length === 0) {
-        return { text: collection.title, link: collection.path };
+        return { text: resource.title, link: resource.path };
       }
 
-      return { text: collection.title, items };
+      return { text: resource.title, items };
     });
   }
 
@@ -155,11 +171,10 @@ export class ResourceManager {
    */
   updateResource(resource: Resource) {
     const index = this.resources.findIndex(r => r.path === resource.path);
-    if (index !== -1) {
-      this.resources[index] = resource;
-    } else {
-      this.resources.push(resource);
-    }
+
+    index !== -1
+      ? (this.resources[index] = resource)
+      : this.resources.push(resource);
   }
 
   /**
@@ -169,18 +184,32 @@ export class ResourceManager {
    */
   filePathToResourcePath(filePath: string): string {
     const relativePath = normalizePath(path.relative(this.srcDir, filePath));
-    return '/' + relativePath.slice(0, -3);
+    return '/' + relativePath.replace(/\.md$/i, '');
   }
 
   /**
-   * 获取指定归属的资源对象
+   * 获取指定归属的资源对象排序列表
+   * 
+   * 排序规则:
+   * 1. 集合在前, 文档在后
+   * 2. 同级集合/文档按照 order 排序, 越小越前
+   * 
    * @param belongId 归属 ID
    * @returns 
    */
-  getResourcesByBelongId(belongId: string | null): Resource[] {
+  getSortResourcesByBelongId(belongId: string | null): Resource[] {
     return this.resources
       .filter(r => r.belong?.id === belongId)
-      .sort((a, b) => a.belong.order - b.belong.order);
+      .sort((a, b) => {
+        if (a.type === 'collection' && b.type === 'doc') {
+          return -1;
+        } else if (a.type === 'doc' && b.type === 'collection') {
+          return 1;
+        } else if (a.belong.order === b.belong.order) {
+          return 0;
+        }
+        return a.belong.order > b.belong.order ? 1 : -1;
+      });
   }
 
   /**
@@ -190,15 +219,28 @@ export class ResourceManager {
    */
   getResourceParentsByBelongId(belongId: string | null): Breadcrumb[] {
     const parents: Breadcrumb[] = [];
+    const parentPaths: string[] = [];
+
     const collections = this.resources.filter(r => r.type === 'collection') as Collection[];
+
     for (; ;) {
       // 查找父级集合
       const parent = collections.find(r => r.type === 'collection' && r.id === belongId);
       if (parent) {
+
+        if (parentPaths.includes(parent.path)) {
+          // 循环引用
+          console.warn(`Circular reference found in collections: ${parentPaths.join(' -> ')}`);
+          break;
+        }
+
+        parentPaths.push(parent.path);
+
         parents.push({
           title: parent.title,
           path: parent.path
         });
+
         belongId = parent.belong.id;
         continue;
       }
@@ -223,6 +265,11 @@ export class ResourceManager {
     return this.resources.filter(r => r.type === 'collection') as Collection[];
   }
 
+  /**
+   * 获取指定路径的资源对象
+   * @param filePath 文档路径
+   * @returns 
+   */
   getResourceByFilePath(filePath: string): Resource | undefined {
     const resourcePath = this.filePathToResourcePath(filePath);
     return this.resources.find(r => r.path === resourcePath);

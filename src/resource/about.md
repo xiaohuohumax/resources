@@ -1,11 +1,10 @@
 ---
-type: collection
 
-id: about
+type: collection
 
 belong:
   id: null
-  # order: 9999
+  order: 5
 
 icon:
   src: /logo.svg

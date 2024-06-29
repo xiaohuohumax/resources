@@ -2,10 +2,6 @@
 
 type: doc
 
-belong:
-  id: software-pc-required
-  order: 3
-
 icon:
   src: /image/logo/Snipaste.svg
 

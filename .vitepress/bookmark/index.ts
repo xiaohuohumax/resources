@@ -1,4 +1,5 @@
 import { Bookmark, Builder as BookmarkBuilder } from '@xiaohuohumax/bookmark';
+
 import { ResourceManager } from '../resource';
 
 import path from 'node:path';
@@ -11,9 +12,9 @@ import fs from 'node:fs';
  * @returns 
  */
 function createBookmarkByBelongId(resourceManager: ResourceManager, belongId: string | null): Bookmark[] {
-  const r = resourceManager.getResourcesByBelongId(belongId);
+  const resources = resourceManager.getSortResourcesByBelongId(belongId);
 
-  return r.map(r => {
+  return resources.map(r => {
     if (r.type === 'collection') {
       const children = createBookmarkByBelongId(resourceManager, r.id);
       if (children.length === 0) {
@@ -31,10 +32,10 @@ function createBookmarkByBelongId(resourceManager: ResourceManager, belongId: st
 /**
  * 创建书签文件
  * @param resourceManager 资源管理器
- * @param outFile 输出文件路径
+ * @param filePath 输出文件路径
  * @param title 书签标题
  */
-export function createBookmark(resourceManager: ResourceManager, outFile: string, title: string): void {
+export function createBookmark(resourceManager: ResourceManager, filePath: string, title: string): void {
   const builder = new BookmarkBuilder({});
 
   const bms: Bookmark[] = createBookmarkByBelongId(resourceManager, null);
@@ -45,5 +46,5 @@ export function createBookmark(resourceManager: ResourceManager, outFile: string
       .replaceAll(/{{\s+title\s+}}/ig, () => title)
   );
 
-  fs.writeFileSync(outFile, bookmarkHtml);
+  fs.writeFileSync(filePath, bookmarkHtml);
 }

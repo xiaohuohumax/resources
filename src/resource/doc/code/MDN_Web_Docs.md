@@ -2,10 +2,6 @@
 
 type: doc
 
-belong:
-  id: doc-code
-  order: 10000
-
 icon:
   src: /image/logo/MDN_Web_Docs.png
 

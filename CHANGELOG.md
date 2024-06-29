@@ -1,5 +1,11 @@
 # resources
 
+## 3.1.0
+
+### Minor Changes
+
+- 结构优化, 资源结构自动构建
+
 ## 3.0.0
 
 ### Major Changes

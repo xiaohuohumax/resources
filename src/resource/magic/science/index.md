@@ -2,10 +2,8 @@
 
 type: collection
 
-id: magic-science
-
-belong:
-  id: magic
+icon:
+  src: /logo.svg
 
 title: 科学上网
 

@@ -2,10 +2,6 @@
 
 type: doc
 
-belong:
-  id: software-mobile-picture
-  # order: 9999
-
 icon:
   src: /image/logo/QuickPic_Gallery.png
 

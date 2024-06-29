@@ -2,10 +2,6 @@
 
 type: doc
 
-belong:
-  id: software-pc-downloader
-  # order: 9999
-
 icon:
   src: /image/logo/Motrix.png
 

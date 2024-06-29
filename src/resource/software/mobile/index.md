@@ -2,10 +2,8 @@
 
 type: collection
 
-id: software-mobile
-
-belong:
-  id: software
+icon:
+  src: /logo.svg
 
 title: 移动端
 

@@ -2,10 +2,8 @@
 
 type: collection
 
-id: software-pc
-
-belong:
-  id: software
+icon:
+  src: /logo.svg
 
 title: 电脑端
 

@@ -2,10 +2,6 @@
 
 type: doc
 
-belong:
-  id: software-web
-  order: 10000
-
 icon:
   src: /image/logo/Learn_Git_Branching.ico
 

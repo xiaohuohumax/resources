@@ -2,10 +2,6 @@
 
 type: doc
 
-belong:
-  id: software-web-color
-  # order: 9999
-
 icon:
   src: /image/logo/grabient.png
 

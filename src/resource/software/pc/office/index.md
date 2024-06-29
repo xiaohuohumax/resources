@@ -2,12 +2,6 @@
 
 type: collection
 
-id: software-pc-office
-
-belong:
-  id: software-pc
-  # order: 9999
-
 icon:
   src: /logo.svg
 

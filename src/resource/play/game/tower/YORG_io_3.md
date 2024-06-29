@@ -2,10 +2,6 @@
 
 type: doc
 
-belong:
-  id: play-game-tower
-  # order: 9999
-
 icon:
   src: /image/logo/yorg3.ico
 

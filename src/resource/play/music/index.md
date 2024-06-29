@@ -2,10 +2,8 @@
 
 type: collection
 
-id: play-music
-
-belong:
-  id: play
+icon:
+  src: /logo.svg
 
 title: 音乐
 

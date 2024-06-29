@@ -2,12 +2,6 @@
 
 type: collection
 
-id: play-game-tower
-
-belong:
-  id: play-game
-  # order: 9999
-
 icon:
   src: /logo.svg
 

@@ -2,10 +2,6 @@
 
 type: doc
 
-belong:
-  id: software-pc-code-database
-  # order: 9999
-
 icon:
   src: /image/logo/redis.svg
 

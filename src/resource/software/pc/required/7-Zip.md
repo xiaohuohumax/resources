@@ -2,10 +2,6 @@
 
 type: doc
 
-belong:
-  id: software-pc-required
-  order: 2
-
 icon:
   src: /image/logo/7zip.png
 

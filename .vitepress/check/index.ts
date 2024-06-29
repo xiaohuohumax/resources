@@ -50,6 +50,7 @@ function getNowTime(): string {
  */
 async function checkLink(link: string, browser: puppeteer.Browser): Promise<[boolean, Error?]> {
   let error: Error | undefined = undefined;
+
   for (let i = 1; i <= RETRY_COUNT; i++) {
     const page = await browser.newPage();
     // 部分网站需要设置 userAgent
@@ -118,7 +119,7 @@ async function check(links: Link[]): Promise<CheckResult> {
     console.table(failLinks, ['title', 'linkText', 'error']);
   }
 
-  const result: CheckResult = {
+  return {
     count: links.length,
     time: getNowTime(),
     failCount: failLinks.length,
@@ -126,8 +127,6 @@ async function check(links: Link[]): Promise<CheckResult> {
     failLinks,
     successLinks,
   };
-
-  return result;
 }
 
 /**
@@ -135,6 +134,7 @@ async function check(links: Link[]): Promise<CheckResult> {
  */
 async function checkWithScan(): Promise<CheckResult> {
   const resourceManager = new ResourceManager(constant.SRC_DIR, constant.SRC_EXCLUDE);
+
   const docs: Doc[] = resourceManager.getAllDocs();
 
   const links: Link[] = docs.map(doc => {

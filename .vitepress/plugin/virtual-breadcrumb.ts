@@ -1,4 +1,5 @@
 import { Plugin } from 'vite';
+
 import { ResourceManager } from '../resource';
 
 const VIRTUAL_BREADCRUMB_ID = 'virtual:breadcrumb';

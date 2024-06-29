@@ -1,12 +1,15 @@
 ---
 
-type: collection
+# 该集合已被禁用
+disabled: true
 
-id: doc
+type: collection
 
 belong:
   id: null
-  order: 0
+
+icon:
+  src: /logo.svg
 
 title: 文档
 

@@ -2,17 +2,14 @@
 
 type: collection
 
-belong:
-  id: null
-
 icon:
   src: /logo.svg
 
-title: 文档
+title: CI CD
 
 ---
 
-# 文档
+# CI CD
 
 <ShowBreadcrumb />
 

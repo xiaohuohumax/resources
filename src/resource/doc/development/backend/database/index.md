@@ -2,17 +2,13 @@
 
 type: collection
 
-belong:
-  id: null
-
 icon:
   src: /logo.svg
 
-title: 文档
-
+title: 数据库
 ---
 
-# 文档
+# 数据库
 
 <ShowBreadcrumb />
 

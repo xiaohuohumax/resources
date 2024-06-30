@@ -2,17 +2,14 @@
 
 type: collection
 
-belong:
-  id: null
-
 icon:
   src: /logo.svg
 
-title: 文档
+title: 教程
 
 ---
 
-# 文档
+# 教程
 
 <ShowBreadcrumb />
 

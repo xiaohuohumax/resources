@@ -1,5 +1,11 @@
 # resources
 
+## 3.1.1
+
+### Patch Changes
+
+- 修复添加集合后面包屑未更新导致页面显示异常错误
+
 ## 3.1.0
 
 ### Minor Changes

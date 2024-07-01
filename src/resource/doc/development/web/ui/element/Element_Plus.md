@@ -1,0 +1,31 @@
+---
+
+type: doc
+
+icon:
+  src: /image/logo/Element_Plus.png
+
+title: Element Plus
+description: 基于 Vue 3，面向设计师和开发者的组件库。
+
+links:
+  - text: 📖文档地址
+    link: &togo https://element-plus.org/zh-CN/
+
+togo: *togo
+
+---
+
+<ShowLogo />
+
+# Element Plus
+
+<ShowBreadcrumb />
+
+## 资源链接
+
+<ShowLinks />
+
+## 简介
+
+基于 Vue 3，面向设计师和开发者的组件库。

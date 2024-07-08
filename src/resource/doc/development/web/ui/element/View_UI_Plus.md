@@ -10,7 +10,7 @@ description: View UI Plus 是 View Design 设计体系中基于 Vue.js 3 的一�
 
 links:
   - text: 📖文档地址
-    link: &togo https://www.iviewui.com/view-ui-plus/guide/introduce
+    link: &togo https://www.iviewui.com/
 
 togo: *togo
 

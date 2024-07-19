@@ -19,4 +19,4 @@ title: 关于
 
 ### ♻ 项目说明
 
-本站基于 [VuePress](https://vuepress.vuejs.org/) 构建，项目地址：[resources](https://github.com/xiaohuohumax/resources) （菜单，资源合集自动生成）
+本站基于 [VitePress](https://vitepress.vuejs.org/) 构建，项目地址：[resources](https://github.com/xiaohuohumax/resources) （菜单，资源合集自动生成）

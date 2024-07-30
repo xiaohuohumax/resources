@@ -32,3 +32,19 @@ a {
 .vp-doc h3 {
   margin: 24px 0 16px !important;
 }
+
+@keyframes card {
+  from {
+    opacity: 0;
+    scale: .5;
+  }
+
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+.ShowCollections .container .VPLink {
+  animation: card .3s ease-in-out;
+}

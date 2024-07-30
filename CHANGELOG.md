@@ -1,5 +1,11 @@
 # resources
 
+## 3.2.0
+
+### Minor Changes
+
+- 卡片添加渐入动画
+
 ## 3.1.1
 
 ### Patch Changes

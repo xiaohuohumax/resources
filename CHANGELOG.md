@@ -1,5 +1,11 @@
 # resources
 
+## 3.3.0
+
+### Minor Changes
+
+- 文档增删改添加 log 提示
+
 ## 3.2.1
 
 ### Patch Changes

@@ -167,7 +167,12 @@ export class ResourceManager {
    */
   spliceResource(filePath: string) {
     const index = this.resources.findIndex(r => r.path === this.filePathToResourcePath(filePath));
-    return index !== -1 ? this.resources.splice(index, 1)[0] : undefined;
+    if (index === -1) {
+      return;
+    }
+    const resource = this.resources.splice(index, 1)[0];
+    console.log(`Resource removed: ${resource.path}`);
+    return resource;
   }
 
   /**
@@ -177,9 +182,13 @@ export class ResourceManager {
   updateResource(resource: Resource) {
     const index = this.resources.findIndex(r => r.path === resource.path);
 
-    index !== -1
-      ? (this.resources[index] = resource)
-      : this.resources.push(resource);
+    if (index === -1) {
+      console.log(`Resource added: ${resource.path}`);
+      this.resources.push(resource);
+    } else {
+      console.log(`Resource updated: ${resource.path}`);
+      this.resources[index] = resource;
+    }
   }
 
   /**

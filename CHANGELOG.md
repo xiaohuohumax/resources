@@ -1,5 +1,11 @@
 # resources
 
+## 3.2.1
+
+### Patch Changes
+
+- 修复编辑 md 文件中 frontmatter 配置时若格式错误会导致服务终止的问题
+
 ## 3.2.0
 
 ### Minor Changes

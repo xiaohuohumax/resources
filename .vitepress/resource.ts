@@ -73,12 +73,17 @@ export class ResourceManager {
     if (!this.isAllowedPath(filePath)) {
       return;
     }
-
-    const { data } = matter(fs.readFileSync(filePath, 'utf-8'));
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    let data: { [key: string]: any } = {};
+    try {
+      data = matter(fs.readFileSync(filePath, 'utf-8')).data;
+    } catch (error) {
+      console.error(`Error reading frontmatter in ${filePath}:\n${(error as Error).message}`);
+      return;
+    }
     if (typeof data.type !== 'string') {
       return;
     }
-
     const resourcePath = this.filePathToResourcePath(filePath);
     // 格式化路径 a/index => a, b => b
     const formatFilePath = resourcePath.replace(/\/index$/g, '');

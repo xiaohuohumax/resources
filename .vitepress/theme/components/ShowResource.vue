@@ -1,26 +1,29 @@
 <script setup lang="ts">
+import type { Resource } from '../types'
 import VPImage from 'vitepress/dist/client/theme-default/components/VPImage.vue'
 import VPLink from 'vitepress/dist/client/theme-default/components/VPLink.vue'
-import { Resource } from '../types'
 
 defineProps<{
   resource: Resource
 }>()
-
 </script>
 
 <template>
   <VPLink class="ShowCollection" :href="resource.path" :no-icon="true" :tag="resource.path ? 'a' : 'div'">
     <article class="box">
       <div v-if="typeof resource.icon === 'object' && resource.icon.wrap" class="icon">
-        <VPImage :image="resource.icon" :alt="resource.icon.alt" :height="resource.icon.height || 48"
-          :width="resource.icon.width || 48" />
+        <VPImage
+          :image="resource.icon" :alt="resource.icon.alt" :height="resource.icon.height || 48"
+          :width="resource.icon.width || 48"
+        />
       </div>
-      <VPImage v-else-if="typeof resource.icon === 'object'" :image="resource.icon" :alt="resource.icon.alt"
-        :height="resource.icon.height || 48" :width="resource.icon.width || 48" />
-      <div v-else-if="resource.icon" class="icon" v-html="resource.icon"></div>
-      <h2 class="title" v-html="resource.title"></h2>
-      <p v-if="resource.description" class="description" v-html="resource.description"></p>
+      <VPImage
+        v-else-if="typeof resource.icon === 'object'" :image="resource.icon" :alt="resource.icon.alt"
+        :height="resource.icon.height || 48" :width="resource.icon.width || 48"
+      />
+      <div v-else-if="resource.icon" class="icon" v-html="resource.icon" />
+      <h2 class="title" v-html="resource.title" />
+      <p v-if="resource.description" class="description" v-html="resource.description" />
 
       <div v-if="resource.togo" class="togo">
         <VPLink :href="resource.togo" :no-icon="true" :tag="resource.togo ? 'a' : 'div'">

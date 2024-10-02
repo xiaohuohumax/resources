@@ -1,18 +1,16 @@
 <script setup lang='ts'>
-
 defineProps<{
   loading: boolean
 }>()
-
 </script>
 
 <template>
   <div class="VPLoading">
-    <div class="loading" v-if="loading">
+    <div v-if="loading" class="loading">
       loading...
     </div>
-    <div class="done" v-else>
-      <slot></slot>
+    <div v-else class="done">
+      <slot />
     </div>
   </div>
 </template>

@@ -5,9 +5,9 @@ type: collection
 # 该集合已被禁用
 disabled: false
 
-# 集合 ID 
+# 集合 ID
 # 若不指定，则自动生成, 由文档路径生成
-# 例如: 
+# 例如:
 #   template/item/index.md -> template-item
 #   template/item/other.md -> template-item-other
 id: template

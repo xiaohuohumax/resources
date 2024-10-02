@@ -1,5 +1,11 @@
 # resources
 
+## 3.3.1
+
+### Patch Changes
+
+- lint 代码改为 antfu 的方案
+
 ## 3.3.0
 
 ### Minor Changes

@@ -1,10 +1,10 @@
 <script setup lang="ts" async>
-import { computed, ref, watch } from 'vue'
 import { computedAsync } from '@vueuse/core'
+import virtualResources from 'virtual:resources'
 import { useData } from 'vitepress'
+import { computed, ref, watch } from 'vue'
 import ShowResource from './ShowResource.vue'
 import VPLoading from './VPLoading.vue'
-import virtualResources from 'virtual:resources'
 
 const { frontmatter } = useData()
 
@@ -23,24 +23,23 @@ const resources = computedAsync(async () => {
 
 watch(resources, () => loading.value = false, { once: true })
 
-const grid = computed(() => {
-  if (!isCollection.value) {
-    return
+const grid = computed<string>(() => {
+  if (isCollection.value) {
+    const length = resources.value.length
+    if (length === 2 || length === 1) {
+      return 'grid-2'
+    }
+    else if (length === 3) {
+      return 'grid-3'
+    }
+    else if (length % 3 === 0) {
+      return 'grid-6'
+    }
+    else if (length > 3) {
+      return 'grid-4'
+    }
   }
-
-  const length = resources.value.length
-
-  if (!length) {
-    return
-  } else if (length === 2 || length === 1) {
-    return 'grid-2'
-  } else if (length === 3) {
-    return 'grid-3'
-  } else if (length % 3 === 0) {
-    return 'grid-6'
-  } else if (length > 3) {
-    return 'grid-4'
-  }
+  return ''
 })
 </script>
 

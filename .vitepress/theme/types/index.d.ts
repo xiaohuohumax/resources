@@ -1,4 +1,4 @@
-import { DefaultTheme } from 'vitepress';
+import type { DefaultTheme } from 'vitepress'
 
 export interface RLink {
   text: string
@@ -39,4 +39,4 @@ export interface Collection extends RBase {
   id: string
 }
 
-export type Resource = Doc | Collection;
+export type Resource = Doc | Collection

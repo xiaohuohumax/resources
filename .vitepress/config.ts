@@ -1,25 +1,25 @@
-import { defineConfig } from 'vitepress';
+import path from 'node:path'
 
-import pkg from '../package.json';
-import { ResourceManager } from './resource';
-import * as constant from './constant';
-import { createBookmark } from './bookmark';
-import localSearchCut from './plugin/local-search-cut';
-import virtualResources from './plugin/virtual-resources';
-import virtualBreadcrumb from './plugin/virtual-breadcrumb';
-import navHmrFix from './plugin/nav-hmr-fix';
+import { defineConfig } from 'vitepress'
+import pkg from '../package.json'
+import { createBookmark } from './bookmark'
+import * as constant from './constant'
+import localSearchCut from './plugin/local-search-cut'
+import navHmrFix from './plugin/nav-hmr-fix'
+import virtualBreadcrumb from './plugin/virtual-breadcrumb'
+import virtualResources from './plugin/virtual-resources'
 
-import path from 'node:path';
+import { ResourceManager } from './resource'
 
-const BASE = '/resources/';
-const TITLE = 'Resources';
-const LOCALE_ID = 'root';
+const BASE = '/resources/'
+const TITLE = 'Resources'
+const LOCALE_ID = 'root'
 
-const resourceManager: ResourceManager = new ResourceManager(constant.SRC_DIR, constant.SRC_EXCLUDE);
+const resourceManager: ResourceManager = new ResourceManager(constant.SRC_DIR, constant.SRC_EXCLUDE)
 
-const bookmarkFilePath = path.join(constant.SRC_DIR, 'public', 'bookmark.html');
+const bookmarkFilePath = path.join(constant.SRC_DIR, 'public', 'bookmark.html')
 // 创建书签文件
-createBookmark(resourceManager, bookmarkFilePath, TITLE + ' Bookmark');
+createBookmark(resourceManager, bookmarkFilePath, `${TITLE} Bookmark`)
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -30,7 +30,7 @@ export default defineConfig({
   cacheDir: 'cache',
   outDir: 'dist',
   head: [
-    ['link', { rel: 'icon', href: BASE + 'logo.svg' }]
+    ['link', { rel: 'icon', href: `${BASE}logo.svg` }],
   ],
   lastUpdated: true,
   vite: {
@@ -43,7 +43,7 @@ export default defineConfig({
       virtualResources(resourceManager),
       // 虚拟面包屑插件
       virtualBreadcrumb(resourceManager),
-    ]
+    ],
   },
   themeConfig: {
     logo: '/logo.svg',
@@ -51,19 +51,19 @@ export default defineConfig({
     socialLinks: [
       {
         icon: 'github',
-        link: 'https://github.com/xiaohuohumax/resources'
-      }
+        link: 'https://github.com/xiaohuohumax/resources',
+      },
     ],
     footer: {
       message: '资源仓库',
-      copyright: `${pkg.license} Licensed | Copyright © 2024-present ${pkg.author.name}`
+      copyright: `${pkg.license} Licensed | Copyright © 2024-present ${pkg.author.name}`,
     },
     lastUpdated: {
       text: '上次更新',
     },
     editLink: {
       pattern: 'https://github.com/xiaohuohumax/resources/edit/main/src/:path',
-      text: '在 GitHub 上编辑此页面'
+      text: '在 GitHub 上编辑此页面',
     },
     notFound: {
       title: '网页被外星人劫持了',
@@ -72,7 +72,7 @@ export default defineConfig({
       linkText: '返回首页',
     },
     outline: {
-      label: '目录'
+      label: '目录',
     },
     returnToTopLabel: '返回顶部',
     search: {
@@ -83,7 +83,7 @@ export default defineConfig({
             translations: {
               button: {
                 buttonText: '搜索文档',
-                buttonAriaLabel: '搜索文档'
+                buttonAriaLabel: '搜索文档',
               },
               modal: {
                 noResultsText: '无法找到相关结果',
@@ -92,28 +92,29 @@ export default defineConfig({
                 footer: {
                   selectText: '选择',
                   navigateText: '切换',
-                  closeText: '关闭'
-                }
-              }
-            }
-          }
-        }
-      }
-    }
+                  closeText: '关闭',
+                },
+              },
+            },
+          },
+        },
+      },
+    },
   },
   transformPageData(pageData) {
-    const filePath = path.join(constant.SRC_DIR, pageData.relativePath);
-    const resource = resourceManager.getResourceByFilePath(filePath);
+    const filePath = path.join(constant.SRC_DIR, pageData.relativePath)
+    const resource = resourceManager.getResourceByFilePath(filePath)
     if (!resource) {
-      return;
+      return
     }
     if (resource.type === 'collection') {
-      pageData.frontmatter.layout = 'doc';
-      pageData.frontmatter.sidebar = false;
-      pageData.frontmatter.aside = false;
-    } else if (resource.type === 'doc') {
-      pageData.frontmatter.layout = 'doc';
+      pageData.frontmatter.layout = 'doc'
+      pageData.frontmatter.sidebar = false
+      pageData.frontmatter.aside = false
     }
-    pageData.frontmatter = Object.assign(pageData.frontmatter, resource);
+    else if (resource.type === 'doc') {
+      pageData.frontmatter.layout = 'doc'
+    }
+    pageData.frontmatter = Object.assign(pageData.frontmatter, resource)
   },
-});
+})

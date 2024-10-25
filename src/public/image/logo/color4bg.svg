@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="160px" height="60px" viewBox="0 0 160 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Logo-white</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="36" height="26" rx="2"></rect>
+        <linearGradient x1="50%" y1="1.30572552%" x2="50%" y2="100%" id="linearGradient-3">
+            <stop stop-color="#71FF00" offset="0%"></stop>
+            <stop stop-color="#FFE365" stop-opacity="0.2" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-4">
+            <stop stop-color="#FF3000" offset="0%"></stop>
+            <stop stop-color="#FFCF56" stop-opacity="0.1" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-5">
+            <stop stop-color="#6500FF" offset="0%"></stop>
+            <stop stop-color="#00E9FF" stop-opacity="0.2" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Logo-white" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="logo/logo-favicon'" transform="translate(0.000000, 17.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="Mask"></g>
+            <g id="Group" mask="url(#mask-2)">
+                <g transform="translate(0.000000, -5.000000)" id="logo/logo-favicon'">
+                    <rect id="Rectangle" fill="url(#linearGradient-3)" x="12" y="5.1" width="12" height="25.8"></rect>
+                    <rect id="Rectangle-Copy" fill="url(#linearGradient-4)" x="24" y="5.1" width="12" height="25.8"></rect>
+                    <rect id="Rectangle-Copy-2" fill="url(#linearGradient-5)" x="0" y="5.1" width="12" height="25.8"></rect>
+                </g>
+            </g>
+        </g>
+        <text id="COLOR4BG" font-family="Inter-Black, Inter" font-size="20" font-weight="800" fill="#001144">
+            <tspan x="44" y="37">COLOR4BG</tspan>
+        </text>
+    </g>
+</svg>

@@ -1,5 +1,11 @@
 # resources
 
+## 3.4.0
+
+### Minor Changes
+
+- 更新 logo
+
 ## 3.3.1
 
 ### Patch Changes

@@ -7,7 +7,7 @@ belong:
   order: 3
 
 icon:
-  src: /logo.svg
+  src: /image/folder.svg
 
 title: 魔法
 

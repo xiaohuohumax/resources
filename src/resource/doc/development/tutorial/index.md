@@ -3,7 +3,7 @@
 type: collection
 
 icon:
-  src: /logo.svg
+  src: /image/folder.svg
 
 title: 教程
 

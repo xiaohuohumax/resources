@@ -6,7 +6,7 @@ belong:
   id: null
 
 icon:
-  src: /logo.svg
+  src: /image/folder.svg
 
 title: 文档
 

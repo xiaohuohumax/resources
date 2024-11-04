@@ -7,7 +7,7 @@ belong:
   order: 4
 
 icon:
-  src: /logo.svg
+  src: /image/folder.svg
 
 title: 娱乐
 

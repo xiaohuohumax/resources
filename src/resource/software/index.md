@@ -7,7 +7,7 @@ belong:
   order: 1
 
 icon:
-  src: /logo.svg
+  src: /image/folder.svg
 
 title: 软件
 

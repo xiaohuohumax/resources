@@ -1,5 +1,11 @@
 # resources
 
+## 3.4.1
+
+### Patch Changes
+
+- 修复首页背景渐变色失效异常
+
 ## 3.4.0
 
 ### Minor Changes

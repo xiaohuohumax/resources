@@ -1,5 +1,11 @@
 # resources
 
+## 3.5.0
+
+### Minor Changes
+
+- 书签添加媒体查询自动切换主题
+
 ## 3.4.1
 
 ### Patch Changes

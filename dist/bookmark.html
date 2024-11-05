@@ -1,7 +1,24 @@
 <!DOCTYPE NETSCAPE-Bookmark-file-1>
 <!-- 这是自动生成的书签文件，请勿修改或者格式化 -->
 <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+<link rel="icon" href="/resources/logo.svg">
 <style>
+  :root {
+    --bg-color: #fff;
+    --text-color: #3c3c43;
+    --link-color: #3a5ccc;
+    --link-hover-color: #3451b2;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg-color: #1b1b1f;
+      --text-color: #fffff5db;
+      --link-color: #a8b1ff;
+      --link-hover-color: #5c73e7;
+    }
+  }
+
   * {
     padding: 0;
     margin: 0;
@@ -9,7 +26,18 @@
 
   body {
     padding: 2em;
+    background-color: var(--bg-color);
+    color: var(--text-color);
   }
+
+  a {
+    color: var(--link-color);
+  }
+
+  a:hover {
+    color: var(--link-hover-color);
+  }
+
 
   dl>dt:not(:has(h3[personal_toolbar_folder="true"])) {
     margin-left: 1.25em;

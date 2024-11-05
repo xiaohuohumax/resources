@@ -1,19 +1,14 @@
 <script setup lang='ts'>
-import type { RLink } from '../types'
-import { useData } from 'vitepress'
+import type { Resource } from '../types'
 import VPLink from 'vitepress/dist/client/theme-default/components/VPLink.vue'
-import { computed } from 'vue'
+import { useFrontmatter } from '../use/frontmatter'
 
-const { frontmatter } = useData()
-
-const isDoc = computed(() => frontmatter.value.type === 'doc')
-
-const links = computed(() => frontmatter.value.links as RLink[])
+const frontmatter = useFrontmatter<Resource>()
 </script>
 
 <template>
-  <div v-if="isDoc" class="VPResourceLinks custom-block">
-    <VPLink v-for="(link, index) in links" :key="index" :href="link.link" :no-icon="true">
+  <div v-if="frontmatter.type === 'doc'" class="VPResourceLinks custom-block">
+    <VPLink v-for="(link, index) in frontmatter.links" :key="index" :href="link.link" :no-icon="true">
       {{ link.text }}
     </VPLink>
   </div>

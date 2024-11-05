@@ -9,7 +9,7 @@ defineProps<{
 </script>
 
 <template>
-  <VPLink class="ShowCollection" :href="resource.path" :no-icon="true" :tag="resource.path ? 'a' : 'div'">
+  <VPLink class="Resource" :href="resource.path" :no-icon="true" :tag="resource.path ? 'a' : 'div'">
     <article class="box">
       <div v-if="typeof resource.icon === 'object' && resource.icon.wrap" class="icon">
         <VPImage
@@ -35,7 +35,7 @@ defineProps<{
 </template>
 
 <style scoped>
-.ShowCollection {
+.Resource {
   display: block;
   border: 1px solid var(--vp-c-bg-soft);
   border-radius: 12px;
@@ -44,17 +44,17 @@ defineProps<{
   transition: border-color 0.25s, background-color 0.25s;
 }
 
-.ShowCollection.link:hover {
+.Resource.link:hover {
   border-color: var(--vp-c-brand-1);
 }
 
-.ShowCollection .box h2 {
+.Resource .box h2 {
   margin: 0 !important;
   padding: 0 !important;
   border-top: none !important;
 }
 
-.ShowCollection .box p {
+.Resource .box p {
   margin: 0 !important;
   padding-top: 8px;
 }

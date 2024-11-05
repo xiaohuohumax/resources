@@ -1,29 +1,18 @@
 <script setup lang='ts'>
-import type { DefaultTheme } from 'vitepress'
-import { useData } from 'vitepress'
+import type { Resource } from '../types'
 import VPImage from 'vitepress/dist/client/theme-default/components/VPImage.vue'
-import { computed } from 'vue'
+import { useFrontmatter } from '../use/frontmatter'
 
-const props = withDefaults(defineProps<{
-  width?: number
-  height?: number
-}>(), {
-  width: 86,
-  height: 86,
-})
-
-const { frontmatter } = useData()
-
-const icon = computed(() => frontmatter.value.icon as DefaultTheme.FeatureIcon)
+const frontmatter = useFrontmatter<Resource>()
 </script>
 
 <template>
-  <div class="ShowLogo" :style="{ '--icon-width': props.width, '--icon-height': props.height }">
-    <div v-if="typeof icon === 'object' && icon.wrap" class="icon">
-      <VPImage :image="icon" :alt="icon.alt" />
+  <div class="ShowLogo" :style="{ '--icon-width': 86, '--icon-height': 86 }">
+    <div v-if="typeof frontmatter.icon === 'object' && frontmatter.icon.wrap" class="icon">
+      <VPImage :image="frontmatter.icon" :alt="frontmatter.icon.alt" />
     </div>
-    <VPImage v-else-if="typeof icon === 'object'" :image="icon" :alt="icon.alt" />
-    <div v-else-if="icon" class="icon" v-html="icon" />
+    <VPImage v-else-if="typeof frontmatter.icon === 'object'" :image="frontmatter.icon" :alt="frontmatter.icon.alt" />
+    <div v-else-if="frontmatter.icon" class="icon" v-html="frontmatter.icon" />
   </div>
 </template>
 

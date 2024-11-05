@@ -4,8 +4,8 @@ import { defineConfig } from 'vitepress'
 import pkg from '../package.json'
 import { createBookmark } from './bookmark'
 import * as constant from './constant'
+import hmrFix from './plugin/hmr-fix'
 import localSearchCut from './plugin/local-search-cut'
-import navHmrFix from './plugin/nav-hmr-fix'
 import virtualBreadcrumb from './plugin/virtual-breadcrumb'
 import virtualResources from './plugin/virtual-resources'
 
@@ -35,10 +35,10 @@ export default defineConfig({
   lastUpdated: true,
   vite: {
     plugins: [
+      // HMR 修复
+      hmrFix(resourceManager),
       // 本地搜索切词增强插件
       localSearchCut(LOCALE_ID, path.join(__dirname, 'dict.txt')),
-      // 导航热更新修复插件
-      navHmrFix(resourceManager, __filename),
       // 虚拟资源插件
       virtualResources(resourceManager),
       // 虚拟面包屑插件
@@ -47,7 +47,7 @@ export default defineConfig({
   },
   themeConfig: {
     logo: '/logo.svg',
-    nav: resourceManager.createNav(),
+    nav: resourceManager.createNav([]),
     socialLinks: [
       {
         icon: 'github',

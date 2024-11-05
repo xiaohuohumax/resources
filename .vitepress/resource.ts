@@ -5,7 +5,6 @@ import path from 'node:path'
 import glob from 'fast-glob'
 
 import matter from 'gray-matter'
-
 import micromatch from 'micromatch'
 import { normalizePath } from 'vite'
 
@@ -28,18 +27,12 @@ export class ResourceManager {
    */
   constructor(private srcDir: string, private srcExclude: string[]) {
     this.resourceGlobSource = normalizePath(path.join(srcDir, '**/*.md'))
-    this.loadResources()
-  }
-
-  /**
-   * 加载资源对象列表
-   */
-  loadResources() {
-    const pagePaths = glob.sync(this.resourceGlobSource, { ignore: this.srcExclude })
-
-    this.resources = pagePaths
-      .map(pagePath => this.createResource(pagePath))
-      .filter(r => r) as Resource[]
+    for (const pagePath of glob.sync(this.resourceGlobSource, { ignore: this.srcExclude })) {
+      const resource = this.createResource(pagePath)
+      if (resource) {
+        this.resources.push(resource)
+      }
+    }
   }
 
   /**
@@ -141,10 +134,10 @@ export class ResourceManager {
    * 创建导航 默认二级导航
    * @returns 导航列表
    */
-  createNav(): DefaultTheme.NavItem[] {
+  createNav(baseNav: DefaultTheme.NavItem[] = []): DefaultTheme.NavItem[] {
     const rootResources = this.getSortResourcesByBelongId(null)
 
-    return rootResources.map((resource) => {
+    const nav = rootResources.map((resource) => {
       if (resource.type === 'doc') {
         return { text: resource.title, link: resource.path }
       }
@@ -160,6 +153,8 @@ export class ResourceManager {
 
       return { text: resource.title, items }
     })
+
+    return [...baseNav, ...nav]
   }
 
   /**

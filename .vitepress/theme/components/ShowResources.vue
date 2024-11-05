@@ -3,15 +3,12 @@ import { computedAsync } from '@vueuse/core'
 import virtualResources from 'virtual:resources'
 import { useData } from 'vitepress'
 import { computed, ref, watch } from 'vue'
-import ShowResource from './ShowResource.vue'
-import VPLoading from './VPLoading.vue'
+import Loading from './Loading.vue'
+import ShowResource from './Resource.vue'
 
 const { frontmatter } = useData()
-
 const isCollection = computed(() => frontmatter.value.type === 'collection')
-
 const loading = ref(true)
-
 const resources = computedAsync(async () => {
   if (isCollection.value) {
     // 从虚拟模块中获取当前集合资源
@@ -25,18 +22,20 @@ watch(resources, () => loading.value = false, { once: true })
 
 const grid = computed<string>(() => {
   if (isCollection.value) {
-    const length = resources.value.length
-    if (length === 2 || length === 1) {
-      return 'grid-2'
-    }
-    else if (length === 3) {
-      return 'grid-3'
-    }
-    else if (length % 3 === 0) {
-      return 'grid-6'
-    }
-    else if (length > 3) {
-      return 'grid-4'
+    if (resources.value) {
+      const length = resources.value.length
+      if (length === 2 || length === 1) {
+        return 'grid-2'
+      }
+      else if (length === 3) {
+        return 'grid-3'
+      }
+      else if (length % 3 === 0) {
+        return 'grid-6'
+      }
+      else if (length > 3) {
+        return 'grid-4'
+      }
     }
   }
   return ''
@@ -45,7 +44,7 @@ const grid = computed<string>(() => {
 
 <template>
   <div v-if="isCollection" class="ShowCollections">
-    <VPLoading :loading="loading">
+    <Loading :loading="loading">
       <div class="container">
         <div class="items">
           <div v-for="resource in resources" :key="resource.title" class="item" :class="[grid]">
@@ -53,7 +52,7 @@ const grid = computed<string>(() => {
           </div>
         </div>
       </div>
-    </VPLoading>
+    </Loading>
   </div>
 </template>
 

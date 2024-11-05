@@ -5,7 +5,7 @@ defineProps<{
 </script>
 
 <template>
-  <div class="VPLoading">
+  <div class="Loading">
     <div v-if="loading" class="loading">
       loading...
     </div>
@@ -16,7 +16,7 @@ defineProps<{
 </template>
 
 <style scoped>
-.VPLoading .loading {
+.Loading .loading {
   padding: 6em;
   text-align: center;
 }

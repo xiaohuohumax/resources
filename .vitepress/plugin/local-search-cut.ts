@@ -1,4 +1,5 @@
 import type { Plugin } from 'vite'
+
 import { Buffer } from 'node:buffer'
 import fs from 'node:fs'
 
@@ -31,7 +32,6 @@ export default function (localeId: string, dictPath: string): Plugin {
       }
 
       const data = JSON.parse(JSON.parse(code.slice(15)))
-
       const indexMap: { [key: string]: any } = Object.fromEntries(data.index)
 
       for (const indexItem of data.index) {
@@ -53,7 +53,6 @@ export default function (localeId: string, dictPath: string): Plugin {
       }
 
       data.index = Object.entries(indexMap)
-
       return `export default ${JSON.stringify(JSON.stringify(data))}`
     },
   }

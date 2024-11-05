@@ -1,5 +1,11 @@
 # resources
 
+## 3.5.1
+
+### Patch Changes
+
+- 热更新修复结构改进
+
 ## 3.5.0
 
 ### Minor Changes

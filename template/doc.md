@@ -25,6 +25,10 @@ icon:
 title: 标题
 # 简介
 description: 这是一段描述。
+# 标签(可选)
+tags:
+  - 标签1
+  - 标签2
 
 # 资源链接(可添加多个)
 links:
@@ -43,6 +47,9 @@ togo: *togo
 <ShowLogo />
 
 # 标题
+
+<!-- 显示标签 -->
+<ShowTags />
 
 <!-- 显示面包屑 -->
 <ShowBreadcrumb />

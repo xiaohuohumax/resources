@@ -1,5 +1,11 @@
 # resources
 
+## 3.6.1
+
+### Patch Changes
+
+- 修改模板文档
+
 ## 3.6.0
 
 ### Minor Changes

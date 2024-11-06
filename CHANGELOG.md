@@ -1,5 +1,11 @@
 # resources
 
+## 3.6.0
+
+### Minor Changes
+
+- 添加标签功能
+
 ## 3.5.1
 
 ### Patch Changes

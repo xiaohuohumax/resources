@@ -96,6 +96,7 @@ export class ResourceManager {
       togoText: data.togoText,
       description: data.description,
       icon: data.icon,
+      tags: data.tags ?? [],
     }
 
     if (data.type === 'collection') {

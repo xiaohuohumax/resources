@@ -25,6 +25,7 @@ export interface RBase {
   togoText?: string
   description?: string
   icon?: DefaultTheme.FeatureIcon
+  tags?: string[]
 }
 
 export interface Doc extends RBase {

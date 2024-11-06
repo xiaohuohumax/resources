@@ -2,6 +2,7 @@
 import type { Resource } from '../types'
 import VPImage from 'vitepress/dist/client/theme-default/components/VPImage.vue'
 import VPLink from 'vitepress/dist/client/theme-default/components/VPLink.vue'
+import Tags from './Tags.vue'
 
 defineProps<{
   resource: Resource
@@ -23,8 +24,8 @@ defineProps<{
       />
       <div v-else-if="resource.icon" class="icon" v-html="resource.icon" />
       <h2 class="title" v-html="resource.title" />
+      <Tags v-if="resource.tags" :tags="resource.tags" />
       <p v-if="resource.description" class="description" v-html="resource.description" />
-
       <div v-if="resource.togo" class="togo">
         <VPLink :href="resource.togo" :no-icon="true" :tag="resource.togo ? 'a' : 'div'">
           {{ resource.togoText || '直达' }}

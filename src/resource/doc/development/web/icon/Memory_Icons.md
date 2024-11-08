@@ -7,6 +7,8 @@ icon:
 
 title: Memory Icons
 description: 一个像素风格的图标库。
+tags:
+  - 图标
 
 links:
   - text: 📖文档地址
@@ -19,6 +21,8 @@ togo: *togo
 <ShowLogo />
 
 # Memory Icons
+
+<ShowTags />
 
 <ShowBreadcrumb />
 

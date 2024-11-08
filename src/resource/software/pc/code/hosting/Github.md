@@ -8,6 +8,9 @@ icon:
 
 title: Github
 description: 全球最大的社交编程及代码托管网站。
+tags:
+  - Git
+  - GitHub
 
 links:
   - text: 📦访问地址
@@ -20,6 +23,8 @@ togo: *togo
 <ShowLogo />
 
 # Github
+
+<ShowTags />
 
 <ShowBreadcrumb />
 

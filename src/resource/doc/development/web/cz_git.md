@@ -7,6 +7,11 @@ icon:
 
 title: cz-git
 description: cz-git 是一款工程性更强，轻量级，高度自定义，输出标准格式的 Commitizen 适配器和 CLI。
+tags:
+  - Commitizen
+  - Git
+  - CLI
+  - Node
 
 links:
   - text: 📖文档地址
@@ -19,6 +24,8 @@ togo: *togo
 <ShowLogo />
 
 # cz-git
+
+<ShowTags />
 
 <ShowBreadcrumb />
 

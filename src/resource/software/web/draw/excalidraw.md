@@ -7,6 +7,10 @@ icon:
 
 title: excalidraw
 description: 一个开源的虚拟手绘风格白板。支持协作和端到端加密。
+tags:
+  - 编辑器
+  - 绘图
+  - 图表
 
 links:
   - text: 🧰浏览地址
@@ -21,6 +25,8 @@ togo: *togo
 <ShowLogo />
 
 # excalidraw
+
+<ShowTags />
 
 <ShowBreadcrumb />
 

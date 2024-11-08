@@ -7,6 +7,9 @@ icon:
 
 title: elements
 description: 一个用于开发 VS Code 扩展的 Web 组件库。
+tags:
+  - Visual Studio Code
+  - 组件库
 
 links:
   - text: 📦项目地址
@@ -19,6 +22,8 @@ togo: *togo
 <ShowLogo />
 
 # elements
+
+<ShowTags />
 
 <ShowBreadcrumb />
 

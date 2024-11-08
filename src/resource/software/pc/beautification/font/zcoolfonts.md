@@ -7,6 +7,8 @@ icon:
 
 title: 酷站字库
 description: 包含几款酷站字体。
+tags:
+  - 字体
 
 links:
   - text: ⏬下载地址
@@ -19,6 +21,8 @@ togo: *togo
 <ShowLogo />
 
 # 酷站字库
+
+<ShowTags />
 
 <ShowBreadcrumb />
 

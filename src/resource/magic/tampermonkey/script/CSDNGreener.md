@@ -7,6 +7,8 @@ icon:
 
 title: CSDNGreener
 description: 🍃CSDN 广告完全过滤 | 免登录 | 个性化排版 | 最强老牌脚本。
+tags:
+  - Tampermonkey
 
 links:
   - text: ⏬下载地址
@@ -19,6 +21,8 @@ togo: *togo
 <ShowLogo />
 
 # CSDNGreener
+
+<ShowTags />
 
 <ShowBreadcrumb />
 

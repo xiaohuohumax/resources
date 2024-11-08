@@ -7,6 +7,9 @@ icon:
 
 title: hoppscotch
 description: 开源 API 开发生态系统（Postman、Insomnia 的开源替代品）。
+tags:
+  - 网络调试
+  - 网络请求
 
 links:
   - text: 📦项目地址
@@ -19,6 +22,8 @@ togo: *togo
 <ShowLogo />
 
 # hoppscotch
+
+<ShowTags />
 
 <ShowBreadcrumb />
 

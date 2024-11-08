@@ -7,6 +7,10 @@ icon:
 
 title: Redis
 description: 开源的、高性能的、基于内存的数据结构存储系统。
+tags:
+  - Redis
+  - 数据库
+  - NoSQL
 
 links:
   - text: ⏬下载地址
@@ -19,6 +23,8 @@ togo: *togo
 <ShowLogo />
 
 # Redis
+
+<ShowTags />
 
 <ShowBreadcrumb />
 

@@ -7,6 +7,10 @@ icon:
 
 title: ECharts
 description: 一个基于 JavaScript 的开源可视化图表库。
+tags:
+  - 图表
+  - 绘图
+  - 组件
 
 links:
   - text: 📖文档地址
@@ -19,6 +23,8 @@ togo: *togo
 <ShowLogo />
 
 # ECharts
+
+<ShowTags />
 
 <ShowBreadcrumb />
 

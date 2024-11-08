@@ -20,6 +20,8 @@ togo: *togo
 
 # SpaceSniffer
 
+<ShowTags />
+
 <ShowBreadcrumb />
 
 ## 资源链接

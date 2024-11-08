@@ -7,6 +7,8 @@ icon:
 
 title: Everything
 description: 基于名称快速定位文件和文件夹的搜索工具。
+tags:
+  - 搜索
 
 links:
   - text: ⏬下载地址
@@ -19,6 +21,8 @@ togo: *togo
 <ShowLogo />
 
 # Everything
+
+<ShowTags />
 
 <ShowBreadcrumb />
 

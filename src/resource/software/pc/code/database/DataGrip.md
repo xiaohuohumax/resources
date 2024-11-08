@@ -7,6 +7,9 @@ icon:
 
 title: DataGrip
 description: 一款功能强大的跨平台工具，适用于关系型和非关系型数据库。
+tags:
+  - 数据库管理工具
+  - JetBrains
 
 links:
   - text: ⏬下载地址
@@ -21,6 +24,8 @@ togo: *togo
 <ShowLogo />
 
 # DataGrip
+
+<ShowTags />
 
 <ShowBreadcrumb />
 

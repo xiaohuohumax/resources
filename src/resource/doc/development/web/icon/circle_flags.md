@@ -7,6 +7,9 @@ icon:
 
 title: circle-flags
 description: 包含400多个圆形 SVG 国家、州和语言标志的图标库。
+tags:
+  - 图标
+  - SVG
 
 links:
   - text: 📖文档地址
@@ -19,6 +22,8 @@ togo: *togo
 <ShowLogo />
 
 # circle-flags
+
+<ShowTags />
 
 <ShowBreadcrumb />
 

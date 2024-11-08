@@ -7,6 +7,11 @@ icon:
 
 title: esbuild
 description: 极速 JavaScript 打包器。
+tags:
+  - JavaScript
+  - 打包器
+  - esbuild
+  - TypeScript
 
 links:
   - text: 📖文档地址
@@ -19,6 +24,8 @@ togo: *togo
 <ShowLogo />
 
 # esbuild
+
+<ShowTags />
 
 <ShowBreadcrumb />
 

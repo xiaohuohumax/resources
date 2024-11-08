@@ -7,6 +7,8 @@ icon:
 
 title: TAAG
 description: 文本转 ASCII 字符画。
+tags:
+  - 字符画
 
 links:
   - text: 🧰浏览地址
@@ -19,6 +21,8 @@ togo: *togo
 <ShowLogo />
 
 # TAAG
+
+<ShowTags />
 
 <ShowBreadcrumb />
 

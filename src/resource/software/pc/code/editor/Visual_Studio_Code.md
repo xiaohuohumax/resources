@@ -7,6 +7,9 @@ icon:
 
 title: Visual Studio Code
 description: 在 Windows、macOS 和 Linux 上运行的独立源代码编辑器。 JavaScript 和 Web 开发人员的最佳选择，具有几乎可支持任何编程语言的扩展。
+tags:
+  - Visual Studio Code
+  - IDE
 
 links:
   - text: ⏬下载地址
@@ -19,6 +22,8 @@ togo: *togo
 <ShowLogo />
 
 # Visual Studio Code
+
+<ShowTags />
 
 <ShowBreadcrumb />
 

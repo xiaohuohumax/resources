@@ -7,6 +7,8 @@ icon:
 
 title: release-action
 description: 一个可以创造或是更新 GitHub Release 的 GitHub Action。
+tags:
+  - GitHub Action
 
 links:
   - text: 📦项目地址
@@ -19,6 +21,8 @@ togo: *togo
 <ShowLogo />
 
 # release-action
+
+<ShowTags />
 
 <ShowBreadcrumb />
 

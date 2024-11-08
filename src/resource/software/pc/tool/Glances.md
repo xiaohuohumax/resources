@@ -7,6 +7,9 @@ icon:
 
 title: Glances
 description: 一款用 Python 语言编写的跨平台系统监控工具。
+tags:
+  - 系统监控
+  - Python
 
 links:
   - text: ⏬下载地址
@@ -19,6 +22,8 @@ togo: *togo
 <ShowLogo />
 
 # Glances
+
+<ShowTags />
 
 <ShowBreadcrumb />
 

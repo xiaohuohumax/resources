@@ -7,6 +7,8 @@ icon:
 
 title: ASCII Generator
 description: ASCII 字符画生成器。
+tags:
+  - 字符画
 
 links:
   - text: 🧰浏览地址
@@ -19,6 +21,8 @@ togo: *togo
 <ShowLogo />
 
 # ASCII Generator
+
+<ShowTags />
 
 <ShowBreadcrumb />
 

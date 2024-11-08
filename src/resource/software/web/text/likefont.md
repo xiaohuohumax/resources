@@ -7,6 +7,8 @@ icon:
 
 title: 字体识别
 description: 上传图片，即可识别字体。
+tags:
+  - 字体
 
 links:
   - text: 🧰浏览地址
@@ -19,6 +21,8 @@ togo: *togo
 <ShowLogo />
 
 # 字体识别
+
+<ShowTags />
 
 <ShowBreadcrumb />
 

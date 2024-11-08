@@ -7,6 +7,10 @@ icon:
 
 title: Chart.js
 description: 用于现代网络的简单而灵活的 JavaScript 图表库。
+tags:
+  - 图表
+  - 绘图
+  - 组件
 
 links:
   - text: 📖文档地址

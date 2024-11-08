@@ -7,6 +7,8 @@ icon:
 
 title: 魔戒
 description: 戴上魔戒，你将获得至高无上的力量。
+tags:
+  - 代理
 
 links:
   - text: 📦访问地址
@@ -19,6 +21,8 @@ togo: *togo
 <ShowLogo />
 
 # 魔戒
+
+<ShowTags />
 
 <ShowBreadcrumb />
 

@@ -7,6 +7,9 @@ icon:
 
 title: Element Plus
 description: 基于 Vue 3，面向设计师和开发者的组件库。
+tags:
+  - Vue
+  - 组件库
 
 links:
   - text: 📖文档地址
@@ -19,6 +22,8 @@ togo: *togo
 <ShowLogo />
 
 # Element Plus
+
+<ShowTags />
 
 <ShowBreadcrumb />
 

@@ -7,6 +7,9 @@ icon:
 
 title: Rocky Linux
 description: 一款开源的企业级操作系统，旨在与 RHEL 实现 100% 的兼容。
+tags:
+  - 操作系统
+  - Linux
 
 links:
   - text: ⏬下载地址
@@ -19,6 +22,8 @@ togo: *togo
 <ShowLogo />
 
 # Rocky Linux
+
+<ShowTags />
 
 <ShowBreadcrumb />
 

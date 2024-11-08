@@ -7,6 +7,9 @@ icon:
 
 title: svgl
 description: 一个好看的 SVG 图标库，收藏了各种常用 Logo。
+tags:
+  - 图片
+  - SVG
 
 links:
   - text: 🧰浏览地址
@@ -19,6 +22,8 @@ togo: *togo
 <ShowLogo />
 
 # svgl
+
+<ShowTags />
 
 <ShowBreadcrumb />
 

@@ -7,6 +7,9 @@ icon:
 
 title: 7-Zip
 description: 免费开源的压缩解压工具，支持多种格式的压缩，解压，归档，文件搜索等功能。
+tags:
+  - 7-zip
+  - 解压缩
 
 links:
   - text: ⏬下载地址
@@ -21,6 +24,8 @@ togo: *togo
 <ShowLogo />
 
 # 7-Zip
+
+<ShowTags />
 
 <ShowBreadcrumb />
 

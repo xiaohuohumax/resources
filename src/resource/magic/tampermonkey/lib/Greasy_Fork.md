@@ -7,6 +7,8 @@ icon:
 
 title: Greasy Fork(油叉)
 description: 一个提供篡改猴脚本的网站。
+tags:
+  - Tampermonkey
 
 links:
   - text: 📦仓库地址
@@ -19,6 +21,8 @@ togo: *togo
 <ShowLogo />
 
 # Greasy Fork(油叉)
+
+<ShowTags />
 
 <ShowBreadcrumb />
 

@@ -7,6 +7,10 @@ icon:
 
 title: ‌‌Nmap
 description: ‌‌Nmap（Network Mapper）是一款开放源代码的网络探测和安全审核的工具。
+tags:
+  - 网络探测
+  - 抓包工具
+  - 安全
 
 links:
   - text: ⏬下载地址
@@ -21,6 +25,8 @@ togo: *togo
 <ShowLogo />
 
 # ‌‌Nmap
+
+<ShowTags />
 
 <ShowBreadcrumb />
 

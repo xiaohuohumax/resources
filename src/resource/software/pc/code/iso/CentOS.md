@@ -7,6 +7,10 @@ icon:
 
 title: CentOS
 description: 一款基于 Linux 内核的自由、开源的服务器操作系统。
+tags:
+  - 操作系统
+  - Linux
+  - CentOS
 
 links:
   - text: ⏬下载地址
@@ -19,6 +23,8 @@ togo: *togo
 <ShowLogo />
 
 # CentOS
+
+<ShowTags />
 
 <ShowBreadcrumb />
 

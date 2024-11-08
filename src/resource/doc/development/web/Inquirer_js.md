@@ -7,6 +7,10 @@ icon:
 
 title: Inquirer.js
 description: 一个开源的交互式命令行用户界面（CLI）库，可以让你轻松地与用户进行交互，获取用户输入并做出相应的处理。
+tags:
+  - JavaScript
+  - CLI
+  - Node
 
 links:
   - text: 📦项目地址
@@ -19,6 +23,8 @@ togo: *togo
 <ShowLogo />
 
 # Inquirer.js
+
+<ShowTags />
 
 <ShowBreadcrumb />
 

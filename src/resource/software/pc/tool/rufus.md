@@ -7,6 +7,8 @@ icon:
 
 title: rufus
 description: 一款格式化和创建 USB 启动盘的辅助工具。
+tags:
+  - U盘
 
 links:
   - text: ⏬下载地址
@@ -19,6 +21,8 @@ togo: *togo
 <ShowLogo />
 
 # rufus
+
+<ShowTags />
 
 <ShowBreadcrumb />
 

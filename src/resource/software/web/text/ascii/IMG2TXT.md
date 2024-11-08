@@ -7,6 +7,8 @@ icon:
 
 title: IMG2TXT
 description: 该脚本接收 GIF、JPG 或 PNG 图像的 URL，并将该图像转换为 ASCII 文本或彩色 HTML。
+tags:
+  - 字符画
 
 links:
   - text: 🧰浏览地址
@@ -19,6 +21,8 @@ togo: *togo
 <ShowLogo />
 
 # IMG2TXT
+
+<ShowTags />
 
 <ShowBreadcrumb />
 

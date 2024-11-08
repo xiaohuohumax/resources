@@ -7,6 +7,9 @@ icon:
 
 title: Windows 11 Cursors Concept
 description: Windows 11 概念版光标 V2。
+tags:
+  - 光标
+  - 美化
 
 links:
   - text: ⏬下载地址
@@ -19,6 +22,8 @@ togo: *togo
 <ShowLogo />
 
 # Windows 11 Cursors Concept
+
+<ShowTags />
 
 <ShowBreadcrumb />
 

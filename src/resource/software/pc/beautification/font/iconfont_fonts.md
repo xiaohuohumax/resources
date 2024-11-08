@@ -7,6 +7,8 @@ icon:
 
 title: iconfont 字库
 description: 一些阿里妈妈的字体库。
+tags:
+  - 字体
 
 links:
   - text: ⏬下载地址
@@ -19,6 +21,8 @@ togo: *togo
 <ShowLogo />
 
 # iconfont 字库
+
+<ShowTags />
 
 <ShowBreadcrumb />
 

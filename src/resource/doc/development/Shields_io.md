@@ -7,6 +7,8 @@ icon:
 
 title: Shields.io
 description: Shields.io 是一个提供简洁、一致、易读的徽章的免费服务，内含数百种服务的徽章。
+tags:
+  - API
 
 links:
   - text: 📖文档地址
@@ -19,6 +21,8 @@ togo: *togo
 <ShowLogo />
 
 # Shields.io
+
+<ShowTags />
 
 <ShowBreadcrumb />
 

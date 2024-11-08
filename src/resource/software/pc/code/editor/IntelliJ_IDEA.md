@@ -7,6 +7,11 @@ icon:
 
 title: IntelliJ IDEA
 description: 领先的 Java 和 Kotlin IDE。
+tags:
+  - JetBrains
+  - IDE
+  - Java
+  - Kotlin
 
 links:
   - text: ⏬下载地址
@@ -21,6 +26,8 @@ togo: *togo
 <ShowLogo />
 
 # IntelliJ IDEA
+
+<ShowTags />
 
 <ShowBreadcrumb />
 

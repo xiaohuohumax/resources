@@ -7,6 +7,9 @@ icon:
 
 title: nginx
 description: 一个HTTP和反向代理服务器、邮件代理服务器以及通用的 TCP/UDP 代理服务器。
+tags:
+  - 服务器
+  - Nginx
 
 links:
   - text: ⏬下载地址
@@ -19,6 +22,8 @@ togo: *togo
 <ShowLogo />
 
 # nginx
+
+<ShowTags />
 
 <ShowBreadcrumb />
 

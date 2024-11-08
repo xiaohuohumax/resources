@@ -7,6 +7,9 @@ icon:
 
 title: EMOJIALL
 description: EMOJI 中文网，这是一本全面的EMOJI字典。
+tags:
+  - emoji
+  - 图片
 
 links:
   - text: 🧰浏览地址
@@ -19,6 +22,8 @@ togo: *togo
 <ShowLogo />
 
 # EMOJIALL
+
+<ShowTags />
 
 <ShowBreadcrumb />
 

@@ -7,6 +7,11 @@ icon:
 
 title: MDN Web Docs
 description: MDN Web Docs 是一个开源的、协作的项目，记录了 Web 平台技术，包括 CSS、HTML、JavaScript 和 Web API。
+tags:
+  - 教程
+  - CSS
+  - HTML
+  - JavaScript
 
 links:
   - text: 📖文档地址
@@ -19,6 +24,8 @@ togo: *togo
 <ShowLogo />
 
 # MDN Web Docs
+
+<ShowTags />
 
 <ShowBreadcrumb />
 

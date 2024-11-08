@@ -7,6 +7,8 @@ icon:
 
 title: Foodiesfeed
 description: 一个免费的美食主题图库，所有照片均高清免费无版权。
+tags:
+  - 图片
 
 links:
   - text: 🧰浏览地址
@@ -19,6 +21,8 @@ togo: *togo
 <ShowLogo />
 
 # Foodiesfeed
+
+<ShowTags />
 
 <ShowBreadcrumb />
 

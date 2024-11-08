@@ -7,6 +7,9 @@ icon:
 
 title: SweetAlert
 description: SweetAlert 是一个 JavaScript “alert” 的漂亮替代品。
+tags:
+  - JavaScript
+  - 组件
 
 links:
   - text: 📦项目地址
@@ -19,6 +22,8 @@ togo: *togo
 <ShowLogo />
 
 # SweetAlert
+
+<ShowTags />
 
 <ShowBreadcrumb />
 

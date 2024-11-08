@@ -7,6 +7,8 @@ icon:
 
 title: Phosphor
 description: Phosphor 是一个灵活的图标系列，用于界面、图表、演示文稿。
+tags:
+  - 图标
 
 links:
   - text: 📖文档地址
@@ -19,6 +21,8 @@ togo: *togo
 <ShowLogo />
 
 # Phosphor
+
+<ShowTags />
 
 <ShowBreadcrumb />
 

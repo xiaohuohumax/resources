@@ -8,6 +8,8 @@ icon:
 
 title: gitignore
 description: 一组有用的 .gitignore 模板集合。
+tags:
+  - 模板
 
 links:
   - text: 📦项目地址
@@ -20,6 +22,8 @@ togo: *togo
 <ShowLogo />
 
 # gitignore
+
+<ShowTags />
 
 <ShowBreadcrumb />
 

@@ -7,6 +7,10 @@ icon:
 
 title: node-mongodb-native
 description: MongoDB 官方 Node.js 驱动
+tags:
+  - 数据库
+  - MongoDB
+  - NoSQL
 
 links:
   - text: 📦项目地址
@@ -19,6 +23,8 @@ togo: *togo
 <ShowLogo />
 
 # node-mongodb-native
+
+<ShowTags />
 
 <ShowBreadcrumb />
 

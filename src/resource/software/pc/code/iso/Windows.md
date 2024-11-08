@@ -7,6 +7,9 @@ icon:
 
 title: Windows
 description: 一款图形用户界面为基础研发的操作系统。
+tags:
+  - 操作系统
+  - Windows
 
 links:
   - text: ⏬下载地址
@@ -19,6 +22,8 @@ togo: *togo
 <ShowLogo />
 
 # Windows
+
+<ShowTags />
 
 <ShowBreadcrumb />
 

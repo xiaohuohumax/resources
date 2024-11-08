@@ -7,6 +7,8 @@ icon:
 
 title: Docker Hub
 description: 用于管理 Docker 镜像的网站。
+tags:
+  - Docker
 
 links:
   - text: 📦访问地址
@@ -19,6 +21,8 @@ togo: *togo
 <ShowLogo />
 
 # Docker Hub
+
+<ShowTags />
 
 <ShowBreadcrumb />
 

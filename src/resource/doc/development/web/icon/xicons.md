@@ -8,6 +8,8 @@ icon:
 
 title: xicons
 description: xicons 整合自多个图标库，并且提供了一些图标工具组件来自定义图标的颜色和尺寸。
+tags:
+  - 图标
 
 links:
   - text: 📖文档地址
@@ -20,6 +22,8 @@ togo: *togo
 <ShowLogo />
 
 # xicons
+
+<ShowTags />
 
 <ShowBreadcrumb />
 

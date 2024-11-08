@@ -7,6 +7,9 @@ icon:
 
 title: Grabient
 description: 渐变色生成器，可以生成各种渐变色。
+tags:
+  - 颜色
+  - 设计
 
 links:
   - text: 🧰浏览地址
@@ -19,6 +22,8 @@ togo: *togo
 <ShowLogo />
 
 # Grabient
+
+<ShowTags />
 
 <ShowBreadcrumb />
 

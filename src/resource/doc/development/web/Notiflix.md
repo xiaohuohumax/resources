@@ -7,6 +7,9 @@ icon:
 
 title: Notiflix
 description: 一个纯 JavaScript 库，用于客户端非阻塞通知、弹出框、加载指示器等。
+tags:
+  - JavaScript
+  - 组件
 
 links:
   - text: 📦项目地址
@@ -19,6 +22,8 @@ togo: *togo
 <ShowLogo />
 
 # Notiflix
+
+<ShowTags />
 
 <ShowBreadcrumb />
 

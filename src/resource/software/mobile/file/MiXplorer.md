@@ -7,6 +7,9 @@ icon:
 
 title: MiXplorer
 description: 一个快速、流畅、美观、可靠和功能齐全的 Android 文件管理器，具有简单直观的用户界面。
+tags:
+  - 解压缩
+  - 文件管理器
 
 links:
   - text: ⏬下载地址
@@ -19,6 +22,8 @@ togo: *togo
 <ShowLogo />
 
 # MiXplorer
+
+<ShowTags />
 
 <ShowBreadcrumb />
 

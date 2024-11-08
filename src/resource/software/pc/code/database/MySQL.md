@@ -7,6 +7,10 @@ icon:
 
 title: MySQL
 description: 开源的关系型数据库管理系统。
+tags:
+  - 数据库
+  - MySQL
+  - SQL
 
 links:
   - text: ⏬下载地址
@@ -19,6 +23,8 @@ togo: *togo
 <ShowLogo />
 
 # MySQL
+
+<ShowTags />
 
 <ShowBreadcrumb />
 

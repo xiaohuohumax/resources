@@ -7,6 +7,11 @@ icon:
 
 title: drawDB
 description: 免费、简单、直观的数据库设计工具和 SQL 生成器。
+tags:
+  - 数据库
+  - 设计
+  - SQL
+  - 绘图
 
 links:
   - text: 🧰浏览地址
@@ -19,6 +24,8 @@ togo: *togo
 <ShowLogo />
 
 # drawDB
+
+<ShowTags />
 
 <ShowBreadcrumb />
 

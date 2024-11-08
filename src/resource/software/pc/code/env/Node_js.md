@@ -7,6 +7,8 @@ icon:
 
 title: Node.js
 description: Node.js 是一个基于 Chrome V8 引擎的 JavaScript 运行环境。
+tags:
+  - Node
 
 links:
   - text: ⏬下载地址
@@ -19,6 +21,8 @@ togo: *togo
 <ShowLogo />
 
 # Node.js
+
+<ShowTags />
 
 <ShowBreadcrumb />
 

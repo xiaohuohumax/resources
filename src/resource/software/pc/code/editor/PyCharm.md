@@ -7,6 +7,10 @@ icon:
 
 title: PyCharm
 description: 适用于 数据科学 和 Web 开发的 Python IDE。
+tags:
+  - JetBrains
+  - IDE
+  - Python
 
 links:
   - text: ⏬下载地址
@@ -21,6 +25,8 @@ togo: *togo
 <ShowLogo />
 
 # PyCharm
+
+<ShowTags />
 
 <ShowBreadcrumb />
 

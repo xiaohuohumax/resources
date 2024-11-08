@@ -7,6 +7,8 @@ icon:
 
 title: WPS Office
 description: 一站式办公服务平台。
+tags:
+  - 办公
 
 links:
   - text: ⏬下载地址
@@ -19,6 +21,8 @@ togo: *togo
 <ShowLogo />
 
 # WPS Office
+
+<ShowTags />
 
 <ShowBreadcrumb />
 

@@ -7,6 +7,9 @@ icon:
 
 title: TypeScript
 description: 学习有关 TypeScript 的所有知识。
+tags:
+  - TypeScript
+  - 编程语言
 
 links:
   - text: 📖文档地址
@@ -19,6 +22,8 @@ togo: *togo
 <ShowLogo />
 
 # TypeScript
+
+<ShowTags />
 
 <ShowBreadcrumb />
 

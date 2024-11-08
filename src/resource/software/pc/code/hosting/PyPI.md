@@ -7,6 +7,8 @@ icon:
 
 title: PyPI
 description: 全球最大的 Python 包管理网站。
+tags:
+  - Python
 
 links:
   - text: 📦访问地址
@@ -19,6 +21,8 @@ togo: *togo
 <ShowLogo />
 
 # PyPI
+
+<ShowTags />
 
 <ShowBreadcrumb />
 

@@ -7,6 +7,8 @@ icon:
 
 title: Microsoft Authenticator
 description: 跨应用使用简单、快速且高度安全的双因素身份验证。
+tags:
+  - 安全
 
 links:
   - text: ⏬下载地址
@@ -19,6 +21,8 @@ togo: *togo
 <ShowLogo />
 
 # Microsoft Authenticator
+
+<ShowTags />
 
 <ShowBreadcrumb />
 

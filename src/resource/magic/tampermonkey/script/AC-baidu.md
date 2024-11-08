@@ -7,6 +7,8 @@ icon:
 
 title: AC-baidu
 description: 重定向优化百度搜狗谷歌必应搜索。
+tags:
+  - Tampermonkey
 
 links:
   - text: ⏬下载地址
@@ -19,6 +21,8 @@ togo: *togo
 <ShowLogo />
 
 # AC-baidu
+
+<ShowTags />
 
 <ShowBreadcrumb />
 

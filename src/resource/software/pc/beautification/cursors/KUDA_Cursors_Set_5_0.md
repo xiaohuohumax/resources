@@ -7,6 +7,9 @@ icon:
 
 title: KUDA Cursors Set 5.0
 description: 简约复古风格光标。
+tags:
+  - 光标
+  - 美化
 
 links:
   - text: ⏬下载地址
@@ -19,6 +22,8 @@ togo: *togo
 <ShowLogo />
 
 # KUDA Cursors Set 5.0
+
+<ShowTags />
 
 <ShowBreadcrumb />
 

@@ -7,6 +7,8 @@ icon:
 
 title: 100FONT.COM
 description: 一个专门收集整理 “免费商用字体” 的网站。
+tags:
+  - 字体
 
 links:
   - text: ⏬下载地址
@@ -19,6 +21,8 @@ togo: *togo
 <ShowLogo />
 
 # 100FONT.COM
+
+<ShowTags />
 
 <ShowBreadcrumb />
 

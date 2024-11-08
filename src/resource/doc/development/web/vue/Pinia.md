@@ -7,6 +7,9 @@ icon:
 
 title: Pinia
 description: Pinia 是 Vue 的存储库，它允许您跨组件/页面共享状态。
+tags:
+  - Vue
+  - Pinia
 
 links:
   - text: 📖文档地址
@@ -19,6 +22,8 @@ togo: *togo
 <ShowLogo />
 
 # Pinia
+
+<ShowTags />
 
 <ShowBreadcrumb />
 

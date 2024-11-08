@@ -8,6 +8,8 @@ icon:
 
 title: JSON Schema
 description: JSON Schema 是一种声明性语言，用于注释和验证 JSON 文档的结构、约束和数据类型。它提供了一种标准化和定义 JSON 数据期望的方法。
+tags:
+  - JSON
 
 links:
   - text: 📖文档地址
@@ -22,6 +24,8 @@ togo: *togo
 <ShowLogo />
 
 # JSON Schema
+
+<ShowTags />
 
 <ShowBreadcrumb />
 

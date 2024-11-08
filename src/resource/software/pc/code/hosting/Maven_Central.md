@@ -7,6 +7,10 @@ icon:
 
 title: Maven Central
 description: Maven 中央存储库。
+tags:
+  - Maven
+  - Java
+  - Kotlin
 
 links:
   - text: 📦访问地址
@@ -19,6 +23,8 @@ togo: *togo
 <ShowLogo />
 
 # Maven Central
+
+<ShowTags />
 
 <ShowBreadcrumb />
 

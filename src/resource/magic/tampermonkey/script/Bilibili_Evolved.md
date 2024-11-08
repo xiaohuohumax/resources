@@ -7,6 +7,8 @@ icon:
 
 title: Bilibili-Evolved
 description: 强大的哔哩哔哩增强脚本。
+tags:
+  - Tampermonkey
 
 links:
   - text: ⏬下载地址
@@ -19,6 +21,8 @@ togo: *togo
 <ShowLogo />
 
 # Bilibili-Evolved
+
+<ShowTags />
 
 <ShowBreadcrumb />
 

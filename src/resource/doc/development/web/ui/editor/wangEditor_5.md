@@ -7,6 +7,9 @@ icon:
 
 title: wangEditor 5
 description: 开源 Web 富文本编辑器，开箱即用，配置简单。
+tags:
+  - 富文本
+  - 编辑器
 
 links:
   - text: 📖文档地址
@@ -21,6 +24,8 @@ togo: *togo
 <ShowLogo />
 
 # wangEditor 5
+
+<ShowTags />
 
 <ShowBreadcrumb />
 

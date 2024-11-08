@@ -7,6 +7,12 @@ icon:
 
 title: uTools
 description: 新一代效率工具平台，呼之即来，即用即走，打造你的个人效率助理。
+tags:
+  - OCR
+  - 翻译
+  - 搜索
+  - JSON
+  - 正则表达式
 
 links:
   - text: ⏬下载地址
@@ -21,6 +27,8 @@ togo: *togo
 <ShowLogo />
 
 # uTools
+
+<ShowTags />
 
 <ShowBreadcrumb />
 

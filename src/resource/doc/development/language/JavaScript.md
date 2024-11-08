@@ -7,6 +7,9 @@ icon:
 
 title: JavaScript
 description: MDN Web Docs 是一个很好的学习 JavaScript 知识的地方。
+tags:
+  - JavaScript
+  - 编程语言
 
 links:
   - text: 📖文档地址
@@ -19,6 +22,8 @@ togo: *togo
 <ShowLogo />
 
 # JavaScript
+
+<ShowTags />
 
 <ShowBreadcrumb />
 

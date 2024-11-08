@@ -8,6 +8,10 @@ icon:
 
 title: changesets
 description: 一个轻量级的版本控制工具，它主要用于 monorepos 管理项目中的版本变更和发布。
+tags:
+  - GitHub Action
+  - Monorepo
+  - 版本控制
 
 links:
   - text: 📦项目地址
@@ -22,6 +26,8 @@ togo: *togo
 <ShowLogo />
 
 # changesets
+
+<ShowTags />
 
 <ShowBreadcrumb />
 

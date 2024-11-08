@@ -7,6 +7,9 @@ icon:
 
 title: Coolors
 description: 超快速配色板生成器，可以创建完美的调色板，或从成千上万个美丽的配色方案中获得灵感。
+tags:
+  - 颜色
+  - 设计
 
 links:
   - text: 🧰浏览地址
@@ -19,6 +22,8 @@ togo: *togo
 <ShowLogo />
 
 # Coolors
+
+<ShowTags />
 
 <ShowBreadcrumb />
 

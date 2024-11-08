@@ -7,6 +7,9 @@ icon:
 
 title: gitmoji
 description: gitmoji 是一个 git 提交信息的 emoji 指南。
+tags:
+  - Git
+  - emoji
 
 links:
   - text: 📖文档地址
@@ -19,6 +22,8 @@ togo: *togo
 <ShowLogo />
 
 # gitmoji
+
+<ShowTags />
 
 <ShowBreadcrumb />
 

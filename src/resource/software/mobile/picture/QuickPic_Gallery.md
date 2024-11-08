@@ -7,6 +7,8 @@ icon:
 
 title: QuickPic Gallery
 description: 一个开源的图片管理软件，支持多种图片格式。
+tags:
+  - 图片管理器
 
 links:
   - text: ⏬下载地址
@@ -19,6 +21,8 @@ togo: *togo
 <ShowLogo />
 
 # QuickPic Gallery
+
+<ShowTags />
 
 <ShowBreadcrumb />
 

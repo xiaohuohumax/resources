@@ -1,4 +1,6 @@
 <script setup lang='ts'>
+import { useTheme } from '../use/theme'
+
 const props = withDefaults(defineProps<{
   tags: string[]
   checkable?: boolean
@@ -20,9 +22,9 @@ const tag = defineModel('tag')
 --vp-c-caution-soft: var(--vp-c-red-soft);
 */
 const colorNames = [
-  'default',
+  // 'default',
   'brand',
-  'tip',
+  // 'tip',
   'note',
   'success',
   'important',
@@ -31,13 +33,14 @@ const colorNames = [
   'caution',
 ]
 
+const theme = useTheme()
 function formatTagColorStyle(tag: string) {
   let hash = 0
   for (let i = 0; i < tag.length; i++) {
     hash += tag.charCodeAt(i)
   }
   const color = colorNames[Math.abs(hash % colorNames.length)]
-  return `background-color: var(--vp-c-${color}-soft);`
+  return `--color: var(--vp-c-${color}-${theme.value === 'dark' ? '2' : '3'});`
 }
 
 function handleTagClick(tag: string, event: MouseEvent) {
@@ -75,11 +78,14 @@ function handleTagClick(tag: string, event: MouseEvent) {
   line-height: initial;
   margin-right: .25em;
   cursor: pointer;
-  border: 1px solid var(--vp-c-bg-soft);
+  border: 1px solid var(--color);
+  color: var(--color);
 }
 
 .Tags span.checkable:hover,
 .Tags span.checkable.checked {
-  border: 1px solid var(--vp-c-brand-1);
+  color: var(--vp-c-bg);
+  border: 1px solid var(--color);
+  background-color: var(--color);
 }
 </style>

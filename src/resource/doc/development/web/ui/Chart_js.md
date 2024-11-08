@@ -24,6 +24,8 @@ togo: *togo
 
 # Chart.js
 
+<ShowTags />
+
 <ShowBreadcrumb />
 
 ## 资源链接

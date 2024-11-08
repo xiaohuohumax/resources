@@ -1,5 +1,11 @@
 # resources
 
+## 3.7.1
+
+### Patch Changes
+
+- 标签样式修改, 打包构建异常修复
+
 ## 3.7.0
 
 ### Minor Changes

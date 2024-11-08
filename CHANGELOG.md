@@ -1,5 +1,11 @@
 # resources
 
+## 3.8.0
+
+### Minor Changes
+
+- 标签添加搜索功能
+
 ## 3.7.1
 
 ### Patch Changes

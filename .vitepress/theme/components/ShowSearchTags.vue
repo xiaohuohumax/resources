@@ -10,6 +10,7 @@ import Tags from './Tags.vue'
 
 const queryTag = useQuery('tag')
 const searchTag = ref(queryTag.value || '')
+const search = ref<string>('')
 const loading = ref(true)
 
 const resources = computedAsync(async () => {
@@ -40,10 +41,16 @@ const tagMap = computed(() => {
 
 const tags = computed(() => {
   return Array.from(tagMap.value.keys())
+    .filter(tag => tag.toLowerCase().includes(search.value.toLocaleLowerCase()))
 })
 
 watch(() => queryTag.value, () => searchTag.value = queryTag.value)
-watch(resources, () => loading.value = false, { once: true })
+watch(() => resources.value, () => loading.value = false, { once: true })
+watch(() => tags.value, () => {
+  if (!tags.value.includes(searchTag.value)) {
+    searchTag.value = ''
+  }
+})
 
 function handleTagClick(tag: string) {
   searchTag.value = tag
@@ -71,6 +78,7 @@ function getTagCount(tag: string) {
 <template>
   <div class="ShowSearchTags">
     <Loading :loading="loading">
+      <input v-model="search" class="search-input" type="text" placeholder="搜索标签">
       <template v-if="tags.length === 0">
         <p>暂无标签</p>
       </template>
@@ -90,7 +98,13 @@ function getTagCount(tag: string) {
 </template>
 
 <style scoped>
-.tags {
-  margin-top: 1em;
+.ShowSearchTags .search-input{
+  font-size: 1.125em;
+  background-color: var(--vp-c-bg-soft);
+  padding: .8em;
+  text-align: center;
+  width: 100%;
+  margin: 1em 0;
+  border-radius: 0.25em;
 }
 </style>

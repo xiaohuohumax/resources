@@ -55,7 +55,7 @@ function handleTagClick(tag: string, event: MouseEvent) {
 }
 
 .Resource:hover {
-  border-color: var(--vp-c-brand-soft);
+  border-color: var(--vp-c-brand-3);
 }
 
 .Resource .box h2 {

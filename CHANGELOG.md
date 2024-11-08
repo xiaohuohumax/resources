@@ -1,5 +1,11 @@
 # resources
 
+## 3.7.0
+
+### Minor Changes
+
+- 添加标签筛选功能
+
 ## 3.6.1
 
 ### Patch Changes

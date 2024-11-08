@@ -4,6 +4,7 @@ import ShowBreadcrumb from './components/ShowBreadcrumb.vue'
 import ShowLinks from './components/ShowLinks.vue'
 import ShowLogo from './components/ShowLogo.vue'
 import ShowResources from './components/ShowResources.vue'
+import ShowSearchTags from './components/ShowSearchTags.vue'
 import ShowTags from './components/ShowTags.vue'
 
 import './custom.css'
@@ -16,6 +17,8 @@ const theme: Theme = {
     app.component('ShowLinks', ShowLinks)
     app.component('ShowLogo', ShowLogo)
     app.component('ShowTags', ShowTags)
+    app.component('ShowSearchTags', ShowSearchTags)
   },
 }
+
 export default theme

@@ -1,5 +1,12 @@
 <script setup lang='ts'>
-defineProps<{ tags: string[] }>()
+const props = withDefaults(defineProps<{
+  tags: string[]
+  checkable?: boolean
+}>(), {
+  checkable: true,
+})
+const emit = defineEmits(['tagClick'])
+const tag = defineModel('tag')
 
 /*
 --vp-c-default-soft: var(--vp-c-gray-soft);
@@ -32,18 +39,29 @@ function formatTagColorStyle(tag: string) {
   const color = colorNames[Math.abs(hash % colorNames.length)]
   return `background-color: var(--vp-c-${color}-soft);`
 }
+
+function handleTagClick(tag: string, event: MouseEvent) {
+  if (props.checkable) {
+    emit('tagClick', tag, event)
+  }
+}
 </script>
 
 <template>
   <div class="Tags">
-    <span v-for="tag in tags" :key="tag" :style="formatTagColorStyle(tag)">
-      {{ tag }}
+    <span
+      v-for="t in tags" :key="t" :class="{
+        checked: tag === t,
+        checkable,
+      }" :style="formatTagColorStyle(t)" @click="handleTagClick(t, $event)"
+    >
+      <slot :value="t">{{ t }}</slot>
     </span>
   </div>
 </template>
 
 <style scoped>
-.Tags{
+.Tags {
   display: inline-flex;
   flex-wrap: wrap;
 }
@@ -56,5 +74,12 @@ function formatTagColorStyle(tag: string) {
   margin-top: .25em;
   line-height: initial;
   margin-right: .25em;
+  cursor: pointer;
+  border: 1px solid var(--vp-c-bg-soft);
+}
+
+.Tags span.checkable:hover,
+.Tags span.checkable.checked {
+  border: 1px solid var(--vp-c-brand-1);
 }
 </style>

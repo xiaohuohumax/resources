@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import type { Resource } from '../types'
+import { useRouter, withBase } from 'vitepress'
 import VPImage from 'vitepress/dist/client/theme-default/components/VPImage.vue'
 import VPLink from 'vitepress/dist/client/theme-default/components/VPLink.vue'
 import Tags from './Tags.vue'
@@ -7,10 +8,17 @@ import Tags from './Tags.vue'
 defineProps<{
   resource: Resource
 }>()
+
+const router = useRouter()
+
+function handleTagClick(tag: string, event: MouseEvent) {
+  event.stopPropagation()
+  router.go(withBase(`/resource/tags?tag=${encodeURIComponent(tag)}`))
+}
 </script>
 
 <template>
-  <VPLink class="Resource" :href="resource.path" :no-icon="true" :tag="resource.path ? 'a' : 'div'">
+  <VPLink class="Resource" :no-icon="true" tag="div" @click="router.go(withBase(resource.path))">
     <article class="box">
       <div v-if="typeof resource.icon === 'object' && resource.icon.wrap" class="icon">
         <VPImage
@@ -24,7 +32,7 @@ defineProps<{
       />
       <div v-else-if="resource.icon" class="icon" v-html="resource.icon" />
       <h2 class="title" v-html="resource.title" />
-      <Tags v-if="resource.tags" :tags="resource.tags" />
+      <Tags v-if="resource.tags" :tags="resource.tags" @tag-click="handleTagClick" />
       <p v-if="resource.description" class="description" v-html="resource.description" />
       <div v-if="resource.togo" class="togo">
         <VPLink :href="resource.togo" :no-icon="true" :tag="resource.togo ? 'a' : 'div'">
@@ -43,9 +51,10 @@ defineProps<{
   height: 100%;
   background-color: var(--vp-c-bg-soft);
   transition: border-color 0.25s, background-color 0.25s;
+  cursor: pointer;
 }
 
-.Resource.link:hover {
+.Resource:hover {
   border-color: var(--vp-c-brand-1);
 }
 

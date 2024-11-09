@@ -19,7 +19,7 @@ export function useQuery(key: string) {
     if (newVal !== oldVal && newVal !== '') {
       const url = new URL(window.location.href)
       url.searchParams.set(key, newVal)
-      window.history.pushState(
+      window.history.replaceState(
         {},
         '',
         url,

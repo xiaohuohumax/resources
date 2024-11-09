@@ -1,5 +1,11 @@
 # resources
 
+## 3.8.2
+
+### Patch Changes
+
+- 修复标签查询页切换标签导致路由记录异常
+
 ## 3.8.1
 
 ### Patch Changes

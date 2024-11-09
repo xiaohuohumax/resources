@@ -17,7 +17,7 @@ const LOCALE_ID = 'root'
 
 const resourceManager: ResourceManager = new ResourceManager(constant.SRC_DIR, constant.SRC_EXCLUDE)
 
-const bookmarkFilePath = path.join(constant.SRC_DIR, 'public', 'bookmark.html')
+const bookmarkFilePath = path.join(constant.PUBLIC_DIR, 'bookmark.html')
 // 创建书签文件
 createBookmark(resourceManager, bookmarkFilePath, `${TITLE} Bookmark`)
 
@@ -34,6 +34,7 @@ export default defineConfig({
   ],
   lastUpdated: true,
   vite: {
+    publicDir: constant.PUBLIC_DIR,
     plugins: [
       // HMR 修复
       hmrFix(resourceManager),

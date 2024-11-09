@@ -1,5 +1,11 @@
 # resources
 
+## 3.9.2
+
+### Patch Changes
+
+- public 文件移动到根目录
+
 ## 3.9.1
 
 ### Patch Changes

@@ -8,7 +8,7 @@ const frontmatter = useFrontmatter<Resource>()
 const router = useRouter()
 
 function handleTagClick(tag: string) {
-  router.go(withBase(`/resource/tags?tag=${encodeURIComponent(tag)}`))
+  router.go(withBase(`/tags?tag=${encodeURIComponent(tag)}`))
 }
 </script>
 

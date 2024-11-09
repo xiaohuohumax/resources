@@ -13,7 +13,7 @@ const router = useRouter()
 
 function handleTagClick(tag: string, event: MouseEvent) {
   event.stopPropagation()
-  router.go(withBase(`/resource/tags?tag=${encodeURIComponent(tag)}`))
+  router.go(withBase(`/tags?tag=${encodeURIComponent(tag)}`))
 }
 </script>
 

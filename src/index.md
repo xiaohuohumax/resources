@@ -12,10 +12,10 @@ hero:
   actions:
     - theme: brand
       text: 装机必备
-      link: /resource/software/pc/required/
+      link: /software/pc/required/
     - theme: brand
       text: 必备软件
-      link: /resource/software/mobile/required
+      link: /software/mobile/required
     - theme: alt
       text: 项目源码
       link: https://github.com/xiaohuohumax/resources

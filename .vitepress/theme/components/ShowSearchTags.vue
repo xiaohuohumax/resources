@@ -4,7 +4,6 @@ import { computedAsync } from '@vueuse/core'
 import virtualResources from 'virtual:resources'
 import { computed, ref, watch } from 'vue'
 import { useQuery } from '../use/query'
-import Loading from './Loading.vue'
 import Resources from './Resources.vue'
 import Tags from './Tags.vue'
 
@@ -13,41 +12,44 @@ const searchTag = ref(queryTag.value || '')
 const search = ref<string>('')
 const loading = ref(true)
 
-const resources = computedAsync(async () => {
-  const ids = Object.keys(virtualResources)
-  const resourcesMap: { [id: string]: Resource } = {}
-  for (const id of ids) {
+const resources = ref<Resource[]>([])
+
+async function initTagCaches() {
+  async function importResource(id: string) {
     for (const resource of (await (virtualResources[id]())).default) {
-      resourcesMap[resource.path] = resource
+      resources.value.push(resource)
     }
   }
+  const importJobs = []
+  for (const id of Object.keys(virtualResources)) {
+    importJobs.push(importResource(id))
+  }
+  await Promise.all(importJobs)
+  loading.value = false
+}
 
-  return Object.values(resourcesMap)
-})
+initTagCaches()
 
 const tagMap = computed(() => {
-  const map = new Map<string, Resource[]>()
-
-  for (const resource of resources.value || []) {
+  const tagMap = new Map<string, Resource[]>()
+  for (const resource of resources.value) {
     for (const tag of resource.tags || []) {
-      const tagResources = map.get(tag) || []
-      tagResources.push(resource)
-      map.set(tag, tagResources)
+      const resources = tagMap.get(tag) || []
+      resources.push(resource)
+      tagMap.set(tag, resources)
     }
   }
-
-  return map
+  return tagMap
 })
 
 const tags = computed(() => {
-  return Array.from(tagMap.value.keys())
-    .filter(tag => tag.toLowerCase().includes(search.value.toLocaleLowerCase()))
+  const tags = Array.from(tagMap.value.keys())
+  return tags.filter(tag => tag.toLocaleLowerCase().includes(search.value.toLocaleLowerCase()))
 })
 
 watch(() => queryTag.value, () => searchTag.value = queryTag.value)
-watch(() => resources.value, () => loading.value = false, { once: true })
 watch(() => tags.value, () => {
-  if (!tags.value.includes(searchTag.value)) {
+  if (!loading.value && !tags.value.includes(searchTag.value)) {
     searchTag.value = ''
   }
 })
@@ -57,18 +59,9 @@ function handleTagClick(tag: string) {
   queryTag.value = tag
 }
 
-const searchResources = computed(() => {
-  if (searchTag.value === '') {
-    return []
-  }
-  const result: Resource[] = []
-  for (const resource of resources.value || []) {
-    if (resource.tags?.includes(searchTag.value)) {
-      result.push(resource)
-    }
-  }
-  return result
-})
+const searchResources = computedAsync(async () => {
+  return tagMap.value.get(searchTag.value) || []
+}, [])
 
 function getTagCount(tag: string) {
   return tagMap.value.get(tag)?.length || 0
@@ -77,23 +70,21 @@ function getTagCount(tag: string) {
 
 <template>
   <div class="ShowSearchTags">
-    <Loading :loading="loading">
-      <input v-model="search" class="search-input" type="text" placeholder="搜索标签">
-      <template v-if="tags.length === 0">
-        <p>暂无标签</p>
-      </template>
-      <template v-else>
-        <Tags v-model:tag="searchTag" class="tags" :tags="tags" @tag-click="handleTagClick">
-          <template #default="{ value }">
-            {{ value }}:{{ getTagCount(value) }}
-          </template>
-        </Tags>
-        <div v-if="searchTag !== ''">
-          <p><small>共 {{ searchResources.length }} 个结果</small></p>
-          <Resources class="resources" is-collection :resources="searchResources" />
-        </div>
-      </template>
-    </Loading>
+    <input v-model="search" class="search-input" type="text" placeholder="搜索标签">
+    <template v-if="tags.length === 0">
+      <p>暂无标签</p>
+    </template>
+    <template v-else>
+      <Tags v-model:tag="searchTag" class="tags" :tags="tags" @tag-click="handleTagClick">
+        <template #default="{ value }">
+          {{ value }}:{{ getTagCount(value) }}
+        </template>
+      </Tags>
+      <div v-if="searchTag !== ''">
+        <p><small>共 {{ searchResources.length }} 个结果</small></p>
+        <Resources class="resources" is-collection :resources="searchResources" />
+      </div>
+    </template>
   </div>
 </template>
 

@@ -1,5 +1,11 @@
 # resources
 
+## 3.8.1
+
+### Patch Changes
+
+- 标签搜索改为异步批量加载
+
 ## 3.8.0
 
 ### Minor Changes

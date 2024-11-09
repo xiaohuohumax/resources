@@ -1,5 +1,11 @@
 # resources
 
+## 3.9.0
+
+### Minor Changes
+
+- 搜索标签添加 query 查询参数
+
 ## 3.8.2
 
 ### Patch Changes

@@ -8,8 +8,9 @@ import Resources from './Resources.vue'
 import Tags from './Tags.vue'
 
 const queryTag = useQuery('tag')
+const querySearch = useQuery('search')
 const searchTag = ref(queryTag.value || '')
-const search = ref<string>('')
+const search = ref<string>(querySearch.value || '')
 const loading = ref(true)
 
 const resources = ref<Resource[]>([])
@@ -47,19 +48,22 @@ const tags = computed(() => {
   return tags.filter(tag => tag.toLocaleLowerCase().includes(search.value.toLocaleLowerCase()))
 })
 
-watch(() => queryTag.value, () => searchTag.value = queryTag.value)
-watch(() => tags.value, () => {
-  if (!loading.value && !tags.value.includes(searchTag.value)) {
-    searchTag.value = ''
-  }
-})
+watch(() => queryTag.value, () => searchTag.value = queryTag.value, { once: true })
+watch(() => querySearch.value, () => search.value = querySearch.value, { once: true })
+watch(() => search.value, () => querySearch.value = search.value)
 
 function handleTagClick(tag: string) {
-  searchTag.value = tag
-  queryTag.value = tag
+  const t = searchTag.value === tag
+    ? ''
+    : tag
+  searchTag.value = t
+  queryTag.value = t
 }
 
 const searchResources = computedAsync(async () => {
+  if (!tags.value.includes(searchTag.value)) {
+    return []
+  }
   return tagMap.value.get(searchTag.value) || []
 }, [])
 
@@ -89,7 +93,7 @@ function getTagCount(tag: string) {
 </template>
 
 <style scoped>
-.ShowSearchTags .search-input{
+.ShowSearchTags .search-input {
   font-size: 1.125em;
   background-color: var(--vp-c-bg-soft);
   padding: .8em;

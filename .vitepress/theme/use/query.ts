@@ -16,9 +16,14 @@ export function useQuery(key: string) {
   })
 
   watch(() => query.value, (newVal, oldVal) => {
-    if (newVal !== oldVal && newVal !== '') {
+    if (newVal !== oldVal) {
       const url = new URL(window.location.href)
-      url.searchParams.set(key, newVal)
+      if (newVal === '') {
+        url.searchParams.delete(key)
+      }
+      else {
+        url.searchParams.set(key, newVal)
+      }
       window.history.replaceState(
         {},
         '',

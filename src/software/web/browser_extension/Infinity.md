@@ -12,9 +12,7 @@ tags:
 
 links:
   - text: ⏬下载地址
-    link: &togo https://www.infinitytab.com/
-
-togo: *togo
+    link: https://www.infinitytab.com/
 
 ---
 

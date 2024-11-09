@@ -1,5 +1,11 @@
 # resources
 
+## 3.10.0
+
+### Minor Changes
+
+- 直达链接缺省时默认使用第一个链接
+
 ## 3.9.2
 
 ### Patch Changes

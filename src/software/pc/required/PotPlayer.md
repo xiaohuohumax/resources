@@ -14,9 +14,7 @@ tags:
 
 links:
   - text: ⏬下载地址
-    link: &togo https://potplayer.daum.net/?lang=zh_CN
-
-togo: *togo
+    link: https://potplayer.daum.net/?lang=zh_CN
 
 ---
 

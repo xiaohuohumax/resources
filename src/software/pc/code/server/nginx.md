@@ -13,9 +13,7 @@ tags:
 
 links:
   - text: ⏬下载地址
-    link: &togo https://nginx.org/en/download.html
-
-togo: *togo
+    link: https://nginx.org/en/download.html
 
 ---
 

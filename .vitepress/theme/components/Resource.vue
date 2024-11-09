@@ -34,9 +34,9 @@ function handleTagClick(tag: string, event: MouseEvent) {
       <h2 class="title" v-html="resource.title" />
       <Tags v-if="resource.tags" :tags="resource.tags" @tag-click="handleTagClick" />
       <p v-if="resource.description" class="description" v-html="resource.description" />
-      <div v-if="resource.togo" class="togo">
+      <div v-if="resource.type === 'doc' && resource.togo" class="togo">
         <VPLink :href="resource.togo" :no-icon="true" :tag="resource.togo ? 'a' : 'div'">
-          {{ resource.togoText || '直达' }}
+          {{ resource.togoText || '' }}
         </VPLink>
       </div>
     </article>

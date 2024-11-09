@@ -12,9 +12,7 @@ tags:
 
 links:
   - text: 🧰浏览地址
-    link: &togo https://www.foodiesfeed.com/
-
-togo: *togo
+    link: https://www.foodiesfeed.com/
 
 ---
 

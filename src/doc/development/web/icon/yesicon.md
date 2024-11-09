@@ -12,9 +12,7 @@ tags:
 
 links:
   - text: 📖文档地址
-    link: &togo https://yesicon.app/
-
-togo: *togo
+    link: https://yesicon.app/
 
 ---
 

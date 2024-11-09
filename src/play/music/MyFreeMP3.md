@@ -13,9 +13,7 @@ tags:
 
 links:
   - text: 🎮浏览地址
-    link: &togo https://tools.liumingye.cn/music/
-
-togo: *togo
+    link: https://tools.liumingye.cn/music/
 
 ---
 

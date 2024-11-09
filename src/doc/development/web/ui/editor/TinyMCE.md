@@ -13,11 +13,9 @@ tags:
 
 links:
   - text: 📖文档地址
-    link: &togo http://tinymce.ax-z.cn/
+    link: http://tinymce.ax-z.cn/
   - text: 🔗在线示例
     link: http://tinymce.ax-z.cn/demos/demo-index.php
-
-togo: *togo
 
 ---
 

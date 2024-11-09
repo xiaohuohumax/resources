@@ -1,13 +1,9 @@
 ---
 
 type: collection
-
 belong:
   id: null
   order: 1
-
-icon:
-  src: /image/folder.svg
 
 title: 软件
 

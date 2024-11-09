@@ -14,9 +14,7 @@ tags:
 
 links:
   - text: 📦项目地址
-    link: &togo https://github.com/SBoudrias/Inquirer.js
-
-togo: *togo
+    link: https://github.com/SBoudrias/Inquirer.js
 
 ---
 

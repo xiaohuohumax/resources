@@ -13,9 +13,7 @@ tags:
 
 links:
   - text: ⏬下载地址
-    link: &togo http://zdevs.ru/en/za/apk.html
-
-togo: *togo
+    link: http://zdevs.ru/en/za/apk.html
 
 ---
 

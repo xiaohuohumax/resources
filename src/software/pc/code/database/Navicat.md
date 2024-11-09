@@ -12,9 +12,7 @@ tags:
 
 links:
   - text: ⏬下载地址
-    link: &togo https://navicat.com.cn/download/navicat-premium
-
-togo: *togo
+    link: https://navicat.com.cn/download/navicat-premium
 
 ---
 

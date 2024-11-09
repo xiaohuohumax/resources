@@ -14,9 +14,7 @@ tags:
 
 links:
   - text: 📖文档地址
-    link: &togo https://echarts.apache.org/zh/index.html
-
-togo: *togo
+    link: https://echarts.apache.org/zh/index.html
 
 ---
 

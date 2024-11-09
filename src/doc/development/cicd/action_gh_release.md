@@ -12,9 +12,7 @@ tags:
 
 links:
   - text: 📦项目地址
-    link: &togo https://github.com/softprops/action-gh-release
-
-togo: *togo
+    link: https://github.com/softprops/action-gh-release
 
 ---
 

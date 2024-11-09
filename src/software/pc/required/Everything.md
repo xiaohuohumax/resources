@@ -12,9 +12,7 @@ tags:
 
 links:
   - text: ⏬下载地址
-    link: &togo https://www.voidtools.com/downloads/
-
-togo: *togo
+    link: https://www.voidtools.com/downloads/
 
 ---
 

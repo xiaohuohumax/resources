@@ -14,9 +14,7 @@ tags:
 
 links:
   - text: 📦项目地址
-    link: &togo https://github.com/terkelg/prompts
-
-togo: *togo
+    link: https://github.com/terkelg/prompts
 
 ---
 

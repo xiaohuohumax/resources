@@ -14,9 +14,7 @@ tags:
 
 links:
   - text: 🧰浏览地址
-    link: &togo https://undraw.co/illustrations
-
-togo: *togo
+    link: https://undraw.co/illustrations
 
 ---
 

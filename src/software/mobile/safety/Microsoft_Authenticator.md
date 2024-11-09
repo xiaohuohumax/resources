@@ -12,9 +12,7 @@ tags:
 
 links:
   - text: ⏬下载地址
-    link: &togo https://www.microsoft.com/zh-cn/security/mobile-authenticator-app
-
-togo: *togo
+    link: https://www.microsoft.com/zh-cn/security/mobile-authenticator-app
 
 ---
 

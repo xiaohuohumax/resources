@@ -12,9 +12,7 @@ tags:
 
 links:
   - text: 📦访问地址
-    link: &togo https://marketplace.visualstudio.com/
-
-togo: *togo
+    link: https://marketplace.visualstudio.com/
 
 ---
 

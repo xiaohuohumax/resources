@@ -13,9 +13,7 @@ tags:
 
 links:
   - text: ⏬下载地址
-    link: &togo https://adblockplus.org/zh_CN/
-
-togo: *togo
+    link: https://adblockplus.org/zh_CN/
 
 ---
 

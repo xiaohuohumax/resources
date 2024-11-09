@@ -17,9 +17,7 @@ tags:
 
 links:
   - text: 📖文档地址
-    link: &togo https://www.webpackjs.com/
-
-togo: *togo
+    link: https://www.webpackjs.com/
 
 ---
 

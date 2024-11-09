@@ -13,9 +13,7 @@ tags:
 
 links:
   - text: ⏬下载地址
-    link: &togo https://xdaforums.com/t/app-2-2-mixplorer-v6-x-released-fully-featured-file-manager.1523691/#post-23109280
-
-togo: *togo
+    link: https://xdaforums.com/t/app-2-2-mixplorer-v6-x-released-fully-featured-file-manager.1523691/#post-23109280
 
 ---
 

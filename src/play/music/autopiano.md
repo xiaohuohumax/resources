@@ -12,9 +12,7 @@ tags:
 
 links:
   - text: 🎮游玩地址
-    link: &togo https://www.autopiano.cn/
-
-togo: *togo
+    link: https://www.autopiano.cn/
 
 ---
 

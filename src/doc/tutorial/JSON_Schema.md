@@ -13,11 +13,9 @@ tags:
 
 links:
   - text: 📖文档地址
-    link: &togo https://json-schema.org/docs
+    link: https://json-schema.org/docs
   - text: 📖中文文档
     link: https://json-schema.apifox.cn/
-
-togo: *togo
 
 ---
 

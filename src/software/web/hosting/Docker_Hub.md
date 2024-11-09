@@ -12,9 +12,7 @@ tags:
 
 links:
   - text: 📦访问地址
-    link: &togo https://hub.docker.com/
-
-togo: *togo
+    link: https://hub.docker.com/
 
 ---
 

@@ -13,9 +13,7 @@ tags:
 
 links:
   - text: 📖文档地址
-    link: &togo https://hatscripts.github.io/circle-flags/
-
-togo: *togo
+    link: https://hatscripts.github.io/circle-flags/
 
 ---
 

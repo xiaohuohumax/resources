@@ -14,9 +14,7 @@ tags:
 
 links:
   - text: 📖文档地址
-    link: &togo https://imzbf.github.io/md-editor-v3/
-
-togo: *togo
+    link: https://imzbf.github.io/md-editor-v3/
 
 ---
 

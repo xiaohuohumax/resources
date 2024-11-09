@@ -14,9 +14,7 @@ tags:
 
 links:
   - text: ⏬下载地址
-    link: &togo https://maven.apache.org/download.cgi
-
-togo: *togo
+    link: https://maven.apache.org/download.cgi
 
 ---
 

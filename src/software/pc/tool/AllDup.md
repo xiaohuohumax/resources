@@ -13,9 +13,7 @@ tags:
 
 links:
   - text: ⏬下载地址
-    link: &togo https://alldup.info/
-
-togo: *togo
+    link: https://alldup.info/
 
 ---
 

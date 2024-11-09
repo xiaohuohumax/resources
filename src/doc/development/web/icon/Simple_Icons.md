@@ -13,9 +13,7 @@ tags:
 
 links:
   - text: 📖文档地址
-    link: &togo https://simpleicons.org/
-
-togo: *togo
+    link: https://simpleicons.org/
 
 ---
 

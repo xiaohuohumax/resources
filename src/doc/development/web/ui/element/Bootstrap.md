@@ -13,9 +13,7 @@ tags:
 
 links:
   - text: 📖文档地址
-    link: &togo https://v5.bootcss.com/
-
-togo: *togo
+    link: https://v5.bootcss.com/
 
 ---
 

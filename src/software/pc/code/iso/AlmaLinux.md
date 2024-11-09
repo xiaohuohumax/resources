@@ -14,9 +14,7 @@ tags:
 
 links:
   - text: ⏬下载地址
-    link: &togo https://almalinux.org/zh-hans/get-almalinux/
-
-togo: *togo
+    link: https://almalinux.org/zh-hans/get-almalinux/
 
 ---
 

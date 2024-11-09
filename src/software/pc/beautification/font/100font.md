@@ -12,9 +12,7 @@ tags:
 
 links:
   - text: ⏬下载地址
-    link: &togo https://www.100font.com/
-
-togo: *togo
+    link: https://www.100font.com/
 
 ---
 

@@ -14,9 +14,7 @@ tags:
 
 links:
   - text: 📖文档地址
-    link: &togo https://tw-elements.com/
-
-togo: *togo
+    link: https://tw-elements.com/
 
 ---
 

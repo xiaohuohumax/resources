@@ -12,9 +12,7 @@ tags:
 
 links:
   - text: 📖文档地址
-    link: &togo https://remixicon.com/
-
-togo: *togo
+    link: https://remixicon.com/
 
 ---
 

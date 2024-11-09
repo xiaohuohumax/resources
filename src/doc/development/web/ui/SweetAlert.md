@@ -13,9 +13,7 @@ tags:
 
 links:
   - text: 📦项目地址
-    link: &togo https://sweetalert.js.org/
-
-togo: *togo
+    link: https://sweetalert.js.org/
 
 ---
 

@@ -15,9 +15,7 @@ tags:
 
 links:
   - text: ⏬下载地址
-    link: &togo https://www.mongodb.com/try/download/community
-
-togo: *togo
+    link: https://www.mongodb.com/try/download/community
 
 ---
 

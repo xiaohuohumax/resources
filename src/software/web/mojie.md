@@ -12,9 +12,7 @@ tags:
 
 links:
   - text: 📦访问地址
-    link: &togo https://mojie.cyou/
-
-togo: *togo
+    link: https://mojie.cyou/
 
 ---
 

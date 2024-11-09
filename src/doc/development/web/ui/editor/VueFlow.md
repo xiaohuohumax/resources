@@ -14,9 +14,7 @@ tags:
 
 links:
   - text: 📖文档地址
-    link: &togo https://vueflow.dev/
-
-togo: *togo
+    link: https://vueflow.dev/
 
 ---
 

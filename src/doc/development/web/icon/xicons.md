@@ -13,9 +13,7 @@ tags:
 
 links:
   - text: 📖文档地址
-    link: &togo https://www.xicons.org/#/zh-CN
-
-togo: *togo
+    link: https://www.xicons.org/#/zh-CN
 
 ---
 

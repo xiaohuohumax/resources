@@ -13,9 +13,7 @@ tags:
 
 links:
   - text: 📖文档地址
-    link: &togo https://ionic.io/ionicons
-
-togo: *togo
+    link: https://ionic.io/ionicons
 
 ---
 

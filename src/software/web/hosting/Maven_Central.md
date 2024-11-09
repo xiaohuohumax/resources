@@ -14,9 +14,7 @@ tags:
 
 links:
   - text: 📦访问地址
-    link: &togo https://central.sonatype.com/
-
-togo: *togo
+    link: https://central.sonatype.com/
 
 ---
 

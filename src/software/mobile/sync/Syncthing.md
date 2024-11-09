@@ -12,9 +12,7 @@ tags:
 
 links:
   - text: ⏬下载地址
-    link: &togo https://syncthing.net/downloads/
-
-togo: *togo
+    link: https://syncthing.net/downloads/
 
 ---
 

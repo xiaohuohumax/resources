@@ -12,9 +12,7 @@ tags:
 
 links:
   - text: 📖文档地址
-    link: &togo https://pictogrammers.com/library/memory/
-
-togo: *togo
+    link: https://pictogrammers.com/library/memory/
 
 ---
 

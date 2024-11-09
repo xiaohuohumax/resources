@@ -12,9 +12,7 @@ tags:
 
 links:
   - text: ⏬下载地址
-    link: &togo http://www.internetdownloadmanager.com/download.html
-
-togo: *togo
+    link: http://www.internetdownloadmanager.com/download.html
 
 ---
 

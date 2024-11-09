@@ -16,9 +16,7 @@ tags:
 
 links:
   - text: 🎮浏览地址
-    link: &togo https://youquhome.com/
-
-togo: *togo
+    link: https://youquhome.com/
 
 ---
 

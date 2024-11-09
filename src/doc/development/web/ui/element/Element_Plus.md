@@ -13,9 +13,7 @@ tags:
 
 links:
   - text: 📖文档地址
-    link: &togo https://element-plus.org/zh-CN/
-
-togo: *togo
+    link: https://element-plus.org/zh-CN/
 
 ---
 

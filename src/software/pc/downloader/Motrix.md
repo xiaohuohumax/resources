@@ -12,9 +12,7 @@ tags:
 
 links:
   - text: ⏬下载地址
-    link: &togo https://motrix.app/
-
-togo: *togo
+    link: https://motrix.app/
 
 ---
 

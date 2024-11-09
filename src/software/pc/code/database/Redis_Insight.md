@@ -14,9 +14,7 @@ tags:
 
 links:
   - text: ⏬下载地址
-    link: &togo https://redis.io/insight/
-
-togo: *togo
+    link: https://redis.io/insight/
 
 ---
 

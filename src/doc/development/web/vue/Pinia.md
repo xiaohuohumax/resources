@@ -13,9 +13,7 @@ tags:
 
 links:
   - text: 📖文档地址
-    link: &togo https://pinia.web3doc.top/
-
-togo: *togo
+    link: https://pinia.web3doc.top/
 
 ---
 

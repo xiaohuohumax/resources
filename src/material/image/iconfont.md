@@ -15,9 +15,7 @@ tags:
 
 links:
   - text: 🧰浏览地址
-    link: &togo https://www.iconfont.cn/
-
-togo: *togo
+    link: https://www.iconfont.cn/
 
 ---
 

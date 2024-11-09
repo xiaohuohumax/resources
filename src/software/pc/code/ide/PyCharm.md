@@ -14,11 +14,9 @@ tags:
 
 links:
   - text: ⏬下载地址
-    link: &togo https://www.jetbrains.com/pycharm/
+    link: https://www.jetbrains.com/pycharm/
   - text: 🚧补丁教程
     link: https://www.quanxiaoha.com/pycharm-pojie/pycharm-pojie-202413.html
-
-togo: *togo
 
 ---
 

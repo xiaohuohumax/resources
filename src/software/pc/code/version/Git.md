@@ -13,9 +13,7 @@ tags:
 
 links:
   - text: ⏬下载地址
-    link: &togo https://git-scm.com/downloads
-
-togo: *togo
+    link: https://git-scm.com/downloads
 
 ---
 

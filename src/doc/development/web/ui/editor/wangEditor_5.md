@@ -13,11 +13,9 @@ tags:
 
 links:
   - text: 📖文档地址
-    link: &togo https://www.wangeditor.com/
+    link: https://www.wangeditor.com/
   - text: 🔗在线示例
     link: https://www.wangeditor.com/demo/index.html
-
-togo: *togo
 
 ---
 

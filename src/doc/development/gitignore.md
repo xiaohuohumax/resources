@@ -13,9 +13,7 @@ tags:
 
 links:
   - text: 📦项目地址
-    link: &togo https://github.com/github/gitignore
-
-togo: *togo
+    link: https://github.com/github/gitignore
 
 ---
 

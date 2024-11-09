@@ -12,9 +12,7 @@ tags:
 
 links:
   - text: 📖文档地址
-    link: &togo https://phosphoricons.com/
-
-togo: *togo
+    link: https://phosphoricons.com/
 
 ---
 

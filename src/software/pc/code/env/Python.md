@@ -13,11 +13,9 @@ tags:
 
 links:
   - text: ⏬下载地址
-    link: &togo https://www.python.org/downloads/
+    link: https://www.python.org/downloads/
   - text: 📖文档地址
     link: https://docs.python.org/zh-cn/3/
-
-togo: *togo
 
 ---
 

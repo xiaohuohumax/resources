@@ -12,9 +12,7 @@ tags:
 
 links:
   - text: ⏬下载地址
-    link: &togo https://greasyfork.org/zh-CN/scripts/14178
-
-togo: *togo
+    link: https://greasyfork.org/zh-CN/scripts/14178
 
 ---
 

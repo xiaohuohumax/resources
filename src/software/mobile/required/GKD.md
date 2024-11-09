@@ -13,9 +13,7 @@ tags:
 
 links:
   - text: ⏬下载地址
-    link: &togo https://github.com/gkd-kit/gkd
-
-togo: *togo
+    link: https://github.com/gkd-kit/gkd
 
 ---
 

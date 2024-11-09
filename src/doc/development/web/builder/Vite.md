@@ -17,9 +17,7 @@ tags:
 
 links:
   - text: 📖文档地址
-    link: &togo https://vitejs.cn/vite3-cn/
-
-togo: *togo
+    link: https://vitejs.cn/vite3-cn/
 
 ---
 

@@ -12,9 +12,7 @@ tags:
 
 links:
   - text: 📖文档地址
-    link: &togo https://fa6.dashgame.com/
-
-togo: *togo
+    link: https://fa6.dashgame.com/
 
 ---
 

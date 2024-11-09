@@ -24,7 +24,7 @@ belong:
   # 归属集合排序 (越小越靠前, 默认0)
   # order: 0
 
-# 图标
+# 图标(可选)
 icon:
   src: /logo.svg
 

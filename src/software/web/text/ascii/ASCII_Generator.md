@@ -12,9 +12,7 @@ tags:
 
 links:
   - text: 🧰浏览地址
-    link: &togo http://www.network-science.de/ascii/
-
-togo: *togo
+    link: http://www.network-science.de/ascii/
 
 ---
 

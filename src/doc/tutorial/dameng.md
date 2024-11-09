@@ -14,9 +14,7 @@ tags:
 
 links:
   - text: 📖文档地址
-    link: &togo https://eco.dameng.com/document/dm/zh-cn/start/
-
-togo: *togo
+    link: https://eco.dameng.com/document/dm/zh-cn/start/
 
 ---
 

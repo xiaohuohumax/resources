@@ -14,9 +14,7 @@ tags:
 
 links:
   - text: 📖文档地址
-    link: &togo https://heroicons.com/
-
-togo: *togo
+    link: https://heroicons.com/
 
 ---
 

@@ -14,9 +14,7 @@ tags:
 
 links:
   - text: 🧰浏览地址
-    link: &togo https://readme-typing-svg.demolab.com/demo/
-
-togo: *togo
+    link: https://readme-typing-svg.demolab.com/demo/
 
 ---
 

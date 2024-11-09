@@ -16,11 +16,9 @@ tags:
 
 links:
   - text: 📖文档地址
-    link: &togo https://boringavatars.com/
+    link: https://boringavatars.com/
   - text: 📦项目地址
     link: https://github.com/boringdesigners/boring-avatars
-
-togo: *togo
 
 ---
 

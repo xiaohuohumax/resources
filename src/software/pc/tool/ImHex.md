@@ -12,9 +12,7 @@ tags:
 
 links:
   - text: ⏬下载地址
-    link: &togo https://imhex.werwolv.net/
-
-togo: *togo
+    link: https://imhex.werwolv.net/
 
 ---
 

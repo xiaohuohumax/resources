@@ -15,9 +15,7 @@ tags:
 
 links:
   - text: 🧰浏览地址
-    link: &togo https://drawdb.vercel.app/
-
-togo: *togo
+    link: https://drawdb.vercel.app/
 
 ---
 

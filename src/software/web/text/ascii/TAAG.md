@@ -12,9 +12,7 @@ tags:
 
 links:
   - text: 🧰浏览地址
-    link: &togo https://patorjk.com/software/taag/#p=display&f=Graffiti&t=Hello%20Resources
-
-togo: *togo
+    link: https://patorjk.com/software/taag/#p=display&f=Graffiti&t=Hello%20Resources
 
 ---
 

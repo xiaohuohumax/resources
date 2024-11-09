@@ -12,9 +12,7 @@ tags:
 
 links:
   - text: 📖文档地址
-    link: &togo https://unocss.dev/
-
-togo: *togo
+    link: https://unocss.dev/
 
 ---
 

@@ -14,11 +14,9 @@ tags:
 
 links:
   - text: ⏬下载地址
-    link: &togo https://www.jetbrains.com/datagrip/
+    link: https://www.jetbrains.com/datagrip/
   - text: 🚧补丁教程
     link: https://www.quanxiaoha.com/datagrip-pojie/datagrip-pojie-202413.html
-
-togo: *togo
 
 ---
 

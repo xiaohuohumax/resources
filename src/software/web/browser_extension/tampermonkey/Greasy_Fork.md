@@ -12,9 +12,7 @@ tags:
 
 links:
   - text: 📦仓库地址
-    link: &togo https://greasyfork.org/zh-CN
-
-togo: *togo
+    link: https://greasyfork.org/zh-CN
 
 ---
 

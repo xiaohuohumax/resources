@@ -14,9 +14,7 @@ tags:
 
 links:
   - text: 📖文档地址
-    link: &togo https://chartjs.cn/
-
-togo: *togo
+    link: https://chartjs.cn/
 
 ---
 

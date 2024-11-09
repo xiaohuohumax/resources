@@ -14,9 +14,7 @@ tags:
 
 links:
   - text: ⏬下载地址
-    link: &togo https://valkey.io/download/
-
-togo: *togo
+    link: https://valkey.io/download/
 
 ---
 

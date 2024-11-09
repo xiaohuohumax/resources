@@ -13,9 +13,7 @@ tags:
 
 links:
   - text: ⏬下载地址
-    link: &togo https://golang.org/dl/
-
-togo: *togo
+    link: https://golang.org/dl/
 
 ---
 

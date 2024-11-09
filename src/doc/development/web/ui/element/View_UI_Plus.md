@@ -13,9 +13,7 @@ tags:
 
 links:
   - text: 📖文档地址
-    link: &togo https://www.iviewui.com/
-
-togo: *togo
+    link: https://www.iviewui.com/
 
 ---
 

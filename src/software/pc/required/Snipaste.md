@@ -12,9 +12,7 @@ tags:
 
 links:
   - text: ⏬下载地址
-    link: &togo https://zh.snipaste.com/download.html
-
-togo: *togo
+    link: https://zh.snipaste.com/download.html
 
 ---
 

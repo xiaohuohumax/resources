@@ -10,6 +10,13 @@ import { normalizePath } from 'vite'
 
 export type * from './theme/types'
 
+export interface ResourceManagerOptions {
+  srcDir: string
+  srcExclude: string[]
+  collectionIconDefault: DefaultTheme.FeatureIcon
+  togoTextDefault: string
+}
+
 /**
  * 资源管理器
  */
@@ -22,12 +29,11 @@ export class ResourceManager {
   private resourceGlobSource: string
 
   /**
-   * @param srcDir 项目文档源目录
-   * @param srcExclude 项目文档源目录排除项
+   * @param options 配置选项
    */
-  constructor(private srcDir: string, private srcExclude: string[]) {
-    this.resourceGlobSource = normalizePath(path.join(srcDir, '**/*.md'))
-    for (const pagePath of glob.sync(this.resourceGlobSource, { ignore: this.srcExclude })) {
+  constructor(private options: ResourceManagerOptions) {
+    this.resourceGlobSource = normalizePath(path.join(this.options.srcDir, '**/*.md'))
+    for (const pagePath of glob.sync(this.resourceGlobSource, { ignore: this.options.srcExclude })) {
       const resource = this.createResource(pagePath)
       if (resource) {
         this.resources.push(resource)
@@ -42,7 +48,7 @@ export class ResourceManager {
    */
   isAllowedPath(filePath: string): boolean {
     return micromatch.isMatch(filePath, this.resourceGlobSource, {
-      ignore: this.srcExclude,
+      ignore: this.options.srcExclude,
     })
   }
 
@@ -92,8 +98,6 @@ export class ResourceManager {
         order: ResourceManager.BELONG_ORDER_DEFAULT,
       }, data.belong),
 
-      togo: data.togo,
-      togoText: data.togoText,
       description: data.description,
       icon: data.icon,
       tags: data.tags ?? [],
@@ -105,14 +109,23 @@ export class ResourceManager {
         ...base,
         type: 'collection',
         id: data.id ?? this.filePathToId(formatFilePath),
+        icon: base.icon ?? this.options.collectionIconDefault,
       }
     }
     else if (data.type === 'doc') {
+      let togo = data.togo
+
+      if (!togo && data.links?.length > 0) {
+        togo = data.links[0].link
+      }
+
       // 文档
       return {
         ...base,
         type: 'doc',
         links: data.links ?? [],
+        togo,
+        togoText: data.togoText ?? this.options.togoTextDefault,
       }
     }
   }
@@ -195,7 +208,7 @@ export class ResourceManager {
    * @returns 资源路径
    */
   filePathToResourcePath(filePath: string): string {
-    const relativePath = normalizePath(path.relative(this.srcDir, filePath))
+    const relativePath = normalizePath(path.relative(this.options.srcDir, filePath))
     return `/${relativePath.replace(/\.md$/i, '')}`
   }
 

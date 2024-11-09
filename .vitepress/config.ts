@@ -15,7 +15,14 @@ const BASE = '/resources/'
 const TITLE = 'Resources'
 const LOCALE_ID = 'root'
 
-const resourceManager: ResourceManager = new ResourceManager(constant.SRC_DIR, constant.SRC_EXCLUDE)
+const resourceManager: ResourceManager = new ResourceManager({
+  srcDir: constant.SRC_DIR,
+  srcExclude: constant.SRC_EXCLUDE,
+  collectionIconDefault: {
+    src: '/image/folder.svg',
+  },
+  togoTextDefault: '直达',
+})
 
 const bookmarkFilePath = path.join(constant.PUBLIC_DIR, 'bookmark.html')
 // 创建书签文件

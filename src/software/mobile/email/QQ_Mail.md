@@ -12,9 +12,7 @@ tags:
 
 links:
   - text: ⏬下载地址
-    link: &togo https://app.mail.qq.com/
-
-togo: *togo
+    link: https://app.mail.qq.com/
 
 ---
 

@@ -12,9 +12,7 @@ tags:
 
 links:
   - text: ⏬下载地址
-    link: &togo http://www.codebaoku.com/jdk/jdk-index.html
-
-togo: *togo
+    link: http://www.codebaoku.com/jdk/jdk-index.html
 
 ---
 

@@ -12,9 +12,7 @@ tags:
 
 links:
   - text: 📖文档地址
-    link: &togo https://www.fast.design/
-
-togo: *togo
+    link: https://www.fast.design/
 
 ---
 

@@ -13,9 +13,7 @@ tags:
 
 links:
   - text: ⏬下载地址
-    link: &togo https://zhutix.com/ico/kuda-5/
-
-togo: *togo
+    link: https://zhutix.com/ico/kuda-5/
 
 ---
 

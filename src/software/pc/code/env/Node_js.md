@@ -12,9 +12,7 @@ tags:
 
 links:
   - text: ⏬下载地址
-    link: &togo https://nodejs.org/en/
-
-togo: *togo
+    link: https://nodejs.org/en/
 
 ---
 

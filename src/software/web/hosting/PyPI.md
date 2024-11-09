@@ -12,9 +12,7 @@ tags:
 
 links:
   - text: 📦访问地址
-    link: &togo https://pypi.org/
-
-togo: *togo
+    link: https://pypi.org/
 
 ---
 

@@ -13,9 +13,7 @@ tags:
 
 links:
   - text: 📖文档地址
-    link: &togo https://shiki.tmrs.site/
-
-togo: *togo
+    link: https://shiki.tmrs.site/
 
 ---
 

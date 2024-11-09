@@ -16,9 +16,7 @@ tags:
 
 links:
   - text: 🧰浏览地址
-    link: &togo https://convertio.co/zh/
-
-togo: *togo
+    link: https://convertio.co/zh/
 
 ---
 

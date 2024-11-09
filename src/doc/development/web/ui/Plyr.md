@@ -15,9 +15,7 @@ tags:
 
 links:
   - text: 📖文档地址
-    link: &togo https://github.com/sampotts/plyr#readme
-
-togo: *togo
+    link: https://github.com/sampotts/plyr#readme
 
 ---
 

@@ -15,9 +15,7 @@ tags:
 
 links:
   - text: 📖文档地址
-    link: &togo https://rollupjs.org/
-
-togo: *togo
+    link: https://rollupjs.org/
 
 ---
 

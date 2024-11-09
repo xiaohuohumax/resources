@@ -13,9 +13,7 @@ tags:
 
 links:
   - text: 📦项目地址
-    link: &togo https://axios-http.com/zh/docs/intro
-
-togo: *togo
+    link: https://axios-http.com/zh/docs/intro
 
 ---
 

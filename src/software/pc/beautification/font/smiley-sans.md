@@ -13,9 +13,7 @@ tags:
 
 links:
   - text: ⏬下载地址
-    link: &togo https://atelier-anchor.com/typefaces/smiley-sans
-
-togo: *togo
+    link: https://atelier-anchor.com/typefaces/smiley-sans
 
 ---
 

@@ -13,9 +13,7 @@ tags:
 
 links:
   - text: 📖文档地址
-    link: &togo https://mui.com/material-ui/getting-started/
-
-togo: *togo
+    link: https://mui.com/material-ui/getting-started/
 
 ---
 

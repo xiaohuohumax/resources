@@ -12,9 +12,7 @@ tags:
 
 links:
   - text: ⏬下载地址
-    link: &togo https://www.wps.cn/product/wps-office
-
-togo: *togo
+    link: https://www.wps.cn/product/wps-office
 
 ---
 

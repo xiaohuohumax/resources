@@ -13,9 +13,7 @@ tags:
 
 links:
   - text: 📖文档地址
-    link: &togo https://www.naiveui.com/zh-CN/dark
-
-togo: *togo
+    link: https://www.naiveui.com/zh-CN/dark
 
 ---
 

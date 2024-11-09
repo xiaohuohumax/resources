@@ -15,9 +15,7 @@ tags:
 
 links:
   - text: 📦项目地址
-    link: &togo https://aplayer.js.org/
-
-togo: *togo
+    link: https://aplayer.js.org/
 
 ---
 

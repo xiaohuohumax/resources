@@ -12,9 +12,7 @@ tags:
 
 links:
   - text: 📖文档地址
-    link: &togo https://cn.vuejs.org/
-
-togo: *togo
+    link: https://cn.vuejs.org/
 
 ---
 

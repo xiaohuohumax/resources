@@ -14,9 +14,7 @@ tags:
 
 links:
   - text: ⏬下载地址
-    link: &togo https://redis.io/downloads/
-
-togo: *togo
+    link: https://redis.io/downloads/
 
 ---
 

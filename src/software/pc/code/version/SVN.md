@@ -13,9 +13,7 @@ tags:
 
 links:
   - text: ⏬下载地址
-    link: &togo https://subversion.apache.org/
-
-togo: *togo
+    link: https://subversion.apache.org/
 
 ---
 

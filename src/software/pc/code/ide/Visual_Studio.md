@@ -13,9 +13,7 @@ tags:
 
 links:
   - text: ⏬下载地址
-    link: &togo https://visualstudio.microsoft.com/
-
-togo: *togo
+    link: https://visualstudio.microsoft.com/
 
 ---
 

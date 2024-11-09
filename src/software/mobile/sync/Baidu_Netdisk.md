@@ -12,9 +12,7 @@ tags:
 
 links:
   - text: ⏬下载地址
-    link: &togo https://pan.baidu.com/download
-
-togo: *togo
+    link: https://pan.baidu.com/download
 
 ---
 

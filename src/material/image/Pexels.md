@@ -13,9 +13,7 @@ tags:
 
 links:
   - text: 🧰浏览地址
-    link: &togo https://www.pexels.com/zh-cn/
-
-togo: *togo
+    link: https://www.pexels.com/zh-cn/
 
 ---
 

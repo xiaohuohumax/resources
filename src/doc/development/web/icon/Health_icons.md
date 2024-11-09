@@ -12,9 +12,7 @@ tags:
 
 links:
   - text: 📖文档地址
-    link: &togo https://healthicons.org/
-
-togo: *togo
+    link: https://healthicons.org/
 
 ---
 

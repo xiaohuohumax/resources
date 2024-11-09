@@ -13,9 +13,7 @@ tags:
 
 links:
   - text: ⏬下载地址
-    link: &togo https://nicolargo.github.io/glances/
-
-togo: *togo
+    link: https://nicolargo.github.io/glances/
 
 ---
 

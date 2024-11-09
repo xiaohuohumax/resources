@@ -13,9 +13,7 @@ tags:
 
 links:
   - text: 📖文档地址
-    link: &togo https://www.pnpm.cn/motivation
-
-togo: *togo
+    link: https://www.pnpm.cn/motivation
 
 ---
 

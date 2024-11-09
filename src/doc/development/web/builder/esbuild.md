@@ -15,9 +15,7 @@ tags:
 
 links:
   - text: 📖文档地址
-    link: &togo https://esbuild.bootcss.com/
-
-togo: *togo
+    link: https://esbuild.bootcss.com/
 
 ---
 

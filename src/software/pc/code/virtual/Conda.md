@@ -15,9 +15,7 @@ tags:
 
 links:
   - text: ⏬下载地址
-    link: &togo https://docs.anaconda.com/miniconda/
-
-togo: *togo
+    link: https://docs.anaconda.com/miniconda/
 
 ---
 

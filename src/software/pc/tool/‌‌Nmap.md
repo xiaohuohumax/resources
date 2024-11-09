@@ -14,11 +14,9 @@ tags:
 
 links:
   - text: ⏬下载地址
-    link: &togo https://nmap.org/download.html
+    link: https://nmap.org/download.html
   - text: 📖文档地址
     link: https://nmap.org/man/zh/
-
-togo: *togo
 
 ---
 

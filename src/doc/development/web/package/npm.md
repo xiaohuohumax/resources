@@ -13,9 +13,7 @@ tags:
 
 links:
   - text: 📖文档地址
-    link: &togo https://docs.npmjs.com/
-
-togo: *togo
+    link: https://docs.npmjs.com/
 
 ---
 

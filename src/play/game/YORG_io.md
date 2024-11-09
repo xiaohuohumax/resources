@@ -12,9 +12,7 @@ tags:
 
 links:
   - text: 🎮游玩地址
-    link: &togo https://yorg.io/
-
-togo: *togo
+    link: https://yorg.io/
 
 ---
 

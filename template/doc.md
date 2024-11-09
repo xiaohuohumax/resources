@@ -37,7 +37,7 @@ links:
   # 链接地址
     link: &togo ~~~
 
-# 链接直达(可选)
+# 链接直达(可选, 为空默认为links第一个)
 togo: *togo
 # 链接直达文字描述(可选)
 # togoText: 链接直达

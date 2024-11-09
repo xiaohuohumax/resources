@@ -12,9 +12,7 @@ tags:
 
 links:
   - text: ⏬下载地址
-    link: &togo https://rufus.ie/zh/
-
-togo: *togo
+    link: https://rufus.ie/zh/
 
 ---
 

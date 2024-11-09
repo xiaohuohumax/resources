@@ -12,9 +12,7 @@ tags:
 
 links:
   - text: ⏬下载地址
-    link: &togo https://www.iconfont.cn/fonts/index
-
-togo: *togo
+    link: https://www.iconfont.cn/fonts/index
 
 ---
 

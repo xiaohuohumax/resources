@@ -12,9 +12,7 @@ tags:
 
 links:
   - text: ⏬下载地址
-    link: &togo https://www.virtualbox.org/wiki/Downloads
-
-togo: *togo
+    link: https://www.virtualbox.org/wiki/Downloads
 
 ---
 

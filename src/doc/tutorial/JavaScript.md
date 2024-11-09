@@ -13,9 +13,7 @@ tags:
 
 links:
   - text: 📖文档地址
-    link: &togo https://developer.mozilla.org/zh-CN/docs/Web/JavaScript
-
-togo: *togo
+    link: https://developer.mozilla.org/zh-CN/docs/Web/JavaScript
 
 ---
 

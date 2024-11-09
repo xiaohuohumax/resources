@@ -12,9 +12,7 @@ tags:
 
 links:
   - text: ⏬下载地址
-    link: &togo http://www.uderzo.it/main_products/space_sniffer/download.html
-
-togo: *togo
+    link: http://www.uderzo.it/main_products/space_sniffer/download.html
 
 ---
 

@@ -14,9 +14,7 @@ tags:
 
 links:
   - text: ⏬下载地址
-    link: &togo https://www.superso.top/Adobe/Photoshop_2024.html
-
-togo: *togo
+    link: https://www.superso.top/Adobe/Photoshop_2024.html
 
 ---
 

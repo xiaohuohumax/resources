@@ -12,9 +12,7 @@ tags:
 
 links:
   - text: 📖文档地址
-    link: &togo https://bas.dev/work/meteocons
-
-togo: *togo
+    link: https://bas.dev/work/meteocons
 
 ---
 

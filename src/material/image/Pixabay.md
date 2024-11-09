@@ -15,9 +15,7 @@ tags:
 
 links:
   - text: 🧰浏览地址
-    link: &togo https://pixabay.com/zh/
-
-togo: *togo
+    link: https://pixabay.com/zh/
 
 ---
 

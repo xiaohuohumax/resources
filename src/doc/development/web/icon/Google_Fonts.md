@@ -12,9 +12,7 @@ tags:
 
 links:
   - text: 📖文档地址
-    link: &togo https://fonts.google.com/icons
-
-togo: *togo
+    link: https://fonts.google.com/icons
 
 ---
 

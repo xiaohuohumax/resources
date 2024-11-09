@@ -13,9 +13,7 @@ tags:
 
 links:
   - text: ⏬下载地址
-    link: &togo https://rockylinux.org/download
-
-togo: *togo
+    link: https://rockylinux.org/download
 
 ---
 

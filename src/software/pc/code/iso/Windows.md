@@ -13,9 +13,7 @@ tags:
 
 links:
   - text: ⏬下载地址
-    link: &togo https://www.xitongku.com/index.html
-
-togo: *togo
+    link: https://www.xitongku.com/index.html
 
 ---
 

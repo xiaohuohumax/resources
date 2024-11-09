@@ -14,9 +14,7 @@ tags:
 
 links:
   - text: ⏬下载地址
-    link: &togo https://github.com/yt-dlp/yt-dlp
-
-togo: *togo
+    link: https://github.com/yt-dlp/yt-dlp
 
 ---
 

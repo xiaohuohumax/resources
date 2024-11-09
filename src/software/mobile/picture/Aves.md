@@ -14,9 +14,7 @@ tags:
 
 links:
   - text: ⏬下载地址
-    link: &togo https://github.com/deckerst/aves
-
-togo: *togo
+    link: https://github.com/deckerst/aves
 
 ---
 

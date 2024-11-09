@@ -13,11 +13,9 @@ tags:
 
 links:
   - text: 📖文档地址
-    link: &togo https://tiptap.dev/docs
+    link: https://tiptap.dev/docs
   - text: 🔗在线示例
     link: https://templates.tiptap.dev/
-
-togo: *togo
 
 ---
 

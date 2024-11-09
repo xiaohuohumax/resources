@@ -12,9 +12,7 @@ tags:
 
 links:
   - text: ⏬下载地址
-    link: &togo https://weixin.qq.com/
-
-togo: *togo
+    link: https://weixin.qq.com/
 
 ---
 

@@ -13,9 +13,7 @@ tags:
 
 links:
   - text: ⏬下载地址
-    link: &togo https://cn.ubuntu.com/download
-
-togo: *togo
+    link: https://cn.ubuntu.com/download
 
 ---
 

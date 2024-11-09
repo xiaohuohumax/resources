@@ -16,9 +16,7 @@ links:
   - text: 🧰浏览地址
     link: &togo https://excalidraw.com/
   - text: 📦项目地址
-    link: &togo https://github.com/excalidraw/excalidraw
-
-togo: *togo
+    link: https://github.com/excalidraw/excalidraw
 
 ---
 

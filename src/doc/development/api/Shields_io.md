@@ -12,9 +12,7 @@ tags:
 
 links:
   - text: 📖文档地址
-    link: &togo https://shields.io/
-
-togo: *togo
+    link: https://shields.io/
 
 ---
 

@@ -13,9 +13,7 @@ tags:
 
 links:
   - text: ⏬下载地址
-    link: &togo https://adguard.info/zh_cn/welcome.html
-
-togo: *togo
+    link: https://adguard.info/zh_cn/welcome.html
 
 ---
 

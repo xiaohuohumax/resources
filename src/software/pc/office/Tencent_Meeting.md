@@ -12,9 +12,7 @@ tags:
 
 links:
   - text: ⏬下载地址
-    link: &togo https://meeting.qq.com/download.html
-
-togo: *togo
+    link: https://meeting.qq.com/download.html
 
 ---
 

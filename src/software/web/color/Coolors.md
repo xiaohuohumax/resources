@@ -13,9 +13,7 @@ tags:
 
 links:
   - text: 🧰浏览地址
-    link: &togo https://coolors.co/
-
-togo: *togo
+    link: https://coolors.co/
 
 ---
 

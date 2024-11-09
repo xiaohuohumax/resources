@@ -12,9 +12,7 @@ tags:
 
 links:
   - text: 🧰浏览地址
-    link: &togo https://www.degraeve.com/img2txt.php
-
-togo: *togo
+    link: https://www.degraeve.com/img2txt.php
 
 ---
 

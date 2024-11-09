@@ -12,9 +12,7 @@ tags:
 
 links:
   - text: 🧰浏览地址
-    link: &togo https://www.likefont.com/
-
-togo: *togo
+    link: https://www.likefont.com/
 
 ---
 

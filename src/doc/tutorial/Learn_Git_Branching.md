@@ -13,9 +13,7 @@ tags:
 
 links:
   - text: 🧰浏览地址
-    link: &togo https://learngitbranching.js.org/
-
-togo: *togo
+    link: https://learngitbranching.js.org/
 
 ---
 

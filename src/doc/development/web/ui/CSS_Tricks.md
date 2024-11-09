@@ -13,9 +13,7 @@ tags:
 
 links:
   - text: 📖文档地址
-    link: &togo https://qishaoxuan.github.io/css_tricks/
-
-togo: *togo
+    link: https://qishaoxuan.github.io/css_tricks/
 
 ---
 

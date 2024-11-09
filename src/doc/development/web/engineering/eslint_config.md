@@ -12,9 +12,7 @@ tags:
 
 links:
   - text: 📖文档地址
-    link: &togo https://github.com/antfu/eslint-config#readme
-
-togo: *togo
+    link: https://github.com/antfu/eslint-config#readme
 
 ---
 

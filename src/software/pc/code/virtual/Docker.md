@@ -13,9 +13,7 @@ tags:
 
 links:
   - text: ⏬下载地址
-    link: &togo https://docker.p2hp.com/get-started
-
-togo: *togo
+    link: https://docker.p2hp.com/get-started
 
 ---
 

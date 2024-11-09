@@ -14,9 +14,7 @@ tags:
 
 links:
   - text: ⏬下载地址
-    link: &togo https://www.pullywood.com/ImageAssistant/
-
-togo: *togo
+    link: https://www.pullywood.com/ImageAssistant/
 
 ---
 

@@ -13,9 +13,7 @@ tags:
 
 links:
   - text: ⏬下载地址
-    link: &togo https://www.jetbrains.com/lp/mono/
-
-togo: *togo
+    link: https://www.jetbrains.com/lp/mono/
 
 ---
 

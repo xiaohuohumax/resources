@@ -12,9 +12,7 @@ tags:
 
 links:
   - text: ⏬下载地址
-    link: &togo https://github.com/the1812/Bilibili-Evolved
-
-togo: *togo
+    link: https://github.com/the1812/Bilibili-Evolved
 
 ---
 

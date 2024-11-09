@@ -12,9 +12,7 @@ tags:
 
 links:
   - text: 📦项目地址
-    link: &togo https://developer.hitokoto.cn/
-
-togo: *togo
+    link: https://developer.hitokoto.cn/
 
 ---
 

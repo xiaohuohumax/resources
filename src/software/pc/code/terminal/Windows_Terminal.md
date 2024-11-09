@@ -14,9 +14,7 @@ tags:
 
 links:
   - text: ⏬下载地址
-    link: &togo https://apps.microsoft.com/detail/9n0dx20hk701
-
-togo: *togo
+    link: https://apps.microsoft.com/detail/9n0dx20hk701
 
 ---
 

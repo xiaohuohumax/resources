@@ -21,8 +21,6 @@ export interface RBase {
   path: string
   belong: RBelong
 
-  togo?: string
-  togoText?: string
   description?: string
   icon?: DefaultTheme.FeatureIcon
   tags?: string[]
@@ -31,6 +29,8 @@ export interface RBase {
 export interface Doc extends RBase {
   type: 'doc'
 
+  togo?: string
+  togoText?: string
   links: RLink[]
 }
 

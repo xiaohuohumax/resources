@@ -12,9 +12,7 @@ tags:
 
 links:
   - text: ⏬下载地址
-    link: &togo https://ziyouziti.com/
-
-togo: *togo
+    link: https://ziyouziti.com/
 
 ---
 

@@ -15,12 +15,10 @@ tags:
   - 正则表达式
 
 links:
-  - text: ⏬下载地址
-    link: &togo https://u.tools/download
   - text: 📖官方文档
-    link: &togo https://u.tools/docs/
-
-togo: *togo
+    link: https://u.tools/docs/
+  - text: ⏬下载地址
+    link: https://u.tools/download
 
 ---
 

@@ -13,9 +13,7 @@ tags:
 
 links:
   - text: 📖文档地址
-    link: &togo https://router.vuejs.org/zh/
-
-togo: *togo
+    link: https://router.vuejs.org/zh/
 
 ---
 

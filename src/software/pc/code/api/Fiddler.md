@@ -15,9 +15,7 @@ tags:
 
 links:
   - text: ⏬下载地址
-    link: &togo https://www.telerik.com/fiddler
-
-togo: *togo
+    link: https://www.telerik.com/fiddler
 
 ---
 

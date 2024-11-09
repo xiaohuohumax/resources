@@ -2,9 +2,6 @@
 
 type: collection
 
-icon:
-  src: /image/folder.svg
-
 title: 密码安全
 
 ---

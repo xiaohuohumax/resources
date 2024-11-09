@@ -13,9 +13,7 @@ tags:
 
 links:
   - text: 📦项目地址
-    link: &togo https://github.com/notiflix/Notiflix
-
-togo: *togo
+    link: https://github.com/notiflix/Notiflix
 
 ---
 

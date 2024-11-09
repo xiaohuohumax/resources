@@ -13,9 +13,7 @@ tags:
 
 links:
   - text: 📖文档地址
-    link: &togo https://www.tslang.cn/docs/home.html
-
-togo: *togo
+    link: https://www.tslang.cn/docs/home.html
 
 ---
 

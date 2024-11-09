@@ -15,9 +15,7 @@ tags:
 
 links:
   - text: 📖文档地址
-    link: &togo https://www.color4bg.com/zh-hans/quick-start/
-
-togo: *togo
+    link: https://www.color4bg.com/zh-hans/quick-start/
 
 ---
 

@@ -14,9 +14,7 @@ tags:
 
 links:
   - text: 📦访问地址
-    link: &togo https://github.com/
-
-togo: *togo
+    link: https://github.com/
 
 ---
 

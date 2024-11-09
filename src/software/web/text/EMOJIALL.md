@@ -13,9 +13,7 @@ tags:
 
 links:
   - text: 🧰浏览地址
-    link: &togo https://www.emojiall.com/
-
-togo: *togo
+    link: https://www.emojiall.com/
 
 ---
 

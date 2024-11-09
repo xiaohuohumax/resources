@@ -14,9 +14,7 @@ tags:
 
 links:
   - text: 📖文档地址
-    link: &togo https://developer.mozilla.org/zh-CN/docs/Learn
-
-togo: *togo
+    link: https://developer.mozilla.org/zh-CN/docs/Learn
 
 ---
 

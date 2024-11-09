@@ -15,9 +15,7 @@ tags:
 
 links:
   - text: ⏬下载地址
-    link: &togo https://mobaxterm.mobatek.net/
-
-togo: *togo
+    link: https://mobaxterm.mobatek.net/
 
 ---
 

@@ -14,9 +14,7 @@ tags:
 
 links:
   - text: 🧰浏览地址
-    link: &togo https://www.processon.com/
-
-togo: *togo
+    link: https://www.processon.com/
 
 ---
 

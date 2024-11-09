@@ -13,9 +13,7 @@ tags:
 
 links:
   - text: ⏬下载地址
-    link: &togo https://www.postman.com/downloads/
-
-togo: *togo
+    link: https://www.postman.com/downloads/
 
 ---
 

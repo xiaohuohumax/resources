@@ -12,9 +12,7 @@ tags:
 
 links:
   - text: ⏬下载地址
-    link: &togo https://github.com/WSTxda/QP-Gallery-Releases
-
-togo: *togo
+    link: https://github.com/WSTxda/QP-Gallery-Releases
 
 ---
 

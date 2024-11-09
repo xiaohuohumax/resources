@@ -13,11 +13,9 @@ tags:
 
 links:
   - text: ⏬下载地址
-    link: &togo https://www.7-zip.org/download.html
+    link: https://www.7-zip.org/download.html
   - text: 📖官方网站
     link: https://sparanoid.com/lab/7z/
-
-togo: *togo
 
 ---
 

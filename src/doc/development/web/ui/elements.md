@@ -13,9 +13,7 @@ tags:
 
 links:
   - text: 📦项目地址
-    link: &togo https://github.com/vscode-elements/elements
-
-togo: *togo
+    link: https://github.com/vscode-elements/elements
 
 ---
 

@@ -13,9 +13,7 @@ tags:
 
 links:
   - text: 📖文档地址
-    link: &togo https://vuetifyjs.com/zh-Hans/
-
-togo: *togo
+    link: https://vuetifyjs.com/zh-Hans/
 
 ---
 

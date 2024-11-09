@@ -12,9 +12,7 @@ tags:
 
 links:
   - text: 📦项目地址
-    link: &togo https://github.com/ncipollo/release-action
-
-togo: *togo
+    link: https://github.com/ncipollo/release-action
 
 ---
 

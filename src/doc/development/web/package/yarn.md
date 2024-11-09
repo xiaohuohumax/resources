@@ -12,9 +12,7 @@ tags:
 
 links:
   - text: 📖文档地址
-    link: &togo https://yarnpkg.com/cli
-
-togo: *togo
+    link: https://yarnpkg.com/cli
 
 ---
 

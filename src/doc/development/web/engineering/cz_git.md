@@ -15,9 +15,7 @@ tags:
 
 links:
   - text: 📖文档地址
-    link: &togo https://cz-git.qbb.sh/zh/
-
-togo: *togo
+    link: https://cz-git.qbb.sh/zh/
 
 ---
 

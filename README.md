@@ -4,7 +4,7 @@
 
 ## 🔖 书签
 
-[bookmark.html](./dist/bookmark.html) 包含全部资源链接，可直接导入浏览器书签栏。
+[bookmark.html](./public/bookmark.html) 包含全部资源链接，可直接导入浏览器书签栏。
 
 **注意**: 请勿格式化此文件，否则会导致书签无法正常导入。
 

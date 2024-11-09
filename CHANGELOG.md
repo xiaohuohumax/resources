@@ -1,5 +1,11 @@
 # resources
 
+## 3.9.1
+
+### Patch Changes
+
+- 搜索标签结构优化
+
 ## 3.9.0
 
 ### Minor Changes

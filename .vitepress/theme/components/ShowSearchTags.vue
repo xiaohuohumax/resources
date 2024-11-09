@@ -2,20 +2,18 @@
 import type { Resource } from '../types'
 import { computedAsync } from '@vueuse/core'
 import virtualResources from 'virtual:resources'
-import { computed, ref, watch } from 'vue'
+import { computed, ref } from 'vue'
 import { useQuery } from '../use/query'
 import Resources from './Resources.vue'
 import Tags from './Tags.vue'
 
 const queryTag = useQuery('tag')
 const querySearch = useQuery('search')
-const searchTag = ref(queryTag.value || '')
-const search = ref<string>(querySearch.value || '')
 const loading = ref(true)
-
 const resources = ref<Resource[]>([])
 
 async function initTagCaches() {
+  resources.value = []
   async function importResource(id: string) {
     for (const resource of (await (virtualResources[id]())).default) {
       resources.value.push(resource)
@@ -44,27 +42,24 @@ const tagMap = computed(() => {
 })
 
 const tags = computed(() => {
-  const tags = Array.from(tagMap.value.keys())
-  return tags.filter(tag => tag.toLocaleLowerCase().includes(search.value.toLocaleLowerCase()))
+  return Array.from(tagMap.value.keys())
+    .filter((tag) => {
+      const tagLower = tag.toLocaleLowerCase()
+      const queryLower = querySearch.value.toLocaleLowerCase()
+      return tagLower.includes(queryLower)
+    })
 })
 
-watch(() => queryTag.value, () => searchTag.value = queryTag.value, { once: true })
-watch(() => querySearch.value, () => search.value = querySearch.value, { once: true })
-watch(() => search.value, () => querySearch.value = search.value)
-
 function handleTagClick(tag: string) {
-  const t = searchTag.value === tag
-    ? ''
-    : tag
-  searchTag.value = t
-  queryTag.value = t
+  queryTag.value = tag
+  queryTag.value = tag
 }
 
 const searchResources = computedAsync(async () => {
-  if (!tags.value.includes(searchTag.value)) {
+  if (!tags.value.includes(queryTag.value)) {
     return []
   }
-  return tagMap.value.get(searchTag.value) || []
+  return tagMap.value.get(queryTag.value) || []
 }, [])
 
 function getTagCount(tag: string) {
@@ -74,17 +69,17 @@ function getTagCount(tag: string) {
 
 <template>
   <div class="ShowSearchTags">
-    <input v-model="search" class="search-input" type="text" placeholder="搜索标签">
+    <input v-model="querySearch" class="search-input" type="text" placeholder="搜索标签">
     <template v-if="tags.length === 0">
       <p>暂无标签</p>
     </template>
     <template v-else>
-      <Tags v-model:tag="searchTag" class="tags" :tags="tags" @tag-click="handleTagClick">
+      <Tags v-model:tag="queryTag" class="tags" :tags="tags" @tag-click="handleTagClick">
         <template #default="{ value }">
           {{ value }}:{{ getTagCount(value) }}
         </template>
       </Tags>
-      <div v-if="searchTag !== ''">
+      <div v-if="queryTag !== ''">
         <p><small>共 {{ searchResources.length }} 个结果</small></p>
         <Resources class="resources" is-collection :resources="searchResources" />
       </div>

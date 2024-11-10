@@ -1,5 +1,11 @@
 # resources
 
+## 3.10.1
+
+### Patch Changes
+
+- 修复 logo 宽高异常
+
 ## 3.10.0
 
 ### Minor Changes

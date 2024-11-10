@@ -22,13 +22,13 @@ function handleTagClick(tag: string, event: MouseEvent) {
     <article class="box">
       <div v-if="typeof resource.icon === 'object' && resource.icon.wrap" class="icon">
         <VPImage
-          :image="resource.icon" :alt="resource.icon.alt" :height="resource.icon.height || 48"
-          :width="resource.icon.width || 48"
+          :image="resource.icon" :alt="resource.icon.alt"
+          style="width: 48px; height: 48px; object-fit: contain;"
         />
       </div>
       <VPImage
         v-else-if="typeof resource.icon === 'object'" :image="resource.icon" :alt="resource.icon.alt"
-        :height="resource.icon.height || 48" :width="resource.icon.width || 48"
+        style="width: 48px; height: 48px; object-fit: contain;"
       />
       <div v-else-if="resource.icon" class="icon" v-html="resource.icon" />
       <h2 class="title" v-html="resource.title" />
@@ -77,19 +77,18 @@ function handleTagClick(tag: string, event: MouseEvent) {
 }
 
 .box> :deep(.VPImage) {
-  margin-bottom: 20px;
+  margin-bottom: .45rem;
 }
 
 .icon {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: .45rem;
   border-radius: 6px;
   background-color: var(--vp-c-default-soft);
   width: 48px;
   height: 48px;
-  font-size: 24px;
   transition: background-color 0.25s;
 }
 

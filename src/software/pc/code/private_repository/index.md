@@ -2,11 +2,11 @@
 
 type: collection
 
-title: 精选
+title: 私有仓库
 
 ---
 
-# 精选
+# 私有仓库
 
 <ShowBreadcrumb />
 

@@ -10,6 +10,7 @@ description: npm 是世界上最大的软件注册表。包含了数以百万计
 tags:
   - 包管理器
   - Node
+  - npm
 
 links:
   - text: 📖文档地址

@@ -1,5 +1,11 @@
 # resources
 
+## 3.10.3
+
+### Patch Changes
+
+- 图标位置调整
+
 ## 3.10.2
 
 ### Patch Changes

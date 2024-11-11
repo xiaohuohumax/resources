@@ -15,6 +15,15 @@ function handleTagClick(tag: string, event: MouseEvent) {
   event.stopPropagation()
   router.go(withBase(`/tags?tag=${encodeURIComponent(tag)}`))
 }
+
+function getImageStyle(isCollection: boolean) {
+  return {
+    width: '48px',
+    height: '48px',
+    objectFit: 'contain',
+    marginLeft: isCollection ? '-4px' : '0',
+  }
+}
 </script>
 
 <template>
@@ -23,12 +32,12 @@ function handleTagClick(tag: string, event: MouseEvent) {
       <div v-if="typeof resource.icon === 'object' && resource.icon.wrap" class="icon">
         <VPImage
           :image="resource.icon" :alt="resource.icon.alt"
-          style="width: 48px; height: 48px; object-fit: contain;"
+          :style="getImageStyle(resource.type === 'collection')"
         />
       </div>
       <VPImage
         v-else-if="typeof resource.icon === 'object'" :image="resource.icon" :alt="resource.icon.alt"
-        style="width: 48px; height: 48px; object-fit: contain;"
+        :style="getImageStyle(resource.type === 'collection')"
       />
       <div v-else-if="resource.icon" class="icon" v-html="resource.icon" />
       <h2 class="title" v-html="resource.title" />

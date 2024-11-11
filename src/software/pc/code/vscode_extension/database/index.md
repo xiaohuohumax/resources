@@ -2,11 +2,11 @@
 
 type: collection
 
-title: 数据库扩展
+title: 数据库
 
 ---
 
-# 数据库扩展
+# 数据库
 
 <ShowBreadcrumb />
 

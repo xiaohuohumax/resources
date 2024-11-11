@@ -2,11 +2,11 @@
 
 type: collection
 
-title: AI 扩展
+title: AI
 
 ---
 
-# AI 扩展
+# AI
 
 <ShowBreadcrumb />
 

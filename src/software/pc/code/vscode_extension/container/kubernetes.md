@@ -11,7 +11,6 @@ tags:
   - Visual Studio Code
   - VS Code 扩展
   - Kubernetes
-  - 容器
 
 links:
   - text: ⏬下载地址

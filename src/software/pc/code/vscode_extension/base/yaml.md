@@ -6,7 +6,7 @@ icon:
   src: /image/logo/vscode_ext_yaml.png
 
 title: YAML
-description: 为 Visual Studio Code 提供全面的 YAML 语言支持，通过 yaml-language-server 实现，并内置 Kubernetes 语法支持。
+description: 为 VS Code 提供全面的 YAML 语言支持，通过 yaml-language-server 实现，并内置 Kubernetes 语法支持。
 tags:
   - Visual Studio Code
   - VS Code 扩展
@@ -34,4 +34,4 @@ links:
 
 ## 简介
 
-为 Visual Studio Code 提供全面的 YAML 语言支持，通过 yaml-language-server 实现，并内置 Kubernetes 语法支持。
+为 VS Code 提供全面的 YAML 语言支持，通过 yaml-language-server 实现，并内置 Kubernetes 语法支持。

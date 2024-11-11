@@ -2,11 +2,11 @@
 
 type: collection
 
-title: 容器扩展
+title: 容器
 
 ---
 
-# 容器扩展
+# 容器
 
 <ShowBreadcrumb />
 

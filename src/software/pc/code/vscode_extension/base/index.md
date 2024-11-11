@@ -2,11 +2,11 @@
 
 type: collection
 
-title: 基础扩展
+title: 基础
 
 ---
 
-# 基础扩展
+# 基础
 
 <ShowBreadcrumb />
 

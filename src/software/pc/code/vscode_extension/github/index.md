@@ -2,11 +2,11 @@
 
 type: collection
 
-title: GitHub 扩展
+title: GitHub
 
 ---
 
-# GitHub 扩展
+# GitHub
 
 <ShowBreadcrumb />
 

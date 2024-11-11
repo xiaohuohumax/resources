@@ -3,7 +3,7 @@
 type: doc
 
 icon:
-  src: /image/logo/SQLite.png
+  src: /image/logo/vscode_ext_SQLite.png
 
 title: SQLite
 description: 此扩展可以帮助你在 VS Code 中连接到 SQLite 数据库并管理数据。

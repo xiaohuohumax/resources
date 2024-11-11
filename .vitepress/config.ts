@@ -19,7 +19,7 @@ const resourceManager: ResourceManager = new ResourceManager({
   srcDir: constant.SRC_DIR,
   srcExclude: constant.SRC_EXCLUDE,
   collectionIconDefault: {
-    src: '/image/folder.svg',
+    src: constant.FOLDER_ICON_PATH,
   },
   togoTextDefault: '直达',
 })

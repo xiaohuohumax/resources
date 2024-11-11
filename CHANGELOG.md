@@ -1,5 +1,11 @@
 # resources
 
+## 3.10.2
+
+### Patch Changes
+
+- 路径格式化
+
 ## 3.10.1
 
 ### Patch Changes

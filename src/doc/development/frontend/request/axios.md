@@ -13,7 +13,7 @@ tags:
 
 links:
   - text: 📦项目地址
-    link: https://axios-http.com/zh/docs/intro
+    link: https://axios-http.com/zh/
 
 ---
 

@@ -15,6 +15,8 @@ tags:
 links:
   - text: ⏬下载地址
     link: https://apps.microsoft.com/detail/9n0dx20hk701
+  - text: 📖官方文档
+    link: https://learn.microsoft.com/zh-cn/windows/terminal/
 
 ---
 

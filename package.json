@@ -11,7 +11,7 @@
     "check": "vite-node .vitepress/script/check.ts",
     "fmt-file": "vite-node .vitepress/script/fmt-file.ts",
     "check:cache": "npm run check -- --cache",
-    "commit": "npm run lint:fix && npm run build && git add . && cz",
+    "commit": "npm run fmt-file && npm run lint:fix && npm run build && git add . && cz",
     "postinstall": "simple-git-hooks",
     "changeset": "changeset",
     "version": "changeset version && npm i",

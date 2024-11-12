@@ -8,7 +8,7 @@ icon:
 title: EMOJIALL
 description: EMOJI 中文网，这是一本全面的EMOJI字典。
 tags:
-  - emoji
+  - Emoji
   - 图片
 
 links:

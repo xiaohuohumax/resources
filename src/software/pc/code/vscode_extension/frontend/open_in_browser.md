@@ -6,7 +6,7 @@ icon:
   src: /image/logo/open_in_browser.png
 
 title: open in browser
-description: open in browser是由非十大模型驱动的AI编程助手，它可以自动生成代码，提升开发效率，帮您调试Bug，节省您的时间。还可以对话聊天，解决您编程碰到的问题。免费且支持80多种语言：Python、C++、Javascript、Typescript、Java等。
+description: open in browser 扩展可以在默认浏览器或应用程序中打开当前文件。
 tags:
   - Visual Studio Code
   - VS Code 扩展
@@ -33,4 +33,4 @@ links:
 
 ## 简介
 
-open in browser是由非十大模型驱动的AI编程助手，它可以自动生成代码，提升开发效率，帮您调试Bug，节省您的时间。还可以对话聊天，解决您编程碰到的问题。免费且支持80多种语言：Python、C++、Javascript、Typescript、Java等。
+open in browser 扩展可以在默认浏览器或应用程序中打开当前文件。

@@ -70,6 +70,7 @@
     "pylance",
     "pypi",
     "pyproject",
+    "pyupgrade",
     "rech",
     "servlet",
     "shiki",

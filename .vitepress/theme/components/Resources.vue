@@ -30,7 +30,7 @@ const grid = computed<string>(() => {
 <template>
   <div class="Resources">
     <div class="items">
-      <div v-for="resource in resources" :key="resource.title" class="item" :class="[grid]">
+      <div v-for="resource in resources" :key="resource.path" class="item" :class="[grid]">
         <Resource :resource="resource" />
       </div>
     </div>

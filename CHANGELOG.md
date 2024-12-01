@@ -1,5 +1,11 @@
 # resources
 
+## 3.10.5
+
+### Patch Changes
+
+- 修复资源链接异常和资源名称重复导致 index 重复异常
+
 ## 3.10.4
 
 ### Patch Changes

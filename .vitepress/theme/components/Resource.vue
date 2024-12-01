@@ -11,8 +11,7 @@ defineProps<{
 
 const router = useRouter()
 
-function handleTagClick(tag: string, event: MouseEvent) {
-  event.stopPropagation()
+function handleTagClick(tag: string) {
   router.go(withBase(`/tags?tag=${encodeURIComponent(tag)}`))
 }
 
@@ -27,7 +26,7 @@ function getImageStyle(isCollection: boolean) {
 </script>
 
 <template>
-  <VPLink class="Resource" :no-icon="true" tag="div" @click="router.go(withBase(resource.path))">
+  <VPLink class="Resource" :no-icon="true" :href="resource.path" @click.prevent>
     <article class="box">
       <div v-if="typeof resource.icon === 'object' && resource.icon.wrap" class="icon">
         <VPImage
@@ -44,7 +43,7 @@ function getImageStyle(isCollection: boolean) {
       <Tags v-if="resource.tags" :tags="resource.tags" @tag-click="handleTagClick" />
       <p v-if="resource.description" class="description" v-html="resource.description" />
       <div v-if="resource.type === 'doc' && resource.togo" class="togo">
-        <VPLink :href="resource.togo" :no-icon="true" :tag="resource.togo ? 'a' : 'div'">
+        <VPLink :href="resource.togo" :no-icon="true" :tag="resource.togo ? 'a' : 'div'" @click.stop>
           {{ resource.togoText || '' }}
         </VPLink>
       </div>

@@ -1,7 +1,7 @@
 <script setup lang='ts'>
 import { useTheme } from '../use/theme'
 
-const props = withDefaults(defineProps<{
+withDefaults(defineProps<{
   tags: string[]
   checkable?: boolean
 }>(), {
@@ -42,24 +42,18 @@ function formatTagColorStyle(tag: string) {
   const color = colorNames[Math.abs(hash % colorNames.length)]
   return `--color: var(--vp-c-${color}-${theme.value === 'dark' ? '2' : '3'});`
 }
-
-function handleTagClick(tag: string, event: MouseEvent) {
-  if (props.checkable) {
-    emit('tagClick', tag, event)
-  }
-}
 </script>
 
 <template>
   <div class="Tags">
-    <span
+    <a
       v-for="t in tags" :key="t" :class="{
         checked: tag === t,
         checkable,
-      }" :style="formatTagColorStyle(t)" @click="handleTagClick(t, $event)"
+      }" :style="formatTagColorStyle(t)" @click="() => checkable && emit('tagClick', t)"
     >
       <slot :value="t">{{ t }}</slot>
-    </span>
+    </a>
   </div>
 </template>
 
@@ -69,7 +63,7 @@ function handleTagClick(tag: string, event: MouseEvent) {
   flex-wrap: wrap;
 }
 
-.Tags span {
+.Tags a {
   border-radius: 4px;
   padding: 3px 6px;
   transition: color 0.25s, background-color 0.5s;
@@ -82,8 +76,8 @@ function handleTagClick(tag: string, event: MouseEvent) {
   color: var(--color);
 }
 
-.Tags span.checkable:hover,
-.Tags span.checkable.checked {
+.Tags a.checkable:hover,
+.Tags a.checkable.checked {
   color: var(--vp-c-bg);
   border: 1px solid var(--color);
   background-color: var(--color);

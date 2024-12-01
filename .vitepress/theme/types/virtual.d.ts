@@ -1,5 +1,5 @@
 declare module 'virtual:resources' {
-  const data: Record<string, () => Promise<{ default: import('./index.d').Resource[] }>>
+  const data: Record<string, import('./index.d').Resource[]>
   export default data
 }
 

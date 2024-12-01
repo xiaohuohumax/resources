@@ -9,25 +9,7 @@ import Tags from './Tags.vue'
 
 const queryTag = useQuery('tag')
 const querySearch = useQuery('search')
-const loading = ref(true)
-const resources = ref<Resource[]>([])
-
-async function initTagCaches() {
-  resources.value = []
-  async function importResource(id: string) {
-    for (const resource of (await (virtualResources[id]())).default) {
-      resources.value.push(resource)
-    }
-  }
-  const importJobs = []
-  for (const id of Object.keys(virtualResources)) {
-    importJobs.push(importResource(id))
-  }
-  await Promise.all(importJobs)
-  loading.value = false
-}
-
-initTagCaches()
+const resources = ref<Resource[]>(Object.values(virtualResources).flat())
 
 const tagMap = computed(() => {
   const tagMap = new Map<string, Resource[]>()

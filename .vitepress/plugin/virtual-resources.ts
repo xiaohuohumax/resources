@@ -19,19 +19,14 @@ export default function (resourceManager: ResourceManager): Plugin {
     },
     load(id) {
       if (id === VIRTUAL_RESOURCES_ID) {
-        // virtual:resources => { collectionId: ()=> import('virtual:resources:collectionId'), ... }
+        // virtual:resources => { collectionId: Resource[], ... }
         const records = resourceManager.getAllCollections()
           .map(({ id }) => id)
           .map((collectionId) => {
-            const importPath = VIRTUAL_RESOURCES_ITEM_PATH + collectionId
-            return `${JSON.stringify(collectionId)} : ()=> import('${importPath}')`
+            const collection = JSON.stringify(resourceManager.getSortResourcesByBelongId(collectionId))
+            return `${JSON.stringify(collectionId)} : ${collection}`
           })
         return `export default { ${records.join(', ')} }`
-      }
-      else if (id.startsWith(VIRTUAL_RESOURCES_ITEM_PATH)) {
-        // virtual:resources:collectionId => Resource[]
-        const collectionId = id.slice(VIRTUAL_RESOURCES_ITEM_PATH.length)
-        return `export default ${JSON.stringify(resourceManager.getSortResourcesByBelongId(collectionId))}`
       }
     },
   }

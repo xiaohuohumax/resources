@@ -1,5 +1,11 @@
 # resources
 
+## 3.10.4
+
+### Patch Changes
+
+- 虚拟资源模块改为同步加载
+
 ## 3.10.3
 
 ### Patch Changes

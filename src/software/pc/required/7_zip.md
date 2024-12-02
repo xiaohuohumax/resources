@@ -14,7 +14,7 @@ tags:
 links:
   - text: ⏬下载地址
     link: https://www.7-zip.org/download.html
-  - text: 📖官方网站
+  - text: 🌍网站地址
     link: https://sparanoid.com/lab/7z/
 
 ---

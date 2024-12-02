@@ -11,7 +11,7 @@ tags:
   - Visual Studio Code
 
 links:
-  - text: 📦访问地址
+  - text: 🌍网站地址
     link: https://marketplace.visualstudio.com/
 
 ---

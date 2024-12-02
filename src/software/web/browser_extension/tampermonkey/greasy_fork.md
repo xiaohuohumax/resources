@@ -11,7 +11,7 @@ tags:
   - Tampermonkey
 
 links:
-  - text: 📦仓库地址
+  - text: 🌍网站地址
     link: https://greasyfork.org/zh-CN
 
 ---

@@ -14,8 +14,6 @@ tags:
   - 版本控制
 
 links:
-  - text: 📖开始使用
-    link: https://github.com/changesets/changesets/blob/main/packages/cli/README.md
   - text: 📦项目地址
     link: https://github.com/changesets/changesets
 

@@ -12,7 +12,7 @@ tags:
   - SVG
 
 links:
-  - text: 🧰浏览地址
+  - text: 🌍网站地址
     link: https://www.itutool.com/tools/svg-editor.html
 
 ---

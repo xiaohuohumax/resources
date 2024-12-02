@@ -14,7 +14,7 @@ tags:
   - 字体
 
 links:
-  - text: 🧰浏览地址
+  - text: 🌍网站地址
     link: https://www.iconfont.cn/
 
 ---

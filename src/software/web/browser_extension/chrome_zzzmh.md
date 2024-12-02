@@ -11,7 +11,7 @@ tags:
   - 浏览器扩展
 
 links:
-  - text: 🌍浏览地址
+  - text: 🌍网站地址
     link: https://chrome.zzzmh.cn
 
 ---

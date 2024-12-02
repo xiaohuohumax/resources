@@ -12,7 +12,7 @@ tags:
   - 图片
 
 links:
-  - text: 🧰浏览地址
+  - text: 🌍网站地址
     link: https://www.emojiall.com/
 
 ---

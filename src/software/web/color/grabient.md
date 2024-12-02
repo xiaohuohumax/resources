@@ -12,7 +12,7 @@ tags:
   - 设计
 
 links:
-  - text: 🧰浏览地址
+  - text: 🌍网站地址
     link: https://www.grabient.com
 
 ---

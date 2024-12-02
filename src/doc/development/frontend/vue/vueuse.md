@@ -13,7 +13,7 @@ tags:
 links:
   - text: 📖文档地址
     link: https://vueuse.nodejs.cn/
-  - text: 💻项目地址
+  - text: 📦项目地址
     link: https://github.com/vueuse/vueuse
 
 ---

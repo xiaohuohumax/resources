@@ -13,7 +13,7 @@ tags:
   - 图表
 
 links:
-  - text: 🧰浏览地址
+  - text: 🌍网站地址
     link: &togo https://excalidraw.com/
   - text: 📦项目地址
     link: https://github.com/excalidraw/excalidraw

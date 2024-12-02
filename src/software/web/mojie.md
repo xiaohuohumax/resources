@@ -11,7 +11,7 @@ tags:
   - 代理
 
 links:
-  - text: 📦访问地址
+  - text: 🌍网站地址
     link: https://mojie.cyou/
 
 ---

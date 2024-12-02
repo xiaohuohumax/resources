@@ -14,7 +14,7 @@ tags:
   - XML
 
 links:
-  - text: 📦官方地址
+  - text: 🌍网站地址
     link: https://baomidou.com/
 
 ---

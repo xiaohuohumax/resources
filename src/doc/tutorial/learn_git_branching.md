@@ -12,7 +12,7 @@ tags:
   - 游戏
 
 links:
-  - text: 🧰浏览地址
+  - text: 🌍网站地址
     link: https://learngitbranching.js.org/
 
 ---

@@ -18,7 +18,7 @@ links:
   - text: ⏬下载地址
     link: https://marketplace.visualstudio.com/items?itemName=foxundermoon.shell-format
   - text: 📦项目地址
-    link: https://github.com/golang/vscode-shell-format
+    link: https://github.com/foxundermoon/vs-shell-format
 
 ---
 

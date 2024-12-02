@@ -15,7 +15,7 @@ links:
   - text: 📖文档地址
     link: http://mockjs.com/
   - text: 📦项目地址
-    link: https://github.com/nuysoft/Mock、
+    link: https://github.com/nuysoft/Mock
 
 ---
 

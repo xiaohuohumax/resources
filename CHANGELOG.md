@@ -1,5 +1,11 @@
 # resources
 
+## 3.11.0
+
+### Minor Changes
+
+- 添加资源统计工具
+
 ## 3.10.6
 
 ### Patch Changes

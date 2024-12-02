@@ -1,6 +1,6 @@
 {
   "name": "resources",
-  "version": "3.10.6",
+  "version": "3.11.0",
   "description": "资源仓库: 收录各种常用资源地址。",
   "type": "module",
   "private": true,
@@ -12,6 +12,7 @@
     "check:cache": "npm run check -- --cache",
     "commit": "npm run fmt && npm run lint:fix && npm run build && git add . && cz",
     "change": "npm run changeset && npm run changeset version && npm i",
+    "stat": "vite-node .vitepress/script/stat.ts",
     "fmt": "vite-node .vitepress/script/fmt.ts",
     "postinstall": "simple-git-hooks",
     "changeset": "changeset",

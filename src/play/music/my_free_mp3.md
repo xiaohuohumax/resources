@@ -12,7 +12,7 @@ tags:
   - 音乐
 
 links:
-  - text: �网站地址
+  - text: 🌍网站地址
     link: https://tools.liumingye.cn/music/
 
 ---

@@ -31,6 +31,7 @@ createBookmark(resourceManager, bookmarkFilePath, `${TITLE} Bookmark`)
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: TITLE,
+  lang: 'zh-CN',
   description: 'Resource Repository',
   base: BASE,
   srcDir: constant.SRC_DIR,

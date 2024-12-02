@@ -1,5 +1,11 @@
 # resources
 
+## 3.10.6
+
+### Patch Changes
+
+- 修复资源链接检查工具 403 误判异常，更新 readme 文档
+
 ## 3.10.5
 
 ### Patch Changes

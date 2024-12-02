@@ -11,6 +11,13 @@ import * as puppeteer from 'puppeteer'
 import * as constant from '../constant'
 import { ResourceManager } from '../resource'
 
+// 排除的状态码
+const EXCLUDE_STATUS_CODES = [
+  304, // 资源未修改，无需重新请求
+  403, // 拒绝访问，人机验证等
+]
+// 浏览器 userAgent
+const USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'
 // 并发限制
 const LIMIT_CONCURRENCY = 26
 // 重试次数
@@ -56,7 +63,7 @@ async function checkLink(link: string, browser: puppeteer.Browser): Promise<[boo
   for (let i = 1; i <= RETRY_COUNT; i++) {
     const page = await browser.newPage()
     // 部分网站需要设置 userAgent
-    await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64)')
+    await page.setUserAgent(USER_AGENT)
     try {
       const response = await page.goto(link, {
         waitUntil: 'domcontentloaded',
@@ -66,10 +73,13 @@ async function checkLink(link: string, browser: puppeteer.Browser): Promise<[boo
       if (response == null) {
         throw new Error(`Failed to fetch ${link}`)
       }
-      else if (!response.ok()) {
-        throw new Error(`Failed to fetch ${link} with status code ${response.status()}`)
+      const code = response.status()
+
+      if (response.ok() || EXCLUDE_STATUS_CODES.includes(code)) {
+        return [true, undefined]
       }
-      return [true, error]
+
+      throw new Error(`Failed to fetch ${link} with status code ${code}`)
     }
     catch (err) {
       error = err as Error

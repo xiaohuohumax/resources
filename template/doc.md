@@ -2,7 +2,7 @@
 # 文档
 type: doc
 
-# 该集合已被禁用
+# 该文档已被禁用
 disabled: false
 
 belong:

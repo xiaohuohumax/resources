@@ -1,44 +1,39 @@
-# Resource
+<div align="center">
+  <h1><a href="https://xiaohuohumax.github.io/resources/">Resources</a></h1>
+  <p><strong>这是一个资源仓库，收录了一些自己收集的常用资源链接（包含：常用软件、文章文档、游戏音乐等）</strong></p>
+</div>
 
-这是一个资源仓库，用于存放一些常用的资源地址。
+## ✨ 功能特点
 
-## 🔖 书签
+本项目是一个基于 [Vitepress](https://vitepress.dev/) 搭建的 [资源导航网站](https://xiaohuohumax.github.io/resources/)
 
-[bookmark.html](./public/bookmark.html) 包含全部资源链接，可直接导入浏览器书签栏。
+- ⚡  热更新集合和文档内容
+- 🔖 自动生成可供浏览器导入的书签文件
+- 🎨 资源支持标签、搜索
+- ✅ 继承资源链接有效性检查工具
+- 🔍 中文本地搜索优化
+- 🌳 自动生成导航栏菜单和资源集合
 
-**注意**: 请勿格式化此文件，否则会导致书签无法正常导入。
+## 🔖 使用书签
 
-## ✨ 附加功能
+> [!WARNING]
+> bookmark.html 是自动生成的类 HTML 文件，请勿格式化此文件，否则会导致书签无法正常导入
 
-- 热更新资源集合、顶部菜单等
-- 自动生成资源集合、顶部菜单
-- 资源链接有效性检查
-- 资源打包浏览器书签
-- 本地搜索中文优化
+如果不想访问 [资源导航网站](https://xiaohuohumax.github.io/resources/)，也可以直接导入 [public/bookmark.html](./public/bookmark.html) 书签文件到浏览器书签栏
 
 ## ♻️ 提交流程
 
-1. 编写文档
-2. [可选] 检查链接是否有效 `npm run check`
-3. [可选] 修改版本号 `npm run changeset` `npm run version`
-4. 拉取最新 `git pull`
-5. 本地提交 `npm run commit`
-6. 推送到远程仓库
+1. 添加资源/更改源码
+2. [可选] `npm run change` 更新版本号和 CHANGELOG 文档
+3. [可选] `git pull` 拉取最新
+4. [可选] `npm run check` 链接检查
+5. `npm run commit` 提交更改
+6. `git push` 推送到远程仓库
 
-## 🔧 检查链接
+## 🗂️ 资源模板
 
-```bash
-# 检查所有链接是否有效
-npm run check
-
-# 检查缓存中失败的链接是否有效
-npm run check:cache
-```
-
-## 🗂️ 模板
-
-- [集合模板 template/collection.md](./template/collection.md)
-- [文档模板 template/doc.md](./template/doc.md)
+- [集合模板](./template/collection.md)
+- [文档模板](./template/doc.md)
 
 ## 📝 更新日志
 

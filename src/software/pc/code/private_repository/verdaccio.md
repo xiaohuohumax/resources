@@ -9,7 +9,7 @@ title: Verdaccio
 description: Verdaccio 是一个基于 Node.js 的轻量级 npm 私有仓库。
 tags:
   - Node
-  - npm
+  - Npm
   - 私有仓库
 
 links:

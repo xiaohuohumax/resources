@@ -10,7 +10,7 @@ description: ‌UniGetUI ‌是一个为 Windows 上的最流行的命令行包�
 tags:
   - 包管理器
   - Npm
-  - Winget
+  - WinGet
 
 links:
   - text: ⏬下载地址

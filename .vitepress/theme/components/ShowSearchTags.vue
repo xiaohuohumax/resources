@@ -2,14 +2,17 @@
 import type { Resource } from '../types'
 import { computedAsync } from '@vueuse/core'
 import virtualResources from 'virtual:resources'
-import { computed, ref } from 'vue'
+import { computed, onMounted, ref, useTemplateRef } from 'vue'
 import { useQuery } from '../use/query'
 import Resources from './Resources.vue'
 import Tags from './Tags.vue'
 
 const queryTag = useQuery('tag')
 const querySearch = useQuery('search')
+const querySearchRef = useTemplateRef<HTMLInputElement>('querySearchRef')
 const resources = ref<Resource[]>(Object.values(virtualResources).flat())
+
+onMounted(() => querySearchRef.value?.focus())
 
 const tagMap = computed(() => {
   const tagMap = new Map<string, Resource[]>()
@@ -51,7 +54,7 @@ function getTagCount(tag: string) {
 
 <template>
   <div class="ShowSearchTags">
-    <input v-model="querySearch" class="search-input" type="text" placeholder="搜索标签">
+    <input ref="querySearchRef" v-model="querySearch" class="search-input" type="text" placeholder="搜索标签">
     <template v-if="tags.length === 0">
       <p>暂无标签</p>
     </template>

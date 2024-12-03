@@ -1,5 +1,11 @@
 # resources
 
+## 3.12.0
+
+### Minor Changes
+
+- 标签搜索框自动获取焦点
+
 ## 3.11.0
 
 ### Minor Changes

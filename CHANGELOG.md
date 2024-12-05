@@ -1,5 +1,11 @@
 # resources
 
+## 3.13.0
+
+### Minor Changes
+
+- Vitepress 默认字体替换为寒蝉圆黑体
+
 ## 3.12.0
 
 ### Minor Changes

@@ -1,5 +1,5 @@
 import type { Theme } from 'vitepress'
-import DefaultTheme from 'vitepress/theme'
+import DefaultTheme from 'vitepress/theme-without-fonts'
 import ShowBreadcrumb from './components/ShowBreadcrumb.vue'
 import ShowLinks from './components/ShowLinks.vue'
 import ShowLogo from './components/ShowLogo.vue'

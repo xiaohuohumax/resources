@@ -112,7 +112,8 @@
     "youquhome",
     "zcool",
     "ziyouziti",
-    "zzzmh"
+    "zzzmh",
+    "tauri"
   ],
   // Disable the default formatter, use eslint instead
   "prettier.enable": false,

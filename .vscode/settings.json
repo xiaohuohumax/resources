@@ -34,6 +34,7 @@
     "hitokoto",
     "hoppscotch",
     "htmltagwrap",
+    "huorong",
     "iconfont",
     "intellij",
     "ionicons",
@@ -87,6 +88,7 @@
     "tabler",
     "tada",
     "tampermonkey",
+    "tauri",
     "tbtool",
     "tiptap",
     "topgoer",
@@ -112,8 +114,7 @@
     "youquhome",
     "zcool",
     "ziyouziti",
-    "zzzmh",
-    "tauri"
+    "zzzmh"
   ],
   // Disable the default formatter, use eslint instead
   "prettier.enable": false,

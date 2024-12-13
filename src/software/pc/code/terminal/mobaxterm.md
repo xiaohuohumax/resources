@@ -16,6 +16,8 @@ tags:
 links:
   - text: ⏬下载地址
     link: https://mobaxterm.mobatek.net/
+  - text: 🚧补丁教程
+    link: https://github.com/flygon2018/MobaXterm-keygen
 
 ---
 

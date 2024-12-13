@@ -14,7 +14,7 @@ hero:
       text: 装机必备
       link: /software/pc/required/
     - theme: brand
-      text: 必备软件
+      text: 手机必备
       link: /software/mobile/required
     - theme: alt
       text: 项目源码

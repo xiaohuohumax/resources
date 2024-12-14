@@ -3,7 +3,7 @@
 type: doc
 
 icon:
-  src: /image/logo/anyburn.ico
+  src: /image/logo/xitongku.ico
 
 title: 系统库
 description: 系统库是一个免费提供 MSDN 原版 Windows 系统和原版 office 下载与安装指引的网站。

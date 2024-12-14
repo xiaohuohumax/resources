@@ -10,6 +10,7 @@ description: UUP dump ‌是一个由社区驱动的工具和网站，主要用�
 tags:
   - 操作系统
   - Windows
+  - 系统镜像
 
 links:
   - text: ⏬下载地址

@@ -11,6 +11,7 @@ tags:
   - 操作系统
   - Linux
   - CentOS
+  - 系统镜像
 
 links:
   - text: ⏬下载地址

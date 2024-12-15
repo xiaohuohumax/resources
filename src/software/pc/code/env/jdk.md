@@ -12,7 +12,7 @@ tags:
 
 links:
   - text: ⏬下载地址
-    link: http://www.codebaoku.com/jdk/jdk-index.html
+    link: https://www.oracle.com/java/technologies/downloads/
 
 ---
 

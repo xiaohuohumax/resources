@@ -13,7 +13,7 @@ tags:
 
 links:
   - text: ⏬下载地址
-    link: https://docs.scriptcat.org/
+    link: https://scriptcat.org/zh-CN/
 
 ---
 

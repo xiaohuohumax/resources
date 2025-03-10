@@ -8,7 +8,7 @@ icon:
 title: 文件快递柜
 description: 文件快递柜-匿名口令分享文本，文件，像拿快递一样取文件。
 tags:
-  - 文件
+  - 文件传输
 
 links:
   - text: 🌍网站地址

@@ -10,8 +10,8 @@ description: 此扩展修改 VS Code 内置的 Markdown 预览，使其支持 Al
 tags:
   - Visual Studio Code
   - VS Code 扩展
-  - markdown
-  - Github
+  - Markdown
+  - GitHub
 
 links:
   - text: ⏬下载地址

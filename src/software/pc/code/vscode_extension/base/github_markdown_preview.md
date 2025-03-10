@@ -10,8 +10,8 @@ description: 修改 VS Code 内置的 Markdown 预览，使其在样式和内容
 tags:
   - Visual Studio Code
   - VS Code 扩展
-  - markdown
-  - Github
+  - Markdown
+  - GitHub
 
 links:
   - text: ⏬下载地址

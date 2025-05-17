@@ -3,7 +3,7 @@
 type: doc
 
 icon:
-  src: /image/logo/jszip.png
+  src: /image/logo/stuk.png
 
 title: JSZip
 description: JSZip 是一个用于创建、读取和编辑 .zip 文件的 JavaScript 库，提供优雅简洁的 API 接口。

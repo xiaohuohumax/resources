@@ -1,5 +1,11 @@
 # resources
 
+## 3.13.1
+
+### Patch Changes
+
+- 更新依赖
+
 ## 3.13.0
 
 ### Minor Changes

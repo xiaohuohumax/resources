@@ -9,6 +9,7 @@ title: BongoCat
 description: 跨平台桌宠 BongoCat，为桌面增添乐趣！
 tags:
   - 桌宠
+  - 直播
 
 links:
   - text: ⏬下载地址

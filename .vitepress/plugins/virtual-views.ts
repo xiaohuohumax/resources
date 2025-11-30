@@ -1,5 +1,5 @@
 import type { Plugin } from 'vitepress'
-import { debounce } from '../utils'
+import { useDebounceFn } from '@vueuse/core'
 import {
   readViews,
   view2Breadcrumbs,
@@ -32,7 +32,7 @@ export default function (srcDir: string): Plugin {
       }
     },
     configureServer(server) {
-      const listener = debounce({ delay: 100 }, (file: string) => {
+      const listener = useDebounceFn((file: string) => {
         if (!file.endsWith('.md')) {
           return
         }
@@ -44,7 +44,7 @@ export default function (srcDir: string): Plugin {
             path: resolvedVirtualModuleId,
           })
         }
-      })
+      }, 100)
 
       server.watcher.on('change', listener)
       server.watcher.on('add', listener)

@@ -1,5 +1,5 @@
 import type { Plugin } from 'vitepress'
-import type { Collection, Empty, Resource, Tags } from '../utils/view'
+import type { Collection, Empty, Resource } from '../utils/view'
 import fs from 'node:fs'
 import path from 'node:path'
 import { updateMarkdownFrontmatter } from '../utils/view'
@@ -31,11 +31,16 @@ export default function (templatesDir: string): Plugin {
         disabled: false,
         order: 0,
         layout: 'resource',
-        icon: '/file.svg',
+        icon: 'file.svg',
         title: 'Title',
         description: 'Description',
-        links: [],
-        tags: [],
+        links: [
+          {
+            text: 'Link',
+            link: 'https://example.com',
+          },
+        ],
+        tags: ['tag1', 'tag2'],
       }, 'resource.md')
 
       createTemplate<Omit<Empty, OmitCore>>({
@@ -45,14 +50,6 @@ export default function (templatesDir: string): Plugin {
         title: 'Title',
         description: 'Description',
       }, 'empty.md')
-
-      createTemplate<Omit<Tags, OmitCore>>({
-        disabled: false,
-        order: 0,
-        layout: 'tags',
-        title: 'Title',
-        description: 'Description',
-      }, 'tags.md')
     },
   }
 }

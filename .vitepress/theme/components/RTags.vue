@@ -1,11 +1,11 @@
 <script setup lang='ts'>
-import { useTheme } from '../composables/theme'
+import { useData } from 'vitepress'
 
 withDefaults(defineProps<{ tags: string[], checkable?: boolean }>(), { checkable: true })
-
 defineEmits(['tagClick'])
 defineModel('tag')
-const theme = useTheme()
+
+const { isDark } = useData()
 
 const colors = ['brand', 'note', 'success', 'important', 'warning', 'danger', 'caution']
 
@@ -23,7 +23,7 @@ function style(tag: string) {
   */
   const code = tag.split('').reduce((a, b) => a + b.charCodeAt(0), 0)
   const color = colors[Math.abs(code % colors.length)]
-  return `--color: var(--vp-c-${color}-${theme.value === 'dark' ? '2' : '3'});`
+  return `--color: var(--vp-c-${color}-${isDark.value ? '2' : '3'});`
 }
 </script>
 

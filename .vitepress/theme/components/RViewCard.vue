@@ -3,11 +3,11 @@ import type { View } from '../../utils/view'
 import VPImage from '@vitepress-components/VPImage.vue'
 import VPLink from '@vitepress-components/VPLink.vue'
 import { useRouter, withBase } from 'vitepress'
-import { useThemeConfig } from '../composables/theme-config'
+import { useTheme } from '../composables/theme'
 
 defineProps<{ view: View }>()
 
-const themeConfig = useThemeConfig()
+const theme = useTheme()
 const router = useRouter()
 
 function handleTagClick(tag: string) {
@@ -27,7 +27,7 @@ function handleTagClick(tag: string) {
       <p v-if="view.description" class="description" v-html="view.description" />
       <div v-if="view.layout === 'resource' && view.togo" class="togo">
         <VPLink :href="view.togo" :no-icon="true" tag="a" @click.stop>
-          {{ themeConfig.view.collection.gotoLabel }}
+          {{ theme.view.collection.gotoLabel }}
         </VPLink>
       </div>
     </article>

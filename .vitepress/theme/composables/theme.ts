@@ -1,19 +1,5 @@
-export function useTheme() {
-  const theme = ref<'light' | 'dark'>('light')
+import type { ThemeConfig } from '../theme-config'
 
-  function updateTheme() {
-    theme.value = document.documentElement.classList.contains('dark') ? 'dark' : 'light'
-  }
-
-  onMounted(() => {
-    updateTheme()
-    const observer = new MutationObserver(updateTheme)
-    observer.observe(document.documentElement, {
-      attributes: true,
-      attributeFilter: ['class'],
-    })
-    return () => observer.disconnect()
-  })
-
-  return theme
+export function useTheme(): Ref<ThemeConfig> {
+  return useData<ThemeConfig>().theme
 }

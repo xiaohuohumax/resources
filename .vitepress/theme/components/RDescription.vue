@@ -2,16 +2,16 @@
 import type { Resource } from '../../utils/view'
 import { string2Anchor } from '../../utils'
 import { useFrontmatter } from '../composables/frontmatter'
-import { useThemeConfig } from '../composables/theme-config'
+import { useTheme } from '../composables/theme'
 
-const themeConfig = useThemeConfig()
+const theme = useTheme()
 const frontmatter = useFrontmatter<Resource>()
-const anchor = string2Anchor(themeConfig.value.view.resource.descriptionLabel)
+const anchor = string2Anchor(theme.value.view.resource.descriptionLabel)
 </script>
 
 <template>
   <h2 :id="anchor" tabindex="-1">
-    {{ themeConfig.view.resource.descriptionLabel }}
+    {{ theme.view.resource.descriptionLabel }}
     <a class="header-anchor" :href="`#${anchor}`">&ZeroWidthSpace;</a>
   </h2>
   <p>{{ frontmatter.description }}</p>

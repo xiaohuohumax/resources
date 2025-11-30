@@ -2,9 +2,13 @@
 disabled: false
 order: 0
 layout: resource
-icon: /file.svg
+icon: file.svg
 title: Title
 description: Description
-links: []
-tags: []
+links:
+  - text: Link
+    link: https://example.com
+tags:
+  - tag1
+  - tag2
 ---

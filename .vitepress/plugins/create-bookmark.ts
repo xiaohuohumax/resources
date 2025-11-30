@@ -3,8 +3,8 @@ import type { Plugin } from 'vitepress'
 import type { View } from '../utils/view'
 import fs from 'node:fs'
 import path from 'node:path'
+import { useDebounceFn } from '@vueuse/core'
 import { Builder } from '@xiaohuohumax/bookmark'
-import { debounce } from '../utils'
 import { readViews } from '../utils/view'
 
 function loopViews(collectionId: string, views: View[]): Bookmark[] {
@@ -54,13 +54,13 @@ export interface Options {
 
 export default function (options: Options): Plugin {
   return {
-    name: 'vitepress:generate-bookmark',
+    name: 'vitepress:create-bookmark',
     configureServer(server) {
       createBookmark(options)
 
-      const listener = debounce({ delay: 100 }, (file: string) => {
+      const listener = useDebounceFn((file: string) => {
         file.endsWith('.md') && createBookmark(options)
-      })
+      }, 100)
 
       server.watcher.on('change', listener)
       server.watcher.on('add', listener)

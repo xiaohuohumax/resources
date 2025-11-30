@@ -3,17 +3,17 @@ import type { Resource } from '../../utils/view'
 import VPLink from '@vitepress-components/VPLink.vue'
 import { string2Anchor } from '../../utils'
 import { useFrontmatter } from '../composables/frontmatter'
-import { useThemeConfig } from '../composables/theme-config'
+import { useTheme } from '../composables/theme'
 
-const themeConfig = useThemeConfig()
+const theme = useTheme()
 const frontmatter = useFrontmatter<Resource>()
-const anchor = string2Anchor(themeConfig.value.view.resource.linkLabel)
+const anchor = string2Anchor(theme.value.view.resource.linkLabel)
 </script>
 
 <template>
   <div v-if="frontmatter.links.length > 0" class="RLinks vp-doc">
     <h2 :id="anchor" tabindex="-1">
-      {{ themeConfig.view.resource.linkLabel }}
+      {{ theme.view.resource.linkLabel }}
       <a class="header-anchor" :href="`#${anchor}`">&ZeroWidthSpace;</a>
     </h2>
     <div class="links">

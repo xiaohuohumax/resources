@@ -50,7 +50,7 @@ export interface Tags extends Core {
   layout: 'tags'
 }
 
-export type View = Collection | Resource | Home
+export type View = Collection | Resource | Home | Empty | Tags
 
 export function generateId(pathname: string): string {
   return crypto.createHash('md5').update(pathname).digest('hex')

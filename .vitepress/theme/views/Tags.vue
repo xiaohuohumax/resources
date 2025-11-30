@@ -1,11 +1,11 @@
 <script lang="ts" setup>
 import type { View } from '../../utils/view'
+import { useUrlSearchParams } from '@vueuse/core'
 import { views } from 'virtual:views'
 import REmpty from '../components/REmpty.vue'
-import { useQuery } from '../composables/query'
 
-const queryTag = useQuery('tag')
-const querySearch = useQuery('search')
+const params = useUrlSearchParams<{ tag?: string, search?: string }>('history')
+
 const inputElement = useTemplateRef<HTMLInputElement>('inputElement')
 onMounted(() => inputElement.value?.focus())
 
@@ -25,23 +25,19 @@ const tagMap = computed(() => {
 
 const tags = computed(() => {
   return Array.from(tagMap.value.keys())
-    .filter((tag) => {
-      const tagLower = tag.toLocaleLowerCase()
-      const queryLower = querySearch.value.toLocaleLowerCase()
-      return tagLower.includes(queryLower)
-    })
+    .filter(tag => tag.toLocaleLowerCase()
+      .includes(params.search?.toLocaleLowerCase() || ''))
 })
 
 function handleTagClick(tag: string) {
-  queryTag.value = tag
-  queryTag.value = tag
+  params.tag = tag
 }
 
 const searchViews = computed(() => {
-  if (!tags.value.includes(queryTag.value)) {
+  if (!tags.value.includes(params.tag || '')) {
     return []
   }
-  return tagMap.value.get(queryTag.value) || []
+  return tagMap.value.get(params.tag || '') || []
 })
 
 function getTagCount(tag: string) {
@@ -52,17 +48,17 @@ function getTagCount(tag: string) {
 <template>
   <REmpty>
     <div class="Tags">
-      <input ref="inputElement" v-model="querySearch" class="search-input" type="text" placeholder="搜索标签">
+      <input ref="inputElement" v-model="params.search" class="search-input" type="text" placeholder="搜索标签">
       <template v-if="tags.length === 0">
         <p>暂无标签</p>
       </template>
       <template v-else>
-        <RTags v-model:tag="queryTag" class="tags" :tags="tags" @tag-click="handleTagClick">
+        <RTags v-model:tag="params.tag" class="tags" :tags="tags" @tag-click="handleTagClick">
           <template #default="{ value }">
             {{ value }}:{{ getTagCount(value) }}
           </template>
         </RTags>
-        <div v-if="queryTag !== ''">
+        <div v-if="params.tag !== undefined">
           <p><small>共 {{ searchViews.length }} 个结果</small></p>
           <RViewCards class="resources" is-collection :views="searchViews" />
         </div>

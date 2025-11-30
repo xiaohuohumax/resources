@@ -1,5 +1,11 @@
 # resources
 
+## 4.0.1
+
+### Patch Changes
+
+- 修复项目仓库 logo 丢失异常
+
 ## 4.0.0
 
 ### Major Changes

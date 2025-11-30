@@ -1,6 +1,6 @@
 {
   "name": "resources",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "description": "资源仓库: 收录各种常用资源地址。",
   "type": "module",
   "private": true,

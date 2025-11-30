@@ -67,6 +67,12 @@ export default defineConfig<ThemeConfig>({
   lastUpdated: true,
   themeConfig: {
     logo: '/logo.svg',
+    socialLinks: [
+      {
+        icon: 'github',
+        link: 'https://github.com/xiaohuohumax/resources',
+      },
+    ],
     view: {
       resource: {
         linkLabel: '资源链接',

@@ -1,5 +1,11 @@
 # resources
 
+## 4.0.3
+
+### Patch Changes
+
+- 修复书签文件条目异常
+
 ## 4.0.2
 
 ### Patch Changes

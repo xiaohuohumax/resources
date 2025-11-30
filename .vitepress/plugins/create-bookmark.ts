@@ -22,7 +22,7 @@ function loopViews(collectionId: string, views: View[]): Bookmark[] {
     else if (view.layout === 'resource') {
       bookmarks.push(
         ...view.links.map(link => ({
-          name: link.text,
+          name: `${view.title} [${link.text}]`,
           href: link.link,
         })),
       )

@@ -6,8 +6,8 @@ import Components from 'unplugin-vue-components/vite'
 import VueDevTools from 'vite-plugin-vue-devtools'
 import { defineConfig } from 'vitepress'
 import ClearDist from './plugins/clear-dist'
+import CreateBookmark from './plugins/create-bookmark'
 import CreateTemplates from './plugins/create-templates'
-import GenerateBookmark from './plugins/generate-bookmark'
 import VirtualViews from './plugins/virtual-views'
 import { readView } from './utils/view'
 
@@ -48,7 +48,7 @@ export default defineConfig<ThemeConfig>({
         dts: abs('types/components.d.ts'),
       }),
       VirtualViews(srcDir),
-      GenerateBookmark({ srcDir, title, publicDir, iconHref }),
+      CreateBookmark({ srcDir, title, publicDir, iconHref }),
       ClearDist(outDir),
       CreateTemplates(templatesDir),
     ],

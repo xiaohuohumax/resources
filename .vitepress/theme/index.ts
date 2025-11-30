@@ -3,6 +3,7 @@ import DefaultTheme from 'vitepress/theme'
 import { h } from 'vue'
 import Collection from './views/Collection.vue'
 import Empty from './views/Empty.vue'
+import Favorites from './views/Favorites.vue'
 import Resource from './views/Resource.vue'
 import Tags from './views/Tags.vue'
 import './style.css'
@@ -15,5 +16,6 @@ export default {
     app.component('Resource', Resource)
     app.component('Empty', Empty)
     app.component('Tags', Tags)
+    app.component('Favorites', Favorites)
   },
 } satisfies Theme

@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import type { Resource } from '../../utils/view'
+import type { Resource } from '../../view'
 import VPLink from '@vitepress-components/VPLink.vue'
 import { string2Anchor } from '../../utils'
 import { useFrontmatter } from '../composables/frontmatter'

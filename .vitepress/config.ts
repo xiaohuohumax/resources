@@ -9,7 +9,7 @@ import ClearDist from './plugins/clear-dist'
 import CreateBookmark from './plugins/create-bookmark'
 import CreateTemplates from './plugins/create-templates'
 import VirtualViews from './plugins/virtual-views'
-import { readView } from './utils/view'
+import { readView } from './view'
 
 const pkg = readPackageSync()
 
@@ -38,7 +38,7 @@ export default defineConfig<ThemeConfig>({
     plugins: [
       VueDevTools(),
       AutoImport({
-        imports: ['vue', 'vitepress'],
+        imports: ['vue', 'vitepress', '@vueuse/core'],
         dts: abs('types/auto-imports.d.ts'),
       }),
       Components({
@@ -80,6 +80,12 @@ export default defineConfig<ThemeConfig>({
       },
       collection: {
         gotoLabel: '直达',
+      },
+      nothingHere: '这里什么都没有~',
+      favorites: {
+        icon: '🌟',
+        addLabel: '点击添加到收藏',
+        cancelLabel: '点击取消收藏',
       },
     },
     footer: {

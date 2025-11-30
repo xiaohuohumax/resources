@@ -9,5 +9,11 @@ export interface ThemeConfig extends Omit<DefaultTheme.Config, 'nav' | 'sidebar'
     collection: {
       gotoLabel: string
     }
+    nothingHere: string
+    favorites: {
+      icon: string
+      addLabel: string
+      cancelLabel: string
+    }
   }
 }

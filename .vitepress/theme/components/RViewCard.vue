@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import type { View } from '../../utils/view'
+import type { View } from '../../view'
 import VPImage from '@vitepress-components/VPImage.vue'
 import VPLink from '@vitepress-components/VPLink.vue'
 import { useRouter, withBase } from 'vitepress'
 import { useTheme } from '../composables/theme'
 
-defineProps<{ view: View }>()
+withDefaults(defineProps<{ view: View, inFavorite?: boolean }>(), { inFavorite: false })
 
 const theme = useTheme()
 const router = useRouter()
@@ -21,12 +21,21 @@ function handleTagClick(tag: string) {
     :href="view.pathname" @click.prevent
   >
     <article class="box">
-      <VPImage :image="view.icon" style="width: 48px; height: 48px; object-fit: contain;" />
-      <h2 class="title" v-html="view.title" />
+      <div class="header">
+        <VPImage :image="view.icon" style="width: 48px; height: 48px; object-fit: contain;" />
+        <RFavorite :view="view" />
+      </div>
+      <h2 v-if="!inFavorite" v-html="view.title" />
+      <h2 v-else>
+        <RBreadcrumbs :view="view" :disabled-click="true" />
+      </h2>
       <RTags v-if="view.layout === 'resource'" :tags="view.tags" @tag-click="handleTagClick" />
       <p v-if="view.description" class="description" v-html="view.description" />
-      <div v-if="view.layout === 'resource' && view.togo" class="togo">
-        <VPLink :href="view.togo" :no-icon="true" tag="a" @click.stop>
+      <div class="actions">
+        <VPLink
+          v-if="view.layout === 'resource' && view.togo" class="action" :href="view.togo" :no-icon="true" tag="a"
+          @click.stop
+        >
           {{ theme.view.collection.gotoLabel }}
         </VPLink>
       </div>
@@ -49,10 +58,23 @@ function handleTagClick(tag: string) {
   border-color: var(--vp-c-brand-3);
 }
 
+.RViewCard .box .header{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
 .RViewCard .box h2 {
-  margin: 0 0 8px !important;
-  padding: 0 !important;
+  margin: 0 0 0px !important;
+  padding: 8px 0 !important;
   border-top: none !important;
+  line-height: 24px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.RViewCard .box h2 ::v-deep(.RBreadcrumbs){
+  margin: 0 !important;
 }
 
 .RViewCard .box p {
@@ -83,12 +105,6 @@ function handleTagClick(tag: string) {
   transition: background-color 0.25s;
 }
 
-.title {
-  line-height: 24px;
-  font-size: 16px;
-  font-weight: 600;
-}
-
 .description {
   flex-grow: 1;
   padding-top: 8px;
@@ -98,18 +114,18 @@ function handleTagClick(tag: string) {
   color: var(--vp-c-text-2);
 }
 
-.togo {
-  padding-top: 8px;
+.actions {
   display: flex;
   align-items: center;
-  font-size: 14px;
-  font-weight: 500;
-  color: var(--vp-c-brand-1);
-  justify-content: end;
-  opacity: 0.5;
+  justify-content: flex-end;
 }
 
-.togo:hover {
+.actions .action {
+  opacity: 0.5;
+  margin-left: 8px;
+}
+
+.actions .action:hover {
   opacity: 1;
 }
 </style>

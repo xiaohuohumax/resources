@@ -1,6 +1,5 @@
 <script lang="ts" setup>
-import type { View } from '../../utils/view'
-import { useUrlSearchParams } from '@vueuse/core'
+import type { View } from '../../view'
 import { views } from 'virtual:views'
 import REmpty from '../components/REmpty.vue'
 

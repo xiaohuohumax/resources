@@ -50,6 +50,10 @@ export interface Tags extends Core {
   layout: 'tags'
 }
 
+export interface Favorites extends Core {
+  layout: 'favorites'
+}
+
 export type View = Collection | Resource | Home | Empty | Tags
 
 export function generateId(pathname: string): string {

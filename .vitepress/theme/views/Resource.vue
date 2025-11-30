@@ -1,6 +1,7 @@
 <script setup lang="ts">
-import type { Resource } from '../../utils/view'
+import type { Resource } from '../../view'
 import VPDoc from '@vitepress-components/VPDoc.vue'
+import RFavorite from '../components/RFavorite.vue'
 import { useFrontmatter } from '../composables/frontmatter'
 
 const router = useRouter()
@@ -16,10 +17,13 @@ function handleTagClick(tag: string) {
     <VPDoc>
       <template #doc-before>
         <div class="vp-doc">
-          <RLogo />
+          <div class="header">
+            <RLogo />
+            <RFavorite :view="frontmatter" />
+          </div>
           <RTitle />
           <RTags :tags="frontmatter.tags" @tag-click="handleTagClick" />
-          <RBreadcrumbs />
+          <RBreadcrumbs :view="frontmatter" />
           <RLinks />
           <RDescription />
         </div>
@@ -29,6 +33,12 @@ function handleTagClick(tag: string) {
 </template>
 
 <style scoped>
+.Resource .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
 ::v-deep(.VPDoc) {
   padding: 32px 24px 0 ;
 }

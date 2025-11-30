@@ -9,7 +9,7 @@ import {
   readMarkdownFrontmatter,
   readView,
   updateMarkdownFrontmatter,
-} from '../.vitepress/utils/view'
+} from '../.vitepress/view'
 
 function formatFilename(filePath: string): string {
   const extname = path.extname(filePath)

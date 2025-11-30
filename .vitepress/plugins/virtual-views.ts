@@ -5,7 +5,7 @@ import {
   view2Breadcrumbs,
   view2CollectionChildrenMap,
   view2Nav,
-} from '../utils/view'
+} from '../view'
 
 export default function (srcDir: string): Plugin {
   const virtualModuleId = 'virtual:views'

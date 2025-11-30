@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import type { Collection } from '../../utils/view'
+import type { Collection } from '../../view'
 import { collectionChildrenMap } from 'virtual:views'
 import REmpty from '../components/REmpty.vue'
 import { useFrontmatter } from '../composables/frontmatter'
@@ -11,7 +11,7 @@ const views = computed(() => collectionChildrenMap[frontmatter.value.id])
 <template>
   <REmpty>
     <RTitle :disable-anchor="true" />
-    <RBreadcrumbs />
+    <RBreadcrumbs :view="frontmatter" />
     <RViewCards :views="views" />
     <Content />
   </REmpty>

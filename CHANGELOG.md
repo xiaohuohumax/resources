@@ -1,5 +1,11 @@
 # resources
 
+## 4.1.0
+
+### Minor Changes
+
+- 添加收藏功能
+
 ## 4.0.4
 
 ### Patch Changes

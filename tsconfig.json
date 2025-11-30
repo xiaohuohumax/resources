@@ -11,11 +11,13 @@
         "./node_modules/vitepress/dist/client/theme-default/components/*"
       ]
     },
+    "skipLibCheck": true,
     "noUnusedLocals": true,
     "removeComments": false,
     "esModuleInterop": true
   },
   "include": [
-    ".vitepress/**/*"
-, "scripts/format.ts"  ]
+    ".vitepress/**/*",
+    "scripts/**/*"
+  ]
 }

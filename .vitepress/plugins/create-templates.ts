@@ -1,8 +1,8 @@
 import type { Plugin } from 'vitepress'
-import type { Collection, Empty, Resource } from '../utils/view'
+import type { Collection, Empty, Resource } from '../view'
 import fs from 'node:fs'
 import path from 'node:path'
-import { updateMarkdownFrontmatter } from '../utils/view'
+import { updateMarkdownFrontmatter } from '../view'
 
 export default function (templatesDir: string): Plugin {
   function createTemplate<T extends Record<string, any>>(template: T, filename: string) {

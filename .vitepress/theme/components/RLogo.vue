@@ -1,5 +1,5 @@
 <script setup lang='ts'>
-import type { Resource } from '../../utils/view'
+import type { Resource } from '../../view'
 import VPImage from '@vitepress-components/VPImage.vue'
 import { useFrontmatter } from '../composables/frontmatter'
 

@@ -13,10 +13,12 @@ declare module 'vue' {
   export interface GlobalComponents {
     Collection: typeof import('./../theme/views/Collection.vue')['default']
     Empty: typeof import('./../theme/views/Empty.vue')['default']
+    Favorites: typeof import('./../theme/views/Favorites.vue')['default']
     RBreadcrumbs: typeof import('./../theme/components/RBreadcrumbs.vue')['default']
     RDescription: typeof import('./../theme/components/RDescription.vue')['default']
     REmpty: typeof import('./../theme/components/REmpty.vue')['default']
     Resource: typeof import('./../theme/views/Resource.vue')['default']
+    RFavorite: typeof import('./../theme/components/RFavorite.vue')['default']
     RLinks: typeof import('./../theme/components/RLinks.vue')['default']
     RLogo: typeof import('./../theme/components/RLogo.vue')['default']
     RTags: typeof import('./../theme/components/RTags.vue')['default']

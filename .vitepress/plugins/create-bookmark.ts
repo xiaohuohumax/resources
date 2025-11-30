@@ -1,11 +1,11 @@
 import type { Bookmark } from '@xiaohuohumax/bookmark'
 import type { Plugin } from 'vitepress'
-import type { View } from '../utils/view'
+import type { View } from '../view'
 import fs from 'node:fs'
 import path from 'node:path'
 import { useDebounceFn } from '@vueuse/core'
 import { Builder } from '@xiaohuohumax/bookmark'
-import { readViews } from '../utils/view'
+import { readViews } from '../view'
 
 function loopViews(collectionId: string, views: View[]): Bookmark[] {
   const bookmarks: Bookmark[] = []

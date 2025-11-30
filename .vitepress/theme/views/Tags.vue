@@ -6,6 +6,8 @@ import { useQuery } from '../composables/query'
 
 const queryTag = useQuery('tag')
 const querySearch = useQuery('search')
+const inputElement = useTemplateRef<HTMLInputElement>('inputElement')
+onMounted(() => inputElement.value?.focus())
 
 const tagMap = computed(() => {
   const tagMap = new Map<string, View[]>()
@@ -50,7 +52,7 @@ function getTagCount(tag: string) {
 <template>
   <REmpty>
     <div class="Tags">
-      <input v-model="querySearch" class="search-input" type="text" placeholder="搜索标签">
+      <input ref="inputElement" v-model="querySearch" class="search-input" type="text" placeholder="搜索标签">
       <template v-if="tags.length === 0">
         <p>暂无标签</p>
       </template>

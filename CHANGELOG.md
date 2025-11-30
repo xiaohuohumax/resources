@@ -1,5 +1,11 @@
 # resources
 
+## 4.0.2
+
+### Patch Changes
+
+- 修复标签搜索框自动获取焦点失效异常
+
 ## 4.0.1
 
 ### Patch Changes

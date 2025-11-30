@@ -1,0 +1,17 @@
+---
+layout: resource
+title: Black Formatter
+description: VS Code 的 Python 格式化扩展，使用 Black 格式化工具。
+icon: black_formatter.png
+tags:
+  - Visual Studio Code
+  - VS Code 扩展
+  - Python
+  - Lint
+links:
+  - text: ⏬下载地址
+    link: >-
+      https://marketplace.visualstudio.com/items?itemName=ms-python.black-formatter
+  - text: 📦项目地址
+    link: https://github.com/microsoft/vscode-black-formatter
+---

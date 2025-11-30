@@ -1,5 +1,11 @@
 # resources
 
+## 4.0.0
+
+### Major Changes
+
+- 代码重构, 删除本地搜索
+
 ## 3.13.1
 
 ### Patch Changes

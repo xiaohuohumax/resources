@@ -1,0 +1,18 @@
+---
+layout: resource
+title: shell-format
+description: 此扩展为 shellscript，dockerfile，ignore，properties，jvmoptions，hosts，bats等提供格式化支持。
+icon: shell_format.png
+tags:
+  - Visual Studio Code
+  - VS Code 扩展
+  - Docker
+  - Shell
+  - Batch File
+links:
+  - text: ⏬下载地址
+    link: >-
+      https://marketplace.visualstudio.com/items?itemName=foxundermoon.shell-format
+  - text: 📦项目地址
+    link: https://github.com/foxundermoon/vs-shell-format
+---

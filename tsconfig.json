@@ -1,7 +1,21 @@
 {
-  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "allowJs": false,
+    "strict": true,
+    "paths": {
+      "@vitepress-components/*": [
+        "./node_modules/vitepress/dist/client/theme-default/components/*"
+      ]
+    },
+    "noUnusedLocals": true,
+    "removeComments": false,
+    "esModuleInterop": true
+  },
   "include": [
-    "src/**/*.ts",
-    ".vitepress/**/*.ts"
-  ]
+    ".vitepress/**/*"
+, "scripts/format.ts"  ]
 }

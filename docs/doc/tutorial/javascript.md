@@ -1,0 +1,12 @@
+---
+layout: resource
+title: JavaScript
+description: MDN Web Docs 是一个很好的学习 JavaScript 知识的地方。
+icon: javascript.svg
+tags:
+  - JavaScript
+  - 编程语言
+links:
+  - text: 📖文档地址
+    link: https://developer.mozilla.org/zh-CN/docs/Web/JavaScript
+---

@@ -1,0 +1,91 @@
+@font-face {
+  font-family: ChillRoundGothic;
+  src: url(/ChillRoundGothic.otf);
+}
+
+:root {
+  --vp-c-bg-soft: #ececedcc;
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #85ffbd 50%, #fffb7d);
+  --vp-home-hero-image-background-image: linear-gradient(-45deg, #74ebd5 50%, #9face6 50%);
+  --vp-home-hero-image-filter: blur(44px);
+  --vp-font-family-base: ChillRoundGothic, sans-serif;
+}
+
+.dark {
+  --vp-c-bg-soft: #202127cc;
+  --vp-c-gutter: #2e2e32;
+}
+
+video,
+img {
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.VPNavBarMenuGroup .VPMenu {
+  min-width: auto !important;
+}
+
+.VPLocalNav {
+  padding: 0 24px;
+}
+
+.VPLocalNav .container {
+  max-width: 1152px;
+  margin: 0 auto;
+}
+
+.VPLocalNavOutlineDropdown button {
+ padding-left: 0 !important;
+}
+
+.VPNav>.VPNavBar:not(.top) {
+  background-color: var(--vp-c-bg-soft) !important;
+  backdrop-filter: blur(10px);
+}
+
+.VPNavBar .container {
+  max-width: 1152px;
+}
+
+.VPFeature {
+  border: 1px solid var(--vp-c-gutter) !important;
+  border-radius: 8px !important;
+}
+
+.vp-doc .header-anchor {
+  margin-left: -0.7em !important;
+}
+
+@media (min-width: 640px) {
+  :root {
+    --vp-home-hero-image-filter: blur(56px);
+  }
+
+  .VPHero {
+    padding: calc(var(--vp-nav-height) + var(--vp-layout-top-height, 0px) + 80px) 32px 64px !important;
+  }
+
+  .VPFeatures {
+    padding: 0 32px !important;
+  }
+
+}
+
+@media (min-width: 768px) {
+  .VPLocalNav {
+    padding: 0 32px;
+  }
+}
+
+@media (min-width: 960px) {
+  :root {
+    --vp-home-hero-image-filter: blur(68px);
+  }
+}
+

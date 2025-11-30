@@ -8,6 +8,6 @@
 ## 🔖 使用书签
 
 > [!NOTE]
-> [bookmark.html](./public/bookmark.html) 是自动生成的类 HTML 文件，请勿格式化此文件，否则会导致书签无法正常导入。
+> [bookmark.html](./docs/bookmark.html) 是自动生成的类 HTML 文件，请勿格式化此文件，否则会导致书签无法正常导入。
 
-如果不想访问 [Resources](https://xiaohuohumax.github.io/resources/)，也可以直接导入 [public/bookmark.html](./public/bookmark.html) 书签文件到浏览器书签栏。
+如果不想访问 [Resources](https://xiaohuohumax.github.io/resources/)，也可以直接导入 [docs/bookmark.html](./docs/bookmark.html) 书签文件到浏览器书签栏。

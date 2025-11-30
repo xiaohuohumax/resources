@@ -1,0 +1,16 @@
+---
+layout: resource
+title: Git History
+description: Git History 扩展可以帮助您查看您仓库的 Git 历史记录。
+icon: git_history.png
+tags:
+  - Visual Studio Code
+  - VS Code 扩展
+  - Git
+links:
+  - text: ⏬下载地址
+    link: >-
+      https://marketplace.visualstudio.com/items?itemName=donjayamanne.githistory
+  - text: 📦项目地址
+    link: https://github.com/DonJayamanne/gitHistoryVSCode
+---

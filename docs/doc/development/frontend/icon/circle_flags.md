@@ -1,0 +1,12 @@
+---
+layout: resource
+title: circle-flags
+description: 包含400多个圆形 SVG 国家、州和语言标志的图标库。
+icon: circle_flags.svg
+tags:
+  - 图标
+  - SVG
+links:
+  - text: 📖文档地址
+    link: https://hatscripts.github.io/circle-flags/
+---

@@ -1,4 +1,5 @@
-node_modules
 dist
 cache
-src/public/bookmark.html
+node_modules
+linkinator.json
+.vitepress/.temp

@@ -1,0 +1,12 @@
+---
+layout: resource
+title: hoppscotch
+description: 开源 API 开发生态系统（Postman、Insomnia 的开源替代品）。
+icon: hoppscotch.png
+tags:
+  - 网络调试
+  - 网络请求
+links:
+  - text: 📦项目地址
+    link: https://github.com/hoppscotch/hoppscotch
+---

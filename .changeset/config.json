@@ -8,11 +8,8 @@
   ],
   "commit": false,
   "linked": [],
-  "access": "public",
+  "access": "restricted",
   "updateInternalDependencies": "patch",
   "ignore": [],
-  "baseBranch": "main",
-  "___experimentalUnsafeOptions_WILL_CHANGE_IN_PATCH": {
-    "updateInternalDependents": "always"
-  }
+  "baseBranch": "main"
 }

@@ -1,0 +1,13 @@
+---
+layout: resource
+title: Day.js
+description: Day.js 是一个轻量的处理时间和日期的 JavaScript 库，和 Moment.js 的 API 设计保持完全一样。
+icon: day_js.png
+tags:
+  - JavaScript
+links:
+  - text: 📖文档地址
+    link: https://day.js.org/docs/zh-CN/installation/installation
+  - text: 📦项目地址
+    link: https://github.com/iamkun/dayjs
+---

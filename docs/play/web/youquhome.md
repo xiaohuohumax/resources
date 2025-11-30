@@ -1,0 +1,15 @@
+---
+layout: resource
+title: 有趣网址之家
+description: 有趣网址之家 - 收藏全球最有趣的网站。
+icon: youquhome.ico
+tags:
+  - 游戏
+  - 奇技淫巧
+  - 音乐
+  - 视频
+  - 图片
+links:
+  - text: 🌍网站地址
+    link: https://youquhome.com/
+---

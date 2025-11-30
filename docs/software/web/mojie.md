@@ -1,0 +1,11 @@
+---
+layout: resource
+title: 魔戒
+description: 戴上魔戒，你将获得至高无上的力量。
+icon: mojie.ico
+tags:
+  - 代理
+links:
+  - text: 🌍网站地址
+    link: https://mojie.app/
+---

@@ -1,0 +1,15 @@
+---
+layout: resource
+title: XML Tools
+description: 此扩展可以为 XML 文件提供语法高亮、智能提示、自动完成、格式化、验证等功能。
+icon: xml_tools.png
+tags:
+  - Visual Studio Code
+  - VS Code 扩展
+  - XML
+links:
+  - text: ⏬下载地址
+    link: https://marketplace.visualstudio.com/items?itemName=DotJoshJohnson.xml
+  - text: 📦项目地址
+    link: https://github.com/DotJoshJohnson/vscode-xml
+---

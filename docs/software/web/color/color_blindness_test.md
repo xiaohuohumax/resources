@@ -1,0 +1,13 @@
+---
+layout: resource
+title: 色盲测试
+description: 专业石原氏色盲测试 - 仅需3分钟，快速检测您的色觉状态。
+icon: color_blindness_test.webp
+tags:
+  - 颜色
+  - 眼睛
+  - 测试
+links:
+  - text: 🌍网站地址
+    link: https://color-blindness-test.com/zh
+---

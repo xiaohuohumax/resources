@@ -1,0 +1,17 @@
+---
+layout: resource
+title: GitHub Markdown Preview
+description: 修改 VS Code 内置的 Markdown 预览，使其在样式和内容上与 GitHub Markdown 渲染相匹配。
+icon: github_markdown_preview.png
+tags:
+  - Visual Studio Code
+  - VS Code 扩展
+  - Markdown
+  - GitHub
+links:
+  - text: ⏬下载地址
+    link: >-
+      https://marketplace.visualstudio.com/items?itemName=bierner.github-markdown-preview
+  - text: 📦项目地址
+    link: https://github.com/mjbvz/vscode-github-markdown-preview
+---

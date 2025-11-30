@@ -1,0 +1,11 @@
+---
+layout: resource
+title: Foodiesfeed
+description: 一个免费的美食主题图库，所有照片均高清免费无版权。
+icon: foodiesfeed.svg
+tags:
+  - 图片
+links:
+  - text: 🌍网站地址
+    link: https://www.foodiesfeed.com/
+---

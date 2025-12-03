@@ -1,5 +1,11 @@
 # resources
 
+## 4.4.1
+
+### Patch Changes
+
+- 配置整理
+
 ## 4.4.0
 
 ### Minor Changes

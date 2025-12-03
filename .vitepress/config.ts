@@ -20,8 +20,9 @@ function abs(p: string): string {
 
 const lang = 'zh-CN'
 const title = 'Resources'
-const description = '资源仓库'
-const copyright = `${pkg.license} Licensed | Copyright © 2024-present ${pkg.author!.name}`
+const description = '资源仓库 · 收录各种常用资源地址(软件、配置、文档等)'
+const repo = 'https://github.com/xiaohuohumax/resources'
+const github = 'https://github.com/xiaohuohumax'
 const hostname = 'https://xiaohuohumax.github.io/resources/'
 
 const base = '/resources/'
@@ -65,12 +66,9 @@ export default defineConfig<ThemeConfig>({
         language: lang,
         description,
         link: hostname,
-        author: {
-          name: pkg.author!.name,
-          link: pkg.author!.url,
-        },
+        author: { name: pkg.author!.name, link: pkg.author!.url },
         baseUrl: 'https://xiaohuohumax.github.io',
-        copyright,
+        copyright: `${pkg.license} Licensed | Copyright © 2024-present ${pkg.author!.name}`,
         filter(value) {
           const view = readView(value.filepath, srcDir)
           return view ? view.layout === 'resource' : false
@@ -85,22 +83,13 @@ export default defineConfig<ThemeConfig>({
         './VPNavScreenMenu.vue': abs('./theme/components/overwrite/VPNavScreenMenu.vue'),
       },
     },
-    build: {
-      chunkSizeWarningLimit: 5000,
-    },
+    build: { chunkSizeWarningLimit: 5000 },
   },
   lastUpdated: true,
-  sitemap: {
-    hostname,
-  },
+  sitemap: { hostname },
   themeConfig: {
     logo: '/logo.svg',
-    socialLinks: [
-      {
-        icon: 'github',
-        link: 'https://github.com/xiaohuohumax/resources',
-      },
-    ],
+    socialLinks: [{ icon: 'github', link: repo }],
     view: {
       resource: {
         linkLabel: '资源链接',
@@ -118,13 +107,13 @@ export default defineConfig<ThemeConfig>({
     },
     footer: {
       message: description,
-      copyright,
+      copyright: `<a class="link" href="${repo}?tab=MIT-1-ov-file">${pkg.license}</a> Licensed | Copyright © 2024-present <a class="link" href="${github}">${pkg.author!.name}</a>`,
     },
     lastUpdated: {
       text: '上次更新',
     },
     editLink: {
-      pattern: 'https://github.com/xiaohuohumax/resources/edit/main/docs/:path',
+      pattern: `${repo}/edit/main/docs/:path`,
       text: '在 GitHub 上编辑此页面',
     },
     notFound: {
@@ -214,8 +203,7 @@ export default defineConfig<ThemeConfig>({
     },
   },
   transformPageData(pageData) {
-    const filePath = path.join(srcDir, pageData.relativePath)
-    const view = readView(filePath, srcDir)
+    const view = readView(path.join(srcDir, pageData.relativePath), srcDir)
     pageData.frontmatter = view || pageData.frontmatter
   },
 })

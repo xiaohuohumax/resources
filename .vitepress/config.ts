@@ -5,6 +5,7 @@ import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
 import VueDevTools from 'vite-plugin-vue-devtools'
 import { defineConfig } from 'vitepress'
+import { RssPlugin } from 'vitepress-plugin-rss'
 import ClearDist from './plugins/clear-dist'
 import CreateBookmark from './plugins/create-bookmark'
 import CreateTemplates from './plugins/create-templates'
@@ -17,7 +18,12 @@ function abs(p: string): string {
   return path.resolve(__dirname, p)
 }
 
+const lang = 'zh-CN'
 const title = 'Resources'
+const description = '资源仓库'
+const copyright = `${pkg.license} Licensed | Copyright © 2024-present ${pkg.author!.name}`
+const hostname = 'https://xiaohuohumax.github.io/resources/'
+
 const base = '/resources/'
 const iconHref = `${base}logo.svg`
 const srcDir = abs('../docs')
@@ -27,12 +33,15 @@ const templatesDir = abs('../templates')
 
 export default defineConfig<ThemeConfig>({
   title,
-  description: 'Resource Repository',
+  description,
   base,
   outDir,
   srcDir,
-  lang: 'zh-CN',
-  head: [['link', { rel: 'icon', href: iconHref }], ['meta', { name: 'algolia-site-verification', content: 'A081FC7145F7741F' }]],
+  lang,
+  head: [
+    ['link', { rel: 'icon', href: iconHref }],
+    ['meta', { name: 'algolia-site-verification', content: 'A081FC7145F7741F' }],
+  ],
   vite: {
     publicDir,
     plugins: [
@@ -51,6 +60,22 @@ export default defineConfig<ThemeConfig>({
       CreateBookmark({ srcDir, title, publicDir, iconHref }),
       ClearDist(outDir),
       CreateTemplates(templatesDir),
+      RssPlugin({
+        title,
+        language: lang,
+        description,
+        link: hostname,
+        author: {
+          name: pkg.author!.name,
+          link: pkg.author!.url,
+        },
+        baseUrl: 'https://xiaohuohumax.github.io',
+        copyright,
+        filter(value) {
+          const view = readView(value.filepath, srcDir)
+          return view ? view.layout === 'resource' : false
+        },
+      }),
     ],
     resolve: {
       alias: {
@@ -66,7 +91,7 @@ export default defineConfig<ThemeConfig>({
   },
   lastUpdated: true,
   sitemap: {
-    hostname: 'https://xiaohuohumax.github.io/resources/',
+    hostname,
   },
   themeConfig: {
     logo: '/logo.svg',
@@ -92,8 +117,8 @@ export default defineConfig<ThemeConfig>({
       },
     },
     footer: {
-      message: '资源仓库',
-      copyright: `${pkg.license} Licensed | Copyright © 2024-present ${pkg.author!.name}`,
+      message: description,
+      copyright,
     },
     lastUpdated: {
       text: '上次更新',

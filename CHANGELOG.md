@@ -1,5 +1,11 @@
 # resources
 
+## 4.4.0
+
+### Minor Changes
+
+- 添加 RSS 订阅
+
 ## 4.3.0
 
 ### Minor Changes

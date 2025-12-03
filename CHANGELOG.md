@@ -1,5 +1,11 @@
 # resources
 
+## 4.1.1
+
+### Patch Changes
+
+- 添加 Algolia 验证 meta
+
 ## 4.1.0
 
 ### Minor Changes

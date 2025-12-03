@@ -32,7 +32,7 @@ export default defineConfig<ThemeConfig>({
   outDir,
   srcDir,
   lang: 'zh-CN',
-  head: [['link', { rel: 'icon', href: iconHref }]],
+  head: [['link', { rel: 'icon', href: iconHref }], ['meta', { name: 'algolia-site-verification', content: 'A081FC7145F7741F' }]],
   vite: {
     publicDir,
     plugins: [

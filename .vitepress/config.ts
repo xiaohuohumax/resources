@@ -65,6 +65,9 @@ export default defineConfig<ThemeConfig>({
     },
   },
   lastUpdated: true,
+  sitemap: {
+    hostname: 'https://xiaohuohumax.github.io/resources/',
+  },
   themeConfig: {
     logo: '/logo.svg',
     socialLinks: [

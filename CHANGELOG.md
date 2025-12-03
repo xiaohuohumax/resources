@@ -1,5 +1,11 @@
 # resources
 
+## 4.3.0
+
+### Minor Changes
+
+- 添加 sitemap
+
 ## 4.2.0
 
 ### Minor Changes

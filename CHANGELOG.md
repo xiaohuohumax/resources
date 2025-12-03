@@ -1,5 +1,11 @@
 # resources
 
+## 4.2.0
+
+### Minor Changes
+
+- 添加 Algolia 搜索功能
+
 ## 4.1.1
 
 ### Patch Changes

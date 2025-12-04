@@ -9,6 +9,7 @@ tags:
   - Redis
   - 数据库管理工具
   - NoSQL
+  - 数据库
 links:
   - text: ⏬下载地址
     link: https://redis.io/insight/

@@ -6,6 +6,7 @@ icon: markdown_badges.png
 tags:
   - API
   - 徽章
+  - Markdown
 links:
   - text: 📖文档地址
     link: https://github.com/Ileriayo/markdown-badges

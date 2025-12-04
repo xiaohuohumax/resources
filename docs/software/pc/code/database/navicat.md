@@ -7,6 +7,7 @@ description: >-
 icon: navicat.svg
 tags:
   - 数据库管理工具
+  - 数据库
 links:
   - text: ⏬下载地址
     link: https://navicat.com.cn/download/navicat-premium

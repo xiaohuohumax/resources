@@ -6,6 +6,7 @@ description: >-
   KB 的数据同步，而文件都会进行 AES 加密处理。
 icon: verysync.ico
 tags:
+  - 文件传输
   - 文件同步
 links:
   - text: ⏬下载地址

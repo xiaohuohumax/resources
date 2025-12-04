@@ -6,6 +6,7 @@ icon: hoppscotch.png
 tags:
   - 网络调试
   - 网络请求
+  - API
 links:
   - text: 📦项目地址
     link: https://github.com/hoppscotch/hoppscotch

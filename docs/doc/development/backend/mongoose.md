@@ -6,6 +6,7 @@ icon: mongoose.png
 tags:
   - MongoDB
   - Node
+  - 数据库
 links:
   - text: 📖文档地址
     link: https://mongoosejs.com/

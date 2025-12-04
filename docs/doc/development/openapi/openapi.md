@@ -7,6 +7,7 @@ description: >-
 icon: openapi.png
 tags:
   - OpenAPI
+  - API
 links:
   - text: 📖文档地址
     link: https://spec.openapis.org/oas/latest.html

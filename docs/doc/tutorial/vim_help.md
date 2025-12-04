@@ -5,6 +5,7 @@ description: 此网站是关于 Vim 帮助文档的学习资源，主要内容�
 icon: vim_help.svg
 tags:
   - Vim
+  - 编辑器
 links:
   - text: 🌍网站地址
     link: https://yianwillis.github.io/vimcdoc/doc/help.html

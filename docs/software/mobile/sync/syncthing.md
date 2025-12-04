@@ -6,6 +6,7 @@ description: >-
   Drive、OneDrive、BitTorrent、WebDAV 等。Syncthing 采用 Go 语言开发，界面简洁，操作简单，功能强大。
 icon: syncthing.svg
 tags:
+  - 文件传输
   - 文件同步
 links:
   - text: ⏬下载地址

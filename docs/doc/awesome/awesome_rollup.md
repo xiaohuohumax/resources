@@ -6,6 +6,7 @@ icon: awesome_rollup.svg
 tags:
   - Awesome
   - Rollup
+  - 打包器
 links:
   - text: 📖文档地址
     link: https://github.com/rollup/awesome

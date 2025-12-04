@@ -46,6 +46,7 @@ function getTagCount(tag: string) {
 
 <template>
   <REmpty>
+    <RTitle />
     <div class="Tags">
       <input ref="inputElement" v-model="params.search" class="search-input" type="text" placeholder="搜索标签">
       <template v-if="tags.length === 0">

@@ -6,6 +6,7 @@ icon: 7_zip.png
 tags:
   - 7-zip
   - 解压缩
+  - 压缩
 links:
   - text: ⏬下载地址
     link: https://www.7-zip.org/download.html

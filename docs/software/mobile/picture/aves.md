@@ -6,7 +6,7 @@ description: >-
   TIFF、SVG、旧的 AVI 等等！
 icon: aves.svg
 tags:
-  - 图片管理器
+  - 图片
   - 视频
   - 音频
 links:

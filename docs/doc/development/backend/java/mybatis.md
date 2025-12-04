@@ -11,6 +11,8 @@ tags:
   - SQL
   - JDBC
   - XML
+  - MyBatis
+  - 数据库
 links:
   - text: 🌍网站地址
     link: https://mybatis.org/mybatis-3/zh_CN/index.html

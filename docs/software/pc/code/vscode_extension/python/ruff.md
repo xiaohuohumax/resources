@@ -10,6 +10,7 @@ tags:
   - VS Code 扩展
   - Python
   - Lint
+  - Rust
 links:
   - text: ⏬下载地址
     link: https://marketplace.visualstudio.com/items?itemName=charliermarsh.ruff

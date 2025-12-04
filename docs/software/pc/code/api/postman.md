@@ -6,6 +6,7 @@ icon: postman.svg
 tags:
   - 网络调试
   - 网络请求
+  - API
 links:
   - text: ⏬下载地址
     link: https://www.postman.com/downloads/

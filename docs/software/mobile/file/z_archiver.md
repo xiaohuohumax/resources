@@ -5,6 +5,7 @@ description: 一个用于管理存档的程序。它拥有简单实用的界面�
 icon: z_archiver.png
 tags:
   - 解压缩
+  - 压缩
   - 文件管理器
 links:
   - text: ⏬下载地址

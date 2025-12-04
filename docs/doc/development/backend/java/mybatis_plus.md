@@ -8,6 +8,8 @@ tags:
   - SQL
   - JDBC
   - XML
+  - MyBatis
+  - 数据库
 links:
   - text: 🌍网站地址
     link: https://baomidou.com/

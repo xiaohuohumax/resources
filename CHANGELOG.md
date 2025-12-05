@@ -1,5 +1,11 @@
 # resources
 
+## 4.7.0
+
+### Minor Changes
+
+- 资源页面支持 index 访问
+
 ## 4.6.0
 
 ### Minor Changes

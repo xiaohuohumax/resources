@@ -96,7 +96,10 @@ function filePath2CollectionPathname(filePath: string, rootFolder: string, isCol
   while (parts.pop()) {
     const collectionPath = path.join(rootFolder, parts.join('/'), 'index.md')
     if (fs.existsSync(collectionPath)) {
-      return filePath2Pathname(collectionPath, rootFolder)
+      const frontmatter = readMarkdownFrontmatter(collectionPath)
+      if (frontmatter.layout === 'collection' || frontmatter.layout === 'home') {
+        return filePath2Pathname(collectionPath, rootFolder)
+      }
     }
   }
 }

@@ -1,5 +1,11 @@
 # resources
 
+## 4.5.1
+
+### Patch Changes
+
+- 修复页面图标多余路径异常
+
 ## 4.5.0
 
 ### Minor Changes

@@ -3,8 +3,8 @@ layout: resource
 title: Rye
 description: Rye 是一个全面的 Python 项目和包管理解决方案。
 icon:
-  dark: /software/pc/code/virtual/rye_dark.svg
-  light: /software/pc/code/virtual/rye_light.svg
+  dark: rye_dark.svg
+  light: rye_light.svg
 tags:
   - 虚拟环境
   - Rye

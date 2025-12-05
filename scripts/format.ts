@@ -42,11 +42,11 @@ function formatView(srcDir: string, filePath: string): void {
   else {
     if (icon.dark !== undefined) {
       formatFilename(path.join(srcDir, icon.dark))
-      icon.dark = string2Anchor(icon.dark)
+      icon.dark = string2Anchor(frontmatter.icon.dark)
     }
     if (icon.light !== undefined) {
       formatFilename(path.join(srcDir, icon.light))
-      icon.light = string2Anchor(icon.light)
+      icon.light = string2Anchor(frontmatter.icon.light)
     }
   }
 

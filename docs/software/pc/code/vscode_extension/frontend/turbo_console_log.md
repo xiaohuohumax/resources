@@ -12,4 +12,5 @@ links:
       https://marketplace.visualstudio.com/items?itemName=ChakrounAnas.turbo-console-log
   - text: 📦项目地址
     link: https://github.com/Chakroun-Anas/turbo-console-log
+id: fcdf7e4a2c7626474a6cb53122ac8384
 ---

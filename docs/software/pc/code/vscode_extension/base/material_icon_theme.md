@@ -16,4 +16,5 @@ links:
       https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme
   - text: 📦项目地址
     link: https://github.com/material-extensions/vscode-material-icon-theme
+id: 7a8cd3fee94200ddbbca095f64f7cc3a
 ---

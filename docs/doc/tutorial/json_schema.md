@@ -10,4 +10,5 @@ tags:
 links:
   - text: 📖文档地址
     link: https://json-schema.org/docs
+id: c0fcfaa74cd8c68bcdaae71a5d3591ef
 ---

@@ -15,4 +15,5 @@ links:
     link: https://marketplace.visualstudio.com/items?itemName=ms-python.python
   - text: 📦项目地址
     link: https://github.com/Microsoft/vscode-python
+id: 9617a035775edd73ac084d159365a679
 ---

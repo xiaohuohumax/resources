@@ -14,4 +14,5 @@ links:
       https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag
   - text: 📦项目地址
     link: https://github.com/formulahendry/vscode-auto-close-tag
+id: 2e1a886f3b56c73cda7738519533e86f
 ---

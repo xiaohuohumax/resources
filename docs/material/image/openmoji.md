@@ -12,4 +12,5 @@ links:
     link: https://openmoji.org/
   - text: 📦项目地址
     link: https://github.com/hfg-gmuend/openmoji
+id: 7bd95f4477d4810ac0df228a78b3f0f2
 ---

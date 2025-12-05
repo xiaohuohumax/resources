@@ -14,4 +14,5 @@ links:
       https://marketplace.visualstudio.com/items?itemName=ms-python.black-formatter
   - text: 📦项目地址
     link: https://github.com/microsoft/vscode-black-formatter
+id: cbdda5ca98f86bda0bf9f0e11ec71b6c
 ---

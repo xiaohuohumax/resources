@@ -11,4 +11,5 @@ links:
     link: https://marketplace.visualstudio.com/items?itemName=yandeu.five-server
   - text: 📦项目地址
     link: https://github.com/yandeu/five-server-vscode
+id: 61d82e0a3b64fbb721bd8c3c303c451e
 ---

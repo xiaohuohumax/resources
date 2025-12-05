@@ -9,4 +9,5 @@ tags:
 links:
   - text: ⏬下载地址
     link: https://github.com/fastfetch-cli/fastfetch
+id: 70e7d48830589077803f803b9cc69806
 ---

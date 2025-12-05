@@ -12,4 +12,5 @@ links:
     link: https://www.7-zip.org/download.html
   - text: 🌍网站地址
     link: https://sparanoid.com/lab/7z/
+id: 723e9f371234a72b2684531d74c1e2b9
 ---

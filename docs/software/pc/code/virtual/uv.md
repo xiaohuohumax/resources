@@ -9,4 +9,5 @@ tags:
 links:
   - text: ⏬下载地址
     link: https://github.com/astral-sh/uv
+id: 097881a6b08af7ae391920840462a392
 ---

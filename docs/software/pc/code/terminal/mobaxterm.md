@@ -13,4 +13,5 @@ links:
     link: https://mobaxterm.mobatek.net/
   - text: 🚧补丁教程
     link: https://github.com/flygon2018/MobaXterm-keygen
+id: 7948fb1e20ad699fa1b9b928f4bb4a15
 ---

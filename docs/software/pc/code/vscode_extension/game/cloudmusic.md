@@ -12,4 +12,5 @@ links:
     link: https://marketplace.visualstudio.com/items?itemName=yxl.cloudmusic
   - text: 📦项目地址
     link: https://github.com/YXL76/cloudmusic-vscode
+id: 1a466fe8284cfe12baa983e51b4b3250
 ---

@@ -12,4 +12,5 @@ links:
       https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense
   - text: 📦项目地址
     link: https://github.com/ChristianKohler/PathIntellisense
+id: 3b55808bef4a5e014936ffa9390d9339
 ---

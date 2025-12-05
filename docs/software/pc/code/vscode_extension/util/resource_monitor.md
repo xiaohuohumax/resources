@@ -13,4 +13,5 @@ links:
       https://marketplace.visualstudio.com/items?itemName=mutantdino.resourcemonitor
   - text: 📦项目地址
     link: https://github.com/Njanderson/resmon
+id: 2f88a2bb5f140e1bb30831188f28391b
 ---

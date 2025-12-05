@@ -13,4 +13,5 @@ links:
       https://marketplace.visualstudio.com/items?itemName=kisstkondoros.vscode-gutter-preview
   - text: 📦项目地址
     link: https://github.com/kisstkondoros/gutter-preview
+id: 19dd7bd11dcd59135e5267251940ea29
 ---

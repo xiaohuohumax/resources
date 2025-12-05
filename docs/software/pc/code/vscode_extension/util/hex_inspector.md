@@ -12,4 +12,5 @@ links:
       https://marketplace.visualstudio.com/items?itemName=mateuszchudyk.hexinspector
   - text: 📦项目地址
     link: https://github.com/mateuszchudyk/vscode-hexinspector
+id: 0d222703d2adf3e00d61040724c9bc81
 ---

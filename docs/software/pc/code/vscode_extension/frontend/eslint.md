@@ -12,4 +12,5 @@ links:
     link: https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint
   - text: 📦项目地址
     link: https://github.com/Microsoft/vscode-eslint
+id: e5027fc3b82a2f1211ec900edc995b58
 ---

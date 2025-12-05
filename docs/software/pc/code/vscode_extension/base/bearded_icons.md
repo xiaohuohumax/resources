@@ -14,4 +14,5 @@ links:
       https://marketplace.visualstudio.com/items?itemName=BeardedBear.beardedicons
   - text: 📦项目地址
     link: https://github.com/BeardedBear/bearded-icons
+id: bf571bf3184361ce607fe060bccb7402
 ---

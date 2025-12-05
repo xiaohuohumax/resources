@@ -13,4 +13,5 @@ links:
       https://marketplace.visualstudio.com/items?itemName=xiaohuohumax.vscode-export-profiles
   - text: 📦项目地址
     link: https://github.com/xiaohuohumax/vscode-export-profiles
+id: 75443f21290d86f9cd719887182a11f3
 ---

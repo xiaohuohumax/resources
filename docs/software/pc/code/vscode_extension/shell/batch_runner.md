@@ -13,4 +13,5 @@ links:
       https://marketplace.visualstudio.com/items?itemName=NilsSoderman.batch-runner
   - text: 📦项目地址
     link: https://github.com/nils-soderman/vscode-batch-runner
+id: 95e7bac7d759f1bd6f6c1b9f97aa06c2
 ---

@@ -12,4 +12,5 @@ links:
     link: https://marketplace.visualstudio.com/items?itemName=redhat.vscode-xml
   - text: 📦项目地址
     link: https://github.com/redhat-developer/vscode-xml
+id: f3faaeda0f9f255bcd3feb806cea87da
 ---

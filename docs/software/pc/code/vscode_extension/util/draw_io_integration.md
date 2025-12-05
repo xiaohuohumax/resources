@@ -14,4 +14,5 @@ links:
     link: https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio
   - text: 📦项目地址
     link: https://github.com/hediet/vscode-drawio
+id: 5e044a9e30141cd65ec7d7c5ab034c8d
 ---

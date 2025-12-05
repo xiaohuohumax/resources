@@ -14,4 +14,5 @@ links:
       https://learn.microsoft.com/zh-cn/windows/package-manager/winget/#install-winget
   - text: 📦项目地址
     link: https://github.com/microsoft/winget-cli
+id: bbd0f35f9148bc32fed634159f7e8bb2
 ---

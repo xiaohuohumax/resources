@@ -12,4 +12,5 @@ tags:
 links:
   - text: 📖文档地址
     link: https://openapi-ts.dev/zh/
+id: 12fa88f51fc19d0f98333a7da81ae292
 ---

@@ -8,4 +8,5 @@ tags:
 links:
   - text: ⏬下载地址
     link: https://www.microsoft.com/zh-cn/security/mobile-authenticator-app
+id: 74b0386561a331b2a727a8cbdab98261
 ---

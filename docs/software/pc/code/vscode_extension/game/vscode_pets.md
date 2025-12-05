@@ -13,4 +13,5 @@ links:
       https://marketplace.visualstudio.com/items?itemName=tonybaloney.vscode-pets
   - text: 📦项目地址
     link: https://github.com/tonybaloney/vscode-pets
+id: 9d9774703197fbcefedc6ab595b40579
 ---

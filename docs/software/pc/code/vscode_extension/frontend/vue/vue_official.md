@@ -12,4 +12,5 @@ links:
     link: https://marketplace.visualstudio.com/items?itemName=Vue.volar
   - text: 📦项目地址
     link: https://github.com/vuejs/language-tools
+id: 98cf66ab1c1e3297a70621adfcbb101e
 ---

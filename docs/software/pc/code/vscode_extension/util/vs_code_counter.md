@@ -12,4 +12,5 @@ links:
       https://marketplace.visualstudio.com/items?itemName=uctakeoff.vscode-counter
   - text: 📦项目地址
     link: https://github.com/uctakeoff/vscode-counter
+id: fa9c76bda5e6458d75d826a7c1329dd3
 ---

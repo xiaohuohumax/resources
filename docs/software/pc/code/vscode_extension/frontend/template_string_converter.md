@@ -12,4 +12,5 @@ links:
       https://marketplace.visualstudio.com/items?itemName=meganrogge.template-string-converter
   - text: 📦项目地址
     link: https://github.com/meganrogge/template-string-converter
+id: 6cf382c3539c1c28afb003e0810db9c6
 ---

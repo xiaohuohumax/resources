@@ -13,4 +13,5 @@ links:
     link: https://yeasy.gitbook.io/docker_practice
   - text: 📦项目地址
     link: https://github.com/yeasy/docker_practice
+id: 9416f23e613bb6654fb95a19ccb57a68
 ---

@@ -13,4 +13,5 @@ links:
       https://marketplace.visualstudio.com/items?itemName=KevinRose.vsc-python-indent
   - text: 📦项目地址
     link: https://github.com/kbrose/vsc-python-indent
+id: 0df84814b19f55a6316e0a3f1a3af3b8
 ---

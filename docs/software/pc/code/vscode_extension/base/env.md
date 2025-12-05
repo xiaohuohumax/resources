@@ -11,4 +11,5 @@ links:
     link: https://marketplace.visualstudio.com/items?itemName=IronGeek.vscode-env
   - text: 📦项目地址
     link: https://github.com/IronGeek/vscode-env
+id: e265b91fc9383fe8ae0e304add7554b8
 ---

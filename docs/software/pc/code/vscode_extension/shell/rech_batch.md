@@ -13,4 +13,5 @@ links:
       https://marketplace.visualstudio.com/items?itemName=rechinformatica.rech-editor-batch
   - text: 📦项目地址
     link: https://github.com/RechInformatica/rech-editor-batch
+id: 51477e727708f5eda28982078783c4d6
 ---

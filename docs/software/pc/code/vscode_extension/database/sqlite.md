@@ -13,4 +13,5 @@ links:
     link: https://marketplace.visualstudio.com/items?itemName=alexcvzz.vscode-sqlite
   - text: 📦项目地址
     link: https://github.com/AlexCovizzi/vscode-sqlite
+id: c112e6ac7717f5ba56bc19461f0dd56e
 ---

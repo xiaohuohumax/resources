@@ -16,7 +16,7 @@ hero:
       link: /software/mobile/required
     - theme: alt
       text: 项目源码
-      link: 'https://github.com/xiaohuohumax/resources'
+      link: https://github.com/xiaohuohumax/resources
     - theme: alt
       text: 下载书签
       link: /bookmark.html
@@ -30,6 +30,7 @@ features:
   - title: 文档
     icon: 📖
     details: 收录各种文章、教程、文档等资源
+id: 6a992d5529f459a44fee58c733255e86
 ---
 
 <script setup lang="ts">

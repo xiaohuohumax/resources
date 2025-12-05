@@ -12,4 +12,5 @@ links:
       https://marketplace.visualstudio.com/items?itemName=pflannery.vscode-versionlens
   - text: 📦项目地址
     link: https://gitlab.com/versionlens/vscode-versionlens
+id: f3697517a6419a3e99bec44a5d9e5970
 ---

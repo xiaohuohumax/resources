@@ -12,4 +12,5 @@ links:
       https://marketplace.visualstudio.com/items?itemName=BriteSnow.vscode-toggle-quotes
   - text: 📦项目地址
     link: https://github.com/BriteSnow/vscode-toggle-quotes
+id: 69ccbbad4cdb80193e1b647949bad024
 ---

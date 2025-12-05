@@ -13,4 +13,5 @@ links:
       https://marketplace.visualstudio.com/items?itemName=kamilturek.vscode-pyproject-toml-snippets
   - text: 📦项目地址
     link: https://github.com/kamilturek/vscode-pyproject-toml-snippets
+id: d134f5bb715a7420be01061d484ff8d3
 ---

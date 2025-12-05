@@ -12,4 +12,5 @@ links:
       https://marketplace.visualstudio.com/items?itemName=ionutvmi.path-autocomplete
   - text: 📦项目地址
     link: https://github.com/mihai-vlc/path-autocomplete
+id: c97f5fc7395885324579539e792d2c34
 ---

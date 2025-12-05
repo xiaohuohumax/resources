@@ -12,4 +12,5 @@ links:
       https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker
   - text: 📦项目地址
     link: https://github.com/streetsidesoftware/vscode-spell-checker
+id: 4444032ee12ae5c522253bd6fe6c68f3
 ---

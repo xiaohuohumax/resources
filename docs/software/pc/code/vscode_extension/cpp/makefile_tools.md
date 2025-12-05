@@ -13,4 +13,5 @@ links:
       https://marketplace.visualstudio.com/items?itemName=ms-vscode.makefile-tools
   - text: 📦项目地址
     link: https://github.com/Microsoft/vscode-makefile-tools
+id: 3f801075701dba7687e5f57bc0d4fbed
 ---

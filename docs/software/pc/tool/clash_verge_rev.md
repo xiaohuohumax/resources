@@ -8,4 +8,5 @@ tags:
 links:
   - text: ⏬下载地址
     link: https://github.com/clash-verge-rev/clash-verge-rev
+id: 133252bf792023fe011f0701ddd9860c
 ---

@@ -13,4 +13,5 @@ links:
       https://marketplace.visualstudio.com/items?itemName=yoavbls.pretty-ts-errors
   - text: 📦项目地址
     link: https://github.com/yoavbls/pretty-ts-errors
+id: 778c2096d7b4baa09620442a21b040c8
 ---

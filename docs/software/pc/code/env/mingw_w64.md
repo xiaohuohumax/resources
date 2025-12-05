@@ -9,4 +9,5 @@ links:
   - text: ⏬下载地址
     link: >-
       https://sourceforge.net/projects/mingw-w64/files/mingw-w64/mingw-w64-release/
+id: a1177d4a90d77efe3bcbeea9592f0a86
 ---

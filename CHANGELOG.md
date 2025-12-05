@@ -1,5 +1,11 @@
 # resources
 
+## 4.5.0
+
+### Minor Changes
+
+- 添加自动添加页面 ID 的插件
+
 ## 4.4.1
 
 ### Patch Changes

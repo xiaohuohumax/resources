@@ -13,4 +13,5 @@ links:
       https://marketplace.visualstudio.com/items?itemName=benspaulding.python-manifest-template
   - text: 📦项目地址
     link: https://github.com/benspaulding/vscode-python-manifest-template
+id: 07f21e61e72b829900a7fd61653db5e4
 ---

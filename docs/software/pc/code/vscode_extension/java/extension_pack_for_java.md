@@ -13,4 +13,5 @@ links:
       https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack
   - text: 📦项目地址
     link: https://github.com/Microsoft/vscode-java-pack
+id: 414d1555f930055c187a57babf70cd8b
 ---

@@ -13,4 +13,5 @@ links:
       https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools-extension-pack
   - text: 📦项目地址
     link: https://github.com/microsoft/vscode-cpptools
+id: aed56936b6bff46a76a87c3b4e573505
 ---

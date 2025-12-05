@@ -12,4 +12,5 @@ tags:
 links:
   - text: ⏬下载地址
     link: https://github.com/QL-Win/QuickLook/releases
+id: d6dfeca410008f890e93844d5c793d8d
 ---

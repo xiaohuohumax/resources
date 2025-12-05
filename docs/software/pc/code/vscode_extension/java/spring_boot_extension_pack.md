@@ -15,4 +15,5 @@ links:
       https://marketplace.visualstudio.com/items?itemName=vmware.vscode-boot-dev-pack
   - text: 📦项目地址
     link: https://github.com/spring-projects/sts4
+id: fb035ef38a83bf8696db72f505c80bf1
 ---

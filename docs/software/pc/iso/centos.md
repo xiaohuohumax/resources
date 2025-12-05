@@ -11,4 +11,5 @@ tags:
 links:
   - text: ⏬下载地址
     link: https://wiki.centos.org/Download.html
+id: b3930d03fb027d1502681a3c2b2f3eab
 ---

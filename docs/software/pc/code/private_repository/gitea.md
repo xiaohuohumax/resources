@@ -13,4 +13,5 @@ links:
     link: https://about.gitea.com/products/gitea/
   - text: 📖文档地址
     link: https://docs.gitea.com/zh-cn/
+id: c4ccf6435cd102c16a40c5a4ebcd345c
 ---

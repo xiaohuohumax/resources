@@ -14,4 +14,5 @@ links:
     link: https://marketplace.visualstudio.com/items?itemName=FittenTech.Fitten-Code
   - text: 📦项目地址
     link: https://github.com/alefragnani/vscode-bookmarks
+id: 3275442f0360c623c81430d64fa7ff0e
 ---

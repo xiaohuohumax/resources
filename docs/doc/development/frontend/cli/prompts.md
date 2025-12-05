@@ -12,4 +12,5 @@ tags:
 links:
   - text: 📦项目地址
     link: https://github.com/terkelg/prompts
+id: afae243cd8dfbaae730e5dd1afd266bc
 ---

@@ -11,4 +11,5 @@ links:
     link: https://www.python.org/downloads/
   - text: 📖文档地址
     link: https://docs.python.org/zh-cn/3/
+id: d1ee9a11ee696a316cdfd7ce9d861d39
 ---

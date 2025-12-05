@@ -14,4 +14,5 @@ links:
       https://marketplace.visualstudio.com/items?itemName=jsynowiec.vscode-insertdatestring
   - text: 📦项目地址
     link: https://github.com/jsynowiec/vscode-insertdatestring
+id: 3f54ac53df09f5f8bce8494e2a11b14c
 ---

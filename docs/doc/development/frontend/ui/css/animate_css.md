@@ -8,4 +8,5 @@ tags:
 links:
   - text: 📖文档地址
     link: https://github.com/animate-css/animate.css
+id: 8c8b003856463b4052b636e9ea249d58
 ---

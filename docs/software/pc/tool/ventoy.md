@@ -8,4 +8,5 @@ tags:
 links:
   - text: ⏬下载地址
     link: https://www.ventoy.net/cn/download.html
+id: fd86eac555b67292f9d3757d7326eb0c
 ---

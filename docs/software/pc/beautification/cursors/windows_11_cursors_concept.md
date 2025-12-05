@@ -9,6 +9,7 @@ tags:
 links:
   - text: ⏬下载地址
     link: https://zhutix.com/ico/windows-11-cursors-design/
+id: f2b616bce4904686190bfe58853182f7
 ---
 
 ![Windows 11 Cursors Concept](win11_concept.png)

@@ -14,4 +14,5 @@ links:
     link: https://boringavatars.com/
   - text: 📦项目地址
     link: https://github.com/boringdesigners/boring-avatars
+id: b46c872247c6725ab7893b5040bd0e2d
 ---

@@ -12,4 +12,5 @@ links:
     link: https://www.jetbrains.com/pycharm/
   - text: 🚧补丁教程
     link: https://www.quanxiaoha.com/pycharm-pojie/pycharm-pojie-202413.html
+id: b258e3767119b6cb6ab29a8c0086c276
 ---

@@ -15,4 +15,5 @@ links:
       https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss
   - text: 📦项目地址
     link: https://github.com/tailwindlabs/tailwindcss-intellisense
+id: 2a858f6079131925d999acf8990d9220
 ---

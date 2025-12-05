@@ -9,4 +9,5 @@ tags:
 links:
   - text: 📦项目地址
     link: https://sweetalert.js.org/
+id: f5f0420e4ecd5e635470a5fe5c8dd647
 ---

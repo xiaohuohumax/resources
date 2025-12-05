@@ -13,4 +13,5 @@ links:
     link: https://marketplace.visualstudio.com/items?itemName=alefragnani.Bookmarks
   - text: 📦项目地址
     link: https://github.com/alefragnani/vscode-bookmarks
+id: 2ea812df2e7b654927a8344886fba2c5
 ---

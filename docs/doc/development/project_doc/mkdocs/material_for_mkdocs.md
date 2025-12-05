@@ -16,4 +16,5 @@ links:
     link: https://squidfunk.github.io/mkdocs-material/
   - text: 📦项目地址
     link: https://github.com/squidfunk/mkdocs-material
+id: e7878da33c084937e7128c6f3e1b218a
 ---

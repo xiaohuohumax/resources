@@ -10,4 +10,5 @@ tags:
 links:
   - text: ⏬下载地址
     link: https://redis.io/downloads/
+id: 7ad5daf62b6114cee060b574dbcaab02
 ---

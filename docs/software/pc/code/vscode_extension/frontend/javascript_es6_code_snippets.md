@@ -14,4 +14,5 @@ links:
       https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets
   - text: 📦项目地址
     link: https://github.com/xabikos/vscode-javascript
+id: 7693d98075caee65a3a3127318734f0b
 ---

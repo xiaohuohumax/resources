@@ -11,4 +11,5 @@ links:
     link: https://marketplace.visualstudio.com/items?itemName=techer.open-in-browser
   - text: 📦项目地址
     link: https://github.com/SudoKillMe/vscode-extensions-open-in-browser
+id: 65a09f43a918f755583678c08eeea628
 ---

@@ -13,4 +13,5 @@ links:
       https://marketplace.visualstudio.com/items?itemName=mechatroner.rainbow-csv
   - text: 📦项目地址
     link: https://github.com/mechatroner/vscode_rainbow_csv
+id: 7273f3ae84cd066347b42cd73fddf9d3
 ---

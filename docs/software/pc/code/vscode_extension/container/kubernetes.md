@@ -13,4 +13,5 @@ links:
       https://marketplace.visualstudio.com/items?itemName=ms-kubernetes-tools.vscode-kubernetes-tools
   - text: 📦项目地址
     link: https://github.com/vscode-kubernetes-tools/vscode-kubernetes-tools
+id: 3bce37a1d079c8218e9337086ac3169f
 ---

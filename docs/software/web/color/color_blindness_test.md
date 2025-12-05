@@ -10,4 +10,5 @@ tags:
 links:
   - text: 🌍网站地址
     link: https://color-blindness-test.com/zh
+id: 8f4db7b7df89d75fb76c3447b1be4692
 ---

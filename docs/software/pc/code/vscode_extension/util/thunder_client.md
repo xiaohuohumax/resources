@@ -13,4 +13,5 @@ links:
       https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client
   - text: 📦项目地址
     link: https://github.com/thunderclient/thunder-client-support
+id: 2f41c0b4275bfb15fe92474f21b87a38
 ---

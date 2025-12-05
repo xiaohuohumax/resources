@@ -15,4 +15,5 @@ links:
       https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one
   - text: 📦项目地址
     link: https://github.com/yzhang-gh/vscode-markdown
+id: e86c00b81d459a9ebfd68f5e7c3307fb
 ---

@@ -9,6 +9,7 @@ import { RssPlugin } from 'vitepress-plugin-rss'
 import ClearDist from './plugins/clear-dist'
 import CreateBookmark from './plugins/create-bookmark'
 import CreateTemplates from './plugins/create-templates'
+import ImproveViews from './plugins/improve-views'
 import VirtualViews from './plugins/virtual-views'
 import { readView } from './view'
 
@@ -61,6 +62,7 @@ export default defineConfig<ThemeConfig>({
       CreateBookmark({ srcDir, title, publicDir, iconHref }),
       ClearDist(outDir),
       CreateTemplates(templatesDir),
+      ImproveViews(srcDir),
       RssPlugin({
         title,
         language: lang,

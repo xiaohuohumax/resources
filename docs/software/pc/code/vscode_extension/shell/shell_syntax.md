@@ -12,4 +12,5 @@ links:
     link: https://marketplace.visualstudio.com/items?itemName=bmalehorn.shell-syntax
   - text: 📦项目地址
     link: https://github.com/bmalehorn/vscode-shell-syntax
+id: 8fcbdc53e4897b459030390130157ae6
 ---

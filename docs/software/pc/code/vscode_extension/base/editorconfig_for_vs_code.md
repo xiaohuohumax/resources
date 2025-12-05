@@ -13,4 +13,5 @@ links:
       https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig
   - text: 📦项目地址
     link: https://github.com/editorconfig/editorconfig-vscode
+id: 5901ac2eccd6867e173456b11ec2e5f1
 ---

@@ -12,4 +12,5 @@ links:
     link: https://www.jetbrains.com/datagrip/
   - text: 🚧补丁教程
     link: https://www.quanxiaoha.com/datagrip-pojie/datagrip-pojie-202413.html
+id: efd893ec8a9c63a179204412e6701ae6
 ---

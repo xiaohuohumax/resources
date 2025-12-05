@@ -9,4 +9,5 @@ tags:
 links:
   - text: 📖文档地址
     link: https://github.com/vuejs/awesome-vue
+id: ce06ce947268197fe0e5691bfdfbaa58
 ---

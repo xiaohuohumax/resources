@@ -13,4 +13,5 @@ tags:
 links:
   - text: ⏬下载地址
     link: https://almalinux.org/zh-hans/get-almalinux/
+id: 154c980bf59d40dec4b9c204cf6e81af
 ---

@@ -10,4 +10,5 @@ tags:
 links:
   - text: ⏬下载地址
     link: https://verdaccio.org/zh-CN/docs/installation
+id: 761f22d6f28bee504cb33ba786efeea3
 ---

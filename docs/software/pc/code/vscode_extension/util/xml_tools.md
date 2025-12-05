@@ -12,4 +12,5 @@ links:
     link: https://marketplace.visualstudio.com/items?itemName=DotJoshJohnson.xml
   - text: 📦项目地址
     link: https://github.com/DotJoshJohnson/vscode-xml
+id: 07f0128dd1e526d90efc90daf885bc34
 ---

@@ -16,4 +16,5 @@ links:
     link: https://marketplace.visualstudio.com/items?itemName=charliermarsh.ruff
   - text: 📦项目地址
     link: https://github.com/astral-sh/ruff-vscode
+id: 5f4c1dcff4204dcec6402592fe6b6fbc
 ---

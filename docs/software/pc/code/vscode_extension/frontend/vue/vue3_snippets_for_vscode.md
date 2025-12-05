@@ -13,4 +13,5 @@ links:
       https://marketplace.visualstudio.com/items?itemName=wejectchan.vue3-snippets-for-vscode
   - text: 📦项目地址
     link: https://github.com/wejectchen/vue3-snippets-for-vscode
+id: 96cd312fdf5c8dd9b3a11ce786daecb3
 ---

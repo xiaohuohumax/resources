@@ -14,4 +14,5 @@ links:
       https://marketplace.visualstudio.com/items?itemName=yy0931.vscode-sqlite3-editor
   - text: 📦项目地址
     link: https://github.com/yy0931/sqlite3-editor
+id: 587ac4b2994fd1b045e01538d5b08663
 ---

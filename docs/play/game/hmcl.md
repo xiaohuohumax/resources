@@ -8,4 +8,5 @@ tags:
 links:
   - text: ⏬下载地址
     link: https://hmcl.huangyuhui.net/download/
+id: bc66e303d4f492c7b85fb360e5684031
 ---

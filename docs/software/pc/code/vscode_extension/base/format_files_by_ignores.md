@@ -13,4 +13,5 @@ links:
       https://marketplace.visualstudio.com/items?itemName=xiaohuohumax.format-files-by-ignores
   - text: 📦项目地址
     link: https://github.com/xiaohuohumax/format-files-by-ignores
+id: 27bf1a85cbeadf393a8907e5f1721cde
 ---

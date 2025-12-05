@@ -11,4 +11,5 @@ links:
     link: https://www.rust-lang.org/zh-CN/
   - text: 📦项目地址
     link: https://github.com/rust-lang/rust
+id: 1ba14c364dbea5b6bffee71ee27effca
 ---

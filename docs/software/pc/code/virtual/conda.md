@@ -11,4 +11,5 @@ tags:
 links:
   - text: ⏬下载地址
     link: https://docs.anaconda.com/miniconda/
+id: 3881bbca8165ba21b03f2a27677ea1d6
 ---

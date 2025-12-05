@@ -8,4 +8,5 @@ tags:
 links:
   - text: 📦项目地址
     link: https://github.com/softprops/action-gh-release
+id: 7ea0c20900fe81e0936dc7b72641b906
 ---

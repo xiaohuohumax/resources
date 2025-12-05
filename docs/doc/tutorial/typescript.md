@@ -9,4 +9,5 @@ tags:
 links:
   - text: 📖文档地址
     link: https://www.tslang.cn/docs/home.html
+id: 6e47987ec9930b5c2a4e77193311cac0
 ---

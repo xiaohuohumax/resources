@@ -15,4 +15,5 @@ links:
       https://marketplace.visualstudio.com/items?itemName=foxundermoon.shell-format
   - text: 📦项目地址
     link: https://github.com/foxundermoon/vs-shell-format
+id: ae029ed88d2ff9a44f76ccd3987d133a
 ---

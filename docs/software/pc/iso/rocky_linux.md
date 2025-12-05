@@ -10,4 +10,5 @@ tags:
 links:
   - text: ⏬下载地址
     link: https://rockylinux.org/download
+id: 6ec74661d4449313da2685451f461c19
 ---

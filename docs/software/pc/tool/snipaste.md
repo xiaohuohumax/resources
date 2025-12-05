@@ -8,4 +8,5 @@ tags:
 links:
   - text: ⏬下载地址
     link: https://zh.snipaste.com/download.html
+id: c998ceaf0f3e098f6069cfe954b25f21
 ---

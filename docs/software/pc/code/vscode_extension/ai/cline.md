@@ -12,4 +12,5 @@ links:
     link: https://marketplace.visualstudio.com/items?itemName=saoudrizwan.claude-dev
   - text: 📦项目地址
     link: https://github.com/cline/cline
+id: fe057d39f7176805eb4f4bcef6d50c62
 ---

@@ -12,4 +12,5 @@ links:
     link: https://marketplace.visualstudio.com/items?itemName=humao.rest-client
   - text: 📦项目地址
     link: https://github.com/Huachao/vscode-restclient
+id: c00114105514baf297e6099a024caaa0
 ---

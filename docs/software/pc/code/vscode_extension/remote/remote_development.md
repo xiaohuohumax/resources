@@ -19,4 +19,5 @@ links:
       https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack
   - text: 📦项目地址
     link: https://github.com/Microsoft/vscode-remote-release
+id: 640f050ed411b2ddcc4693468670135c
 ---

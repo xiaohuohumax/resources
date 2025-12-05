@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import type { View } from '../../view'
+import type { Icon, Tags, Togo, View } from '../../view'
 import VPImage from '@vitepress-components/VPImage.vue'
 import VPLink from '@vitepress-components/VPLink.vue'
 import { useRouter, withBase } from 'vitepress'
 import { useTheme } from '../composables/theme'
 
-withDefaults(defineProps<{ view: View, inFavorite?: boolean }>(), { inFavorite: false })
+const props = withDefaults(defineProps<{ view: View, inFavorite?: boolean }>(), { inFavorite: false })
 
 const theme = useTheme()
 const router = useRouter()
@@ -13,29 +13,27 @@ const router = useRouter()
 function handleTagClick(tag: string) {
   router.go(withBase(`/tags?tag=${encodeURIComponent(tag)}`))
 }
+
+const icon = computed(() => (props.view as Partial<Icon>).icon)
+const tags = computed(() => (props.view as Partial<Tags>).tags)
+const togo = computed(() => (props.view as Partial<Togo>).togo)
 </script>
 
 <template>
-  <VPLink
-    v-if="view.layout === 'collection' || view.layout === 'resource'" class="RViewCard" :no-icon="true"
-    :href="view.pathname" @click.prevent
-  >
+  <VPLink class="RViewCard" :no-icon="true" :href="view.pathname" @click.prevent>
     <article class="box">
-      <div class="header">
-        <VPImage :image="view.icon" style="width: 48px; height: 48px; object-fit: contain;" />
+      <div v-if="icon" class="header">
+        <VPImage :image="icon" style="width: 48px; height: 48px; object-fit: contain;" />
         <RFavorite :view="view" />
       </div>
       <h2 v-if="!inFavorite" v-html="view.title" />
       <h2 v-else>
         <RBreadcrumbs :view="view" :disabled-click="true" />
       </h2>
-      <RTags v-if="view.layout === 'resource'" :tags="view.tags" @tag-click="handleTagClick" />
+      <RTags v-if="tags" :tags="tags" @tag-click="handleTagClick" />
       <p v-if="view.description" class="description" v-html="view.description" />
       <div class="actions">
-        <VPLink
-          v-if="view.layout === 'resource' && view.togo" class="action" :href="view.togo" :no-icon="true" tag="a"
-          @click.stop
-        >
+        <VPLink v-if="togo" class="action" :href="togo" :no-icon="true" tag="a" @click.stop>
           {{ theme.view.collection.gotoLabel }}
         </VPLink>
       </div>
@@ -58,7 +56,7 @@ function handleTagClick(tag: string) {
   border-color: var(--vp-c-brand-3);
 }
 
-.RViewCard .box .header{
+.RViewCard .box .header {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -73,7 +71,7 @@ function handleTagClick(tag: string) {
   font-weight: 600;
 }
 
-.RViewCard .box h2 ::v-deep(.RBreadcrumbs){
+.RViewCard .box h2 ::v-deep(.RBreadcrumbs) {
   margin: 0 !important;
 }
 

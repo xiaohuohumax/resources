@@ -2,6 +2,7 @@ import fs from 'node:fs'
 import path from 'node:path'
 import { string2Anchor } from '../.vitepress/utils'
 import {
+  DefaultIcon,
   formatIcon,
   normalizePath,
   readFolders,
@@ -34,7 +35,8 @@ function formatView(srcDir: string, filePath: string): void {
     return
   }
 
-  let icon = formatIcon(frontmatter.icon, view.pathname)
+  const defaultIcon = view.layout === 'collection' ? DefaultIcon.Collection : DefaultIcon.Resource
+  let icon = formatIcon(frontmatter.icon, view.pathname, defaultIcon)
   if (typeof icon === 'string') {
     formatFilename(path.join(srcDir, icon))
     icon = string2Anchor(frontmatter.icon)

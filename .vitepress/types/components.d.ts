@@ -11,6 +11,7 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
+    Article: typeof import('./../theme/views/Article.vue')['default']
     Collection: typeof import('./../theme/views/Collection.vue')['default']
     Empty: typeof import('./../theme/views/Empty.vue')['default']
     Favorites: typeof import('./../theme/views/Favorites.vue')['default']
@@ -21,6 +22,7 @@ declare module 'vue' {
     RFavorite: typeof import('./../theme/components/RFavorite.vue')['default']
     RLinks: typeof import('./../theme/components/RLinks.vue')['default']
     RLogo: typeof import('./../theme/components/RLogo.vue')['default']
+    RRelatedView: typeof import('./../theme/components/RRelatedView.vue')['default']
     RTags: typeof import('./../theme/components/RTags.vue')['default']
     RTitle: typeof import('./../theme/components/RTitle.vue')['default']
     RViewCard: typeof import('./../theme/components/RViewCard.vue')['default']

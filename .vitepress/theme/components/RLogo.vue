@@ -1,9 +1,9 @@
 <script setup lang='ts'>
-import type { Resource } from '../../view'
+import type { ResourceView } from '../../view'
 import VPImage from '@vitepress-components/VPImage.vue'
 import { useFrontmatter } from '../composables/frontmatter'
 
-const frontmatter = useFrontmatter<Resource>()
+const frontmatter = useFrontmatter<ResourceView>()
 </script>
 
 <template>

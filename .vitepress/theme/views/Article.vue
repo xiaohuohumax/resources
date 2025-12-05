@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import type { ResourceView } from '../../view'
+import type { ArticleView } from '../../view'
 import VPDoc from '@vitepress-components/VPDoc.vue'
 import RFavorite from '../components/RFavorite.vue'
 import { useFrontmatter } from '../composables/frontmatter'
 
 const router = useRouter()
-const frontmatter = useFrontmatter<ResourceView>()
+const frontmatter = useFrontmatter<ArticleView>()
 
 function handleTagClick(tag: string) {
   router.go(withBase(`/tags?tag=${encodeURIComponent(tag)}`))
@@ -13,7 +13,7 @@ function handleTagClick(tag: string) {
 </script>
 
 <template>
-  <div class="Resource">
+  <div class="Article">
     <VPDoc>
       <template #doc-before>
         <div class="vp-doc">
@@ -24,8 +24,6 @@ function handleTagClick(tag: string) {
           <RTitle />
           <RTags :tags="frontmatter.tags" @tag-click="handleTagClick" />
           <RBreadcrumbs :view="frontmatter" />
-          <RLinks />
-          <RDescription />
         </div>
       </template>
     </VPDoc>
@@ -33,7 +31,7 @@ function handleTagClick(tag: string) {
 </template>
 
 <style scoped>
-.Resource .header {
+.Article .header {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;

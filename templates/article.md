@@ -1,13 +1,10 @@
 ---
 disabled: false
 order: 0
-layout: resource
-icon: /resource.svg
+layout: article
+icon: /article.svg
 title: Title
 description: Description
-links:
-  - text: Link
-    link: https://example.com
 tags:
   - tag1
   - tag2

@@ -1,5 +1,11 @@
 # resources
 
+## 4.6.0
+
+### Minor Changes
+
+- 添加文章类型页面
+
 ## 4.5.1
 
 ### Patch Changes

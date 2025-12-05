@@ -1,12 +1,12 @@
 <script lang="ts" setup>
-import type { Resource } from '../../view'
+import type { ResourceView } from '../../view'
 import VPLink from '@vitepress-components/VPLink.vue'
 import { string2Anchor } from '../../utils'
 import { useFrontmatter } from '../composables/frontmatter'
 import { useTheme } from '../composables/theme'
 
 const theme = useTheme()
-const frontmatter = useFrontmatter<Resource>()
+const frontmatter = useFrontmatter<ResourceView>()
 const anchor = string2Anchor(theme.value.view.resource.linkLabel)
 </script>
 

@@ -25,28 +25,43 @@ export interface Link {
   link: string
 }
 
-export interface Collection extends Core {
-  layout: 'collection'
+export interface Links {
+  links: Link[]
+}
+
+export interface Icon {
   icon: DefaultTheme.ThemeableImage
 }
 
-export interface Resource extends Core {
-  layout: 'resource'
-  icon: DefaultTheme.ThemeableImage
-  links: Link[]
+export interface Tags {
   tags: string[]
+}
+
+export interface Togo {
   togo?: string
 }
 
-export interface Home extends Core {
+export interface CollectionView extends Core, Icon {
+  layout: 'collection'
+}
+
+export interface ResourceView extends Core, Icon, Links, Tags, Togo {
+  layout: 'resource'
+}
+
+export interface ArticleView extends Core, Icon, Tags {
+  layout: 'article'
+}
+
+export interface HomeView extends Core {
   layout: 'home'
 }
 
-export interface Empty extends Core {
+export interface EmptyView extends Core {
   layout: 'empty'
 }
 
-export interface Tags extends Core {
+export interface TagsView extends Core {
   layout: 'tags'
 }
 
@@ -54,7 +69,7 @@ export interface Favorites extends Core {
   layout: 'favorites'
 }
 
-export type View = Collection | Resource | Home | Empty | Tags
+export type View = CollectionView | ResourceView | ArticleView | HomeView | EmptyView | TagsView
 
 export function generateId(pathname: string): string {
   return crypto.createHash('md5').update(pathname).digest('hex')
@@ -86,9 +101,15 @@ function filePath2CollectionPathname(filePath: string, rootFolder: string, isCol
   }
 }
 
-export function formatIcon(icon: any, pathname: string): DefaultTheme.ThemeableImage {
+export enum DefaultIcon {
+  Collection = '/folder.svg',
+  Resource = '/resource.svg',
+  Article = '/article.svg',
+}
+
+export function formatIcon(icon: any, pathname: string, defaultIcon: DefaultIcon): DefaultTheme.ThemeableImage {
   if (typeof icon === 'undefined') {
-    return '/folder.svg'
+    return defaultIcon
   }
   function resolveIcon(i: string): string {
     return i.startsWith('/') ? i : normalizePath(path.join('/', path.dirname(pathname), i))
@@ -161,19 +182,29 @@ export function readView(filePath: string, rootFolder: string): View | undefined
           ...data,
           ...core,
           layout: 'resource',
-          icon: formatIcon(data.icon, pathname),
+          icon: formatIcon(data.icon, pathname, DefaultIcon.Resource),
           links,
           tags: data.tags || [],
           togo: data.togo || firstLink?.link || '',
-        } satisfies Resource
+        } satisfies ResourceView
+      }
+      case 'article':
+      {
+        return {
+          ...data,
+          ...core,
+          layout: 'article',
+          icon: formatIcon(data.icon, pathname, DefaultIcon.Article),
+          tags: data.tags || [],
+        } satisfies ArticleView
       }
       case 'collection':
         return {
           ...data,
           ...core,
           layout: 'collection',
-          icon: formatIcon(data.icon, pathname),
-        } satisfies Collection
+          icon: formatIcon(data.icon, pathname, DefaultIcon.Collection),
+        } satisfies CollectionView
     }
     return Object.assign({ layout: data.layout }, data, core) satisfies View
   }

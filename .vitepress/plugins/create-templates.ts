@@ -1,8 +1,8 @@
 import type { Plugin } from 'vitepress'
-import type { Collection, Empty, Resource } from '../view'
+import type { ArticleView, CollectionView, EmptyView, ResourceView } from '../view'
 import fs from 'node:fs'
 import path from 'node:path'
-import { updateMarkdownFrontmatter } from '../view'
+import { DefaultIcon, updateMarkdownFrontmatter } from '../view'
 
 export default function (templatesDir: string): Plugin {
   function createTemplate<T extends Record<string, any>>(template: T, filename: string) {
@@ -18,20 +18,20 @@ export default function (templatesDir: string): Plugin {
 
       type OmitCore = 'id' | 'pathname' | 'collectionId'
 
-      createTemplate<Omit<Collection, OmitCore>>({
+      createTemplate<Omit<CollectionView, OmitCore>>({
         disabled: false,
         order: 0,
         layout: 'collection',
-        icon: '/folder.svg',
+        icon: DefaultIcon.Collection,
         title: 'Title',
         description: 'Description',
       }, 'index.md')
 
-      createTemplate<Omit<Resource, OmitCore>>({
+      createTemplate<Omit<ResourceView, OmitCore>>({
         disabled: false,
         order: 0,
         layout: 'resource',
-        icon: 'file.svg',
+        icon: DefaultIcon.Resource,
         title: 'Title',
         description: 'Description',
         links: [
@@ -43,7 +43,17 @@ export default function (templatesDir: string): Plugin {
         tags: ['tag1', 'tag2'],
       }, 'resource.md')
 
-      createTemplate<Omit<Empty, OmitCore>>({
+      createTemplate<Omit<ArticleView, OmitCore>>({
+        disabled: false,
+        order: 0,
+        layout: 'article',
+        icon: DefaultIcon.Article,
+        title: 'Title',
+        description: 'Description',
+        tags: ['tag1', 'tag2'],
+      }, 'article.md')
+
+      createTemplate<Omit<EmptyView, OmitCore>>({
         disabled: false,
         order: 0,
         layout: 'empty',

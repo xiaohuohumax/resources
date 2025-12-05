@@ -2,6 +2,7 @@
 layout: article
 title: 封装属于自己的 Windows 系统镜像
 description: 介绍如何封装一个 Windows 系统镜像，并分享一些常见问题的解决方案。
+icon: index.svg
 tags:
   - 系统
 id: 6d92fa37bfe2d5d5f089f9074d548165

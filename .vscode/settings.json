@@ -55,6 +55,7 @@
     "automa",
     "autopiano",
     "autoplay",
+    "autounattend",
     "bilibili",
     "bitcomet",
     "breakline",
@@ -196,7 +197,8 @@
     "zcool",
     "ziyouziti",
     "zkochan",
-    "zzzmh"
+    "zzzmh",
+    "unattend"
   ],
   "cSpell.ignorePaths": [
     "pnpm-lock.yaml",

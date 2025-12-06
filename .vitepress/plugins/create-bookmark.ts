@@ -1,65 +1,79 @@
 import type { Bookmark } from '@xiaohuohumax/bookmark'
 import type { Plugin } from 'vitepress'
-import type { View } from '../view'
+import type { CollectionChildrenMap } from '../view'
 import fs from 'node:fs'
 import path from 'node:path'
 import { useDebounceFn } from '@vueuse/core'
 import { Builder } from '@xiaohuohumax/bookmark'
-import { readViews } from '../view'
-
-function loopViews(collectionId: string, views: View[]): Bookmark[] {
-  const bookmarks: Bookmark[] = []
-  for (const view of views.filter(view => view.collectionId === collectionId)) {
-    if (view.layout === 'collection') {
-      const children = loopViews(view.id, views)
-      if (children.length > 0) {
-        bookmarks.push({
-          name: view.title,
-          children,
-        })
-      }
-    }
-    else if (view.layout === 'resource') {
-      bookmarks.push(
-        ...view.links.map(link => ({
-          name: `${view.title} [${link.text}]`,
-          href: link.link,
-        })),
-      )
-    }
-  }
-  return bookmarks
-}
-
-function createBookmark(options: Options) {
-  const views = readViews(options.srcDir)
-  const homeView = views.find(view => view.layout === 'home')
-  const bookmarks = homeView ? loopViews(homeView.id, views) : []
-  const builder = new Builder()
-  const content = builder.buildHTMLString(bookmarks, ({ bookmark }) => {
-    return fs.readFileSync(path.join(__dirname, 'bookmark.html'), 'utf-8')
-      .replace(/\{\{\s+bookmark\s+\}\}/gi, () => bookmark)
-      .replace(/\{\{\s+icon\s+\}\}/gi, () => options.iconHref)
-      .replaceAll(/\{\{\s+title\s+\}\}/gi, () => options.title)
-  })
-  fs.writeFileSync(path.join(options.publicDir, 'bookmark.html'), content, 'utf-8')
-}
+import { readViews, view2CollectionChildrenMap } from '../view'
 
 export interface Options {
   title: string
   srcDir: string
   publicDir: string
   iconHref: string
+  hostname: string
 }
 
 export default function (options: Options): Plugin {
+  function loopViews(collectionId: string, collectionChildrenMap: CollectionChildrenMap): Bookmark[] {
+    const bookmarks: Bookmark[] = []
+    const children = collectionChildrenMap[collectionId]
+    if (!children) {
+      return bookmarks
+    }
+
+    for (const view of children) {
+      if (view.layout === 'collection') {
+        const children = loopViews(view.id, collectionChildrenMap)
+        if (children.length > 0) {
+          bookmarks.push({
+            name: view.title,
+            children,
+          })
+        }
+      }
+      else if (view.layout === 'resource') {
+        bookmarks.push(
+          ...view.links.map(link => ({
+            name: `${view.title} [${link.text}]`,
+            href: link.link,
+          })),
+        )
+      }
+      else if (view.layout === 'article') {
+        bookmarks.push({
+          name: view.title,
+          href: new URL(view.pathname, options.hostname).href,
+        })
+      }
+    }
+    return bookmarks
+  }
+
+  function createBookmark() {
+    const views = readViews(options.srcDir)
+    const homeView = views.find(view => view.layout === 'home')
+    const collectionChildrenMap = view2CollectionChildrenMap(views)
+    const bookmarks = homeView ? loopViews(homeView.id, collectionChildrenMap) : []
+    const builder = new Builder()
+    const content = builder.buildHTMLString(bookmarks, ({ bookmark }) => {
+      return fs.readFileSync(path.join(__dirname, 'bookmark.html'), 'utf-8')
+        .replace(/\{\{\s+bookmark\s+\}\}/gi, () => bookmark)
+        .replace(/\{\{\s+icon\s+\}\}/gi, () => options.iconHref)
+        .replaceAll(/\{\{\s+title\s+\}\}/gi, () => options.title)
+    })
+    fs.writeFileSync(path.join(options.publicDir, 'bookmark.html'), content, 'utf-8')
+  }
+
   return {
     name: 'vitepress:create-bookmark',
+    buildStart() {
+      createBookmark()
+    },
     configureServer(server) {
-      createBookmark(options)
-
       const listener = useDebounceFn((file: string) => {
-        file.endsWith('.md') && createBookmark(options)
+        file.endsWith('.md') && createBookmark()
       }, 100)
 
       server.watcher.on('change', listener)

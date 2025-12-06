@@ -1,5 +1,11 @@
 # resources
 
+## 4.7.1
+
+### Patch Changes
+
+- 修复书签确实文章类型页面异常
+
 ## 4.7.0
 
 ### Minor Changes

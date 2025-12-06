@@ -59,7 +59,7 @@ export default defineConfig<ThemeConfig>({
         dts: abs('types/components.d.ts'),
       }),
       VirtualViews(srcDir),
-      CreateBookmark({ srcDir, title, publicDir, iconHref }),
+      CreateBookmark({ srcDir, title, publicDir, iconHref, hostname }),
       ClearDist(outDir),
       CreateTemplates(templatesDir),
       ImproveViews(srcDir),

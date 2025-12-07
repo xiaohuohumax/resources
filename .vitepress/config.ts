@@ -43,7 +43,6 @@ export default defineConfig<ThemeConfig>({
   head: [
     ['link', { rel: 'icon', href: iconHref }],
     ['meta', { name: 'algolia-site-verification', content: 'A081FC7145F7741F' }],
-    ['script', { defer: '', async: '', src: 'https://cn.vercount.one/js' }],
   ],
   vite: {
     publicDir,

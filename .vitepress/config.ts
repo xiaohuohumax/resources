@@ -43,6 +43,7 @@ export default defineConfig<ThemeConfig>({
   head: [
     ['link', { rel: 'icon', href: iconHref }],
     ['meta', { name: 'algolia-site-verification', content: 'A081FC7145F7741F' }],
+    ['script', { defer: '', async: '', src: 'https://cn.vercount.one/js' }],
   ],
   vite: {
     publicDir,
@@ -83,6 +84,7 @@ export default defineConfig<ThemeConfig>({
         // Overwrite built-in components
         './VPNavBarMenu.vue': abs('./theme/components/overwrite/VPNavBarMenu.vue'),
         './VPNavScreenMenu.vue': abs('./theme/components/overwrite/VPNavScreenMenu.vue'),
+        './components/VPFooter.vue': abs('./theme/components/overwrite/VPFooter.vue'),
       },
     },
     build: { chunkSizeWarningLimit: 5000 },
@@ -110,6 +112,9 @@ export default defineConfig<ThemeConfig>({
     footer: {
       message: description,
       copyright: `<a class="link" href="${repo}?tab=MIT-1-ov-file">${pkg.license}</a> Licensed | Copyright © 2024-present <a class="link" href="${github}">${pkg.author!.name}</a>`,
+      page_pv: '本页面访问量',
+      site_pv: '网站总访问量',
+      site_uv: '网站总访客数',
     },
     lastUpdated: {
       text: '上次更新',

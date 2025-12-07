@@ -1,6 +1,6 @@
 import type { DefaultTheme } from 'vitepress'
 
-export interface ThemeConfig extends Omit<DefaultTheme.Config, 'nav' | 'sidebar'> {
+export interface ThemeConfig extends Omit<DefaultTheme.Config, 'nav' | 'sidebar' | 'footer'> {
   view: {
     resource: {
       descriptionLabel: string
@@ -15,5 +15,10 @@ export interface ThemeConfig extends Omit<DefaultTheme.Config, 'nav' | 'sidebar'
       addLabel: string
       cancelLabel: string
     }
+  }
+  footer?: DefaultTheme.Footer & {
+    page_pv: string
+    site_pv: string
+    site_uv: string
   }
 }

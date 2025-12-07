@@ -169,6 +169,7 @@
     "tiptap",
     "topgoer",
     "treemap",
+    "unattend",
     "unigetui",
     "unocss",
     "unplugin",
@@ -177,6 +178,7 @@
     "v2rayn",
     "valkey",
     "ventoy",
+    "vercount",
     "verysync",
     "vitepress",
     "vuetify",
@@ -198,8 +200,7 @@
     "zcool",
     "ziyouziti",
     "zkochan",
-    "zzzmh",
-    "unattend"
+    "zzzmh"
   ],
   "cSpell.ignorePaths": [
     "pnpm-lock.yaml",

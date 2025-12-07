@@ -28,6 +28,7 @@ declare module 'vue' {
     RViewCard: typeof import('./../theme/components/RViewCard.vue')['default']
     RViewCards: typeof import('./../theme/components/RViewCards.vue')['default']
     Tags: typeof import('./../theme/views/Tags.vue')['default']
+    VPFooter: typeof import('./../theme/components/overwrite/VPFooter.vue')['default']
     VPNavBarMenu: typeof import('./../theme/components/overwrite/VPNavBarMenu.vue')['default']
     VPNavScreenMenu: typeof import('./../theme/components/overwrite/VPNavScreenMenu.vue')['default']
   }

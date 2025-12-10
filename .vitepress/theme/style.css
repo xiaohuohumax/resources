@@ -4,18 +4,12 @@
 }
 
 :root {
-  --vp-c-bg-soft: #ececedcc;
   --vp-home-hero-name-color: transparent;
   --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #85ffbd 50%, #fffb7d);
   --vp-home-hero-image-background-image: linear-gradient(-45deg, #74ebd5 50%, #9face6 50%);
   --vp-home-hero-image-filter: blur(44px);
   --vp-font-family-base: ChillRoundGothic, sans-serif;
   --vp-c-yellow-1: #f2b54c;
-}
-
-.dark {
-  --vp-c-bg-soft: #202127cc;
-  --vp-c-gutter: #2e2e32;
 }
 
 video,
@@ -30,10 +24,12 @@ a {
 
 .VPNavBarMenuGroup .VPMenu {
   min-width: auto !important;
+  border: none !important;
 }
 
 .VPLocalNav {
   padding: 0 24px;
+  border: none !important;
 }
 
 .VPLocalNav .container {
@@ -42,12 +38,15 @@ a {
 }
 
 .VPLocalNavOutlineDropdown button {
- padding-left: 0 !important;
+  padding-left: 0 !important;
 }
 
-.VPNav>.VPNavBar:not(.top) {
-  background-color: var(--vp-c-bg-soft) !important;
-  backdrop-filter: blur(10px);
+.VPNavBar:not(.top) {
+  border: none !important;
+}
+
+.VPNavBar .divider {
+  display: none !important;
 }
 
 .VPNavBar .container {
@@ -55,17 +54,18 @@ a {
 }
 
 .VPFeature {
-  border: 1px solid var(--vp-c-gutter) !important;
   border-radius: 8px !important;
+  background: none !important;
+  border: none !important;
+  backdrop-filter: blur(2px) !important;
 }
 
 .vp-doc .header-anchor {
   margin-left: -0.7em !important;
 }
 
-
 .VPDoc {
-  padding: 32px 24px 0 ;
+  padding: 32px 24px 0;
 }
 
 .VPDoc .container,
@@ -77,9 +77,17 @@ a {
 .VPDoc>.container>.content {
   padding: 24px;
   margin-bottom: 24px;
-  border: 1px solid var(--vp-c-gutter);
-  backdrop-filter: blur(10px);
   border-radius: 8px;
+  background: var(--vp-c-bg) !important;
+}
+
+.VPFooter {
+  border: none !important;
+  background: var(--vp-c-bg) !important;
+}
+
+.DocSearch-Hit-source {
+  background: none !important;
 }
 
 @media (min-width: 640px) {
@@ -120,4 +128,3 @@ a {
     margin-bottom: 32px;
   }
 }
-

@@ -62,10 +62,9 @@ const stat = computed(() => collectionStatMap[props.view.id])
   display: block;
   border-radius: 8px;
   height: 100%;
-  background-color: var(--vp-c-bg-soft);
   transition: border-color 0.25s, background-color 0.25s;
-  border: 1px solid var(--vp-c-gutter);
   cursor: pointer;
+  background: var(--vp-c-bg);
 }
 
 .RViewCard:hover {

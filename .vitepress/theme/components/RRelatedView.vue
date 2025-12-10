@@ -45,8 +45,7 @@ if (import.meta.env.PROD) {
 <style scoped>
 .RRelatedView {
   align-items: center;
-  border: 1px solid var(--vp-c-gutter);
-  backdrop-filter: blur(10px);
+  background-color: var(--vp-c-bg-alt);
   border-radius: 8px;
   padding: 20px;
   margin: 20px 0;

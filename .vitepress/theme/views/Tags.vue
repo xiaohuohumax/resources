@@ -72,7 +72,7 @@ function getTagCount(tag: string) {
 <style scoped>
 .Tags .search-input {
   font-size: 1.125em;
-  background-color: var(--vp-c-bg-soft);
+  background-color: var(--vp-c-bg);
   padding: .8em;
   text-align: center;
   width: 100%;

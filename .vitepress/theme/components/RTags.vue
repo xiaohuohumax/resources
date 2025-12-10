@@ -56,15 +56,16 @@ function style(tag: string) {
 
 .RTags a {
   border-radius: 4px;
-  padding: 3px 6px;
+  padding: 6px;
   transition: color 0.25s, background-color 0.5s;
   font-size: .9em !important;
   margin-top: .25em;
   line-height: initial;
   margin-right: .25em;
   cursor: pointer;
-  border: 1px solid var(--vp-c-border);
+  /* border: 1px solid var(--vp-c-border); */
   color: var(--color);
+  background-color: var(--vp-c-bg-soft);
 }
 
 .RTags a:last-child {
@@ -74,7 +75,7 @@ function style(tag: string) {
 .RTags a.checkable:hover,
 .RTags a.checkable.checked {
   color: var(--vp-c-bg);
-  border: 1px solid var(--vp-c-border);
+  /* border: 1px solid var(--vp-c-border); */
   background-color: var(--color);
 }
 </style>

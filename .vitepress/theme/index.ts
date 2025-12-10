@@ -1,6 +1,7 @@
 import type { Theme } from 'vitepress'
 import { inBrowser } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
+import RLayout from './components/RLayout.vue'
 import RRelatedView from './components/RRelatedView.vue'
 import { useVisit } from './composables/visit'
 import Article from './views/Article.vue'
@@ -13,6 +14,7 @@ import './style.css'
 
 export default {
   extends: DefaultTheme,
+  Layout: RLayout,
   enhanceApp({ app, router }) {
     app.component('Collection', Collection)
     app.component('Resource', Resource)

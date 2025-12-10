@@ -1,5 +1,11 @@
 # resources
 
+## 4.12.0
+
+### Minor Changes
+
+- 添加动态背景
+
 ## 4.11.1
 
 ### Patch Changes

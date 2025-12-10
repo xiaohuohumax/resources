@@ -7,7 +7,7 @@ tags:
   - Visual Studio Code
   - VS Code 扩展
   - Markdown
-  - GitHub
+  - Github
 links:
   - text: ⏬下载地址
     link: >-

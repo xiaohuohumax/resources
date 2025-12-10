@@ -6,7 +6,7 @@ icon:
   dark: changesets_dark.svg
   light: changesets_light.svg
 tags:
-  - GitHub Action
+  - Github Action
   - Monorepo
   - 版本控制
 links:

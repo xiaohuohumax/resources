@@ -7,7 +7,7 @@ icon:
   light: github_light.svg
 tags:
   - Git
-  - GitHub
+  - Github
 links:
   - text: 🌍网站地址
     link: https://github.com/

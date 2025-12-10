@@ -6,7 +6,7 @@ icon: github_actions.png
 tags:
   - Visual Studio Code
   - VS Code 扩展
-  - GitHub
+  - Github
 links:
   - text: ⏬下载地址
     link: >-

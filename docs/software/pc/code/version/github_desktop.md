@@ -6,7 +6,7 @@ icon: github_desktop.svg
 tags:
   - 版本控制
   - Git
-  - GitHub
+  - Github
 links:
   - text: ⏬下载地址
     link: https://desktop.github.com/

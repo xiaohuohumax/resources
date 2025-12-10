@@ -1,12 +1,22 @@
 <script lang="ts" setup>
-import type { Icon } from '../../view'
+import type { Icon, View } from '../../view'
 import VPImage from '@vitepress-components/VPImage.vue'
 import VPLink from '@vitepress-components/VPLink.vue'
 import { views } from 'virtual:views'
+import { useFrontmatter } from '../composables/frontmatter'
+import { useTheme } from '../composables/theme'
 
-const props = defineProps<{ id: string }>()
+const props = defineProps<{ id: string, alt: string }>()
+const theme = useTheme()
 const view = computed(() => views.find(v => v.id === props.id))
 const icon = computed(() => (view.value as Partial<Icon>).icon)
+
+if (import.meta.env.PROD) {
+  if (!views.find(v => v.id === props.id)) {
+    const frontmatter = useFrontmatter<View>()
+    throw new Error(`View "${props.id}"("${props.alt}") not found in "${frontmatter.value.pathname}"`)
+  }
+}
 </script>
 
 <template>
@@ -23,6 +33,13 @@ const icon = computed(() => (view.value as Partial<Icon>).icon)
       </div>
     </div>
   </VPLink>
+  <div v-else class="RRelatedView">
+    <div class="content">
+      <p class="title">
+        {{ theme.view.relatedView.notFound }}
+      </p>
+    </div>
+  </div>
 </template>
 
 <style scoped>

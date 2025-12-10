@@ -1,5 +1,11 @@
 # resources
 
+## 4.9.0
+
+### Minor Changes
+
+- 页面引用组件优化
+
 ## 4.8.1
 
 ### Patch Changes

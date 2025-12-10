@@ -15,19 +15,19 @@ id: 6d92fa37bfe2d5d5f089f9074d548165
 ## 前期准备
 
 1. 下载一个 Windows 系统镜像，推荐使用 Windows 11 IoT Enterprise LTSC 镜像(物联网企业版)。
-<RRelatedView id="a996c8c6a989391e5a62976f60e1d414" />
+<RRelatedView id="a996c8c6a989391e5a62976f60e1d414" alt="系统库" />
 2. 下载 MAS 项目源码。
-<RRelatedView id="66304918bb23227f5bbe0f11a52c9648" />
+<RRelatedView id="66304918bb23227f5bbe0f11a52c9648" alt="Microsoft Activation Scripts (MAS)" />
 3. 安装系统镜像编辑工具 AnyBurn。
-<RRelatedView id="729ef2acbd8afdd7e170d3d2c78243bc" />
+<RRelatedView id="729ef2acbd8afdd7e170d3d2c78243bc" alt="AnyBurn" />
 4. 下载烧录工具，推荐使用 rufus。
-<RRelatedView id="b47c15377482fc1d8213e3085810594d" />
+<RRelatedView id="b47c15377482fc1d8213e3085810594d" alt="rufus" />
 
 ## 开始封装
 
 ### 制作应答文件 Autounattend.xml
 
-<RRelatedView id="d2d7d1fb96773451110ffede1bfc88ef" />
+<RRelatedView id="d2d7d1fb96773451110ffede1bfc88ef" alt="Generate autounattend.xml files for Windows 10/11" />
 
 勾选 `Use a distribution share / configuration set` 选项。
 
@@ -59,7 +59,7 @@ id: 6d92fa37bfe2d5d5f089f9074d548165
 1. 在 `$OEM$` 文件夹中创建 `$1/Installs/` 文件夹。
 2. 将安装包复制到 `$1/Installs/` 文件夹。
 
-<RRelatedView id="89d8d34fcfad16f8faf80144d5179ebe" />
+<RRelatedView id="89d8d34fcfad16f8faf80144d5179ebe" alt="装机必备" />
 
 ### 编辑系统镜像
 

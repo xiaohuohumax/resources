@@ -11,6 +11,9 @@
         "./node_modules/vitepress/dist/client/theme-default/components/*"
       ]
     },
+    "types": [
+      "vitepress/client"
+    ],
     "skipLibCheck": true,
     "noUnusedLocals": true,
     "removeComments": false,

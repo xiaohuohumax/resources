@@ -107,6 +107,9 @@ export default defineConfig<ThemeConfig>({
         addLabel: '点击添加到收藏',
         cancelLabel: '点击取消收藏',
       },
+      relatedView: {
+        notFound: '没有找到相关内容',
+      },
     },
     footer: {
       message: description,

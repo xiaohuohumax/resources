@@ -1,5 +1,11 @@
 # resources
 
+## 4.9.1
+
+### Patch Changes
+
+- 修复标签页卡片标签点击无响应异常
+
 ## 4.9.0
 
 ### Minor Changes

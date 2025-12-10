@@ -2,8 +2,9 @@
 import type { View } from '../../view'
 import { views } from 'virtual:views'
 import REmpty from '../components/REmpty.vue'
+import { useQuery } from '../composables/query'
 
-const params = useUrlSearchParams<{ tag?: string, search?: string }>('history')
+const params = useQuery<{ tag?: string, search?: string }>()
 
 const inputElement = useTemplateRef<HTMLInputElement>('inputElement')
 onMounted(() => inputElement.value?.focus())
@@ -25,18 +26,18 @@ const tagMap = computed(() => {
 const tags = computed(() => {
   return Array.from(tagMap.value.keys())
     .filter(tag => tag.toLocaleLowerCase()
-      .includes(params.search?.toLocaleLowerCase() || ''))
+      .includes(params.value.search?.toLocaleLowerCase() || ''))
 })
 
 function handleTagClick(tag: string) {
-  params.tag = tag
+  params.value.tag = tag
 }
 
 const searchViews = computed(() => {
-  if (!tags.value.includes(params.tag || '')) {
+  if (!tags.value.includes(params.value.tag || '')) {
     return []
   }
-  return tagMap.value.get(params.tag || '') || []
+  return tagMap.value.get(params.value.tag || '') || []
 })
 
 function getTagCount(tag: string) {
@@ -64,7 +65,6 @@ function getTagCount(tag: string) {
         </div>
       </template>
     </div>
-
     <Content />
   </REmpty>
 </template>

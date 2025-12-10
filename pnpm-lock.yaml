@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@tabler/icons-vue':
+        specifier: ^3.35.0
+        version: 3.35.0(vue@3.5.25(typescript@5.9.3))
       '@vueuse/core':
         specifier: ^14.1.0
         version: 14.1.0(vue@3.5.25(typescript@5.9.3))
@@ -855,6 +858,14 @@ packages:
 
   '@sugarat/theme-shared@0.0.6':
     resolution: {integrity: sha512-858llnOYVBkzXy9/WICD/xNeGI3V+FDzfRaF8JACN/WIhyADB4crpjjgMgy04MgnE3QLUYiIH0ZvgFps1XOqSA==}
+
+  '@tabler/icons-vue@3.35.0':
+    resolution: {integrity: sha512-m5ugq8mWYfTzx0opMcX49ADFxr3xu0IhJaOddw8Djlhx30pBOPWwOiIUBMAqlgP9TFHAysdwqrq50hBw5DxPSQ==}
+    peerDependencies:
+      vue: '>=3.0.1'
+
+  '@tabler/icons@3.35.0':
+    resolution: {integrity: sha512-yYXe+gJ56xlZFiXwV9zVoe3FWCGuZ/D7/G4ZIlDtGxSx5CGQK110wrnT29gUj52kEZoxqF7oURTk97GQxELOFQ==}
 
   '@types/conventional-commits-parser@5.0.2':
     resolution: {integrity: sha512-BgT2szDXnVypgpNxOK8aL5SGjUdaQbC++WZNjF1Qge3Og2+zhHj+RWhmehLhYyvQwqAmvezruVfOf8+3m74W+g==}
@@ -4162,6 +4173,13 @@ snapshots:
     dependencies:
       cross-spawn: 7.0.6
       gray-matter: 4.0.3
+
+  '@tabler/icons-vue@3.35.0(vue@3.5.25(typescript@5.9.3))':
+    dependencies:
+      '@tabler/icons': 3.35.0
+      vue: 3.5.25(typescript@5.9.3)
+
+  '@tabler/icons@3.35.0': {}
 
   '@types/conventional-commits-parser@5.0.2':
     dependencies:

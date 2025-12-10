@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import type { Icon, Tags, Togo, View } from '../../view'
+import { IconChevronsRight } from '@tabler/icons-vue'
 import VPImage from '@vitepress-components/VPImage.vue'
 import VPLink from '@vitepress-components/VPLink.vue'
 import { collectionStatMap } from 'virtual:views'
@@ -38,7 +39,7 @@ const stat = computed(() => collectionStatMap[props.view.id])
       <div class="grow" />
       <div class="actions">
         <VPLink v-if="togo" class="action link" :href="togo" :no-icon="true" tag="a" @click.stop>
-          {{ theme.view.collection.gotoLabel }}
+          {{ theme.view.collection.gotoLabel }} <IconChevronsRight />
         </VPLink>
         <template v-if="view.layout === 'collection'">
           <span v-if="stat.collectionCount > 0" class="action">
@@ -98,24 +99,12 @@ const stat = computed(() => collectionStatMap[props.view.id])
 .box {
   display: flex;
   flex-direction: column;
-  padding: 24px;
+  padding: 18px;
   height: 100%;
 }
 
 .box> :deep(.VPImage) {
   margin-bottom: .45rem;
-}
-
-.icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: .45rem;
-  border-radius: 6px;
-  background-color: var(--vp-c-default-soft);
-  width: 48px;
-  height: 48px;
-  transition: background-color 0.25s;
 }
 
 .description {
@@ -145,5 +134,9 @@ const stat = computed(() => collectionStatMap[props.view.id])
 
 .actions .action.link:hover {
   opacity: 1;
+}
+
+.actions .action.link {
+  display: flex;
 }
 </style>

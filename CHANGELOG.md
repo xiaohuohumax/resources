@@ -1,5 +1,11 @@
 # resources
 
+## 4.11.0
+
+### Minor Changes
+
+- 添加图标库美化界面
+
 ## 4.10.0
 
 ### Minor Changes

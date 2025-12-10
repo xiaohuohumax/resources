@@ -11,7 +11,6 @@ export interface ThemeConfig extends Omit<DefaultTheme.Config, 'nav' | 'sidebar'
     }
     nothingHere: string
     favorites: {
-      icon: string
       addLabel: string
       cancelLabel: string
     }

@@ -54,7 +54,7 @@ function getTagCount(tag: string) {
         <p>暂无标签</p>
       </template>
       <template v-else>
-        <RTags v-model:tag="params.tag" class="tags" :tags="tags" @tag-click="handleTagClick">
+        <RTags v-model:tag="params.tag" class="tags" :tags="tags" :space-between="true" @tag-click="handleTagClick">
           <template #default="{ value }">
             {{ value }}:{{ getTagCount(value) }}
           </template>

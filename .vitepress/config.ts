@@ -103,7 +103,6 @@ export default defineConfig<ThemeConfig>({
       },
       nothingHere: '这里什么都没有~',
       favorites: {
-        icon: '🌟',
         addLabel: '点击添加到收藏',
         cancelLabel: '点击取消收藏',
       },
@@ -112,9 +111,9 @@ export default defineConfig<ThemeConfig>({
       notFound: '没有找到相关内容',
     },
     viewCard: {
-      collectionCountLabel: '集合:',
-      resourceCountLabel: '资源:',
-      articleCountLabel: '文章:',
+      collectionCountLabel: '集合',
+      resourceCountLabel: '资源',
+      articleCountLabel: '文章',
     },
     footer: {
       message: description,

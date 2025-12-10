@@ -1,7 +1,11 @@
 <script setup lang='ts'>
 import { useData } from 'vitepress'
 
-withDefaults(defineProps<{ tags: string[], checkable?: boolean }>(), { checkable: true })
+withDefaults(defineProps<{
+  tags: string[]
+  checkable?: boolean
+  spaceBetween?: boolean
+}>(), { checkable: true, spaceBetween: false })
 defineEmits(['tagClick'])
 defineModel('tag')
 
@@ -28,7 +32,11 @@ function style(tag: string) {
 </script>
 
 <template>
-  <div v-if="tags.length > 0" class="RTags">
+  <div
+    v-if="tags.length > 0" class="RTags" :style="{
+      'justify-content': spaceBetween ? 'space-between' : 'inherit',
+    }"
+  >
     <a
       v-for="t in tags" :key="t" :class="{
         checked: tag === t,
@@ -55,14 +63,18 @@ function style(tag: string) {
   line-height: initial;
   margin-right: .25em;
   cursor: pointer;
-  border: 1px solid var(--vp-c-gutter);
+  border: 1px solid var(--vp-c-border);
   color: var(--color);
+}
+
+.RTags a:last-child {
+  margin-right: auto;
 }
 
 .RTags a.checkable:hover,
 .RTags a.checkable.checked {
   color: var(--vp-c-bg);
-  border: 1px solid var(--vp-c-gutter);
+  border: 1px solid var(--vp-c-border);
   background-color: var(--color);
 }
 </style>

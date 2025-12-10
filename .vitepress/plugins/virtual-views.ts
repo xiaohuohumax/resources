@@ -4,6 +4,7 @@ import {
   readViews,
   view2Breadcrumbs,
   view2CollectionChildrenMap,
+  view2CollectionStatMap,
   view2Nav,
 } from '../view'
 
@@ -22,11 +23,13 @@ export default function (srcDir: string): Plugin {
         const views = readViews(srcDir)
         const breadcrumbMap = view2Breadcrumbs(views)
         const collectionChildrenMap = view2CollectionChildrenMap(views)
+        const collectionStatMap = view2CollectionStatMap(views)
         const nav = view2Nav(views)
         return `
           export const views = Object.freeze(${JSON.stringify(views)});
           export const breadcrumbMap = Object.freeze(${JSON.stringify(breadcrumbMap)});
           export const collectionChildrenMap = Object.freeze(${JSON.stringify(collectionChildrenMap)});
+          export const collectionStatMap = Object.freeze(${JSON.stringify(collectionStatMap)});
           export const nav = Object.freeze(${JSON.stringify(nav)});
         `
       }

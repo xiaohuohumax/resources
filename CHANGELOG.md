@@ -1,5 +1,11 @@
 # resources
 
+## 4.10.0
+
+### Minor Changes
+
+- 集合卡片添加资源统计
+
 ## 4.9.1
 
 ### Patch Changes

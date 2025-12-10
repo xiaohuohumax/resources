@@ -313,3 +313,49 @@ export function view2Nav(views: View[]): DefaultTheme.NavItem[] {
     }
   })
 }
+
+export interface CollectionStat {
+  collectionCount: number
+  resourceCount: number
+  articleCount: number
+}
+
+export interface CollectionStatMap {
+  [id: string]: CollectionStat
+}
+
+export function view2CollectionStatMap(views: View[]): CollectionStatMap {
+  const map = new Map<string, CollectionStat>()
+
+  views.forEach((collection) => {
+    map.set(collection.id, {
+      collectionCount: 0,
+      resourceCount: 0,
+      articleCount: 0,
+    })
+  })
+
+  function updateParentCollectionStat(view: View, updateStat: CollectionStat) {
+    const parentCollection = views.find(v => v.id === view.collectionId)
+    if (!parentCollection) {
+      return
+    }
+    const parentStat = map.get(parentCollection.id)!
+    parentStat.collectionCount += updateStat.collectionCount
+    parentStat.resourceCount += updateStat.resourceCount
+    parentStat.articleCount += updateStat.articleCount
+    map.set(parentCollection.id, parentStat)
+    updateParentCollectionStat(parentCollection, updateStat)
+  }
+
+  for (const view of views) {
+    const stat: CollectionStat = {
+      collectionCount: view.layout === 'collection' ? 1 : 0,
+      resourceCount: view.layout === 'resource' ? 1 : 0,
+      articleCount: view.layout === 'article' ? 1 : 0,
+    }
+    updateParentCollectionStat(view, stat)
+  }
+
+  return Object.fromEntries(map)
+}

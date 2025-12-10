@@ -15,9 +15,14 @@ export interface ThemeConfig extends Omit<DefaultTheme.Config, 'nav' | 'sidebar'
       addLabel: string
       cancelLabel: string
     }
-    relatedView: {
-      notFound: string
-    }
+  }
+  relatedView: {
+    notFound: string
+  }
+  viewCard: {
+    collectionCountLabel: string
+    resourceCountLabel: string
+    articleCountLabel: string
   }
   footer?: DefaultTheme.Footer & {
     page_pv: string

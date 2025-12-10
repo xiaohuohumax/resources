@@ -36,7 +36,7 @@ if (import.meta.env.PROD) {
   <div v-else class="RRelatedView">
     <div class="content">
       <p class="title">
-        {{ theme.view.relatedView.notFound }}
+        {{ theme.relatedView.notFound }}
       </p>
     </div>
   </div>

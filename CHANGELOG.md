@@ -1,5 +1,11 @@
 # resources
 
+## 4.11.1
+
+### Patch Changes
+
+- 修复搜索时鼠标闪烁问题
+
 ## 4.11.0
 
 ### Minor Changes

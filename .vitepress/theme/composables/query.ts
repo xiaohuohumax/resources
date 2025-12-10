@@ -10,7 +10,7 @@ export function useQuery<T extends Record<string, string>>() {
   const query = ref<T>(parseQuery(route.query))
 
   watch(() => query.value, (newValue) => {
-    const searchParams = new URLSearchParams(route.query)
+    const searchParams = new URLSearchParams()
     for (const [key, value] of Object.entries(newValue as T)) {
       if (value !== '') {
         searchParams.append(key, value)

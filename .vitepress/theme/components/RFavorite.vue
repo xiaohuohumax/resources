@@ -4,10 +4,8 @@ import { useFavorites } from '../composables/favorites'
 import { useTheme } from '../composables/theme'
 
 const props = defineProps<{ view: View }>()
-
 const theme = useTheme()
 const { isFavorited, toggleFavorite } = useFavorites()
-
 const state = isFavorited(props.view.id)
 const title = computed(() => state.value
   ? theme.value.view.favorites.cancelLabel

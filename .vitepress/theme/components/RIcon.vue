@@ -7,5 +7,10 @@ const props = defineProps<{
 </script>
 
 <template>
-  <i class="ti" :class="`ti-${props.name}`" :style="{ color: props.color, fontSize: props.size }" />
+  <i
+    class="ti" :class="`ti-${props.name}`" :style="{
+      color: props.color,
+      fontSize: props.size,
+    }"
+  />
 </template>

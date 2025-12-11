@@ -4,7 +4,6 @@ import { string2Anchor } from '../../utils'
 import { useFrontmatter } from '../composables/frontmatter'
 
 withDefaults(defineProps<{ disableAnchor?: boolean }>(), { disableAnchor: false })
-
 const frontmatter = useFrontmatter<ResourceView>()
 const anchor = string2Anchor(frontmatter.value.title)
 </script>

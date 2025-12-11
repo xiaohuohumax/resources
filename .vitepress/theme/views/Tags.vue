@@ -3,8 +3,10 @@ import type { View } from '../../view'
 import { views } from 'virtual:views'
 import REmpty from '../components/REmpty.vue'
 import { useQuery } from '../composables/query'
+import { useTheme } from '../composables/theme'
 
 const params = useQuery<{ tag?: string, search?: string }>()
+const theme = useTheme()
 
 const inputElement = useTemplateRef<HTMLInputElement>('inputElement')
 onMounted(() => inputElement.value?.focus())
@@ -51,7 +53,7 @@ function getTagCount(tag: string) {
     <div class="Tags">
       <input ref="inputElement" v-model="params.search" class="search-input" type="text" placeholder="搜索标签">
       <template v-if="tags.length === 0">
-        <p>暂无标签</p>
+        <p>{{ theme.view.tags }}</p>
       </template>
       <template v-else>
         <RTags v-model:tag="params.tag" class="tags" :tags="tags" :space-between="true" @tag-click="handleTagClick">
@@ -60,7 +62,7 @@ function getTagCount(tag: string) {
           </template>
         </RTags>
         <div v-if="params.tag !== undefined">
-          <p><small>共 {{ searchViews.length }} 个结果</small></p>
+          <p><small>{{ theme.view.tags.countLabel }} {{ searchViews.length }}</small></p>
           <RViewCards class="resources" is-collection :views="searchViews" />
         </div>
       </template>

@@ -8,12 +8,10 @@ withDefaults(defineProps<{
 }>(), { checkable: true, spaceBetween: false })
 defineEmits(['tagClick'])
 defineModel('tag')
-
 const { isDark } = useData()
 
-const colors = ['brand', 'note', 'success', 'important', 'warning', 'danger', 'caution']
-
 function style(tag: string) {
+  const colors = ['brand', 'note', 'success', 'important', 'warning', 'danger', 'caution']
   /*
   --vp-c-default-soft: var(--vp-c-gray-soft);
   --vp-c-brand-soft: var(--vp-c-indigo-soft);

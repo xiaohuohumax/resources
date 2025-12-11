@@ -7,19 +7,16 @@ import { useRouter, withBase } from 'vitepress'
 import { useTheme } from '../composables/theme'
 
 const props = withDefaults(defineProps<{ view: View, inFavorite?: boolean }>(), { inFavorite: false })
-
 const theme = useTheme()
 const router = useRouter()
+const icon = computed(() => (props.view as Partial<Icon>).icon)
+const tags = computed(() => (props.view as Partial<Tags>).tags)
+const togo = computed(() => (props.view as Partial<Togo>).togo)
+const stat = computed(() => collectionStatMap[props.view.id])
 
 function handleTagClick(tag: string) {
   router.go(withBase(`/tags?tag=${encodeURIComponent(tag)}`))
 }
-
-const icon = computed(() => (props.view as Partial<Icon>).icon)
-const tags = computed(() => (props.view as Partial<Tags>).tags)
-const togo = computed(() => (props.view as Partial<Togo>).togo)
-
-const stat = computed(() => collectionStatMap[props.view.id])
 </script>
 
 <template>

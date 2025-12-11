@@ -15,7 +15,7 @@ const theme = useTheme()
       </div>
     </div>
     <div v-if="views.length === 0" class="empty">
-      {{ theme.view.nothingHere }}
+      {{ theme.viewCards.nothingHere }}
     </div>
   </div>
 </template>

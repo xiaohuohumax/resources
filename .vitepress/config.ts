@@ -101,10 +101,13 @@ export default defineConfig<ThemeConfig>({
       collection: {
         gotoLabel: '直达',
       },
-      nothingHere: '这里什么都没有~',
       favorites: {
         addLabel: '点击添加到收藏',
         cancelLabel: '点击取消收藏',
+      },
+      tags: {
+        emptyLabel: '暂无标签',
+        countLabel: '相关标签数量',
       },
     },
     relatedView: {
@@ -114,6 +117,9 @@ export default defineConfig<ThemeConfig>({
       collectionCountLabel: '集合',
       resourceCountLabel: '资源',
       articleCountLabel: '文章',
+    },
+    viewCards: {
+      nothingHere: '这里什么都没有~',
     },
     footer: {
       message: description,

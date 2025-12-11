@@ -70,9 +70,6 @@ if (import.meta.env.PROD) {
   margin-right: 10px;
 }
 
-@media (min-width: 640px) {
-}
-
 @media (min-width: 768px) {
   .RRelatedView{
     display: flex;

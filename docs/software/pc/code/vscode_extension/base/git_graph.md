@@ -8,9 +8,11 @@ tags:
   - VS Code 扩展
   - Git
 links:
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph
-  - text: 📦项目地址
+  - icon: code
+    text: 项目地址
     link: https://github.com/mhutchie/vscode-git-graph
 id: dfd013f503677a92a8e4f93d51818dde
 ---

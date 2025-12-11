@@ -7,7 +7,8 @@ tags:
   - 虚拟环境
   - Docker
 links:
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: https://docker.p2hp.com/get-started
 id: 232893b701b127febf777ce085349883
 ---

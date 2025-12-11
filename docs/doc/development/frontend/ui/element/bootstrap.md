@@ -7,7 +7,8 @@ tags:
   - Bootstrap
   - 组件库
 links:
-  - text: 📖文档地址
+  - icon: book
+    text: 文档地址
     link: https://v5.bootcss.com/
 id: ad76b52c724f856a6a2618d90cc9f809
 ---

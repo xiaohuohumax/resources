@@ -21,6 +21,7 @@ interface Core {
 }
 
 export interface Link {
+  icon: string
   text: string
   link: string
 }

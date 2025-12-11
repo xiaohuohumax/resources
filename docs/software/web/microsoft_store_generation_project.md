@@ -6,7 +6,8 @@ icon: microsoft_store_generation_project.png
 tags:
   - Microsoft Store
 links:
-  - text: 🌍网站地址
+  - icon: world-www
+    text: 网站地址
     link: https://store.rg-adguard.net/
 id: a6e68d93170b037c3bfeb1223a907dc9
 ---

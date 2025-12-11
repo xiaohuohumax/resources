@@ -7,9 +7,11 @@ tags:
   - 编程语言
   - Python
 links:
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: https://www.python.org/downloads/
-  - text: 📖文档地址
+  - icon: book
+    text: 文档地址
     link: https://docs.python.org/zh-cn/3/
 id: d1ee9a11ee696a316cdfd7ce9d861d39
 ---

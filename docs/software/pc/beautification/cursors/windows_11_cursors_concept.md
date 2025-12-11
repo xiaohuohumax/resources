@@ -7,7 +7,8 @@ tags:
   - 光标
   - 美化
 links:
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: https://zhutix.com/ico/windows-11-cursors-design/
 id: f2b616bce4904686190bfe58853182f7
 ---

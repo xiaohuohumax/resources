@@ -8,9 +8,11 @@ tags:
   - 绘图
   - 图表
 links:
-  - text: 🌍网站地址
+  - icon: world-www
+    text: 网站地址
     link: https://excalidraw.com/
-  - text: 📦项目地址
+  - icon: code
+    text: 项目地址
     link: https://github.com/excalidraw/excalidraw
 id: 4536140cbf6a4a915bae6b6bff9fe781
 ---

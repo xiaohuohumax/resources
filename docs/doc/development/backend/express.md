@@ -7,9 +7,11 @@ tags:
   - Express
   - Node
 links:
-  - text: 🌍网站地址
+  - icon: world-www
+    text: 网站地址
     link: https://expressjs.com/
-  - text: 📦项目地址
+  - icon: code
+    text: 项目地址
     link: https://github.com/expressjs/express
 id: 9b5fa587ba0ed216a404edb0d1f16029
 ---

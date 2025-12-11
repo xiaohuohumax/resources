@@ -8,10 +8,12 @@ tags:
   - VS Code 扩展
   - 系统监控
 links:
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: >-
       https://marketplace.visualstudio.com/items?itemName=mutantdino.resourcemonitor
-  - text: 📦项目地址
+  - icon: code
+    text: 项目地址
     link: https://github.com/Njanderson/resmon
 id: 2f88a2bb5f140e1bb30831188f28391b
 ---

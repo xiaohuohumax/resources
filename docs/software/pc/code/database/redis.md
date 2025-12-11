@@ -8,7 +8,8 @@ tags:
   - 数据库
   - NoSQL
 links:
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: https://redis.io/downloads/
 id: 7ad5daf62b6114cee060b574dbcaab02
 ---

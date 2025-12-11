@@ -6,7 +6,8 @@ icon: git_auto_commit_action.jpg
 tags:
   - Github Action
 links:
-  - text: 📦项目地址
+  - icon: code
+    text: 项目地址
     link: https://github.com/stefanzweifel/git-auto-commit-action
 id: d415341d242ddc180a826d19295ace11
 ---

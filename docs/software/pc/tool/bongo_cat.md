@@ -7,7 +7,8 @@ tags:
   - 桌宠
   - 直播
 links:
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: https://github.com/ayangweb/BongoCat/releases
 id: 7d387e8fcb0ce28dd6c06e3541200816
 ---

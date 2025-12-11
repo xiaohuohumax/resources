@@ -7,9 +7,11 @@ tags:
   - Rust
   - 编程语言
 links:
-  - text: 📖文档地址
+  - icon: book
+    text: 文档地址
     link: https://www.rust-lang.org/zh-CN/
-  - text: 📦项目地址
+  - icon: code
+    text: 项目地址
     link: https://github.com/rust-lang/rust
 id: 1ba14c364dbea5b6bffee71ee27effca
 ---

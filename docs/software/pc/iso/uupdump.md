@@ -8,7 +8,8 @@ tags:
   - Windows
   - 系统镜像
 links:
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: https://uupdump.net/
 id: 6fa54d001e8b4aed5e5502cb0b698d43
 ---

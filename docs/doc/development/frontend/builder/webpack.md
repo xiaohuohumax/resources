@@ -11,7 +11,8 @@ tags:
   - Vue
   - React
 links:
-  - text: 📖文档地址
+  - icon: book
+    text: 文档地址
     link: https://www.webpackjs.com/
 id: fb4c5f6333b02237fd54e5d920518874
 ---

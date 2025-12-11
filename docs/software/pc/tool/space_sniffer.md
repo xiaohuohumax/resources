@@ -7,7 +7,8 @@ icon: space_sniffer.png
 tags:
   - 磁盘
 links:
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: http://www.uderzo.it/main_products/space_sniffer/download.html
 id: c402c768737f037b5fb433e6b318a72b
 ---

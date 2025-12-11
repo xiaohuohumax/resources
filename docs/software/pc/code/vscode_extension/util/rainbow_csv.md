@@ -8,10 +8,12 @@ tags:
   - VS Code 扩展
   - CSV
 links:
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: >-
       https://marketplace.visualstudio.com/items?itemName=mechatroner.rainbow-csv
-  - text: 📦项目地址
+  - icon: code
+    text: 项目地址
     link: https://github.com/mechatroner/vscode_rainbow_csv
 id: 7273f3ae84cd066347b42cd73fddf9d3
 ---

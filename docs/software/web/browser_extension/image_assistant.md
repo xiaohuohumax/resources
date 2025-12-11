@@ -10,7 +10,8 @@ tags:
   - 图片
   - 下载器
 links:
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: https://www.pullywood.com/ImageAssistant/
 id: f2340235defb608bf41cf69c1f10fbf2
 ---

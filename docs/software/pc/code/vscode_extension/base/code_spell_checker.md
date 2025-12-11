@@ -7,10 +7,12 @@ tags:
   - Visual Studio Code
   - VS Code 扩展
 links:
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: >-
       https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker
-  - text: 📦项目地址
+  - icon: code
+    text: 项目地址
     link: https://github.com/streetsidesoftware/vscode-spell-checker
 id: 4444032ee12ae5c522253bd6fe6c68f3
 ---

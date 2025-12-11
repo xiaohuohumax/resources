@@ -6,7 +6,8 @@ icon: everything.svg
 tags:
   - 搜索
 links:
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: https://www.voidtools.com/downloads/
 id: ebbcf4e346e560e7e4852228e6c877a3
 ---

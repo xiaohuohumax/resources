@@ -8,7 +8,8 @@ icon: chinese_poetry.png
 tags:
   - 诗词歌赋
 links:
-  - text: 📦项目地址
+  - icon: code
+    text: 项目地址
     link: https://github.com/chinese-poetry/chinese-poetry
 id: 97f635d0fb8e944445781536920090b9
 ---

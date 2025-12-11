@@ -7,7 +7,8 @@ tags:
   - 浏览器扩展
   - 自动化
 links:
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: https://github.com/AutomaApp/automa
 id: 230e2dba2630e8620e115d2a2afef34c
 ---

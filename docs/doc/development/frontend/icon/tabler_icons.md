@@ -6,7 +6,8 @@ icon: tabler_icons.svg
 tags:
   - 图标
 links:
-  - text: 📖文档地址
+  - icon: book
+    text: 文档地址
     link: https://tabler.io/icons
 id: 740f7ce9422defe94a8522e39de40833
 ---

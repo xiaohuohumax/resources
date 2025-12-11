@@ -8,7 +8,8 @@ icon: autopiano.png
 tags:
   - 音乐
 links:
-  - text: 🎮游玩地址
+  - icon: device-gamepad-2
+    text: 游玩地址
     link: https://www.autopiano.cn/
 id: d5b6df438fdb8eb88b5ee697ec6e9851
 ---

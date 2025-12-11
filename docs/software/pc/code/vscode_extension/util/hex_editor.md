@@ -7,9 +7,11 @@ tags:
   - Visual Studio Code
   - VS Code 扩展
 links:
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: https://marketplace.visualstudio.com/items?itemName=ms-vscode.hexeditor
-  - text: 📦项目地址
+  - icon: code
+    text: 项目地址
     link: https://github.com/microsoft/vscode-hexeditor
 id: 6820fea38452807c2be7c4b99b45f011
 ---

@@ -9,10 +9,12 @@ tags:
   - Markdown
   - Github
 links:
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: >-
       https://marketplace.visualstudio.com/items?itemName=yahyabatulu.vscode-markdown-alert
-  - text: 📦项目地址
+  - icon: code
+    text: 项目地址
     link: https://github.com/ByPikod/vscode-markdown-alert
 id: 682d0afaaedce6670d53744ce962a691
 ---

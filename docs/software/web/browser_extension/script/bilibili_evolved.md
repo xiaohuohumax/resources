@@ -6,7 +6,8 @@ icon: bilibili_evolved.png
 tags:
   - Tampermonkey
 links:
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: https://github.com/the1812/Bilibili-Evolved
 id: d36092107e262978b88aabc178005267
 ---

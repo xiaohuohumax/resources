@@ -8,7 +8,8 @@ tags:
   - 绘图
   - 流程图
 links:
-  - text: 🌍网站地址
+  - icon: world-www
+    text: 网站地址
     link: https://www.processon.com/
 id: 34af677975979e6b2edb73e688d71b72
 ---

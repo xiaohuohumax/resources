@@ -6,7 +6,8 @@ icon: img2txt.ico
 tags:
   - 字符画
 links:
-  - text: 🌍网站地址
+  - icon: world-www
+    text: 网站地址
     link: https://www.degraeve.com/img2txt.php
 id: e70b1b8412e31325c4968250e6e1425e
 ---

@@ -9,9 +9,11 @@ tags:
   - Git
   - 私有仓库
 links:
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: https://about.gitea.com/products/gitea/
-  - text: 📖文档地址
+  - icon: book
+    text: 文档地址
     link: https://docs.gitea.com/zh-cn/
 id: c4ccf6435cd102c16a40c5a4ebcd345c
 ---

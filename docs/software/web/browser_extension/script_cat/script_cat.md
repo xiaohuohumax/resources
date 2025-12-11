@@ -7,7 +7,8 @@ tags:
   - ScriptCat
   - 浏览器扩展
 links:
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: https://scriptcat.org/zh-CN/
 id: a734f9ac36ce125bc60fe0ca3b40abc8
 ---

@@ -8,7 +8,8 @@ tags:
   - 主题
   - 图标
 links:
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: https://greasyfork.org/zh-CN/scripts/471272
 id: f720fb992fd7e6b1f5544604d1af3547
 ---

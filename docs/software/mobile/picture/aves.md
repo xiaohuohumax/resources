@@ -10,7 +10,8 @@ tags:
   - 视频
   - 音频
 links:
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: https://github.com/deckerst/aves
 id: b56ae8155aca551b783452963b852c70
 ---

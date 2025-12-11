@@ -7,7 +7,8 @@ tags:
   - Tampermonkey
   - ScriptCat
 links:
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: https://scriptcat.org/zh-CN/script-show-page/3559
 id: 4172c168a5e905c7dc7bedbfe34fc40b
 ---

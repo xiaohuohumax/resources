@@ -6,7 +6,8 @@ icon: javascript_info.png
 tags:
   - JavaScript
 links:
-  - text: 📖文档地址
+  - icon: book
+    text: 文档地址
     link: https://zh.javascript.info/
 id: 7d5c07e3a4f015937ad71eacfccfb376
 ---

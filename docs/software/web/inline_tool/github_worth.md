@@ -6,7 +6,8 @@ icon: github_worth.svg
 tags:
   - Github
 links:
-  - text: 🌍网站地址
+  - icon: world-www
+    text: 网站地址
     link: https://github-worth.vercel.app/
 id: a4538a7a4c4832bb649972643aca92c4
 ---

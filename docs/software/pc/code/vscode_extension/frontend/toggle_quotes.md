@@ -7,10 +7,12 @@ tags:
   - Visual Studio Code
   - VS Code 扩展
 links:
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: >-
       https://marketplace.visualstudio.com/items?itemName=BriteSnow.vscode-toggle-quotes
-  - text: 📦项目地址
+  - icon: code
+    text: 项目地址
     link: https://github.com/BriteSnow/vscode-toggle-quotes
 id: 69ccbbad4cdb80193e1b647949bad024
 ---

@@ -8,9 +8,11 @@ tags:
   - Node
   - 数据库
 links:
-  - text: 📖文档地址
+  - icon: book
+    text: 文档地址
     link: https://mongoosejs.com/
-  - text: 📦项目地址
+  - icon: code
+    text: 项目地址
     link: https://github.com/Automattic/mongoose
 id: a3fdbc1221c8832a0f1f3092e2e6e447
 ---

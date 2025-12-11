@@ -10,7 +10,8 @@ tags:
   - Rye
   - Python
 links:
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: https://rye.astral.sh/
 id: accd8e6430e19de14939b50ff92535b9
 ---

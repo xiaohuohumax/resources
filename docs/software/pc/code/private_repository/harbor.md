@@ -9,9 +9,11 @@ tags:
   - Docker
   - 私有仓库
 links:
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: https://goharbor.io/
-  - text: 📖文档地址
+  - icon: book
+    text: 文档地址
     link: https://goharbor.io/docs/2.11.0/install-config/
 id: 41671f9c914acc3721c1c366f7885b4f
 ---

@@ -7,7 +7,8 @@ tags:
   - 图片
   - Emoji
 links:
-  - text: 🌍网站地址
+  - icon: world-www
+    text: 网站地址
     link: https://favicon.io/
 id: 1a6cf71c84079818826eb1f3bf7533fc
 ---

@@ -7,7 +7,8 @@ tags:
   - Awesome
   - Python
 links:
-  - text: 📖文档地址
+  - icon: book
+    text: 文档地址
     link: https://github.com/vinta/awesome-python
 id: ced0cb07525680bc98c3f0f1aba1ab48
 ---

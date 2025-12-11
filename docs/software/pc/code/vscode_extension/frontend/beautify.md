@@ -9,10 +9,12 @@ tags:
   - CSS
   - Lint
 links:
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: >-
       https://marketplace.visualstudio.com/items?itemName=michelemelluso.code-beautifier
-  - text: 📦项目地址
+  - icon: code
+    text: 项目地址
     link: https://github.com/mike7515/code-beautifier
 id: 2cb0c05763f08f078e5dbccba42206d3
 ---

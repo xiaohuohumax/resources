@@ -7,10 +7,12 @@ tags:
   - Visual Studio Code
   - VS Code 扩展
 links:
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: >-
       https://marketplace.visualstudio.com/items?itemName=stackbreak.comment-divider
-  - text: 📦项目地址
+  - icon: code
+    text: 项目地址
     link: https://github.com/stackbreak/comment-divider
 id: 4cc626620cc59c59d24b77559c2cf87e
 ---

@@ -8,7 +8,8 @@ tags:
   - 网络请求
   - API
 links:
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: https://www.postman.com/downloads/
 id: 4044bd106cd5582654d4f18654c61735
 ---

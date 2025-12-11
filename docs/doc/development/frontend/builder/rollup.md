@@ -9,7 +9,8 @@ tags:
   - Rollup
   - TypeScript
 links:
-  - text: 📖文档地址
+  - icon: book
+    text: 文档地址
     link: https://rollupjs.org/
 id: daad61ba1bddb6b09395ebaa2c8aa634
 ---

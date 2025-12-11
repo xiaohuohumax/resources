@@ -8,9 +8,11 @@ tags:
   - VS Code 扩展
   - YAML
 links:
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml
-  - text: 📦项目地址
+  - icon: code
+    text: 项目地址
     link: https://github.com/redhat-developer/vscode-yaml
 id: f7f5bf5de3690f2728c5e5126f021cf9
 ---

@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import type { Icon, Tags, Togo, View } from '../../view'
-import { IconChevronsRight } from '@tabler/icons-vue'
 import VPImage from '@vitepress-components/VPImage.vue'
 import VPLink from '@vitepress-components/VPLink.vue'
 import { collectionStatMap } from 'virtual:views'
@@ -39,7 +38,7 @@ const stat = computed(() => collectionStatMap[props.view.id])
       <div class="grow" />
       <div class="actions">
         <VPLink v-if="togo" class="action link" :href="togo" :no-icon="true" tag="a" @click.stop>
-          {{ theme.view.collection.gotoLabel }} <IconChevronsRight />
+          {{ theme.view.collection.gotoLabel }} <RIcon name="chevrons-right" size="1.5em" />
         </VPLink>
         <template v-if="view.layout === 'collection'">
           <span v-if="stat.collectionCount > 0" class="action">
@@ -137,5 +136,6 @@ const stat = computed(() => collectionStatMap[props.view.id])
 
 .actions .action.link {
   display: flex;
+  align-items: center;
 }
 </style>

@@ -7,7 +7,8 @@ tags:
   - React
   - 组件库
 links:
-  - text: 📖文档地址
+  - icon: book
+    text: 文档地址
     link: https://mui.com/material-ui/getting-started/
 id: d4c04d61a18ab8d87cedb3ad65d636f9
 ---

@@ -7,7 +7,8 @@ tags:
   - 文件传输
   - 文件同步
 links:
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: https://pan.baidu.com/download
 id: cade2035556c1d572d93f6babfeeca9b
 ---

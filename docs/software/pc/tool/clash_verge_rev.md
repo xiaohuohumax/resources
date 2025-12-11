@@ -6,7 +6,8 @@ icon: clash_verge_rev.png
 tags:
   - 代理
 links:
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: https://github.com/clash-verge-rev/clash-verge-rev
 id: 133252bf792023fe011f0701ddd9860c
 ---

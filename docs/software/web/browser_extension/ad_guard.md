@@ -7,7 +7,8 @@ tags:
   - 浏览器扩展
   - 广告屏蔽
 links:
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: https://adguard.info/zh_cn/welcome.html
 id: 6b5b9054f42828aa1ed488a9b598e7f8
 ---

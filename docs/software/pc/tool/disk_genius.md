@@ -7,7 +7,8 @@ tags:
   - Windows
   - 磁盘
 links:
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: https://www.diskgenius.cn/download.php
 id: d50b809060ad611ccbd0e6052bef600f
 ---

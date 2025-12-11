@@ -7,9 +7,11 @@ tags:
   - 文件传输
   - WebRTC
 links:
-  - text: 🌍网站地址
+  - icon: world-www
+    text: 网站地址
     link: https://snapdrop.net/
-  - text: 📦项目地址
+  - icon: code
+    text: 项目地址
     link: https://github.com/SnapDrop/snapdrop
 id: a04cdf3f998a7f04f7723bb64c578b88
 ---

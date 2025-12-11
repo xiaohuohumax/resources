@@ -9,9 +9,11 @@ tags:
   - Redis
   - 数据库
 links:
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: https://marketplace.visualstudio.com/items?itemName=Dunn.redis
-  - text: 📦项目地址
+  - icon: code
+    text: 项目地址
     link: https://github.com/pikadun/vscode-redis
 id: f2d993e1e39d7c9fa59e6f5fda9bbe74
 ---

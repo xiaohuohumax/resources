@@ -10,7 +10,8 @@ tags:
   - CDN
   - Bootstrap
 links:
-  - text: 🌍网站地址
+  - icon: world-www
+    text: 网站地址
     link: https://www.bootcdn.cn/
 id: 8c84c4657073c362e52727bd51da9642
 ---

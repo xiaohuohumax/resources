@@ -7,7 +7,8 @@ tags:
   - 服务器
   - Nginx
 links:
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: https://nginx.org/en/download.html
 id: d5a85470951f7c9ff5520171e606c473
 ---

@@ -1,3 +1,4 @@
+import type { HeadConfig } from 'vitepress'
 import type { ThemeConfig } from './theme/theme-config'
 import path from 'node:path'
 import { readPackageSync } from 'read-pkg'
@@ -30,7 +31,6 @@ const base = '/resources/'
 const iconHref = `${base}logo.svg`
 const srcDir = abs('../docs')
 const outDir = abs('../dist')
-const publicDir = abs('../docs')
 const templatesDir = abs('../templates')
 
 export default defineConfig<ThemeConfig>({
@@ -45,7 +45,7 @@ export default defineConfig<ThemeConfig>({
     ['meta', { name: 'algolia-site-verification', content: 'A081FC7145F7741F' }],
   ],
   vite: {
-    publicDir,
+    publicDir: srcDir,
     plugins: [
       VueDevTools(),
       AutoImport({
@@ -59,7 +59,7 @@ export default defineConfig<ThemeConfig>({
         dts: abs('types/components.d.ts'),
       }),
       VirtualViews(srcDir),
-      CreateBookmark({ srcDir, title, publicDir, iconHref, hostname }),
+      CreateBookmark({ srcDir, title, publicDir: srcDir, iconHref, hostname }),
       ClearDist(outDir),
       CreateTemplates(templatesDir),
       ImproveViews(srcDir),
@@ -218,5 +218,13 @@ export default defineConfig<ThemeConfig>({
   transformPageData(pageData) {
     const view = readView(path.join(srcDir, pageData.relativePath), srcDir)
     pageData.frontmatter = view || pageData.frontmatter
+  },
+  transformHead({ pageData }) {
+    const view = readView(path.join(srcDir, pageData.relativePath), srcDir)
+    const heads: HeadConfig[] = []
+    if (view && (view.layout === 'resource' || view.layout === 'article')) {
+      heads.push(['meta', { name: 'keywords', content: view.tags.join(',') }])
+    }
+    return heads
   },
 })

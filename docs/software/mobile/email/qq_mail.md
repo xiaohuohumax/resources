@@ -6,7 +6,8 @@ icon: qq_mail.png
 tags:
   - 邮箱
 links:
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: https://app.mail.qq.com/
 id: 4ed8e91f18b52cc380f4877570e84c98
 ---

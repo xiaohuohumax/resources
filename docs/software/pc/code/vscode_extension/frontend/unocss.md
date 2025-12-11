@@ -7,9 +7,11 @@ tags:
   - Visual Studio Code
   - VS Code 扩展
 links:
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: https://marketplace.visualstudio.com/items?itemName=antfu.unocss
-  - text: 📦项目地址
+  - icon: code
+    text: 项目地址
     link: https://github.com/unocss/unocss
 id: 4a5eb888ff3a7ac6cb2211e8d10cd938
 ---

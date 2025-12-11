@@ -1,5 +1,11 @@
 # resources
 
+## 4.13.0
+
+### Minor Changes
+
+- 资源链接图标修改
+
 ## 4.12.0
 
 ### Minor Changes

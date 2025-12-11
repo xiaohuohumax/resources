@@ -7,7 +7,8 @@ tags:
   - Git
   - Emoji
 links:
-  - text: 📖文档地址
+  - icon: book
+    text: 文档地址
     link: https://gitmoji.dev/
 id: 3e33c3df0cf7e1b155c5cefe36e3e2a8
 ---

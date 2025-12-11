@@ -9,7 +9,8 @@ tags:
   - 解压缩
   - 压缩
 links:
-  - text: 📦项目地址
+  - icon: code
+    text: 项目地址
     link: https://github.com/rikyoz/bit7z
 id: 2afbd416f5cebb44af221f688008e932
 ---

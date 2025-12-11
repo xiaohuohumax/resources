@@ -8,7 +8,8 @@ icon:
 tags:
   - 模板
 links:
-  - text: 📦项目地址
+  - icon: code
+    text: 项目地址
     link: https://github.com/github/gitignore
 id: 9f097e4448dd7e72e2ca05fad8126dd1
 ---

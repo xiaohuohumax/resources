@@ -8,10 +8,12 @@ tags:
   - VS Code 扩展
   - Python
 links:
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: >-
       https://marketplace.visualstudio.com/items?itemName=njpwerner.autodocstring
-  - text: 📦项目地址
+  - icon: code
+    text: 项目地址
     link: https://github.com/NilsJPWerner/autoDocstring
 id: 8b8986b6675a5cc24f3077a7d6c48449
 ---

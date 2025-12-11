@@ -7,7 +7,8 @@ tags:
   - Visual Studio Code
   - VS Code 扩展
 links:
-  - text: 📖文档地址
+  - icon: book
+    text: 文档地址
     link: https://code.visualstudio.com/api
 id: 8f051c2e27579825a0ef4e2e465d2512
 ---

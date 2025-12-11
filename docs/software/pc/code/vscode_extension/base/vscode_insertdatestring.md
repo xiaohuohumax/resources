@@ -9,10 +9,12 @@ tags:
   - 时间
   - 日期
 links:
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: >-
       https://marketplace.visualstudio.com/items?itemName=jsynowiec.vscode-insertdatestring
-  - text: 📦项目地址
+  - icon: code
+    text: 项目地址
     link: https://github.com/jsynowiec/vscode-insertdatestring
 id: 3f54ac53df09f5f8bce8494e2a11b14c
 ---

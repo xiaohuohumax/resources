@@ -7,9 +7,11 @@ tags:
   - Mock
   - 网络请求
 links:
-  - text: 📖文档地址
+  - icon: book
+    text: 文档地址
     link: http://mockjs.com/
-  - text: 📦项目地址
+  - icon: code
+    text: 项目地址
     link: https://github.com/nuysoft/Mock
 id: 76b51d700009ca9c7931507cb6e1ca90
 ---

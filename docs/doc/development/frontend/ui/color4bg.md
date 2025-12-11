@@ -9,7 +9,8 @@ tags:
   - 图片
   - 组件
 links:
-  - text: 📖文档地址
+  - icon: book
+    text: 文档地址
     link: https://www.color4bg.com/zh-hans/quick-start/
 id: 098ceabe18f2d7b9011297af828d1d32
 ---

@@ -11,9 +11,11 @@ tags:
   - JavaScript
   - Python
 links:
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: https://marketplace.visualstudio.com/items?itemName=quicktype.quicktype
-  - text: 📦项目地址
+  - icon: code
+    text: 项目地址
     link: https://github.com/glideapps/quicktype
 id: 2f0f19c1003e283a940338bf764429e8
 ---

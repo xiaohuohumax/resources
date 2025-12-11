@@ -7,10 +7,12 @@ tags:
   - Visual Studio Code
   - VS Code 扩展
 links:
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: >-
       https://marketplace.visualstudio.com/items?itemName=bradgashler.htmltagwrap
-  - text: 📦项目地址
+  - icon: code
+    text: 项目地址
     link: https://github.com/bgashler1/vscode-htmltagwrap
 id: acd5fa6e69927c3fb769a7dd954f877d
 ---

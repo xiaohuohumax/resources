@@ -6,7 +6,8 @@ icon: unocss.svg
 tags:
   - CSS
 links:
-  - text: 📖文档地址
+  - icon: book
+    text: 文档地址
     link: https://unocss.dev/
 id: a9cad38711ea1742040e439583414990
 ---

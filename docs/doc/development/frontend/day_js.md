@@ -6,9 +6,11 @@ icon: day_js.png
 tags:
   - JavaScript
 links:
-  - text: 📖文档地址
+  - icon: book
+    text: 文档地址
     link: https://day.js.org/docs/zh-CN/installation/installation
-  - text: 📦项目地址
+  - icon: code
+    text: 项目地址
     link: https://github.com/iamkun/dayjs
 id: a89121ca1a82a196a76ab8781d0e4373
 ---

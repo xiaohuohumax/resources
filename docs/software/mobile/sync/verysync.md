@@ -9,7 +9,8 @@ tags:
   - 文件传输
   - 文件同步
 links:
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: https://www.verysync.com/download.html
 id: 55ed0ebfaf8e5dcef87b60ce07a52201
 ---

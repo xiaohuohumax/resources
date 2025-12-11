@@ -13,9 +13,11 @@ tags:
   - 数据库
   - 安全
 links:
-  - text: 🌍网站地址
+  - icon: world-www
+    text: 网站地址
     link: https://roadmap.sh/
-  - text: 📦项目地址
+  - icon: code
+    text: 项目地址
     link: https://github.com/kamranahmedse/developer-roadmap
 id: 96090ab49edf5181611370bd808803f8
 ---

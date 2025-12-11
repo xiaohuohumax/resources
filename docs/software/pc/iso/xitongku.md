@@ -9,7 +9,8 @@ tags:
   - Office
   - 系统镜像
 links:
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: https://www.xitongku.com/index.html
 id: a996c8c6a989391e5a62976f60e1d414
 ---

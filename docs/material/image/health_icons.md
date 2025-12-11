@@ -8,7 +8,8 @@ icon: health_icons.svg
 tags:
   - 图标
 links:
-  - text: 📖文档地址
+  - icon: book
+    text: 文档地址
     link: https://healthicons.org/
 id: 1c4918ed648f135297c2f01583308bef
 ---

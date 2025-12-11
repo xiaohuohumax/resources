@@ -7,7 +7,8 @@ tags:
   - 视频录制
   - 直播
 links:
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: https://obsproject.com/
 id: c9409771450a9e0b7f5ea313bd80ad21
 ---

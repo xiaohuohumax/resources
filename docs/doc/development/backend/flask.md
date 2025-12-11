@@ -7,7 +7,8 @@ tags:
   - Flask
   - Python
 links:
-  - text: 📖文档地址
+  - icon: book
+    text: 文档地址
     link: https://flask.palletsprojects.com/en/stable/
 id: e1ed296d158c6e163a01adf2d251b66e
 ---

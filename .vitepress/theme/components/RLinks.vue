@@ -18,7 +18,7 @@ const anchor = string2Anchor(theme.value.view.resource.linkLabel)
     </h2>
     <div class="links">
       <VPLink v-for="link in frontmatter.links" :key="link.text" :href="link.link" :no-icon="true">
-        {{ link.text }}
+        <RIcon :name="link.icon" /> {{ link.text }}
       </VPLink>
     </div>
   </div>

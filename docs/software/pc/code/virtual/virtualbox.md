@@ -6,7 +6,8 @@ icon: virtualbox.svg
 tags:
   - 虚拟环境
 links:
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: https://www.virtualbox.org/wiki/Downloads
 id: b15ce5e89451b07e2e0f9c25055e1741
 ---

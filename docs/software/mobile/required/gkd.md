@@ -7,7 +7,8 @@ tags:
   - 无障碍
   - 广告屏蔽
 links:
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: https://github.com/gkd-kit/gkd
 id: f0f4c74429ed4c51a10a187934f3d410
 ---

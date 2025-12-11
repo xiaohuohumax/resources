@@ -6,7 +6,8 @@ icon: ming_cute.svg
 tags:
   - 图标
 links:
-  - text: 📖文档地址
+  - icon: book
+    text: 文档地址
     link: https://www.mingcute.com/
 id: 441419381fcf6543ebe88446b3d6abf6
 ---

@@ -7,7 +7,8 @@ tags:
   - 游戏
   - IO Game
 links:
-  - text: 🎮游玩地址
+  - icon: device-gamepad-2
+    text: 游玩地址
     link: https://yorg3.io/
 id: a1409cc8713f402d188c061f8737fd92
 ---

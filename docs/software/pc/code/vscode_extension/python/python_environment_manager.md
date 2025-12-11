@@ -8,10 +8,12 @@ tags:
   - VS Code 扩展
   - Python
 links:
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: >-
       https://marketplace.visualstudio.com/items?itemName=donjayamanne.python-environment-manager
-  - text: 📦项目地址
+  - icon: code
+    text: 项目地址
     link: https://github.com/DonJayamanne/vscode-python-manager
 id: a4a7c73d46e4237e60d93ba277e332e6
 ---

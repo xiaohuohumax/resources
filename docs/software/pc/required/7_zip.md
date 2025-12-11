@@ -8,9 +8,11 @@ tags:
   - 解压缩
   - 压缩
 links:
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: https://www.7-zip.org/download.html
-  - text: 🌍网站地址
+  - icon: world-www
+    text: 网站地址
     link: https://sparanoid.com/lab/7z/
 id: 723e9f371234a72b2684531d74c1e2b9
 ---

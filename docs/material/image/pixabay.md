@@ -9,7 +9,8 @@ tags:
   - 音频
   - 插画
 links:
-  - text: 🌍网站地址
+  - icon: world-www
+    text: 网站地址
     link: https://pixabay.com/zh/
 id: 754136f2301643ce7c2fa4a93d9eb5e7
 ---

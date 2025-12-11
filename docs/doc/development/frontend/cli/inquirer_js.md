@@ -8,7 +8,8 @@ tags:
   - CLI
   - Node
 links:
-  - text: 📦项目地址
+  - icon: code
+    text: 项目地址
     link: https://github.com/SBoudrias/Inquirer.js
 id: 70c6b195336252560d5bd8bc5e1a1fee
 ---

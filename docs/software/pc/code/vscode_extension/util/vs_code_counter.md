@@ -7,10 +7,12 @@ tags:
   - Visual Studio Code
   - VS Code 扩展
 links:
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: >-
       https://marketplace.visualstudio.com/items?itemName=uctakeoff.vscode-counter
-  - text: 📦项目地址
+  - icon: code
+    text: 项目地址
     link: https://github.com/uctakeoff/vscode-counter
 id: fa9c76bda5e6458d75d826a7c1329dd3
 ---

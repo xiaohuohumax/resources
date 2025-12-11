@@ -8,7 +8,8 @@ tags:
   - Tailwind CSS
   - SVG
 links:
-  - text: 📖文档地址
+  - icon: book
+    text: 文档地址
     link: https://heroicons.com/
 id: 45fc98a8a7ff0264a44063bd9b622091
 ---

@@ -11,7 +11,8 @@ tags:
   - MyBatis
   - 数据库
 links:
-  - text: 🌍网站地址
+  - icon: world-www
+    text: 网站地址
     link: https://baomidou.com/
 id: e4e342d3a0d8ee3f62ecf66e2efbc37f
 ---

@@ -36,6 +36,7 @@ export default function (templatesDir: string): Plugin {
         description: 'Description',
         links: [
           {
+            icon: 'question-mark',
             text: 'Link',
             link: 'https://example.com',
           },

@@ -9,7 +9,8 @@ tags:
   - 插画
   - 字体
 links:
-  - text: 🌍网站地址
+  - icon: world-www
+    text: 网站地址
     link: https://www.iconfont.cn/
 id: 61381fa036f3056df21c48b4d79fc360
 ---

@@ -6,7 +6,8 @@ icon: remix_icon.svg
 tags:
   - 图标
 links:
-  - text: 📖文档地址
+  - icon: book
+    text: 文档地址
     link: https://remixicon.com/
 id: 165345941177d102ae0c1616c99f373c
 ---

@@ -11,7 +11,8 @@ tags:
   - Vue
   - React
 links:
-  - text: 📖文档地址
+  - icon: book
+    text: 文档地址
     link: https://vitejs.cn/vite3-cn/
 id: 1a3f8c58350a6b7124f440b72adb0e92
 ---

@@ -11,10 +11,12 @@ tags:
   - MySQL
   - 数据库
 links:
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: >-
       https://marketplace.visualstudio.com/items?itemName=Oracle.mysql-shell-for-vs-code
-  - text: 📦项目地址
+  - icon: code
+    text: 项目地址
     link: https://github.com/mysql/mysql-shell-plugins
 id: 6862f14a57e1d62dc6ce5060625bbd37
 ---

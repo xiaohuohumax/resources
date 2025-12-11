@@ -6,7 +6,8 @@ icon: v2rayn.svg
 tags:
   - 代理
 links:
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: https://github.com/2dust/v2rayN
 id: c45f1d2034d0d520191d81ef01ba53aa
 ---

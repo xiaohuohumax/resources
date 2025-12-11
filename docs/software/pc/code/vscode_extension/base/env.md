@@ -7,9 +7,11 @@ tags:
   - Visual Studio Code
   - VS Code 扩展
 links:
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: https://marketplace.visualstudio.com/items?itemName=IronGeek.vscode-env
-  - text: 📦项目地址
+  - icon: code
+    text: 项目地址
     link: https://github.com/IronGeek/vscode-env
 id: e265b91fc9383fe8ae0e304add7554b8
 ---

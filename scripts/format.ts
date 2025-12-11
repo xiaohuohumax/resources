@@ -55,7 +55,7 @@ function formatView(srcDir: string, filePath: string): void {
   updateMarkdownFrontmatter(filePath, { icon })
 }
 
-const srcDir = path.join(__dirname, '..', 'docs')
+const srcDir = path.join(__dirname, '../docs')
 
 readFolders(srcDir).forEach(formatFilename)
 readMarkdownFiles(srcDir).map(formatFilename).forEach(formatView.bind(null, srcDir))

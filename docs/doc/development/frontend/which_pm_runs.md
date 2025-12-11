@@ -7,7 +7,8 @@ tags:
   - JavaScript
   - 包管理器
 links:
-  - text: 📦项目地址
+  - icon: code
+    text: 项目地址
     link: https://github.com/zkochan/packages/tree/main/which-pm-runs#readme
 id: b8f00d660a47bcd17a876bdefaf01dd6
 ---

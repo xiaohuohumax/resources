@@ -6,9 +6,11 @@ icon: file_code_box.png
 tags:
   - 文件传输
 links:
-  - text: 🌍网站地址
+  - icon: world-www
+    text: 网站地址
     link: https://share.lanol.cn/
-  - text: 📦项目地址
+  - icon: code
+    text: 项目地址
     link: https://github.com/vastsa/FileCodeBox
 id: 9347de2475e7102e8bd0d26a918515cd
 ---

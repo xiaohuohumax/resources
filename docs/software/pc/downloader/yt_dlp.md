@@ -8,7 +8,8 @@ tags:
   - 音频
   - 视频
 links:
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: https://github.com/yt-dlp/yt-dlp
 id: 12dfee34a4cb457db149ca8f825cc3b3
 ---

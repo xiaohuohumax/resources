@@ -8,10 +8,12 @@ tags:
   - VS Code 扩展
   - Lint
 links:
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: >-
       https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig
-  - text: 📦项目地址
+  - icon: code
+    text: 项目地址
     link: https://github.com/editorconfig/editorconfig-vscode
 id: 5901ac2eccd6867e173456b11ec2e5f1
 ---

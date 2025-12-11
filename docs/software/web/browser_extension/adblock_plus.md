@@ -7,7 +7,8 @@ tags:
   - 浏览器扩展
   - 广告屏蔽
 links:
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: https://adblockplus.org/zh_CN/
 id: 4c02a8d4cd184a4f94c2f2d0ea352cca
 ---

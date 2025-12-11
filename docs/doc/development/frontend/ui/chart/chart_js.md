@@ -8,7 +8,8 @@ tags:
   - 绘图
   - 组件
 links:
-  - text: 📖文档地址
+  - icon: book
+    text: 文档地址
     link: https://chartjs.cn/
 id: 5b9cd2f32e6ab2b1073de5a27b841423
 ---

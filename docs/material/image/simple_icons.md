@@ -7,7 +7,8 @@ tags:
   - 图标
   - SVG
 links:
-  - text: 📖文档地址
+  - icon: book
+    text: 文档地址
     link: https://simpleicons.org/
 id: eb36ef996d891f02bc146603994a73b1
 ---

@@ -9,10 +9,12 @@ tags:
   - Python
   - TOML
 links:
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: >-
       https://marketplace.visualstudio.com/items?itemName=tamasfe.even-better-toml
-  - text: 📦项目地址
+  - icon: code
+    text: 项目地址
     link: https://github.com/tamasfe/taplo
 id: 55d1469d6d9db2ab4abada052546ce1e
 ---

@@ -7,7 +7,8 @@ tags:
   - 代码高亮
   - 组件
 links:
-  - text: 📖文档地址
+  - icon: book
+    text: 文档地址
     link: https://shiki.tmrs.site/
 id: caa322762db1e6980c9f58cccde3bf79
 ---

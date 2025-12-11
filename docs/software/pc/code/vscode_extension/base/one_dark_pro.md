@@ -8,10 +8,12 @@ tags:
   - VS Code 扩展
   - 主题
 links:
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: >-
       https://marketplace.visualstudio.com/items?itemName=zhuangtongfa.material-theme
-  - text: 📦项目地址
+  - icon: code
+    text: 项目地址
     link: https://github.com/Binaryify/OneDark-Pro
 id: 2750e03aa926648084df779acad0c46a
 ---

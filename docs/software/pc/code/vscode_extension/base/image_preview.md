@@ -8,10 +8,12 @@ tags:
   - VS Code 扩展
   - 图片
 links:
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: >-
       https://marketplace.visualstudio.com/items?itemName=kisstkondoros.vscode-gutter-preview
-  - text: 📦项目地址
+  - icon: code
+    text: 项目地址
     link: https://github.com/kisstkondoros/gutter-preview
 id: 19dd7bd11dcd59135e5267251940ea29
 ---

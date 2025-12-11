@@ -6,7 +6,8 @@ icon: infinity.png
 tags:
   - 浏览器扩展
 links:
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: https://www.infinitytab.com/
 id: b828d56a42f161d8ac4a8e52341cb20a
 ---

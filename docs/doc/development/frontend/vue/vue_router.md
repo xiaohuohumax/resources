@@ -7,7 +7,8 @@ tags:
   - Vue
   - Vue Router
 links:
-  - text: 📖文档地址
+  - icon: book
+    text: 文档地址
     link: https://router.vuejs.org/zh/
 id: 84197340e8ba35519ea88ac4ce98b4dc
 ---

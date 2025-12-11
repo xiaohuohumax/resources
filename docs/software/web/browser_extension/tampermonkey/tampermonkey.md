@@ -7,7 +7,8 @@ tags:
   - Tampermonkey
   - 浏览器扩展
 links:
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: https://www.tampermonkey.net/
 id: a14273473266113f5c76012f41544a64
 ---

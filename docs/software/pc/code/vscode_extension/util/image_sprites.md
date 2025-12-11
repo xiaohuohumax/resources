@@ -8,10 +8,12 @@ tags:
   - VS Code 扩展
   - 图片
 links:
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: >-
       https://marketplace.visualstudio.com/items?itemName=gurayyarar.imagesprites
-  - text: 📦项目地址
+  - icon: code
+    text: 项目地址
     link: https://github.com/gurayyarar/ImageSprites
 id: bb6eb82f80fbc3d40f54cfeee931d32f
 ---

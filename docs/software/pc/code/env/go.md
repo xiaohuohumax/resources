@@ -7,7 +7,8 @@ tags:
   - 编程语言
   - Go
 links:
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: https://golang.org/dl/
 id: 13d1debe577801a6059aebe755b17a57
 ---

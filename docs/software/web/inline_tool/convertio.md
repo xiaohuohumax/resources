@@ -10,7 +10,8 @@ tags:
   - 图片
   - 字体
 links:
-  - text: 🌍网站地址
+  - icon: world-www
+    text: 网站地址
     link: https://convertio.co/zh/
 id: 64dce1b36abbd1029c3313622f8ee81e
 ---

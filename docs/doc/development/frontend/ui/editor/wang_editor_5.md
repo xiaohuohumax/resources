@@ -7,9 +7,11 @@ tags:
   - 富文本
   - 编辑器
 links:
-  - text: 📖文档地址
+  - icon: book
+    text: 文档地址
     link: https://www.wangeditor.com/
-  - text: 🔗在线示例
+  - icon: link
+    text: 在线示例
     link: https://www.wangeditor.com/demo/index.html
 id: 57ec9c45d1120af4d43b44f23ada1cab
 ---

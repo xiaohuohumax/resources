@@ -9,6 +9,7 @@
   --vp-home-hero-image-background-image: linear-gradient(-45deg, #74ebd5 50%, #9face6 50%);
   --vp-home-hero-image-filter: blur(44px);
   --vp-font-family-base: ChillRoundGothic, sans-serif;
+  --vp-font-family-mono: ChillRoundGothic, sans-serif;
   --vp-c-yellow-1: #f2b54c;
 }
 
@@ -87,7 +88,7 @@ a {
 }
 
 .DocSearch-Hit-source {
-  background: none !important;
+  background: var(--docsearch-modal-background) !important;
 }
 
 @media (min-width: 640px) {

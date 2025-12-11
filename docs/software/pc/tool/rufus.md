@@ -6,7 +6,8 @@ icon: rufus.png
 tags:
   - U盘
 links:
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: https://rufus.ie/zh/
 id: b47c15377482fc1d8213e3085810594d
 ---

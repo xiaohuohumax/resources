@@ -6,7 +6,8 @@ icon: /resource.svg
 title: Title
 description: Description
 links:
-  - text: Link
+  - icon: question-mark
+    text: Link
     link: https://example.com
 tags:
   - tag1

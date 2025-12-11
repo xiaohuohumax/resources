@@ -7,7 +7,8 @@ tags:
   - Windows
   - 系统监控
 links:
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: https://pcmanager.microsoft.com/zh-cn
 id: 927758dfce06b2a36e2658333c7ad059
 ---

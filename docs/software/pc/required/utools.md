@@ -10,9 +10,11 @@ tags:
   - JSON
   - 正则表达式
 links:
-  - text: 📖文档地址
+  - icon: book
+    text: 文档地址
     link: https://u.tools/docs/
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: https://u.tools/download
 id: 8c51a50f9a06305e7016be149b7761b2
 ---

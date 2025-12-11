@@ -7,7 +7,8 @@ tags:
   - 系统镜像
   - 自动化
 links:
-  - text: 🌍网站地址
+  - icon: world-www
+    text: 网站地址
     link: https://schneegans.de/windows/unattend-generator/
 id: d2d7d1fb96773451110ffede1bfc88ef
 ---

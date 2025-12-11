@@ -10,7 +10,8 @@ tags:
   - 达梦
   - SQL
 links:
-  - text: 📖文档地址
+  - icon: book
+    text: 文档地址
     link: https://eco.dameng.com/document/dm/zh-cn/start/
 id: 1c2e06056e19205f791808bdfd535e0a
 ---

@@ -11,7 +11,8 @@ tags:
   - NoSQL
   - 数据库
 links:
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: https://redis.io/insight/
 id: 8736757c48f62f028853d91f1ad6b7c9
 ---

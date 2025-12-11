@@ -9,10 +9,12 @@ tags:
   - Excel
   - CSV
 links:
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: >-
       https://marketplace.visualstudio.com/items?itemName=GrapeCity.gc-excelviewer
-  - text: 📦项目地址
+  - icon: code
+    text: 项目地址
     link: https://github.com/wijmo/gc-excelviewer
 id: d602e89165e9f781a30c819cb0c352b1
 ---

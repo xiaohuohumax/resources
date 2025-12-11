@@ -7,9 +7,11 @@ tags:
   - 浏览器扩展
   - 书签
 links:
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: https://www.ainewtab.app/LazyCat-Bookmark-Cleaner/zh-cn/
-  - text: 📦项目地址
+  - icon: code
+    text: 项目地址
     link: https://github.com/Alanrk/LazyCat-Bookmark-Cleaner
 id: 91fc11511f5abd88c817f487dfed6ab0
 ---

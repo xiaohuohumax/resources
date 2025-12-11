@@ -7,7 +7,8 @@ tags:
   - 图片
   - SVG
 links:
-  - text: 🌍网站地址
+  - icon: world-www
+    text: 网站地址
     link: https://www.itutool.com/tools/svg-editor.html
 id: c41a09b2ec9879d266061e6f5dc1c56d
 ---

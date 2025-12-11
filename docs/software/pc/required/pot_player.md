@@ -9,7 +9,8 @@ tags:
   - 音频
   - 直播
 links:
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: https://potplayer.daum.net/?lang=zh_CN
 id: 2807a250aebc4ea9f68c029e1c4e6165
 ---

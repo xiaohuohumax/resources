@@ -11,9 +11,11 @@ tags:
   - Vue
   - Markdown
 links:
-  - text: 📖文档地址
+  - icon: book
+    text: 文档地址
     link: https://vitepress.dev/zh/
-  - text: 📦项目地址
+  - icon: code
+    text: 项目地址
     link: https://github.com/vuejs/vitepress
 id: a79a0782f587b01ec8a86dd684e6e9f6
 ---

@@ -6,7 +6,8 @@ icon: relationship.svg
 tags:
   - 亲戚
 links:
-  - text: 🌍网站地址
+  - icon: world-www
+    text: 网站地址
     link: https://tool.lu/relationship/
 id: 56f1768b082aad547296ccb8c7b46025
 ---

@@ -10,9 +10,11 @@ tags:
   - 组件
   - SVG
 links:
-  - text: 📖文档地址
+  - icon: book
+    text: 文档地址
     link: https://boringavatars.com/
-  - text: 📦项目地址
+  - icon: code
+    text: 项目地址
     link: https://github.com/boringdesigners/boring-avatars
 id: b46c872247c6725ab7893b5040bd0e2d
 ---

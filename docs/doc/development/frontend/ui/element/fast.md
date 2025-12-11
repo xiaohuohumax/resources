@@ -8,7 +8,8 @@ icon: fast.svg
 tags:
   - 组件库
 links:
-  - text: 📖文档地址
+  - icon: book
+    text: 文档地址
     link: https://www.fast.design/
 id: 61f21419ff6a970f124ab78e3f445181
 ---

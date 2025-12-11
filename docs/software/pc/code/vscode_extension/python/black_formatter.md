@@ -9,10 +9,12 @@ tags:
   - Python
   - Lint
 links:
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: >-
       https://marketplace.visualstudio.com/items?itemName=ms-python.black-formatter
-  - text: 📦项目地址
+  - icon: code
+    text: 项目地址
     link: https://github.com/microsoft/vscode-black-formatter
 id: cbdda5ca98f86bda0bf9f0e11ec71b6c
 ---

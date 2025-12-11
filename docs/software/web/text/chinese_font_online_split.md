@@ -6,7 +6,8 @@ icon: chinese_font_online_split.ico
 tags:
   - 字体
 links:
-  - text: 🌍网站地址
+  - icon: world-www
+    text: 网站地址
     link: https://chinese-font.netlify.app/zh-cn/online-split/
 id: c5251c948e8a7c566047d8463ead29b9
 ---

@@ -8,7 +8,8 @@ tags:
   - Bootstrap
   - SVG
 links:
-  - text: 📖文档地址
+  - icon: book
+    text: 文档地址
     link: https://icons.getbootstrap.com/
 id: 483443f829217108d705fc161ba9e62e
 ---

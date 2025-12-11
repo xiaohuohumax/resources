@@ -7,7 +7,8 @@ tags:
   - 版本控制
   - SVN
 links:
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: https://subversion.apache.org/
 id: 8ae455ec82b7edb373fb786c4ab2b2a3
 ---

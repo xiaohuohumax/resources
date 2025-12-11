@@ -11,7 +11,8 @@ tags:
   - 调度
   - JavaScript
 links:
-  - text: 📦项目地址
+  - icon: code
+    text: 项目地址
     link: https://github.com/sindresorhus/p-limit
 id: 8087acdc43705b2ca876948fc4d39681
 ---

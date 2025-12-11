@@ -7,7 +7,8 @@ tags:
   - 颜色
   - 设计
 links:
-  - text: 🌍网站地址
+  - icon: world-www
+    text: 网站地址
     link: https://www.grabient.com
 id: 22b07f72a4dc5ee91166fb3bd9b7c9f6
 ---

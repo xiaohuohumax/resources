@@ -9,7 +9,8 @@ tags:
   - 系统监控
   - 磁盘
 links:
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: https://www.huorong.cn/
 id: ff52b480ecc44c53ef3aac64a7fed0e2
 ---

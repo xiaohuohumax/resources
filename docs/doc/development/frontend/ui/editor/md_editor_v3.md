@@ -8,7 +8,8 @@ tags:
   - 编辑器
   - Vue
 links:
-  - text: 📖文档地址
+  - icon: book
+    text: 文档地址
     link: https://imzbf.github.io/md-editor-v3/
 id: 031a6b6ce95df8c89b17206127632efb
 ---

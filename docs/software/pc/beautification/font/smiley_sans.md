@@ -8,7 +8,8 @@ icon:
 tags:
   - 字体
 links:
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: https://atelier-anchor.com/typefaces/smiley-sans
 id: e4b741e92569a8beca081faa2cd8e6e4
 ---

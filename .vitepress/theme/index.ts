@@ -10,6 +10,7 @@ import Empty from './views/Empty.vue'
 import Favorites from './views/Favorites.vue'
 import Resource from './views/Resource.vue'
 import Tags from './views/Tags.vue'
+import '@tabler/icons-webfont/dist/tabler-icons.min.css'
 import './style.css'
 
 export default {

@@ -9,7 +9,8 @@ tags:
   - 视频
   - 音频
 links:
-  - text: 📖文档地址
+  - icon: book
+    text: 文档地址
     link: https://github.com/sampotts/plyr#readme
 id: eafe386389d23723566526680c7bb5f1
 ---

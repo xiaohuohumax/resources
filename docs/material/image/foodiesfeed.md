@@ -6,7 +6,8 @@ icon: foodiesfeed.svg
 tags:
   - 图片
 links:
-  - text: 🌍网站地址
+  - icon: world-www
+    text: 网站地址
     link: https://www.foodiesfeed.com/
 id: 38c986ecf852fbe66c0c549649631a28
 ---

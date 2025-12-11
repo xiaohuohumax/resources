@@ -8,9 +8,11 @@ tags:
   - VS Code 扩展
   - Game
 links:
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: https://marketplace.visualstudio.com/items?itemName=dsy4567.4399-on-vscode
-  - text: 📦项目地址
+  - icon: code
+    text: 项目地址
     link: https://github.com/dsy4567/4399-on-vscode
 id: 5be540c594ebd5448a3253ff0ff8b891
 ---

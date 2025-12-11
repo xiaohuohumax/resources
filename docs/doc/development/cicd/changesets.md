@@ -10,7 +10,8 @@ tags:
   - Monorepo
   - 版本控制
 links:
-  - text: 📦项目地址
+  - icon: code
+    text: 项目地址
     link: https://github.com/changesets/changesets
 id: 1c5b44d5a9acd7a87f9918bb8379faa2
 ---

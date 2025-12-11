@@ -6,9 +6,11 @@ icon: vue_xiuxiangame.png
 tags:
   - 游戏
 links:
-  - text: 🎮游玩地址
+  - icon: device-gamepad-2
+    text: 游玩地址
     link: https://xiuxian.wenzi.games/
-  - text: 📦项目地址
+  - icon: code
+    text: 项目地址
     link: https://github.com/setube/vue-xiuxiangame
 id: 631c78b94034d7c53ae8f0aaa522ced1
 ---

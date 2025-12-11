@@ -8,10 +8,12 @@ tags:
   - VS Code 扩展
   - Java
 links:
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: >-
       https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack
-  - text: 📦项目地址
+  - icon: code
+    text: 项目地址
     link: https://github.com/Microsoft/vscode-java-pack
 id: 414d1555f930055c187a57babf70cd8b
 ---

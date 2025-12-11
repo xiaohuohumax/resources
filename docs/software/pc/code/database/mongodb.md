@@ -9,7 +9,8 @@ tags:
   - MongoDB
   - JSON
 links:
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: https://www.mongodb.com/try/download/community
 id: db7aa9decdb4f95e5711cb5309d6787d
 ---

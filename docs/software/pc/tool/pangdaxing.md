@@ -8,7 +8,8 @@ tags:
   - Adobe
   - Photoshop
 links:
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: https://pangdaxing.top/adobe/2025.html
 id: 4fe5dafc4450ff5b0b3c2f55ebd90b1a
 ---

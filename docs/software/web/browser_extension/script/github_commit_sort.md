@@ -10,7 +10,8 @@ tags:
   - ScriptCat
   - Github
 links:
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: https://scriptcat.org/zh-CN/script-show-page/2576
 id: 01aa77a352fe0a69719becb030ee9c75
 ---

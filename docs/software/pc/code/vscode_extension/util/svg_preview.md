@@ -8,10 +8,12 @@ tags:
   - VS Code 扩展
   - SVG
 links:
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: >-
       https://marketplace.visualstudio.com/items?itemName=SimonSiefke.svg-preview
-  - text: 📦项目地址
+  - icon: code
+    text: 项目地址
     link: https://github.com/SimonSiefke/vscode-svg-preview
 id: 4a9333e871a139a8b42c35f0846b3808
 ---

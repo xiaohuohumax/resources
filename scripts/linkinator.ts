@@ -10,7 +10,7 @@ async function simple() {
     markdown: true,
   })
 
-  const results = { passed, unknown: [] }
+  const results: Record<string, any> = { passed, unknown: [] }
   for (const link of links.filter(link => !link.url.endsWith('.md'))) {
     const key = link.status !== undefined ? link.status : 'unknown'
     const statusList = results[key] || []

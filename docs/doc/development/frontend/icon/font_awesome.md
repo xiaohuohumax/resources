@@ -6,7 +6,8 @@ icon: font_awesome.svg
 tags:
   - 图标
 links:
-  - text: 📖文档地址
+  - icon: book
+    text: 文档地址
     link: https://fa6.dashgame.com/
 id: b1889248375090863811d6efdc2944c4
 ---

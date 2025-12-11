@@ -1,13 +1,11 @@
 <script setup lang="ts">
 import type { View } from '../../view'
-import { IconStar, IconStarFilled } from '@tabler/icons-vue'
 import { useFavorites } from '../composables/favorites'
 import { useTheme } from '../composables/theme'
 
 const props = defineProps<{ view: View }>()
 
 const theme = useTheme()
-const { isDark } = useData()
 const { isFavorited, toggleFavorite } = useFavorites()
 
 const state = isFavorited(props.view.id)
@@ -19,10 +17,7 @@ const title = computed(() => state.value
 
 <template>
   <button :title="title" class="RFavorite" :class="{ 'is-favorited': state }" @click="toggleFavorite(props.view.id)">
-    <component
-      :is="state ? IconStarFilled : IconStar" color="var(--vp-c-yellow-1)"
-      :stroke-width="isDark ? 0.5 : 1.5"
-    />
+    <RIcon :name="state ? 'star-filled' : 'star'" color="var(--vp-c-yellow-1)" />
   </button>
 </template>
 

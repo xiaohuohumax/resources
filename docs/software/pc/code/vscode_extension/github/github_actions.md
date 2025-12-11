@@ -8,10 +8,12 @@ tags:
   - VS Code 扩展
   - Github
 links:
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: >-
       https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-github-actions
-  - text: 📦项目地址
+  - icon: code
+    text: 项目地址
     link: https://github.com/github/vscode-github-actions
 id: f53652e36d1a7370011232b948d0992b
 ---

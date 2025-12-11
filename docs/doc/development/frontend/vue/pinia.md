@@ -7,7 +7,8 @@ tags:
   - Vue
   - Pinia
 links:
-  - text: 📖文档地址
+  - icon: book
+    text: 文档地址
     link: https://pinia.web3doc.top/
 id: 8626e0a6bbcf1e70014744d367fc49c3
 ---

@@ -8,7 +8,8 @@ tags:
   - 绘图
   - 组件
 links:
-  - text: 📖文档地址
+  - icon: book
+    text: 文档地址
     link: https://echarts.apache.org/zh/index.html
 id: 0b7390e7e647493025bd362838edac0f
 ---

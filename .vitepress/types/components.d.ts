@@ -21,6 +21,7 @@ declare module 'vue' {
     REmpty: typeof import('./../theme/components/REmpty.vue')['default']
     Resource: typeof import('./../theme/views/Resource.vue')['default']
     RFavorite: typeof import('./../theme/components/RFavorite.vue')['default']
+    RIcon: typeof import('./../theme/components/RIcon.vue')['default']
     RLayout: typeof import('./../theme/components/RLayout.vue')['default']
     RLinks: typeof import('./../theme/components/RLinks.vue')['default']
     RLogo: typeof import('./../theme/components/RLogo.vue')['default']

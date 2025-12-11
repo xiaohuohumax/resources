@@ -6,7 +6,8 @@ icon: chinese_font_analyze.ico
 tags:
   - 字体
 links:
-  - text: 🌍网站地址
+  - icon: world-www
+    text: 网站地址
     link: https://chinese-font.netlify.app/zh-cn/analyze/
 id: 617c1354fdcc1f85cd011e4a275020d8
 ---

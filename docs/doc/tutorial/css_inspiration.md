@@ -7,7 +7,8 @@ tags:
   - CSS
   - 奇技淫巧
 links:
-  - text: 📖文档地址
+  - icon: book
+    text: 文档地址
     link: https://csscoco.com/inspiration/#/
 id: 58b1b68650484169570f837fbd2f6e43
 ---

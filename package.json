@@ -1,6 +1,6 @@
 {
   "name": "resources",
-  "version": "4.12.0",
+  "version": "4.13.0",
   "description": "资源仓库: 收录各种常用资源地址。",
   "type": "module",
   "private": true,
@@ -11,10 +11,10 @@
     "preview": "vitepress preview",
     "postinstall": "simple-git-hooks",
     "changeset": "changeset",
-    "lint": "eslint .",
     "commit": "pnpm format && pnpm build && pnpm lint:fix && git add . && git-cz",
     "format": "vite-node scripts/format.ts",
     "linkinator": "vite-node scripts/linkinator.ts",
+    "lint": "eslint .",
     "lint:fix": "eslint . --fix"
   },
   "keywords": [
@@ -39,7 +39,7 @@
     }
   },
   "dependencies": {
-    "@tabler/icons-vue": "^3.35.0",
+    "@tabler/icons-webfont": "^3.35.0",
     "@vueuse/core": "^14.1.0",
     "color4bg": "^0.1.1",
     "slugify": "^1.6.6",

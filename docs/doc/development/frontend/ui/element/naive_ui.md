@@ -7,7 +7,8 @@ tags:
   - Vue
   - 组件库
 links:
-  - text: 📖文档地址
+  - icon: book
+    text: 文档地址
     link: https://www.naiveui.com/zh-CN/dark
 id: 17dc7f9eb515e8a3d6095b4093d98a30
 ---

@@ -6,7 +6,8 @@ icon: google_fonts.png
 tags:
   - 图标
 links:
-  - text: 📖文档地址
+  - icon: book
+    text: 文档地址
     link: https://fonts.google.com/icons
 id: 43ab5b180e80a8d423b437df07eca0a7
 ---

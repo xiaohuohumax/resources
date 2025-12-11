@@ -9,9 +9,11 @@ tags:
   - Python
   - Lint
 links:
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: https://marketplace.visualstudio.com/items?itemName=ms-python.isort
-  - text: 📦项目地址
+  - icon: code
+    text: 项目地址
     link: https://github.com/microsoft/vscode-isort
 id: 3b106294e9e7ee5ce3b8f651af2dbf76
 ---

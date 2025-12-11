@@ -9,9 +9,11 @@ tags:
   - MongoDB
   - 数据库
 links:
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: https://marketplace.visualstudio.com/items?itemName=mongodb.mongodb-vscode
-  - text: 📦项目地址
+  - icon: code
+    text: 项目地址
     link: https://github.com/mongodb-js/vscode
 id: 5f093ae27b84bcc111bb4c249025b49f
 ---

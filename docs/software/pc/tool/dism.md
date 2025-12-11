@@ -7,7 +7,8 @@ tags:
   - Windows
   - 系统镜像
 links:
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: https://github.com/Chuyu-Team/Dism-Multi-language
 id: e448c077dbcc50efe1c8d7270be43297
 ---

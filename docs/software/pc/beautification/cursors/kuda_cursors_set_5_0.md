@@ -7,7 +7,8 @@ tags:
   - 光标
   - 美化
 links:
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: https://zhutix.com/ico/kuda-5/
 id: 009732c94b8701fb6b4a2ef62f1188a9
 ---

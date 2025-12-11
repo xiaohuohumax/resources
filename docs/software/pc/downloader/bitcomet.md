@@ -7,7 +7,8 @@ tags:
   - 下载器
   - BitTorrent
 links:
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: http://www.bitcomet.com/en/downloads
 id: e4c63885f921b97296a590d4963f5d84
 ---

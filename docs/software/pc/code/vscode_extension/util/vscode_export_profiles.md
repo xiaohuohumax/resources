@@ -8,10 +8,12 @@ tags:
   - VS Code 扩展
   - Lint
 links:
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: >-
       https://marketplace.visualstudio.com/items?itemName=xiaohuohumax.vscode-export-profiles
-  - text: 📦项目地址
+  - icon: code
+    text: 项目地址
     link: https://github.com/xiaohuohumax/vscode-export-profiles
 id: 75443f21290d86f9cd719887182a11f3
 ---

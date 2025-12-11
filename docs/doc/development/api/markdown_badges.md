@@ -8,7 +8,8 @@ tags:
   - 徽章
   - Markdown
 links:
-  - text: 📖文档地址
+  - icon: book
+    text: 文档地址
     link: https://github.com/Ileriayo/markdown-badges
 id: ae7ed207fa7f2d3011215a0c3be9b725
 ---

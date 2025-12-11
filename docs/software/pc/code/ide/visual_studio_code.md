@@ -9,7 +9,8 @@ tags:
   - Visual Studio Code
   - IDE
 links:
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: https://code.visualstudio.com/
 id: 4740883ab271bca961fb1bf61990bf3a
 ---

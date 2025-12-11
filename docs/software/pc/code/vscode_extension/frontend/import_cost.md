@@ -7,9 +7,11 @@ tags:
   - Visual Studio Code
   - VS Code 扩展
 links:
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: https://marketplace.visualstudio.com/items?itemName=wix.vscode-import-cost
-  - text: 📦项目地址
+  - icon: code
+    text: 项目地址
     link: https://github.com/wix/import-cost
 id: cee06fbe78ef821bca3ab7d1b8a127b4
 ---

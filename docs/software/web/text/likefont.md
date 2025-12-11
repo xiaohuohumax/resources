@@ -6,7 +6,8 @@ icon: likefont.svg
 tags:
   - 字体
 links:
-  - text: 🌍网站地址
+  - icon: world-www
+    text: 网站地址
     link: https://www.likefont.com/
 id: a00acac8fbc06ab994d6fe4a36bf930b
 ---

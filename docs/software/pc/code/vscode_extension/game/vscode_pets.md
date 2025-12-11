@@ -8,10 +8,12 @@ tags:
   - VS Code 扩展
   - Game
 links:
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: >-
       https://marketplace.visualstudio.com/items?itemName=tonybaloney.vscode-pets
-  - text: 📦项目地址
+  - icon: code
+    text: 项目地址
     link: https://github.com/tonybaloney/vscode-pets
 id: 9d9774703197fbcefedc6ab595b40579
 ---

@@ -8,10 +8,12 @@ tags:
   - VS Code 扩展
   - Batch File
 links:
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: >-
       https://marketplace.visualstudio.com/items?itemName=rechinformatica.rech-editor-batch
-  - text: 📦项目地址
+  - icon: code
+    text: 项目地址
     link: https://github.com/RechInformatica/rech-editor-batch
 id: 51477e727708f5eda28982078783c4d6
 ---

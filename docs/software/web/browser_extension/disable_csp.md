@@ -8,7 +8,8 @@ icon: disable_csp.png
 tags:
   - 浏览器扩展
 links:
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: https://github.com/lisonge/Disable-CSP
 id: a55dfc02df63e9d36b0229776a2fa9b8
 ---

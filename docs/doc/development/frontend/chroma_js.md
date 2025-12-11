@@ -7,9 +7,11 @@ tags:
   - 颜色
   - JavaScript
 links:
-  - text: 📖文档地址
+  - icon: book
+    text: 文档地址
     link: https://gka.github.io/chroma.js/
-  - text: 📦项目地址
+  - icon: code
+    text: 项目地址
     link: https://github.com/gka/chroma.js
 id: 8ec4239c72cf48516f0440bf92b209d4
 ---

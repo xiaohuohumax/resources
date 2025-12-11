@@ -7,9 +7,11 @@ tags:
   - Visual Studio Code
   - VS Code 扩展
 links:
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: https://marketplace.visualstudio.com/items?itemName=alefragnani.Bookmarks
-  - text: 📦项目地址
+  - icon: code
+    text: 项目地址
     link: https://github.com/alefragnani/vscode-bookmarks
 id: 984d05d7ffa4e18511b13d8da9c19837
 ---

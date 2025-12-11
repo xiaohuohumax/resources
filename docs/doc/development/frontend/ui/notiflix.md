@@ -7,7 +7,8 @@ tags:
   - JavaScript
   - 组件
 links:
-  - text: 📦项目地址
+  - icon: code
+    text: 项目地址
     link: https://github.com/notiflix/Notiflix
 id: a0827202d11c59a69821e534fe743273
 ---

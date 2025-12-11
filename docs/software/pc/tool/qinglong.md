@@ -12,7 +12,8 @@ tags:
   - Shell
   - Linux
 links:
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: https://qinglong.online/guide/getting-started/installation-guide
 id: 859db7a1588ca5dc6df002fc2d439a85
 ---

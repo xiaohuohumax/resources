@@ -9,9 +9,11 @@ tags:
   - Docker
   - 虚拟环境
 links:
-  - text: 📖文档地址
+  - icon: book
+    text: 文档地址
     link: https://yeasy.gitbook.io/docker_practice
-  - text: 📦项目地址
+  - icon: code
+    text: 项目地址
     link: https://github.com/yeasy/docker_practice
 id: 9416f23e613bb6654fb95a19ccb57a68
 ---

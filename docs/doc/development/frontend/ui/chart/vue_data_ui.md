@@ -8,7 +8,8 @@ tags:
   - 绘图
   - 组件
 links:
-  - text: 📖文档地址
+  - icon: book
+    text: 文档地址
     link: https://vue-data-ui.graphieros.com/
 id: 236fbe68626bfa8ef63c6883569142b3
 ---

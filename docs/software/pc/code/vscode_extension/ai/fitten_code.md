@@ -10,9 +10,11 @@ tags:
   - VS Code 扩展
   - AI
 links:
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: https://marketplace.visualstudio.com/items?itemName=FittenTech.Fitten-Code
-  - text: 📦项目地址
+  - icon: code
+    text: 项目地址
     link: https://github.com/alefragnani/vscode-bookmarks
 id: 3275442f0360c623c81430d64fa7ff0e
 ---

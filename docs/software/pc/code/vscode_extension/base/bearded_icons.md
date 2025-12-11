@@ -9,10 +9,12 @@ tags:
   - 主题
   - 图标
 links:
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: >-
       https://marketplace.visualstudio.com/items?itemName=BeardedBear.beardedicons
-  - text: 📦项目地址
+  - icon: code
+    text: 项目地址
     link: https://github.com/BeardedBear/bearded-icons
 id: bf571bf3184361ce607fe060bccb7402
 ---

@@ -8,7 +8,8 @@ tags:
   - SVG
   - 插画
 links:
-  - text: 🌍网站地址
+  - icon: world-www
+    text: 网站地址
     link: https://undraw.co/illustrations
 id: e8282c7ad84135b2dafc5a5bb641326b
 ---

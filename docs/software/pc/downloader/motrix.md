@@ -7,7 +7,8 @@ tags:
   - 下载器
   - BitTorrent
 links:
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: https://motrix.app/
 id: 469f41dbc96907b6fe08aee98fe6aa5f
 ---

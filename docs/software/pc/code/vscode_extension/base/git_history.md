@@ -8,10 +8,12 @@ tags:
   - VS Code 扩展
   - Git
 links:
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: >-
       https://marketplace.visualstudio.com/items?itemName=donjayamanne.githistory
-  - text: 📦项目地址
+  - icon: code
+    text: 项目地址
     link: https://github.com/DonJayamanne/gitHistoryVSCode
 id: 1b4f2e99ca9ef8aa1606d74a7a0db0be
 ---

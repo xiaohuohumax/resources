@@ -8,7 +8,8 @@ tags:
   - Java
   - Tomcat
 links:
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: https://tomcat.apache.org/
 id: 2672a91c20bb89c6059e7bbeb00b5449
 ---

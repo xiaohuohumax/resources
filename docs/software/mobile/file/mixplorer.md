@@ -8,7 +8,8 @@ tags:
   - 压缩
   - 文件管理器
 links:
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: >-
       https://xdaforums.com/t/app-2-2-mixplorer-v6-x-released-fully-featured-file-manager.1523691/#post-23109280
 id: 6c1411b45f88c82887eaa5cb816e745d

@@ -7,7 +7,8 @@ tags:
   - 图标
   - SVG
 links:
-  - text: 📖文档地址
+  - icon: book
+    text: 文档地址
     link: https://ionic.io/ionicons
 id: 8c27fb7c6a1911619fceab19fa352ece
 ---

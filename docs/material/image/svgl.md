@@ -7,7 +7,8 @@ tags:
   - 图片
   - SVG
 links:
-  - text: 🌍网站地址
+  - icon: world-www
+    text: 网站地址
     link: https://svgl.app/
 id: 3dd366771f53f3a6e6e442284b67383b
 ---

@@ -7,9 +7,11 @@ tags:
   - 压缩
   - JavaScript
 links:
-  - text: 📖文档地址
+  - icon: book
+    text: 文档地址
     link: https://stuk.github.io/jszip/
-  - text: 📦项目地址
+  - icon: code
+    text: 项目地址
     link: https://github.com/Stuk/jszip
 id: 31682c0344a21a4d3e51e3a586bc3118
 ---

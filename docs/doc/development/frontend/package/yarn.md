@@ -6,7 +6,8 @@ icon: yarn.svg
 tags:
   - 包管理器
 links:
-  - text: 📖文档地址
+  - icon: book
+    text: 文档地址
     link: https://yarnpkg.com/cli
 id: a7b1432ac8d92dbdfe642186800656c7
 ---

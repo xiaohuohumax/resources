@@ -8,9 +8,11 @@ tags:
   - VS Code 扩展
   - Vue
 links:
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: https://marketplace.visualstudio.com/items?itemName=Vue.volar
-  - text: 📦项目地址
+  - icon: code
+    text: 项目地址
     link: https://github.com/vuejs/language-tools
 id: 98cf66ab1c1e3297a70621adfcbb101e
 ---

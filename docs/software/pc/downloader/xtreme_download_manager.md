@@ -6,9 +6,11 @@ icon: xtreme_download_manager.svg
 tags:
   - 下载器
 links:
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: https://xtremedownloadmanager.com/#downloads
-  - text: 📦项目地址
+  - icon: code
+    text: 项目地址
     link: https://github.com/subhra74/xdm
 id: c252e1ac8941fded30de1d9fde91e96d
 ---

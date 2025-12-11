@@ -7,10 +7,12 @@ tags:
   - Visual Studio Code
   - VS Code 扩展
 links:
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: >-
       https://marketplace.visualstudio.com/items?itemName=mateuszchudyk.hexinspector
-  - text: 📦项目地址
+  - icon: code
+    text: 项目地址
     link: https://github.com/mateuszchudyk/vscode-hexinspector
 id: 0d222703d2adf3e00d61040724c9bc81
 ---

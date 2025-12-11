@@ -7,7 +7,8 @@ tags:
   - Vue
   - 组件库
 links:
-  - text: 📖文档地址
+  - icon: book
+    text: 文档地址
     link: https://element-plus.org/zh-CN/
 id: 95faca300672db93ecd77f3686a903b5
 ---

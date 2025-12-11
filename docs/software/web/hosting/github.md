@@ -9,7 +9,8 @@ tags:
   - Git
   - Github
 links:
-  - text: 🌍网站地址
+  - icon: world-www
+    text: 网站地址
     link: https://github.com/
 id: 8300f105c7d16f4fa92154999057219e
 ---

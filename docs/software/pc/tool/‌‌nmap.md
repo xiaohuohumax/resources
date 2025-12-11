@@ -8,9 +8,11 @@ tags:
   - 抓包工具
   - 安全
 links:
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: https://nmap.org/download.html
-  - text: 📖文档地址
+  - icon: book
+    text: 文档地址
     link: https://nmap.org/man/zh/
 id: b3019d09344af5c6e2cf5520a8b368f1
 ---

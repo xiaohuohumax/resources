@@ -7,7 +7,8 @@ tags:
   - 颜色
   - 设计
 links:
-  - text: 🌍网站地址
+  - icon: world-www
+    text: 网站地址
     link: https://coolors.co/
 id: da880c65fe4591be1bb82afcf062806f
 ---

@@ -8,7 +8,8 @@ tags:
   - 网络请求
   - API
 links:
-  - text: 📦项目地址
+  - icon: code
+    text: 项目地址
     link: https://github.com/hoppscotch/hoppscotch
 id: cd953043191b9aeae476d9ab3b3abdd7
 ---

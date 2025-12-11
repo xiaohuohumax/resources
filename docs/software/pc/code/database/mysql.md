@@ -8,7 +8,8 @@ tags:
   - MySQL
   - SQL
 links:
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: https://dev.mysql.com/downloads/mysql/
 id: 45b60c984947057490de02ecb14e9d06
 ---

@@ -6,7 +6,8 @@ icon: harmonyos_sans.ico
 tags:
   - 字体
 links:
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: https://developer.huawei.com/consumer/cn/design/resource/
 id: 47bfc7929a7218e5965ac25da624fd74
 ---

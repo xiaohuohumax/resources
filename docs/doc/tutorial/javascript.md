@@ -7,7 +7,8 @@ tags:
   - JavaScript
   - 编程语言
 links:
-  - text: 📖文档地址
+  - icon: book
+    text: 文档地址
     link: https://developer.mozilla.org/zh-CN/docs/Web/JavaScript
 id: 23bc8ea2338d532023a6aa7066e38061
 ---

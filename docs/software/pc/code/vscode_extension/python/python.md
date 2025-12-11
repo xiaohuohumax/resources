@@ -11,9 +11,11 @@ tags:
   - VS Code 扩展
   - Python
 links:
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: https://marketplace.visualstudio.com/items?itemName=ms-python.python
-  - text: 📦项目地址
+  - icon: code
+    text: 项目地址
     link: https://github.com/Microsoft/vscode-python
 id: 9617a035775edd73ac084d159365a679
 ---

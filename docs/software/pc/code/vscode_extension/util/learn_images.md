@@ -8,7 +8,8 @@ tags:
   - VS Code 扩展
   - 图片
 links:
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-images
 id: 07adc403ff8fa156ec464d10621fa9f1
 ---

@@ -10,10 +10,12 @@ tags:
   - Spring Boot
   - Spring
 links:
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: >-
       https://marketplace.visualstudio.com/items?itemName=vmware.vscode-boot-dev-pack
-  - text: 📦项目地址
+  - icon: code
+    text: 项目地址
     link: https://github.com/spring-projects/sts4
 id: fb035ef38a83bf8696db72f505c80bf1
 ---

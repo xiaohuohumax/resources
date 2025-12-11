@@ -9,7 +9,8 @@ tags:
   - Windows
   - 美化
 links:
-  - text: ⏬下载地址
+  - icon: download
+    text: 下载地址
     link: https://nilesoft.org/download
 id: fc79f01018d9aa1652b72b9f813af0cc
 ---

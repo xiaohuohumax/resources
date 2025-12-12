@@ -4,6 +4,7 @@ export interface UseFavoritesReturn {
   ids: RemovableRef<string[]>
   toggleFavorite: (id: string) => void
   isFavorited: (id: string) => Ref<boolean>
+  removeFavorites: (ids: string[]) => void
 }
 
 export function useFavorites(): UseFavoritesReturn {
@@ -27,5 +28,9 @@ export function useFavorites(): UseFavoritesReturn {
     isFavorited(id).value ? removeFavorite(id) : addFavorite(id)
   }
 
-  return { ids, toggleFavorite, isFavorited }
+  function removeFavorites(ids: string[]) {
+    ids.forEach(removeFavorite)
+  }
+
+  return { ids, toggleFavorite, isFavorited, removeFavorites }
 }

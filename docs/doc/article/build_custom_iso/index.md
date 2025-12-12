@@ -5,7 +5,7 @@ description: 介绍如何封装一个 Windows 系统镜像，并分享一些常�
 icon: index.svg
 tags:
   - 系统
-id: 12e67974c671f81cf4d63c4fbe9946f7
+id: 6b8ea3a19c8de06c1f930422898ef64b
 ---
 
 ## 前言

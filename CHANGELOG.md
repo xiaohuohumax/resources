@@ -1,5 +1,11 @@
 # resources
 
+## 4.13.3
+
+### Patch Changes
+
+- 修复文件路径调整导致收藏出现无效资源问题
+
 ## 4.13.2
 
 ### Patch Changes

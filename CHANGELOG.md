@@ -1,5 +1,11 @@
 # resources
 
+## 4.13.4
+
+### Patch Changes
+
+- 修复面包屑导航多余 index
+
 ## 4.13.3
 
 ### Patch Changes

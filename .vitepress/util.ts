@@ -192,7 +192,7 @@ function findParentBreadcrumbs(views: View[], view: View): Breadcrumb[] {
   const parentCollections: Breadcrumb[] = []
   while (view) {
     const parentView = views.find(v => v.id === view.collectionId)
-    if (parentView && isFolderView(parentView)) {
+    if (parentView && isCollectionView(parentView)) {
       parentCollections.push(view2Breadcrumb(parentView))
       view = parentView
     }

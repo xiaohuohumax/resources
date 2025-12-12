@@ -12,17 +12,12 @@ import CreateBookmark from './plugins/create-bookmark'
 import CreateTemplates from './plugins/create-templates'
 import ImproveViews from './plugins/improve-views'
 import VirtualViews from './plugins/virtual-views'
-import { readView } from './view'
+import { hasTags, isFileView } from './theme/view'
+import { abs, readView } from './util'
 
-const pkg = readPackageSync()
-
-function abs(p: string): string {
-  return path.resolve(__dirname, p)
-}
-
-const lang = 'zh-CN'
 const title = 'Resources'
 const description = '资源仓库 · 收录各种常用资源地址(软件、配置、文档等)'
+const lang = 'zh-CN'
 const repo = 'https://github.com/xiaohuohumax/resources'
 const github = 'https://github.com/xiaohuohumax'
 const hostname = 'https://xiaohuohumax.github.io/resources/'
@@ -32,6 +27,7 @@ const iconHref = `${base}logo.svg`
 const srcDir = abs('../docs')
 const outDir = abs('../dist')
 const templatesDir = abs('../templates')
+const pkg = readPackageSync()
 
 export default defineConfig<ThemeConfig>({
   title,
@@ -73,7 +69,7 @@ export default defineConfig<ThemeConfig>({
         copyright: `${pkg.license} Licensed | Copyright © 2024-present ${pkg.author!.name}`,
         filter(value) {
           const view = readView(value.filepath, srcDir)
-          return view ? view.layout === 'resource' : false
+          return view ? isFileView(view) : false
         },
       }),
     ],
@@ -228,7 +224,7 @@ export default defineConfig<ThemeConfig>({
   transformHead({ pageData }) {
     const view = readView(path.join(srcDir, pageData.relativePath), srcDir)
     const heads: HeadConfig[] = []
-    if (view && (view.layout === 'resource' || view.layout === 'article')) {
+    if (view && hasTags(view)) {
       heads.push(['meta', { name: 'keywords', content: view.tags.join(',') }])
     }
     return heads

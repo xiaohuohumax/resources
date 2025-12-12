@@ -6,7 +6,7 @@ import {
   readMarkdownFrontmatter,
   readView,
   updateMarkdownFrontmatter,
-} from '../view'
+} from '../util'
 
 export default function (srcDir: string): Plugin {
   function fixViewIds(file: string) {
@@ -15,7 +15,6 @@ export default function (srcDir: string): Plugin {
     }
 
     const view = readView(file, srcDir)
-
     if (!view) {
       return
     }

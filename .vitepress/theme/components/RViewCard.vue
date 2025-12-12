@@ -1,17 +1,15 @@
 <script setup lang="ts">
-import type { Icon, Tags, Togo, View } from '../../view'
+import type { View } from '../view'
 import VPImage from '@vitepress-components/VPImage.vue'
 import VPLink from '@vitepress-components/VPLink.vue'
 import { collectionStatMap } from 'virtual:views'
 import { useRouter, withBase } from 'vitepress'
 import { useTheme } from '../composables/theme'
+import { hasIcon, hasTags, hasTogo, isCollectionView } from '../view'
 
 const props = withDefaults(defineProps<{ view: View, inFavorite?: boolean }>(), { inFavorite: false })
 const theme = useTheme()
 const router = useRouter()
-const icon = computed(() => (props.view as Partial<Icon>).icon)
-const tags = computed(() => (props.view as Partial<Tags>).tags)
-const togo = computed(() => (props.view as Partial<Togo>).togo)
 const stat = computed(() => collectionStatMap[props.view.id])
 
 function handleTagClick(tag: string) {
@@ -22,22 +20,22 @@ function handleTagClick(tag: string) {
 <template>
   <VPLink class="RViewCard" :no-icon="true" :href="view.pathname" @click.prevent>
     <article class="box">
-      <div v-if="icon" class="header">
-        <VPImage :image="icon" style="width: 48px; height: 48px; object-fit: contain;" />
+      <div v-if="hasIcon(view)" class="header">
+        <VPImage :image="view.icon" style="width: 48px; height: 48px; object-fit: contain;" />
         <RFavorite :view="view" />
       </div>
       <h2 v-if="!inFavorite" v-html="view.title" />
       <h2 v-else>
         <RBreadcrumbs :view="view" :disabled-click="true" />
       </h2>
-      <RTags v-if="tags" :tags="tags" @tag-click="handleTagClick" />
+      <RTags v-if="hasTags(view)" :tags="view.tags" @tag-click="handleTagClick" />
       <p v-if="view.description" class="description" v-html="view.description" />
       <div class="grow" />
       <div class="actions">
-        <VPLink v-if="togo" class="action link" :href="togo" :no-icon="true" tag="a" @click.stop>
+        <VPLink v-if="hasTogo(view)" class="action link" :href="view.togo" :no-icon="true" tag="a" @click.stop>
           {{ theme.view.collection.gotoLabel }} <RIcon name="chevrons-right" size="1.5em" />
         </VPLink>
-        <template v-if="view.layout === 'collection'">
+        <template v-if="isCollectionView(view)">
           <span v-if="stat.collectionCount > 0" class="action">
             {{ theme.viewCard.collectionCountLabel }} {{ stat.collectionCount }}
           </span>

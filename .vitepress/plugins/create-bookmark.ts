@@ -1,11 +1,12 @@
 import type { Bookmark } from '@xiaohuohumax/bookmark'
 import type { Plugin } from 'vitepress'
-import type { CollectionChildrenMap } from '../view'
+import type { CollectionChildrenMap } from '../util'
 import fs from 'node:fs'
 import path from 'node:path'
 import { useDebounceFn } from '@vueuse/core'
 import { Builder } from '@xiaohuohumax/bookmark'
-import { readViews, view2CollectionChildrenMap } from '../view'
+import { isArticleView, isCollectionView, isHomeView, isResourceView } from '../theme/view'
+import { readViews, view2CollectionChildrenMap } from '../util'
 
 export interface Options {
   title: string
@@ -24,7 +25,7 @@ export default function (options: Options): Plugin {
     }
 
     for (const view of children) {
-      if (view.layout === 'collection') {
+      if (isCollectionView(view)) {
         const children = loopViews(view.id, collectionChildrenMap)
         if (children.length > 0) {
           bookmarks.push({
@@ -33,7 +34,7 @@ export default function (options: Options): Plugin {
           })
         }
       }
-      else if (view.layout === 'resource') {
+      else if (isResourceView(view)) {
         bookmarks.push(
           ...view.links.map(link => ({
             name: `${view.title} [${link.text}]`,
@@ -41,7 +42,7 @@ export default function (options: Options): Plugin {
           })),
         )
       }
-      else if (view.layout === 'article') {
+      else if (isArticleView(view)) {
         bookmarks.push({
           name: view.title,
           href: new URL(view.pathname, options.hostname).href,
@@ -53,7 +54,7 @@ export default function (options: Options): Plugin {
 
   function createBookmark() {
     const views = readViews(options.srcDir)
-    const homeView = views.find(view => view.layout === 'home')
+    const homeView = views.find(v => isHomeView(v))
     const collectionChildrenMap = view2CollectionChildrenMap(views)
     const bookmarks = homeView ? loopViews(homeView.id, collectionChildrenMap) : []
     const builder = new Builder()

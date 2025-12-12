@@ -1,76 +1,27 @@
 import type { DefaultTheme } from 'vitepress'
+import type { ArticleView, CollectionView, ResourceView, View, ViewCore } from './theme/view'
 import crypto from 'node:crypto'
 import fs from 'node:fs'
 import path from 'node:path'
 import { globbySync } from 'globby'
 import matter from 'gray-matter'
 import yaml from 'js-yaml'
+import {
+  isArticleView,
+  isCollectionView,
+  isFolderView,
+  isHomeView,
+  isResourceView,
+  isView,
+} from './theme/view'
+
+export function abs(p: string): string {
+  return path.resolve(__dirname, p)
+}
 
 export function normalizePath(p: string): string {
   return path.normalize(p).replaceAll('\\', '/')
 }
-
-interface Core {
-  disabled?: boolean
-  order: number
-  id: string
-  collectionId: string
-  title: string
-  description: string
-  pathname: string
-}
-
-export interface Link {
-  icon: string
-  text: string
-  link: string
-}
-
-export interface Links {
-  links: Link[]
-}
-
-export interface Icon {
-  icon: DefaultTheme.ThemeableImage
-}
-
-export interface Tags {
-  tags: string[]
-}
-
-export interface Togo {
-  togo?: string
-}
-
-export interface CollectionView extends Core, Icon {
-  layout: 'collection'
-}
-
-export interface ResourceView extends Core, Icon, Links, Tags, Togo {
-  layout: 'resource'
-}
-
-export interface ArticleView extends Core, Icon, Tags {
-  layout: 'article'
-}
-
-export interface HomeView extends Core {
-  layout: 'home'
-}
-
-export interface EmptyView extends Core {
-  layout: 'empty'
-}
-
-export interface TagsView extends Core {
-  layout: 'tags'
-}
-
-export interface Favorites extends Core {
-  layout: 'favorites'
-}
-
-export type View = CollectionView | ResourceView | ArticleView | HomeView | EmptyView | TagsView
 
 export function generateId(pathname: string): string {
   return crypto.createHash('md5').update(pathname).digest('hex')
@@ -88,17 +39,17 @@ export function readMarkdownFiles(rootFolder: string): string[] {
   return globbySync([normalizePath(path.join(rootFolder, '**/*.md'))])
 }
 
-function filePath2CollectionPathname(filePath: string, rootFolder: string, isCollection: boolean): string | undefined {
+function filePath2CollectionPathname(filePath: string, rootFolder: string, isFolder: boolean): string | undefined {
   const pathname = filePath2Pathname(filePath, rootFolder)
   const parts = pathname.split('/')
-  if (isCollection) {
+  if (isFolder) {
     parts.pop()
   }
   while (parts.pop()) {
     const collectionPath = path.join(rootFolder, parts.join('/'), 'index.md')
     if (fs.existsSync(collectionPath)) {
       const frontmatter = readMarkdownFrontmatter(collectionPath)
-      if (frontmatter.layout === 'collection' || frontmatter.layout === 'home') {
+      if (isView(frontmatter) && isFolderView(frontmatter)) {
         return filePath2Pathname(collectionPath, rootFolder)
       }
     }
@@ -162,13 +113,13 @@ export function readView(filePath: string, rootFolder: string): View | undefined
     }
     const data = readMarkdownFrontmatter(filePath)
     data.layout ||= 'resource'
-    const isCollection = data.layout === 'collection' || data.layout === 'home'
-    const collectionPathname = filePath2CollectionPathname(filePath, rootFolder, isCollection)
+    const isFolder = isView(data) && isFolderView(data)
+    const collectionPathname = filePath2CollectionPathname(filePath, rootFolder, isFolder)
     const pathname = filePath2Pathname(filePath, rootFolder)
     if (data.disabled === true) {
       return
     }
-    const core: Core = {
+    const core: ViewCore = {
       order: data.order || 0,
       id: generateId(pathname),
       collectionId: collectionPathname ? generateId(collectionPathname) : '',
@@ -241,7 +192,7 @@ function findParentBreadcrumbs(views: View[], view: View): Breadcrumb[] {
   const parentCollections: Breadcrumb[] = []
   while (view) {
     const parentView = views.find(v => v.id === view.collectionId)
-    if (parentView && parentView.layout === 'collection') {
+    if (parentView && isFolderView(parentView)) {
       parentCollections.push(view2Breadcrumb(parentView))
       view = parentView
     }
@@ -267,9 +218,9 @@ export interface CollectionChildrenMap {
 
 function sortViews(views: View[]): View[] {
   return views.sort((a, b) => {
-    return a.layout === 'collection' && b.layout === 'resource'
+    return isCollectionView(a) && isResourceView(b)
       ? -1
-      : a.layout === 'resource' && b.layout === 'collection'
+      : isResourceView(a) && isCollectionView(b)
         ? 1
         : a.order === b.order
           ? 0
@@ -288,7 +239,7 @@ export function view2CollectionChildrenMap(views: View[]): CollectionChildrenMap
 }
 
 function findTopViews(views: View[]): View[] {
-  const homeView = views.find(v => v.layout === 'home')
+  const homeView = views.find(v => isHomeView(v))
   return homeView ? sortViews(views.filter(v => v.collectionId === homeView.id)) : []
 }
 
@@ -351,9 +302,9 @@ export function view2CollectionStatMap(views: View[]): CollectionStatMap {
 
   for (const view of views) {
     const stat: CollectionStat = {
-      collectionCount: view.layout === 'collection' ? 1 : 0,
-      resourceCount: view.layout === 'resource' ? 1 : 0,
-      articleCount: view.layout === 'article' ? 1 : 0,
+      collectionCount: isCollectionView(view) ? 1 : 0,
+      resourceCount: isResourceView(view) ? 1 : 0,
+      articleCount: isArticleView(view) ? 1 : 0,
     }
     updateParentCollectionStat(view, stat)
   }

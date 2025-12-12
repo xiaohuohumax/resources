@@ -1,5 +1,5 @@
 <script setup lang='ts'>
-import type { View } from '../../view'
+import type { View } from '../view'
 import VPLink from '@vitepress-components/VPLink.vue'
 import { breadcrumbMap } from 'virtual:views'
 

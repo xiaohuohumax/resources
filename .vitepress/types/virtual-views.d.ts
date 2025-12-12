@@ -1,7 +1,7 @@
 declare module 'virtual:views' {
-  export const views: import('../view').View[]
-  export const breadcrumbMap: import('../view').BreadcrumbMap
-  export const collectionChildrenMap: import('../view').CollectionChildrenMap
-  export const collectionStatMap: import('../view').CollectionStatMap
+  export const views: import('../theme/view').View[]
+  export const breadcrumbMap: import('../util').BreadcrumbMap
+  export const collectionChildrenMap: import('../util').CollectionChildrenMap
+  export const collectionStatMap: import('../util').CollectionStatMap
   export const nav: import('vitepress').DefaultTheme.NavItem[]
 }

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { View } from '../../view'
+import type { View } from '../view'
 import { useFavorites } from '../composables/favorites'
 import { useTheme } from '../composables/theme'
 

@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import type { ResourceView } from '../../view'
+import type { ResourceView } from '../view'
 import VPDoc from '@vitepress-components/VPDoc.vue'
 import RFavorite from '../components/RFavorite.vue'
-import { useFrontmatter } from '../composables/frontmatter'
+import { useView } from '../composables/view'
 
 const router = useRouter()
-const frontmatter = useFrontmatter<ResourceView>()
+const view = useView<ResourceView>()
 
 function handleTagClick(tag: string) {
   router.go(withBase(`/tags?tag=${encodeURIComponent(tag)}`))
@@ -19,11 +19,11 @@ function handleTagClick(tag: string) {
         <div class="vp-doc">
           <div class="header">
             <RLogo />
-            <RFavorite :view="frontmatter" />
+            <RFavorite :view="view" />
           </div>
           <RTitle />
-          <RTags :tags="frontmatter.tags" @tag-click="handleTagClick" />
-          <RBreadcrumbs :view="frontmatter" />
+          <RTags :tags="view.tags" @tag-click="handleTagClick" />
+          <RBreadcrumbs :view="view" />
           <RLinks />
           <RDescription />
         </div>

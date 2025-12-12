@@ -1,14 +1,14 @@
 <script setup lang='ts'>
-import type { ResourceView } from '../../view'
+import type { ResourceView } from '../view'
 import VPImage from '@vitepress-components/VPImage.vue'
-import { useFrontmatter } from '../composables/frontmatter'
+import { useView } from '../composables/view'
 
-const frontmatter = useFrontmatter<ResourceView>()
+const view = useView<ResourceView>()
 </script>
 
 <template>
   <div class="RLogo">
-    <VPImage :image="frontmatter.icon" />
+    <VPImage :image="view.icon" />
   </div>
 </template>
 

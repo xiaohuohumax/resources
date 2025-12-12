@@ -1,20 +1,19 @@
 <script lang="ts" setup>
-import type { Icon, View } from '../../view'
 import VPImage from '@vitepress-components/VPImage.vue'
 import VPLink from '@vitepress-components/VPLink.vue'
 import { views } from 'virtual:views'
-import { useFrontmatter } from '../composables/frontmatter'
 import { useTheme } from '../composables/theme'
+import { useView } from '../composables/view'
+import { hasIcon } from '../view'
 
 const props = defineProps<{ id: string, alt: string }>()
 const theme = useTheme()
 const view = computed(() => views.find(v => v.id === props.id))
-const icon = computed(() => (view.value as Partial<Icon>).icon)
 
 if (import.meta.env.PROD) {
   if (!views.find(v => v.id === props.id)) {
-    const frontmatter = useFrontmatter<View>()
-    throw new Error(`View "${props.id}"("${props.alt}") not found in "${frontmatter.value.pathname}"`)
+    const view = useView()
+    throw new Error(`View "${props.id}"("${props.alt}") not found in "${view.value.pathname}"`)
   }
 }
 </script>
@@ -22,7 +21,7 @@ if (import.meta.env.PROD) {
 <template>
   <VPLink v-if="view" :no-icon="true" :href="view.pathname">
     <div class="RRelatedView">
-      <VPImage v-if="icon" :image="icon" />
+      <VPImage v-if="hasIcon(view)" :image="view.icon" />
       <div class="content">
         <p class="title">
           {{ view.title }}

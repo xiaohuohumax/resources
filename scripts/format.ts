@@ -1,6 +1,7 @@
 import fs from 'node:fs'
 import path from 'node:path'
-import { string2Anchor } from '../.vitepress/utils'
+import { string2Anchor } from '../.vitepress/theme/util'
+import { isFolderView } from '../.vitepress/theme/view'
 import {
   DefaultIcon,
   formatIcon,
@@ -10,7 +11,7 @@ import {
   readMarkdownFrontmatter,
   readView,
   updateMarkdownFrontmatter,
-} from '../.vitepress/view'
+} from '../.vitepress/util'
 
 function formatFilename(filePath: string): string {
   const extname = path.extname(filePath)
@@ -35,7 +36,7 @@ function formatView(srcDir: string, filePath: string): void {
     return
   }
 
-  const defaultIcon = view.layout === 'collection' ? DefaultIcon.Collection : DefaultIcon.Resource
+  const defaultIcon = isFolderView(view) ? DefaultIcon.Collection : DefaultIcon.Resource
   let icon = formatIcon(frontmatter.icon, view.pathname, defaultIcon)
   if (typeof icon === 'string') {
     formatFilename(path.join(srcDir, icon))

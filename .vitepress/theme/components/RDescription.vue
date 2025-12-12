@@ -1,11 +1,11 @@
 <script lang="ts" setup>
-import type { ResourceView } from '../../view'
-import { string2Anchor } from '../../utils'
-import { useFrontmatter } from '../composables/frontmatter'
+import type { ResourceView } from '../view'
 import { useTheme } from '../composables/theme'
+import { useView } from '../composables/view'
+import { string2Anchor } from '../util'
 
 const theme = useTheme()
-const frontmatter = useFrontmatter<ResourceView>()
+const view = useView<ResourceView>()
 const anchor = string2Anchor(theme.value.view.resource.descriptionLabel)
 </script>
 
@@ -14,5 +14,5 @@ const anchor = string2Anchor(theme.value.view.resource.descriptionLabel)
     {{ theme.view.resource.descriptionLabel }}
     <a class="header-anchor" :href="`#${anchor}`">&ZeroWidthSpace;</a>
   </h2>
-  <p>{{ frontmatter.description }}</p>
+  <p>{{ view.description }}</p>
 </template>

@@ -1,13 +1,15 @@
 <script setup lang="ts">
 import type { ThemeConfig } from '../../theme-config'
 import { useLayout } from 'vitepress/theme'
+import { useView } from '../../composables/view'
 
-const { theme, frontmatter } = useData<ThemeConfig>()
+const { theme } = useData<ThemeConfig>()
+const view = useView()
 const { hasSidebar } = useLayout()
 </script>
 
 <template>
-  <footer v-if="theme.footer && frontmatter.footer !== false" class="VPFooter" :class="{ 'has-sidebar': hasSidebar }">
+  <footer v-if="theme.footer && view.footer !== false" class="VPFooter" :class="{ 'has-sidebar': hasSidebar }">
     <div class="container">
       <p v-if="theme.footer.message" class="message" v-html="theme.footer.message" />
       <p v-if="theme.footer.copyright" class="copyright" v-html="theme.footer.copyright" />

@@ -1,6 +1,6 @@
 import type { Plugin } from 'vitepress'
 import fs from 'node:fs'
-import { readMarkdownFiles } from '../view'
+import { readMarkdownFiles } from '../util'
 
 export default function (outDir: string): Plugin {
   return {

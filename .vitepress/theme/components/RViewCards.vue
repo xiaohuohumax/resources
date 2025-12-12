@@ -1,5 +1,5 @@
 <script setup lang="ts" async>
-import type { View } from '../../view'
+import type { View } from '../view'
 import { useTheme } from '../composables/theme'
 
 const props = defineProps<{ views: View[], inFavorite?: boolean }>()

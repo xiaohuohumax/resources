@@ -6,7 +6,7 @@ import {
   view2CollectionChildrenMap,
   view2CollectionStatMap,
   view2Nav,
-} from '../view'
+} from '../util'
 
 export default function (srcDir: string): Plugin {
   const virtualModuleId = 'virtual:views'

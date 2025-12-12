@@ -1,5 +1,11 @@
 # resources
 
+## 4.13.2
+
+### Patch Changes
+
+- 结构优化
+
 ## 4.13.1
 
 ### Patch Changes

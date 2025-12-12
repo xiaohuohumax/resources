@@ -1,9 +1,10 @@
 <script lang="ts" setup>
-import type { View } from '../../view'
+import type { View } from '../view'
 import { views } from 'virtual:views'
 import REmpty from '../components/REmpty.vue'
 import { useQuery } from '../composables/query'
 import { useTheme } from '../composables/theme'
+import { hasTags } from '../view'
 
 const params = useQuery<{ tag?: string, search?: string }>()
 const theme = useTheme()
@@ -14,7 +15,7 @@ onMounted(() => inputElement.value?.focus())
 const tagMap = computed(() => {
   const tagMap = new Map<string, View[]>()
   for (const view of views) {
-    if (view.layout === 'resource') {
+    if (hasTags(view)) {
       for (const tag of view.tags || []) {
         const resources = tagMap.get(tag) || []
         resources.push(view)

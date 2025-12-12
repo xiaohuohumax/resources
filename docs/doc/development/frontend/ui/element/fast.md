@@ -6,6 +6,7 @@ description: >-
   Web 组件可以与几乎任何前端框架一起使用。
 icon: fast.svg
 tags:
+  - Web Components
   - 组件库
 links:
   - icon: book

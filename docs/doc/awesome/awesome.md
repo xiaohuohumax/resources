@@ -2,7 +2,7 @@
 layout: resource
 title: Awesome
 description: 关于各种有趣主题的精彩列表。
-icon: awesome.png
+icon: awesome.jpg
 tags:
   - Awesome
 links:

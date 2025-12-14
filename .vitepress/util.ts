@@ -88,13 +88,8 @@ export function formatIcon(icon: any, pathname: string, defaultIcon: DefaultIcon
   return result
 }
 
-export function readMarkdownFrontmatter(filePath: string): Record<string, any> {
-  return matter(fs.readFileSync(filePath, 'utf-8')).data
-}
-
-export function updateMarkdownFrontmatter(filePath: string, data: Record<string, any>): void {
-  const oldContent = fs.existsSync(filePath) ? fs.readFileSync(filePath, 'utf-8') : ''
-  const content = matter.stringify(oldContent, data, {
+function createMatterOptions(): matter.GrayMatterOption<string, any> {
+  return {
     engines: {
       yaml: {
         // Enable emoji support in YAML (js-yaml version>4.0.0)
@@ -102,7 +97,16 @@ export function updateMarkdownFrontmatter(filePath: string, data: Record<string,
         stringify: data => yaml.dump(data),
       },
     },
-  })
+  }
+}
+
+export function readMarkdownFrontmatter(filePath: string): Record<string, any> {
+  return matter(fs.readFileSync(filePath, 'utf-8'), createMatterOptions()).data
+}
+
+export function updateMarkdownFrontmatter(filePath: string, data: Record<string, any>): void {
+  const oldContent = fs.existsSync(filePath) ? fs.readFileSync(filePath, 'utf-8') : ''
+  const content = matter.stringify(oldContent, data, createMatterOptions())
   fs.writeFileSync(filePath, content.replace(/\n+$/g, '\n'), 'utf-8')
 }
 

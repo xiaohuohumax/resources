@@ -1,5 +1,11 @@
 # resources
 
+## 4.13.5
+
+### Patch Changes
+
+- 修复 markdown 中 frontmatter 解析错误导致服务停止异常
+
 ## 4.13.4
 
 ### Patch Changes

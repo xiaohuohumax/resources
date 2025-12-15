@@ -54,7 +54,7 @@ function getTagCount(tag: string) {
     <div class="Tags">
       <input ref="inputElement" v-model="params.search" class="search-input" type="text" placeholder="搜索标签">
       <template v-if="tags.length === 0">
-        <p>{{ theme.view.tags }}</p>
+        <p>{{ theme.view.tags.emptyLabel }}</p>
       </template>
       <template v-else>
         <RTags v-model:tag="params.tag" class="tags" :tags="tags" :space-between="true" @tag-click="handleTagClick">

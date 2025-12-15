@@ -1,5 +1,11 @@
 # resources
 
+## 4.13.6
+
+### Patch Changes
+
+- 修复标签页搜索空时显示错误的问题
+
 ## 4.13.5
 
 ### Patch Changes

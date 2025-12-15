@@ -102,7 +102,7 @@ export default defineConfig<ThemeConfig>({
         cancelLabel: '点击取消收藏',
       },
       tags: {
-        emptyLabel: '暂无标签',
+        emptyLabel: '暂无相关标签',
         countLabel: '相关标签数量',
       },
     },

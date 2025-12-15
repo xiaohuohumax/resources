@@ -6,6 +6,7 @@ icon: svg_sditor.png
 tags:
   - 图片
   - SVG
+  - 编辑器
 links:
   - icon: world-www
     text: 网站地址

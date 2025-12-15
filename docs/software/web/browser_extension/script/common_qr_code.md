@@ -6,6 +6,7 @@ icon: common_qr_code.svg
 tags:
   - Tampermonkey
   - ScriptCat
+  - 二维码
 links:
   - icon: download
     text: 下载地址

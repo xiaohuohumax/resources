@@ -5,6 +5,7 @@ description: Photopea 是一款免费的在线图片编辑器。
 icon: photopea.png
 tags:
   - 图片
+  - 编辑器
 links:
   - icon: world-www
     text: 网站地址

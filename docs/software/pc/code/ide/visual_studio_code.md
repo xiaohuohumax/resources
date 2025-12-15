@@ -8,6 +8,7 @@ icon: visual_studio_code.png
 tags:
   - Visual Studio Code
   - IDE
+  - 编辑器
 links:
   - icon: download
     text: 下载地址

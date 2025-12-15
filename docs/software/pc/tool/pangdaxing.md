@@ -6,7 +6,6 @@ icon: pangdaxing.png
 tags:
   - 设计
   - Adobe
-  - Photoshop
 links:
   - icon: download
     text: 下载地址

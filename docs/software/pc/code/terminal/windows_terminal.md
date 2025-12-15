@@ -7,6 +7,8 @@ tags:
   - Windows
   - 终端
   - CLI
+  - WSL
+  - Shell
 links:
   - icon: download
     text: 下载地址

@@ -5,6 +5,7 @@ description: 该脚本接收 GIF、JPG 或 PNG 图像的 URL，并将该图像�
 icon: img2txt.ico
 tags:
   - 字符画
+  - HTML
 links:
   - icon: world-www
     text: 网站地址

@@ -6,6 +6,9 @@ icon: docker.svg
 tags:
   - 虚拟环境
   - Docker
+  - Windows
+  - Linux
+  - MacOS
 links:
   - icon: download
     text: 下载地址

@@ -6,6 +6,7 @@ icon: fastapi.png
 tags:
   - FastAPI
   - Python
+  - Web 框架
 links:
   - icon: book
     text: 文档地址

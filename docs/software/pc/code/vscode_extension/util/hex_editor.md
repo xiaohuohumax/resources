@@ -6,6 +6,7 @@ icon: hex_editor.png
 tags:
   - Visual Studio Code
   - VS Code 扩展
+  - 编辑器
 links:
   - icon: download
     text: 下载地址

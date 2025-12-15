@@ -7,6 +7,7 @@ tags:
   - Visual Studio Code
   - VS Code 扩展
   - HTTP
+  - API
 links:
   - icon: download
     text: 下载地址

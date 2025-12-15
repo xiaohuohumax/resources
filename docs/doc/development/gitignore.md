@@ -7,6 +7,7 @@ icon:
   light: gitignore_light.svg
 tags:
   - 模板
+  - Git
 links:
   - icon: code
     text: 项目地址

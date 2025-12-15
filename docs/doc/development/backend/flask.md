@@ -6,6 +6,7 @@ icon: flask.png
 tags:
   - Flask
   - Python
+  - Web 框架
 links:
   - icon: book
     text: 文档地址

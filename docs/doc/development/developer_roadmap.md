@@ -7,9 +7,6 @@ description: >-
 icon: developer_roadmap.png
 tags:
   - 路线图
-  - 资源
-  - 前端
-  - 后端
   - 数据库
   - 安全
 links:

@@ -10,6 +10,7 @@ tags:
   - VS Code 扩展
   - MySQL
   - 数据库
+  - Shell
 links:
   - icon: download
     text: 下载地址

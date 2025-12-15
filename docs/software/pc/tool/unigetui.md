@@ -10,6 +10,7 @@ tags:
   - 包管理器
   - Npm
   - WinGet
+  - 卸载
 links:
   - icon: download
     text: 下载地址

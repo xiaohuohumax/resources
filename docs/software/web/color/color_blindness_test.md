@@ -5,7 +5,6 @@ description: 专业石原氏色盲测试 - 仅需3分钟，快速检测您的色
 icon: color_blindness_test.webp
 tags:
   - 颜色
-  - 眼睛
   - 测试
 links:
   - icon: world-www

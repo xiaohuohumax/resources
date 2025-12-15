@@ -4,6 +4,7 @@ title: Day.js
 description: Day.js 是一个轻量的处理时间和日期的 JavaScript 库，和 Moment.js 的 API 设计保持完全一样。
 icon: day_js.png
 tags:
+  - 日期
   - JavaScript
 links:
   - icon: book

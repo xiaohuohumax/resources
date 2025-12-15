@@ -6,7 +6,7 @@ icon: cloudmusic.png
 tags:
   - Visual Studio Code
   - VS Code 扩展
-  - Game
+  - 游戏
 links:
   - icon: download
     text: 下载地址

@@ -7,6 +7,7 @@ tags:
   - Visual Studio Code
   - VS Code 扩展
   - Java
+  - 测试
 links:
   - icon: download
     text: 下载地址

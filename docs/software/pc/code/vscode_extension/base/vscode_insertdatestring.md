@@ -6,7 +6,6 @@ icon: vscode_insertdatestring.png
 tags:
   - Visual Studio Code
   - VS Code 扩展
-  - 时间
   - 日期
 links:
   - icon: download

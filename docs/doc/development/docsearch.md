@@ -4,7 +4,7 @@ title: DocSearch
 description: DocSearch 是一个由 Algolia 提供的免费服务，帮助开发者为其文档网站提供高效、精确的搜索体验。
 icon: docsearch.ico
 tags:
-  - Algolia
+  - 搜索
 links:
   - icon: book
     text: 文档地址

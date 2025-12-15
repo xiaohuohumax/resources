@@ -7,6 +7,7 @@ tags:
   - 图标
   - Bootstrap
   - SVG
+  - 字体
 links:
   - icon: book
     text: 文档地址

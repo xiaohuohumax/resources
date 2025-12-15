@@ -7,6 +7,7 @@ tags:
   - Visual Studio Code
   - VS Code 扩展
   - Batch File
+  - 终端
 links:
   - icon: download
     text: 下载地址

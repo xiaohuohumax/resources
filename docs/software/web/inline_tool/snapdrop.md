@@ -4,6 +4,7 @@ title: Snapdrop
 description: Snapdrop 是一个开源的在线文件传输工具，可以在 Windows、Mac、Linux、iOS、Android 等平台使用。
 icon: snapdrop.png
 tags:
+  - 局域网
   - 文件传输
   - WebRTC
 links:

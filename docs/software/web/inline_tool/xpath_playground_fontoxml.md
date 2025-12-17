@@ -5,6 +5,7 @@ description: 这是 FontoXML 的一个 XPath 表达式在线测试工具，可�
 icon: xpath_playground_fontoxml.png
 tags:
   - XPath
+  - XML
 links:
   - icon: world-www
     text: 网站地址

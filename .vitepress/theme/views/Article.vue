@@ -26,6 +26,9 @@ function handleTagClick(tag: string) {
           <RBreadcrumbs :view="view" />
         </div>
       </template>
+      <template #doc-after>
+        <RGiscus />
+      </template>
     </VPDoc>
   </div>
 </template>

@@ -28,6 +28,9 @@ function handleTagClick(tag: string) {
           <RDescription />
         </div>
       </template>
+      <template #doc-after>
+        <RGiscus />
+      </template>
     </VPDoc>
   </div>
 </template>

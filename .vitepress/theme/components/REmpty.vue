@@ -9,6 +9,7 @@ import VPDocFooter from '@vitepress-components/VPDocFooter.vue'
         <main class="main vp-doc">
           <slot />
         </main>
+        <slot name="doc-after" />
         <VPDocFooter />
       </div>
     </div>

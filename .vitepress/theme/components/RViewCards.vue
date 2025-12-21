@@ -22,7 +22,7 @@ const theme = useTheme()
 
 <style scoped>
 .RViewCards {
-  margin: 16px auto 0;
+  margin: 16px auto;
 }
 
 .items {

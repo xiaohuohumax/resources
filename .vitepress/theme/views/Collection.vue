@@ -14,5 +14,10 @@ const views = computed(() => collectionChildrenMap[view.value.id])
     <RBreadcrumbs :view="view" />
     <RViewCards :views="views" />
     <Content />
+    <template #doc-after>
+      <RCard>
+        <RGiscus />
+      </RCard>
+    </template>
   </REmpty>
 </template>

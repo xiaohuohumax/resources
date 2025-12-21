@@ -1,5 +1,11 @@
 # resources
 
+## 4.14.0
+
+### Minor Changes
+
+- 添加评论功能
+
 ## 4.13.6
 
 ### Patch Changes

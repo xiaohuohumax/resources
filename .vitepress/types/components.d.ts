@@ -17,7 +17,6 @@ declare module 'vue' {
     Favorites: typeof import('./../theme/views/Favorites.vue')['default']
     RBackground: typeof import('./../theme/components/RBackground.vue')['default']
     RBreadcrumbs: typeof import('./../theme/components/RBreadcrumbs.vue')['default']
-    RCard: typeof import('./../theme/components/RCard.vue')['default']
     RDescription: typeof import('./../theme/components/RDescription.vue')['default']
     REmpty: typeof import('./../theme/components/REmpty.vue')['default']
     Resource: typeof import('./../theme/views/Resource.vue')['default']

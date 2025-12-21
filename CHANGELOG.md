@@ -1,5 +1,11 @@
 # resources
 
+## 4.15.0
+
+### Minor Changes
+
+- 删除集合的评论功能
+
 ## 4.14.0
 
 ### Minor Changes

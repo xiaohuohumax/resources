@@ -10,5 +10,5 @@ links:
   - icon: book
     text: 文档地址
     link: https://commitlint.js.org/
-id: 8c8ba2df789165ee245a7a28038dc71f
+id: ed75c70d85edaaa57c312d9a835da218
 ---

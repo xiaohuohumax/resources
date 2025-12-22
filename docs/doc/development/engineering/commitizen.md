@@ -12,5 +12,5 @@ links:
   - icon: book
     text: 文档地址
     link: https://commitizen-tools.github.io/commitizen/
-id: 6456bd3b705524732051e8c455b2b8a9
+id: df1dff70ff8399f2bc1248f18044b682
 ---

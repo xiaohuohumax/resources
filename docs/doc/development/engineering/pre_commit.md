@@ -12,5 +12,5 @@ links:
   - icon: book
     text: 文档地址
     link: https://pre-commit.com/
-id: 6d49d8d7d69d13f67c03c95275ad11aa
+id: fe44d64f17c4dbfe95f40756392b57d0
 ---

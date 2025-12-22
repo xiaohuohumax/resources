@@ -25,6 +25,7 @@ const hostname = 'https://xiaohuohumax.github.io/resources/'
 const base = '/resources/'
 const iconHref = `${base}logo.svg`
 const srcDir = abs('../docs')
+const staticDir = abs('../docs/static')
 const outDir = abs('../dist')
 const templatesDir = abs('../templates')
 const pkg = readPackageSync()
@@ -55,7 +56,7 @@ export default defineConfig<ThemeConfig>({
         dts: abs('types/components.d.ts'),
       }),
       VirtualViews(srcDir),
-      CreateBookmark({ srcDir, title, publicDir: srcDir, iconHref, hostname }),
+      CreateBookmark({ srcDir, title, publicDir: staticDir, iconHref, hostname }),
       ClearDist(outDir),
       CreateTemplates(templatesDir),
       ImproveViews(srcDir),

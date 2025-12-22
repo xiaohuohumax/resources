@@ -1,5 +1,11 @@
 # resources
 
+## 4.16.0
+
+### Minor Changes
+
+- markdown 代码块字体使用 JetBrainsMono
+
 ## 4.15.0
 
 ### Minor Changes

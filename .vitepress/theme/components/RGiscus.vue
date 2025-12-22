@@ -8,8 +8,8 @@ const { isDark } = useData()
 
 function getTheme() {
   return isDark.value
-    ? new URL(withBase('/giscus_dark.css'), location.href).href
-    : new URL(withBase('/giscus_light.css'), location.href).href
+    ? new URL(withBase('/static/giscus_dark.css'), location.href).href
+    : new URL(withBase('/static/giscus_light.css'), location.href).href
 }
 
 const theme = ref('')

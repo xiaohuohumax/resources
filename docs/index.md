@@ -19,7 +19,7 @@ hero:
       link: https://github.com/xiaohuohumax/resources
     - theme: alt
       text: 下载书签
-      link: /bookmark.html
+      link: /static/bookmark.html
 features:
   - title: 软件
     icon: 📦

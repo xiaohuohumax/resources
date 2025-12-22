@@ -1,6 +1,11 @@
 @font-face {
   font-family: ChillRoundGothic;
-  src: url(/ChillRoundGothic.otf);
+  src: url(/static/ChillRoundGothic.otf);
+}
+
+@font-face {
+  font-family: JetBrainsMono;
+  src: url(/static/JetBrainsMono-Regular.ttf);
 }
 
 :root {
@@ -9,7 +14,7 @@
   --vp-home-hero-image-background-image: linear-gradient(-45deg, #74ebd5 50%, #9face6 50%);
   --vp-home-hero-image-filter: blur(44px);
   --vp-font-family-base: ChillRoundGothic, sans-serif;
-  --vp-font-family-mono: ChillRoundGothic, sans-serif;
+  --vp-font-family-mono: JetBrainsMono, ChillRoundGothic, sans-serif;
   --vp-c-yellow-1: #f2b54c;
 }
 

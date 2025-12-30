@@ -7,6 +7,7 @@ description: >-
 icon: chinese_poetry.png
 tags:
   - 诗词歌赋
+  - 古籍
 links:
   - icon: code
     text: 项目地址

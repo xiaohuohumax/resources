@@ -1,5 +1,11 @@
 # resources
 
+## 4.16.2
+
+### Patch Changes
+
+- 背景组件优化减少锯齿
+
 ## 4.16.1
 
 ### Patch Changes

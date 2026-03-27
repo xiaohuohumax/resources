@@ -1,6 +1,6 @@
 {
   "name": "resources",
-  "version": "4.16.2",
+  "version": "4.16.3",
   "description": "资源仓库: 收录各种常用资源地址。",
   "type": "module",
   "private": true,
@@ -47,27 +47,27 @@
     "vue": "^3.5.25"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^6.2.0",
-    "@changesets/changelog-github": "^0.5.2",
+    "@antfu/eslint-config": "^7.7.3",
+    "@changesets/changelog-github": "^0.6.0",
     "@changesets/cli": "^2.29.8",
     "@commitlint/config-conventional": "^20.0.0",
     "@types/js-yaml": "^4.0.9",
-    "@types/node": "^24.10.1",
+    "@types/node": "^25.5.0",
     "@xiaohuohumax/bookmark": "^2.1.2",
     "commitizen": "^4.3.1",
     "cz-git": "^1.12.0",
-    "eslint": "^9.38.0",
+    "eslint": "^10.1.0",
     "globby": "^16.0.0",
     "gray-matter": "^4.0.3",
     "js-yaml": "^4.1.1",
     "linkinator": "^7.5.0",
     "read-pkg": "^10.0.0",
     "simple-git-hooks": "^2.13.1",
-    "unplugin-auto-import": "^20.3.0",
-    "unplugin-vue-components": "^30.0.0",
-    "vite-node": "^5.2.0",
+    "unplugin-auto-import": "^21.0.0",
+    "unplugin-vue-components": "^32.0.0",
+    "vite-node": "^6.0.0",
     "vite-plugin-vue-devtools": "^8.0.5",
     "vitepress": "^2.0.0-alpha.15",
-    "vitepress-plugin-rss": "^0.3.4"
+    "vitepress-plugin-rss": "^0.4.3"
   }
 }

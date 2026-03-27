@@ -1,5 +1,11 @@
 # resources
 
+## 4.16.3
+
+### Patch Changes
+
+- 依赖升级
+
 ## 4.16.2
 
 ### Patch Changes

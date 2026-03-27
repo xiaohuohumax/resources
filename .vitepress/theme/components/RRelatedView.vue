@@ -11,7 +11,7 @@ const theme = useTheme()
 const view = computed(() => views.find(v => v.id === props.id))
 
 if (import.meta.env.PROD) {
-  if (!views.find(v => v.id === props.id)) {
+  if (!views.some(v => v.id === props.id)) {
     const view = useView()
     throw new Error(`View "${props.id}"("${props.alt}") not found in "${view.value.pathname}"`)
   }

@@ -32,11 +32,11 @@ id: 6b8ea3a19c8de06c1f930422898ef64b
 
 勾选 `Use a distribution share / configuration set` 选项。
 
-![](enable_oem.png)
+![允许 OEM](enable_oem.png)
 
 依据自己的喜好修改其他配置，之后选择 `Download .xml file` 下载 `Autounattend.xml` 文件。
 
-![](download.png)
+![下载](download.png)
 
 ### 准备 `$OEM$` 文件夹
 
@@ -50,7 +50,7 @@ id: 6b8ea3a19c8de06c1f930422898ef64b
 3. 执行命令 `Extract_OEM_Folder.cmd`。
 4. 选择 `HWID`。
 
-![](extract_oem_folder.png)
+![解压 OEM 文件夹](extract_oem_folder.png)
 
 #### 为镜像添加常用软件的安装包[可选]
 
@@ -68,7 +68,7 @@ id: 6b8ea3a19c8de06c1f930422898ef64b
 2. 将 `Autounattend.xml` 文件复制到镜像根目录下。
 3. 将 `$OEM$` 文件夹复制到镜像根目录下。
 
-![](editor_iso.png)
+![编辑镜像](editor_iso.png)
 
 4. 点击 `下一步` 设置新镜像路径，点击 `开始生成` 按钮，完成镜像编辑。
 

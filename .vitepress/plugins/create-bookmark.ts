@@ -16,6 +16,10 @@ export interface Options {
   hostname: string
 }
 
+const BOOKMARK_RE = /\{\{\s+bookmark\s+\}\}/gi
+const ICON_RE = /\{\{\s+icon\s+\}\}/gi
+const TITLE_RE = /\{\{\s+title\s+\}\}/gi
+
 export default function (options: Options): Plugin {
   function loopViews(collectionId: string, collectionChildrenMap: CollectionChildrenMap): Bookmark[] {
     const bookmarks: Bookmark[] = []
@@ -60,9 +64,9 @@ export default function (options: Options): Plugin {
     const builder = new Builder()
     const content = builder.buildHTMLString(bookmarks, ({ bookmark }) => {
       return fs.readFileSync(path.join(__dirname, 'bookmark.html'), 'utf-8')
-        .replace(/\{\{\s+bookmark\s+\}\}/gi, () => bookmark)
-        .replace(/\{\{\s+icon\s+\}\}/gi, () => options.iconHref)
-        .replaceAll(/\{\{\s+title\s+\}\}/gi, () => options.title)
+        .replace(BOOKMARK_RE, () => bookmark)
+        .replace(ICON_RE, () => options.iconHref)
+        .replaceAll(TITLE_RE, () => options.title)
     })
     fs.writeFileSync(path.join(options.publicDir, 'bookmark.html'), content, 'utf-8')
   }

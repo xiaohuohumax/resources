@@ -27,8 +27,10 @@ export function generateId(pathname: string): string {
   return crypto.createHash('md5').update(pathname).digest('hex')
 }
 
+const MARKDOWN_SUFFIX_RE = /\.md$/
+
 export function filePath2Pathname(filePath: string, rootFolder: string): string {
-  return normalizePath(path.relative(rootFolder, filePath).replace(/\.md$/, ''))
+  return normalizePath(path.relative(rootFolder, filePath).replace(MARKDOWN_SUFFIX_RE, ''))
 }
 
 export function readFolders(rootFolder: string): string[] {
@@ -104,10 +106,12 @@ export function readMarkdownFrontmatter(filePath: string): Record<string, any> {
   return matter(fs.readFileSync(filePath, 'utf-8'), createMatterOptions()).data
 }
 
+const LINEBREAK_RE = /\n+$/g
+
 export function updateMarkdownFrontmatter(filePath: string, data: Record<string, any>): void {
   const oldContent = fs.existsSync(filePath) ? fs.readFileSync(filePath, 'utf-8') : ''
   const content = matter.stringify(oldContent, data, createMatterOptions())
-  fs.writeFileSync(filePath, content.replace(/\n+$/g, '\n'), 'utf-8')
+  fs.writeFileSync(filePath, content.replace(LINEBREAK_RE, '\n'), 'utf-8')
 }
 
 export function readView(filePath: string, rootFolder: string): View | undefined {

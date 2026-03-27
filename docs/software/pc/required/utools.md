@@ -12,9 +12,9 @@ tags:
 links:
   - icon: book
     text: 文档地址
-    link: https://u.tools/docs/
+    link: https://www.u-tools.cn/
   - icon: download
     text: 下载地址
-    link: https://u.tools/download
+    link: https://www.u-tools.cn/download/
 id: 8c51a50f9a06305e7016be149b7761b2
 ---

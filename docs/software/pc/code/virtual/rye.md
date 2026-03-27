@@ -1,4 +1,5 @@
 ---
+disabled: true
 layout: resource
 title: Rye
 description: Rye 是一个全面的 Python 项目和包管理解决方案。

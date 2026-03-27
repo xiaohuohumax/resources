@@ -1,5 +1,11 @@
 # resources
 
+## 4.16.1
+
+### Patch Changes
+
+- 修复 Giscus 字体路径异常
+
 ## 4.16.0
 
 ### Minor Changes

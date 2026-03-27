@@ -5,6 +5,7 @@ description: 一个提供篡改猴脚本的网站。
 icon: greasy_fork.png
 tags:
   - Tampermonkey
+  - Userscript
 links:
   - icon: world-www
     text: 网站地址

@@ -7,6 +7,7 @@ icon:
   light: github_commit_sort_light.svg
 tags:
   - Tampermonkey
+  - Userscript
   - ScriptCat
   - Github
 links:

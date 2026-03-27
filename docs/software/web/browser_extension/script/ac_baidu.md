@@ -5,6 +5,7 @@ description: 重定向优化百度搜狗谷歌必应搜索。
 icon: ac_baidu.webp
 tags:
   - Tampermonkey
+  - Userscript
 links:
   - icon: download
     text: 下载地址

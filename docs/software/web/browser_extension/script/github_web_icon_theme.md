@@ -5,6 +5,7 @@ description: Github 页面图标美化，将原本只有文件和文件夹的丑
 icon: github_web_icon_theme.jpg
 tags:
   - Tampermonkey
+  - Userscript
   - 主题
   - 图标
 links:

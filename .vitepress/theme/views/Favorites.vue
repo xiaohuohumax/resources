@@ -11,6 +11,6 @@ const favoriteViews = computed(() => views.filter(v => ids.value.includes(v.id))
 <template>
   <REmpty>
     <RTitle />
-    <RViewCards :views="favoriteViews" :in-favorite="true" />
+    <RViewCards :views="favoriteViews" :in-favorite="true" :allow-disabled="true" />
   </REmpty>
 </template>

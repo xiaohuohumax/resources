@@ -2,7 +2,7 @@
 import type { View } from '../view'
 import { useTheme } from '../composables/theme'
 
-const props = defineProps<{ views: View[], inFavorite?: boolean }>()
+const props = defineProps<{ views: View[], inFavorite?: boolean, allowDisabled?: true }>()
 const grid = computed<string>(() => props.views.length < 3 ? 'grid-2' : 'grid-3')
 const theme = useTheme()
 </script>
@@ -11,7 +11,7 @@ const theme = useTheme()
   <div class="RViewCards">
     <div class="items">
       <template v-for="view in views" :key="view.id">
-        <div v-if="view.disabled !== true" class="item" :class="[grid]">
+        <div v-if="view.disabled !== true || allowDisabled === true" class="item" :class="[grid]">
           <RViewCard :view="view" :in-favorite="inFavorite" />
         </div>
       </template>

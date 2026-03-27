@@ -1,5 +1,11 @@
 # resources
 
+## 4.18.0
+
+### Minor Changes
+
+- 收藏页面显示禁用的资源
+
 ## 4.17.0
 
 ### Minor Changes

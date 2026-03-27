@@ -29,6 +29,9 @@ export default function (options: Options): Plugin {
     }
 
     for (const view of children) {
+      if (view.disabled === true) {
+        continue
+      }
       if (isCollectionView(view)) {
         const children = loopViews(view.id, collectionChildrenMap)
         if (children.length > 0) {

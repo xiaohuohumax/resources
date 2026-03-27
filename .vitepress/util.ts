@@ -124,9 +124,9 @@ export function readView(filePath: string, rootFolder: string): View | undefined
     const isFolder = isView(data) && isFolderView(data)
     const collectionPathname = filePath2CollectionPathname(filePath, rootFolder, isFolder)
     const pathname = filePath2Pathname(filePath, rootFolder)
-    if (data.disabled === true) {
-      return
-    }
+    // if (data.disabled === true) {
+    //   return
+    // }
     const core: ViewCore = {
       order: data.order || 0,
       id: generateId(pathname),
@@ -178,8 +178,26 @@ export function readView(filePath: string, rootFolder: string): View | undefined
 
 export function readViews(rootFolder: string): View[] {
   const markdownFiles = readMarkdownFiles(rootFolder)
-  return markdownFiles.map(filePath => readView(filePath, rootFolder))
+  const views = markdownFiles.map(filePath => readView(filePath, rootFolder))
     .filter((view): view is View => view !== undefined)
+  syncAllChildrenDisabled(views)
+  return views
+}
+
+function syncAllChildrenDisabled(views: View[]) {
+  const childrenMap = view2CollectionChildrenMap(views)
+  const disabledCollectionIds = views.filter(v => isCollectionView(v) && v.disabled === true).map(v => v.id)
+  while (disabledCollectionIds.length > 0) {
+    const first = disabledCollectionIds.shift()!
+    for (const view of childrenMap[first]) {
+      if (isCollectionView(view)) {
+        disabledCollectionIds.push(view.id)
+      }
+      else {
+        view.disabled = true
+      }
+    }
+  }
 }
 
 export interface Breadcrumb extends Pick<View, 'pathname' | 'title' | 'id'> {}
@@ -248,14 +266,14 @@ export function view2CollectionChildrenMap(views: View[]): CollectionChildrenMap
 
 function findTopViews(views: View[]): View[] {
   const homeView = views.find(v => isHomeView(v))
-  return homeView ? sortViews(views.filter(v => v.collectionId === homeView.id)) : []
+  return homeView ? sortViews(views.filter(v => v.collectionId === homeView.id && v.disabled !== true)) : []
 }
 
 export function view2Nav(views: View[]): DefaultTheme.NavItem[] {
   const topViews = findTopViews(views)
   const collectionChildrenMap = view2CollectionChildrenMap(views)
   return topViews.map((view) => {
-    const items = sortViews(collectionChildrenMap[view.id]).map((view) => {
+    const items = sortViews(collectionChildrenMap[view.id].filter(v => v.disabled !== true)).map((view) => {
       return {
         text: view.title,
         link: view.pathname,
@@ -309,6 +327,9 @@ export function view2CollectionStatMap(views: View[]): CollectionStatMap {
   }
 
   for (const view of views) {
+    if (view.disabled === true) {
+      continue
+    }
     const stat: CollectionStat = {
       collectionCount: isCollectionView(view) ? 1 : 0,
       resourceCount: isResourceView(view) ? 1 : 0,

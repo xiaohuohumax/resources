@@ -15,6 +15,9 @@ onMounted(() => inputElement.value?.focus())
 const tagMap = computed(() => {
   const tagMap = new Map<string, View[]>()
   for (const view of views) {
+    if (view.disabled === true) {
+      continue
+    }
     if (hasTags(view)) {
       for (const tag of view.tags || []) {
         const resources = tagMap.get(tag) || []

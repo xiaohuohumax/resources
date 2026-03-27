@@ -10,9 +10,11 @@ const theme = useTheme()
 <template>
   <div class="RViewCards">
     <div class="items">
-      <div v-for="view in views" :key="view.id" class="item" :class="[grid]">
-        <RViewCard :view="view" :in-favorite="inFavorite" />
-      </div>
+      <template v-for="view in views" :key="view.id">
+        <div v-if="view.disabled !== true" class="item" :class="[grid]">
+          <RViewCard :view="view" :in-favorite="inFavorite" />
+        </div>
+      </template>
     </div>
     <div v-if="views.length === 0" class="empty">
       {{ theme.viewCards.nothingHere }}

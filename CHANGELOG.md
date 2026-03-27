@@ -1,5 +1,11 @@
 # resources
 
+## 4.17.0
+
+### Minor Changes
+
+- 资源屏蔽改为链接不可达
+
 ## 4.16.3
 
 ### Patch Changes

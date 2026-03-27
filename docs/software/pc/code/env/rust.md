@@ -13,5 +13,5 @@ links:
   - icon: code
     text: 项目地址
     link: https://github.com/rust-lang/rust
-id: 1ba14c364dbea5b6bffee71ee27effca
+id: 731a0c4c3140587745524bff6ddf72ff
 ---

@@ -10,5 +10,8 @@ links:
   - icon: download
     text: 下载地址
     link: https://motrix.app/
+  - icon: code
+    text: 项目地址
+    link: https://github.com/agalwood/Motrix
 id: 469f41dbc96907b6fe08aee98fe6aa5f
 ---

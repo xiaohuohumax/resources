@@ -7,11 +7,8 @@ tags:
   - 编辑器
   - 富文本
 links:
-  - icon: book
-    text: 文档地址
-    link: http://tinymce.ax-z.cn/
-  - icon: link
-    text: 在线示例
-    link: http://tinymce.ax-z.cn/demos/demo-index.php
+  - icon: code
+    text: 项目地址
+    link: https://github.com/tinymce/tinymce
 id: f8f04f110cffe0f6bb5080c5ffbc4ca9
 ---

@@ -11,6 +11,6 @@ tags:
 links:
   - icon: book
     text: 文档地址
-    link: https://www.nuxtjs.cn/
+    link: https://nuxt.com/
 id: 81464e1a453c54d20dbdc4c1f8fdd17c
 ---

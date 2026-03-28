@@ -7,9 +7,8 @@ tags:
   - Vite
   - Node
 links:
-  - icon: book
-    text: 文档地址
-    link: >-
-      https://github.com/vitest-dev/vitest/blob/main/packages/vite-node/README.md
+  - icon: code
+    text: 项目地址地址
+    link: https://github.com/antfu-collective/vite-node
 id: f953b8ef082168df2c43d943de1eb559
 ---

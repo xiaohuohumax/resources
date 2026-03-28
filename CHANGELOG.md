@@ -1,5 +1,11 @@
 # resources
 
+## 4.18.1
+
+### Patch Changes
+
+- 修复链接检查不全异常
+
 ## 4.18.0
 
 ### Minor Changes

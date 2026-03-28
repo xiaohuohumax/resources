@@ -6,12 +6,11 @@ async function simple() {
   checker.on('link', result => console.log(result.status, result.url))
 
   const { links, passed } = await checker.check({
-    path: 'docs/**/*.md',
-    markdown: true,
+    path: 'docs/static/bookmark.html',
   })
 
   const results: Record<string, any> = { passed, unknown: [] }
-  for (const link of links.filter(link => !link.url.endsWith('.md'))) {
+  for (const link of links.filter(link => !link.url.startsWith('docs'))) {
     const key = link.status !== undefined ? link.status : 'unknown'
     const statusList = results[key] || []
     statusList.push(link)

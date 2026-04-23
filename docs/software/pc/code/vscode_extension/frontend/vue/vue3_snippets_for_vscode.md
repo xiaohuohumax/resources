@@ -1,4 +1,5 @@
 ---
+disabled: true
 layout: resource
 title: vue3-snippets-for-vscode
 description: 此扩展是一个适配 Vue3 Api 的 snippets 插件。

@@ -11,4 +11,4 @@ id: 46b3931b9959c927df4fc65fdee94b07
 
 ## ♻ 项目说明
 
-本站基于 [VitePress](https://vitepress.vuejs.org/) 构建，网站字体 [寒蝉圆黑体](https://github.com/Warren2060/ChillRoundGothic)，项目地址：[resources](https://github.com/xiaohuohumax/resources) （菜单，资源合集自动生成）
+本站基于 [VitePress](https://vitepress.vuejs.org/) 构建，网站字体 [寒蝉圆黑体](https://github.com/Warren2060/ChillRoundGothic) + [JetBrains Mono](https://www.jetbrains.com/zh-cn/lp/mono/)，项目地址：[Resources](https://github.com/xiaohuohumax/resources) （菜单，资源合集自动生成）

@@ -23,8 +23,9 @@ export function normalizePath(p: string): string {
   return path.normalize(p).replaceAll('\\', '/')
 }
 
-export function generateId(pathname: string): string {
-  return crypto.createHash('md5').update(pathname).digest('hex')
+export function randomId(): string {
+  const data = new Date().toISOString()
+  return crypto.createHash('md5').update(data).digest('hex')
 }
 
 const MARKDOWN_SUFFIX_RE = /\.md$/
@@ -41,19 +42,20 @@ export function readMarkdownFiles(rootFolder: string): string[] {
   return globbySync([normalizePath(path.join(rootFolder, '**/*.md'))])
 }
 
-function filePath2CollectionPathname(filePath: string, rootFolder: string, isFolder: boolean): string | undefined {
+function tryReadCollectionId(filePath: string, rootFolder: string, isFolder: boolean): string | undefined {
   const pathname = filePath2Pathname(filePath, rootFolder)
   const parts = pathname.split('/')
   if (isFolder) {
     parts.pop()
   }
   while (parts.pop()) {
-    const collectionPath = path.join(rootFolder, parts.join('/'), 'index.md')
-    if (fs.existsSync(collectionPath)) {
-      const frontmatter = readMarkdownFrontmatter(collectionPath)
-      if (isView(frontmatter) && isFolderView(frontmatter)) {
-        return filePath2Pathname(collectionPath, rootFolder)
-      }
+    const collectionPath = path.join(rootFolder, ...parts, 'index.md')
+    if (!fs.existsSync(collectionPath)) {
+      continue
+    }
+    const frontmatter = readMarkdownFrontmatter(collectionPath)
+    if (isView(frontmatter) && isFolderView(frontmatter)) {
+      return frontmatter.id
     }
   }
 }
@@ -122,15 +124,15 @@ export function readView(filePath: string, rootFolder: string): View | undefined
     const data = readMarkdownFrontmatter(filePath)
     data.layout ||= 'resource'
     const isFolder = isView(data) && isFolderView(data)
-    const collectionPathname = filePath2CollectionPathname(filePath, rootFolder, isFolder)
+    const collectionId = tryReadCollectionId(filePath, rootFolder, isFolder)
     const pathname = filePath2Pathname(filePath, rootFolder)
     // if (data.disabled === true) {
     //   return
     // }
     const core: ViewCore = {
       order: data.order || 0,
-      id: generateId(pathname),
-      collectionId: collectionPathname ? generateId(collectionPathname) : '',
+      id: data.id ?? randomId(),
+      collectionId: collectionId ?? '',
       title: data.title || path.basename(pathname),
       description: data.description || '',
       pathname,

@@ -1,5 +1,11 @@
 # resources
 
+## 4.19.0
+
+### Minor Changes
+
+- 资源 ID 由路径生成改为首次随日期生成
+
 ## 4.18.1
 
 ### Patch Changes

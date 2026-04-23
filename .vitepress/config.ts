@@ -7,6 +7,7 @@ import Components from 'unplugin-vue-components/vite'
 import VueDevTools from 'vite-plugin-vue-devtools'
 import { defineConfig } from 'vitepress'
 import { RssPlugin } from 'vitepress-plugin-rss'
+import CheckId from './plugins/check-id'
 import ClearDist from './plugins/clear-dist'
 import CreateBookmark from './plugins/create-bookmark'
 import CreateTemplates from './plugins/create-templates'
@@ -56,6 +57,7 @@ export default defineConfig<ThemeConfig>({
         dts: abs('types/components.d.ts'),
       }),
       VirtualViews(srcDir),
+      CheckId(srcDir),
       CreateBookmark({ srcDir, title, publicDir: staticDir, iconHref, hostname }),
       ClearDist(outDir),
       CreateTemplates(templatesDir),

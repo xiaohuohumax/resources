@@ -1,7 +1,7 @@
 import type { Plugin } from 'vitepress'
 import { useDebounceFn } from '@vueuse/core'
 import {
-  generateId,
+  randomId,
   readMarkdownFiles,
   readMarkdownFrontmatter,
   readView,
@@ -20,8 +20,9 @@ export default function (srcDir: string): Plugin {
     }
 
     const frontmatter = readMarkdownFrontmatter(file)
-    const id = generateId(view.pathname)
-    frontmatter.id !== id && updateMarkdownFrontmatter(file, { id })
+    if (!frontmatter.id) {
+      updateMarkdownFrontmatter(file, { id: randomId() })
+    }
   }
 
   return {

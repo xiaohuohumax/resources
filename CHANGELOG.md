@@ -1,5 +1,11 @@
 # resources
 
+## 4.19.1
+
+### Patch Changes
+
+- 修复 CI Node 依赖版本升级导致构建失败异常
+
 ## 4.19.0
 
 ### Minor Changes

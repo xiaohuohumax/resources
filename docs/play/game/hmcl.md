@@ -5,6 +5,7 @@ description: HMCL 是一个免费、开源的 Minecraft 启动器，允许玩家
 icon: hmcl.png
 tags:
   - 游戏
+  - 启动器
 links:
   - icon: download
     text: 下载地址

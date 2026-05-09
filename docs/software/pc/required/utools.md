@@ -9,6 +9,7 @@ tags:
   - 搜索
   - JSON
   - 正则表达式
+  - 启动器
 links:
   - icon: book
     text: 文档地址

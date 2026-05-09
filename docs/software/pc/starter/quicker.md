@@ -7,6 +7,7 @@ tags:
   - 搜索
   - 翻译
   - OCR
+  - 启动器
 links:
   - icon: download
     text: 下载地址

@@ -9,6 +9,7 @@ tags:
   - 图片
   - 视频
   - 音频
+  - 图像查看器
 links:
   - icon: download
     text: 下载地址

@@ -5,6 +5,7 @@ description: 一个开源的图片管理软件，支持多种图片格式。
 icon: quick_pic_gallery.png
 tags:
   - 图片
+  - 图像查看器
 links:
   - icon: download
     text: 下载地址

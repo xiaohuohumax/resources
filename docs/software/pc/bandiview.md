@@ -7,6 +7,7 @@ description: >-
 icon: bandiview.svg
 tags:
   - 图片
+  - 图像查看器
 links:
   - icon: download
     text: 下载地址

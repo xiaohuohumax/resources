@@ -5,6 +5,7 @@ description: 极速看图，不止于快。为摄影师打造的专业级 RAW �
 icon: guo_he_view.ico
 tags:
   - 图片
+  - 图像查看器
 links:
   - icon: download
     text: 下载地址

@@ -82,7 +82,6 @@ export default defineConfig<ThemeConfig>({
         // Overwrite built-in components
         './VPNavBarMenu.vue': abs('./theme/components/overwrite/VPNavBarMenu.vue'),
         './VPNavScreenMenu.vue': abs('./theme/components/overwrite/VPNavScreenMenu.vue'),
-        './components/VPFooter.vue': abs('./theme/components/overwrite/VPFooter.vue'),
       },
     },
     build: { chunkSizeWarningLimit: 5000 },

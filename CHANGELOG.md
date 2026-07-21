@@ -1,5 +1,11 @@
 # resources
 
+## 4.19.2
+
+### Patch Changes
+
+- 去除统计组件
+
 ## 4.19.1
 
 ### Patch Changes

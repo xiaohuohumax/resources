@@ -11,6 +11,6 @@ tags:
 links:
   - icon: download
     text: 下载地址
-    link: https://ecopaste.cn/download/index
+    link: https://github.com/EcoPasteHub/EcoPaste/releases
 id: 671350bd987e2e31db8463ee86a6d8a2
 ---

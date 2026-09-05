@@ -1,5 +1,11 @@
 # resources
 
+## 4.19.3
+
+### Patch Changes
+
+- 修复 Github Action 缓存异常
+
 ## 4.19.2
 
 ### Patch Changes
